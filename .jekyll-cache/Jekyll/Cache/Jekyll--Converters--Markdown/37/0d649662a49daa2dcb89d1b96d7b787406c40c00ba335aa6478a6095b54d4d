@@ -1,0 +1,67 @@
+I"<p>For just about all of my Angular applications I’ve used Real Favicon Generator to generate the files for my Favicon icon. It’s a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I’ve found a quick and painless way to use both the Node and HTML5 tools. I’ll also show you how to add Progressive Web App (PWA) meta tags so that you can add your newly created icons to your mobile homescreen. Lets get to it.</p>
+
+<ol>
+  <li>
+    <p>Head over to the Real Favicon Generator site and upload your icon. Note that your icon should have even/square dimensions and be at least 260px wide/high.</p>
+  </li>
+  <li>
+    <p>Set your icon settings; which basically allows you to play with the margin size, background size and what it will look like as a PWA icon on your mobile devices.</p>
+  </li>
+  <li>
+    <p>Once the Real Favicon generator does its thing, you’ll want to click on the “NodeJS” tab as seen in the image below.</p>
+  </li>
+</ol>
+
+<p><img src="../images/posts/rfg-arrows.png" alt="Real Favicon Generator" /></p>
+
+<ol>
+  <li>
+    <p>Now you’ll want to install the Real Favicon Generator CLI which helps to generate the files for you. So run  npm install -g cli-real-favicon</p>
+  </li>
+  <li>
+    <p>Now that the CLI is installed, run this command touch faviconDescription.json &amp;&amp; mkdir src/assets/outputDir. This creates a generator file and output folder where the generator files are going to be placed in.</p>
+  </li>
+  <li>
+    <p>Now you’ll want to copy that source code on the RFG site into the newly created faviconDescription.json file. You’ll notice that there will be TODO: Path to your master picture.</p>
+  </li>
+  <li>
+    <p>You’ll need to add your original icon that you uploaded to RFG into the newly created src/assets/outputDir folder. I named my image favicon.png so my path looks like this:</p>
+  </li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"masterPicture"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/assets/outputDir/favicon.png"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">Update</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">line</span><span class="w"> </span><span class="err">(Should</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">same</span><span class="w"> </span><span class="err">if</span><span class="w"> </span><span class="err">you</span><span class="w"> </span><span class="err">rename</span><span class="w"> </span><span class="err">your</span><span class="w"> </span><span class="err">image</span><span class="w"> </span><span class="err">to</span><span class="w"> </span><span class="err">favicon.png)</span><span class="w">
+    </span><span class="nl">"iconsPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"design"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>Now that you have copied and pasted that code and updated the “masterPicture” path to your image path, you’ll want to run this RFG CLI command to generate your new icons. So run this in your terminal:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>real-favicon generate faviconDescription.json faviconData.json src/assets/outputDir
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>If everything went correctly you should now see your icons in your src/assets/outputDir directory.</p>
+  </li>
+  <li>
+    <p>Now go into your angular.json file and make sure it has the path to your favicon in the assets like so:</p>
+  </li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="nl">"assets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+     </span><span class="s2">"src/assets/outputDir/favicon.ico"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">Add</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">line</span><span class="w">
+     </span><span class="s2">"src/assets"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"src/sitemap.xml"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"src/robots.txt"</span><span class="w">
+ </span><span class="p">]</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>Finally!!!!!!! One last step, go into your index.html file and add your meta tags. Mine looks like what’s below. If you copy and paste my code just remember to update the color HEX’s to be what you choose for your icon. You can find those HEX colors on the HTML5 tab on the RFG site. I’ve added some PWA tags too so when you add your site to your mobile devices’ home screen, and launch the app, it will run like a PWA application and will use your new icon.</li>
+</ol>
+:ET

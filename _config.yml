@@ -1,0 +1,46 @@
+# site settings
+title: Colin B. Stodd
+subtitle: Colin Stodd's Personal Website
+email: cbstodd@harpua.co
+description: Focused on his career in web application and mobile development
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author: Colin Stodd
+street_address:
+city: Annapolis
+state: MD
+zip_code: 21403
+country: United States of America
+phone:
+
+# social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/cbstodd
+googleplus_url: https://plus.google.com/u/0/+cbstodd
+instagram_url: https://instagram.com/cbstodd
+linkedin_url: https://www.linkedin.com/in/colin.stodd
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/cbstodd
+theme: solid_state_jekyll_theme
+
+# Syntax Highlighting:
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# build settings
+markdown: kramdown
+
+menus:
+  - Home: "/index.html"
+  - Generic: "/generic.html"
+  - Elements: "/elements.html"
+  - Log in: "#"
+  - Sign up: "#"
+
+sass:
+  style: compressed

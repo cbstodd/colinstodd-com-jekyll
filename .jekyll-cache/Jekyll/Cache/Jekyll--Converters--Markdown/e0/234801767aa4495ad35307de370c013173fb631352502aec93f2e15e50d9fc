@@ -1,0 +1,40 @@
+I"><p>Most people use SASS/SCSS or LESS,  but maybe you don’t need to?  Here are a couple of reasons I’m opting to use vanilla CSS instead of SCSS in my projects.</p>
+
+<ol>
+  <li>
+    <p>It’s one less abstraction or process I need to compile. I can’t tell you the number of times I build my application but something in the build process goes weary and it’s because of something like SASS.</p>
+  </li>
+  <li>
+    <p>CSS now has variables.  That’s right; The main reason I loved SCSS so much was because of the ability to create variables. Doing so allowed you to change the root variable and it would change everything application/site wide. It’s pretty awesome, but now you can do the same with vanilla CSS. Most text editors &amp; IDE’s also support color highlighting too with CSS variables. It’s simple, all you need to do is wrap your variables inside a <code class="highlighter-rouge">:root {}</code> like so</p>
+  </li>
+</ol>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+    <span class="c">/* Fonts */</span>
+    <span class="py">--sans-font</span><span class="p">:</span> <span class="s2">'Roboto'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+    <span class="py">--serif-font</span><span class="p">:</span> <span class="s2">'Cambria'</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+
+    <span class="c">/* Colors */</span>
+    <span class="py">--dark-red</span><span class="p">:</span> <span class="m">#860000</span><span class="p">;</span>
+    <span class="py">--light-gray</span><span class="p">:</span> <span class="m">#cccccc</span><span class="p">;</span>
+    <span class="py">--dark</span><span class="p">:</span> <span class="m">#444444</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--sans-font</span><span class="p">);</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--dark</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>And you can call those variables with <code class="highlighter-rouge">var(--var-name)</code>.</p>
+
+<ol>
+  <li>Another reason I’ve started using CSS again is CSS Grid. With a few lines of code, you can create your own CSS “Grid Framework” like <a href="https://getbootstrap.com/">Bootstrap</a>, with columns and all. Since CSS Grid takes some more explaining (and I’m really lazy), I’m going to forward you to a couple of resources that are amazing and must be bookmarked. This <a href="https://scrimba.com/g/gR8PTE">interactive course from Scrimba</a> will leave you a pro at CSS Grid and should only take you an afternoon to complete, and best of all it’s 100% FREE!</li>
+</ol>
+
+<p>And for reference sake, you can’t get much better than <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Tricks</a>.</p>
+
+<p>This guide from Learn <a href="https://learncssgrid.com/">CSS Grid</a> is also a great reference/education tool.</p>
+
+<p>And with those, you’ll be well on your way to a CSS Grid pro!</p>
+:ET
