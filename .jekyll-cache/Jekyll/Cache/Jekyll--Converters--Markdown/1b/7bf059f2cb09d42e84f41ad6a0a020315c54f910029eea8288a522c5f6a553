@@ -1,0 +1,33 @@
+I"\<p>There are other packages out there that you can use such as <a href="https://github.com/valor-software/ngx-bootstrap">ngx-bootstrap</a>, but this is the vanilla <a href="https://getbootstrap.com/">Bootstrap</a> (including JavaScript) method.</p>
+
+<p>There are some slight differences from versions before Angular 6.</p>
+
+<ol>
+  <li>From the root of your project, run in your terminal:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>bootstrap <span class="nt">--save</span>
+</code></pre></div></div>
+
+<ol>
+  <li>And you need to install it’s dependencies (<a href="https://jquery.com/">jQuery</a>) and (<a href="https://popper.js.org/">Popper.JS</a>):</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>jquery popper.js <span class="nt">--save</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Open up your <code class="highlighter-rouge">angular.json</code> file to find and add the style and scripts:</li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="s2">"./node_modules/bootstrap/dist/css/bootstrap.min.css"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"src/styles.css"</span><span class="w">
+</span><span class="p">]</span><span class="err">,</span><span class="w">
+</span><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="s2">"./node_modules/jquery/dist/jquery.min.js"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"./node_modules/popper.js/dist/umd/popper.min.js"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"./node_modules/bootstrap/dist/js/bootstrap.min.js"</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+:ET
