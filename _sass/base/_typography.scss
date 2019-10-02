@@ -44,7 +44,7 @@ a {
 	text-decoration: none;
 
 	&:hover {
-		border-bottom-color: transparent;
+		border-bottom-color: #ffffff;
 		color: _palette(fg-bold) !important;
 	}
 
@@ -100,8 +100,11 @@ i {
 	font-style: italic;
 }
 
-p {
+p,
+li {
 	margin: 0 0 _size(element-margin) 0;
+	font-weight: 300;
+	line-height: 2.2em;
 }
 
 h1,
@@ -185,7 +188,7 @@ code {
 	background: _palette(border-bg);
 	border-radius: _size(border-radius);
 	border: solid 2px _palette(border);
-	font-family: 'SF Mono', Menlo, 'Roboto Mono', _font(family-fixed), monospace;
+	font-family: _font(family-fixed);
 	font-size: 0.9em;
 	margin: 0 0.25em;
 	padding: 0.25em 0.65em;
@@ -193,8 +196,8 @@ code {
 
 pre {
 	-webkit-overflow-scrolling: touch;
-	font-family: 'SF Mono', Menlo, 'Roboto Mono', _font(family-fixed), monospace;
-	font-size: 0.9em;
+	font-family: _font(family-fixed);
+	font-size: 1em;
 	margin: 0 0 _size(element-margin) 0;
 
 	code {

@@ -1,0 +1,86 @@
+/*~  Banner ~*/
+.dots {
+    width: 3em;
+    height: 3em;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-right: 2rem;
+    float: left;
+}
+
+.dots>div {
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #f506e1;
+    border-radius: 50%;
+    animation: fade 1.5s alternate ease-in-out infinite;
+}
+
+.dots>div:nth-of-type(2),
+.dots>div:nth-of-type(4) {
+    animation-delay: 0.25s;
+}
+
+.dots>div:nth-of-type(3),
+.dots>div:nth-of-type(5),
+.dots>div:nth-of-type(7) {
+    animation-delay: 0.5s;
+}
+
+.dots>div:nth-of-type(6),
+.dots>div:nth-of-type(8) {
+    animation-delay: 0.75s;
+}
+
+.dots>div:nth-of-type(9) {
+    animation-delay: 1s;
+}
+
+@keyframes fade {
+    to {
+        opacity: 0.2;
+    }
+}
+
+
+/*~  LInks ~*/
+/* a {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+  }
+
+  a::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #3cefff;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #161616;
+  }
+
+  a:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  } */

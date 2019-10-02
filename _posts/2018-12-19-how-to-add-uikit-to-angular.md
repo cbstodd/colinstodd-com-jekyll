@@ -5,7 +5,7 @@ author: Colin Stodd
 tags: Angular, UIKIT, Tutorial
 title: How to add UIKit to Angular
 date:   2019-02-19 15:30:12 -0400
-pinned: true
+pinned: false
 image: "images/posts/uikit.png"
 description: How to install UIKit in Angular 6+ using CSS or SASS/SCSS.
 ---

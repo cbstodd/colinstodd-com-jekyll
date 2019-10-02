@@ -2,7 +2,7 @@
 layout: home
 title: Home
 landing-title: Colin B. Stodd
-description:  Personal website focused on my career in web application and mobile development.
+description:  Percussionist, Software Developer & Co-Founder of <a href="https://harpua.co" target="_blank">Harpua, LLC.</a>
 image: 'images/bg.jpg'
 author: Colin Stodd
 ---
