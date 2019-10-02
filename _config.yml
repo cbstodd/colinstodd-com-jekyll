@@ -37,10 +37,12 @@ markdown: kramdown
 
 menus:
   - Home: "/index.html"
+  - About: "/about.html"
+  - Contact: "/contact.html"
   - Generic: "/generic.html"
   - Elements: "/elements.html"
-  - Log in: "#"
-  - Sign up: "#"
+  # - Log in: "#"
+  # - Sign up: "#"
 
 sass:
   style: compressed
