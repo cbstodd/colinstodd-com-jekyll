@@ -1,0 +1,8 @@
+---
+layout: posts
+title: Posts
+description: View all of Colin's Blog Posts.
+
+---
+
+This is a full list of blog posts. To view them individually, click on the post image or title.

@@ -39,6 +39,8 @@ menus:
   - Home: "/index.html"
   - About: "/about.html"
   - Contact: "/contact.html"
+  - Posts: "/posts.html"
+  - Projects: "/projects.html"
   - Generic: "/generic.html"
   - Elements: "/elements.html"
   # - Log in: "#"
