@@ -1,0 +1,22 @@
+I"<p><code class="highlighter-rouge">ngClass</code> functions as though <code class="highlighter-rouge">ngIf</code> is built into the statement. The class binds and defaults to truthy. So if <code class="highlighter-rouge">showPerson</code> is true, it will bind, or else it will not. But you can declare the else with a falsey statement by using <code class="highlighter-rouge">!</code> not.</p>
+
+<p><strong>Component:</strong>*</p>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// componentName.component.ts</span>
+<span class="nx">showPerson</span><span class="p">:</span><span class="nx">boolean</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="nx">showToggle</span><span class="p">(){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">showPerson</span> <span class="o">=</span> <span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">showPerson</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong><em>View:</em></strong></p>
+
+<p><strong>Better for having more than one conditional:</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- * componentName.component.html * --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">(click)=</span><span class="s">"showToggle();"</span>
+        <span class="na">[ngClass]=</span><span class="s">"{'btn-warning':showPerson, 'btn-success':!showPerson}"</span><span class="nt">&gt;</span>
+    Toggle person
+<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+:ET

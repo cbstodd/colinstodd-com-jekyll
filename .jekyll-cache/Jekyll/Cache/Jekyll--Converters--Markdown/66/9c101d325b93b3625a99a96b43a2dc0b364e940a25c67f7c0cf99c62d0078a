@@ -1,0 +1,39 @@
+I"�<p>I figured this out the other day so I thought I’d share how I used <a href="https://github.com/angular/angularfire2" target="_blank">AngularFire2</a>’s email/password observable to split the email into a username. There might be a better way to do it, but this is pretty straightforward.</p>
+
+<p>My goal was to display the username on a page when logged in (see image). Basically strip anything off after the <code class="highlighter-rouge">@</code> (the fake email address was <code class="highlighter-rouge">colper@example.com</code>). It sill needs styling but you get the point. This assumes you have already set up <a href="https://github.com/angular/angularfire2" target="_blank">AngularFire2</a>’s email/password user authentication and can successfully display a user’s values.</p>
+
+<p>I have my authentication logic in a <code class="highlighter-rouge">auth.service.ts</code> service file. And included the <code class="highlighter-rouge">auth.service.ts</code> where I want to render the username. In this case it was the <code class="highlighter-rouge">occasions.component.ts</code>.</p>
+
+<p>From my <code class="highlighter-rouge">authService</code> I created a function <code class="highlighter-rouge">getUsername()</code>. I subscribe to that user and <code class="highlighter-rouge">split()</code>, <code class="highlighter-rouge">join()</code>, and convert it back to a <code class="highlighter-rouge">toString()</code> adding the <code class="highlighter-rouge">@</code> in front of the username. Fairly straightforward, but I’m still getting down my promises/observables and thought this might help someone doing the same.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// auth.service.ts</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">NavbarComponent</span> <span class="kr">implements</span> <span class="nx">OnInit</span> <span class="p">{</span>
+    <span class="nx">username</span><span class="p">;</span> <span class="c1">// Dont forget This</span>
+
+    <span class="nx">getUsername</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">afAuth</span><span class="p">.</span><span class="nx">auth</span><span class="p">.</span><span class="nx">currentUser</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">username</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">user</span>
+                <span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">user</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                    <span class="kd">const</span> <span class="nx">splitEmail</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">email</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1">@</span><span class="dl">'</span><span class="p">).</span><span class="nx">splice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+                    <span class="kd">const</span> <span class="nx">strEmail</span>   <span class="o">=</span> <span class="nx">splitEmail</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>
+                    <span class="k">this</span><span class="p">.</span><span class="nx">username</span>    <span class="o">=</span> <span class="s2">`@</span><span class="p">${</span><span class="nx">strEmail</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                <span class="p">});</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// occasions.component.ts</span>
+<span class="kd">constructor</span><span class="p">(</span>
+    <span class="kr">private</span> <span class="nx">dataService</span><span class="p">:</span> <span class="nx">DataService</span><span class="p">,</span>
+    <span class="kr">public</span> <span class="nx">authService</span><span class="p">:</span> <span class="nx">AuthService</span>
+<span class="p">)</span> <span class="p">{}</span>
+
+<span class="nx">ngOnInit</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">occasion$</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">dataService</span><span class="p">.</span><span class="nx">getOccasions</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">authService</span><span class="p">.</span><span class="nx">getUsername</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Let me know if you have any questions or if there is more eloquent way to do this. Thanks.</p>
+:ET

@@ -1,0 +1,39 @@
+I"X<p>dotenv allows you to store sensitive data variables locally (Secret Keys, etc), without having to include them directly in your app files.</p>
+
+<p>This is based off of <a href="https://www.npmjs.com/package/dotenv-webpack" target="_blank">dotenv-webpack</a>’s NPM package.</p>
+
+<p>You first want to install dotenv-webpack via your terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>dotenv-webpack <span class="nt">--save</span>
+</code></pre></div></div>
+
+<p>Then create a file in the root of your directory <code class="highlighter-rouge">.env</code> and add your secret keys or whatever it is you want to hide like this.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">SECRET_KEY_EXAMPLE</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">3213213232132132123132adassdasdsd</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Now make sure to add <code class="highlighter-rouge">.env</code> to your <code class="highlighter-rouge">.gitignore</code> file so that it doesn’t get deployed to Git.</p>
+
+<p>Then add this plugin to your <code class="highlighter-rouge">webpack.config.js</code> file.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// webpack.config.js</span>
+<span class="kd">const</span> <span class="nx">Dotenv</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">dotenv-webpack</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="p">...</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="k">new</span> <span class="nx">Dotenv</span><span class="p">()</span>
+  <span class="p">]</span>
+  <span class="p">...</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>In your main project folder ie <code class="highlighter-rouge">index.js</code>, add this line of code to require dotenv.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">dotenv</span><span class="dl">'</span><span class="p">).</span><span class="nx">config</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>And you can test to see that it’s working by logging it to your console like so:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">SECRET_KEY_EXAMPLE</span><span class="p">);</span>
+</code></pre></div></div>
+:ET

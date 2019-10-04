@@ -1,0 +1,64 @@
+I"¿"<p>You can extend or import/assign classes within a class. Here is a example of that.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Developer</span> <span class="p">{</span>
+      <span class="nx">language</span><span class="p">()</span> <span class="p">{</span>
+          <span class="kd">const</span> <span class="nx">languages</span> <span class="o">=</span> <span class="p">[</span>
+              <span class="dl">'</span><span class="s1">Ruby</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">JavaScript</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">Python</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">jQuery</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">Swift</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">HTML5</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">CSS3</span><span class="dl">'</span>
+          <span class="p">];</span>
+      <span class="p">}</span>
+
+      <span class="kd">constructor</span><span class="p">(</span> <span class="p">{</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">eyeColor</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">blue</span><span class="dl">'</span> <span class="p">}</span> <span class="o">=</span> <span class="p">{}</span> <span class="p">)</span> <span class="p">{</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">eyeColor</span> <span class="o">=</span> <span class="nx">eyeColor</span><span class="p">;</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="kd">class</span> <span class="nx">Student</span> <span class="kd">extends</span> <span class="nx">Developer</span> <span class="p">{</span>
+      <span class="c1">// If called a framework as true, then it will call the instance of language</span>
+      <span class="c1">//   if false, then it will call a language aka framework from the Student class</span>
+      <span class="nx">language</span><span class="p">(</span> <span class="nx">framework</span> <span class="p">)</span> <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="nx">framework</span><span class="p">){</span>
+              <span class="k">super</span><span class="p">.</span><span class="nx">language</span><span class="p">();</span>
+              <span class="k">return</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="kd">const</span> <span class="nx">languages</span> <span class="o">=</span> <span class="p">[</span>
+              <span class="dl">'</span><span class="s1">Ruby on Rails</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">Angular</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">ReactJS</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">Django</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">Ionic</span><span class="dl">'</span><span class="p">,</span>
+              <span class="dl">'</span><span class="s1">Ember</span><span class="dl">'</span>
+          <span class="p">];</span>
+          <span class="c1">// Generates a random language</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2"> is learning </span><span class="p">${</span><span class="nx">languages</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">languages</span><span class="p">.</span><span class="nx">length</span><span class="p">)]}</span><span class="s2">.`</span><span class="p">);</span>
+      <span class="p">}</span>
+
+      <span class="kd">constructor</span><span class="p">(</span> <span class="p">{</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">interestLevel</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">}</span> <span class="o">=</span> <span class="p">{}</span> <span class="p">)</span> <span class="p">{</span>
+          <span class="k">super</span><span class="p">({</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">age</span> <span class="p">});</span> <span class="c1">// Needed to call instances from Person</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span> <span class="c1">// Needed to call this.name</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span> <span class="c1">// Needed to call this.name</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">interestLevel</span> <span class="o">=</span> <span class="nx">interestLevel</span><span class="p">;</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">grades</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Map</span><span class="p">();</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+
+
+  <span class="c1">// Sets the Class name</span>
+  <span class="c1">// let colin = new Developer({ name: 'Colin', age: 32 });</span>
+  <span class="kd">let</span> <span class="nx">colin</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Student</span><span class="p">({</span> <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Colin</span><span class="dl">'</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span> <span class="na">interestLevel</span><span class="p">:</span> <span class="mi">4</span> <span class="p">});</span>
+  <span class="nx">colin</span><span class="p">.</span><span class="nx">language</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">colper</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Developer</span><span class="p">(({</span> <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Colper</span><span class="dl">'</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">32</span> <span class="p">}));</span>
+
+  <span class="c1">//Calls the language function on that class</span>
+  <span class="nx">colin</span><span class="p">.</span><span class="nx">language</span><span class="p">();</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Colin's interest level is: </span><span class="p">${</span><span class="nx">colin</span><span class="p">.</span><span class="nx">interestLevel</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Colin's developer name is </span><span class="p">${</span><span class="nx">colper</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">, and is </span><span class="p">${</span><span class="nx">colper</span><span class="p">.</span><span class="nx">age</span><span class="p">}</span><span class="s2"> years old.`</span><span class="p">);</span>
+</code></pre></div></div>
+:ET
