@@ -14,32 +14,32 @@ layout: default
   <!-- Content -->
   <div class="wrapper">
     <div class="inner">
-      {% assign projects = site.projects %}
-      {% for project in projects %}
-      {% if project.title != 404 %}
-      <a href="{{ project.url | relative_url }}">
+      {% assign posts = site.posts %}
+      {% for post in posts %}
+      {% if post.title != 404 %}
+      <a href="{{ post.url | relative_url }}">
 
         <header class="major">
-          <h1>{{ project.title }}</h1>
+          <h1>{{ post.title }}</h1>
         </header>
 
         <div class="row uniform">
           <div class="8u">
-              {% if project.description %}
-                {{ project.description }}
+              {% if post.description %}
+                {{ post.description }}
               {% endif %}
           </div>
           <div class="4u">
-            {% if project.image %}
-            <img src="{{ project.image }}"
-                 alt="{{ project.title }}" class="image fit" />
+            {% if post.image %}
+            <img src="{{ post.image }}"
+                 alt="{{ post.title }}" class="image fit" />
             {% endif %}
           </div>
         </div>
 
-        {% if project.date %}<p>{{ project.date | date_to_string }}</p>{% endif %}
+        {% if post.date %}<p>{{ post.date | date_to_string }}</p>{% endif %}
         <hr>
-        <!-- <p>{{ project.content }}</p> -->
+        <!-- <p>{{ post.content }}</p> -->
         {% endif %}
         {% endfor %}
       </a>

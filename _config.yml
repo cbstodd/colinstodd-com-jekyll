@@ -11,7 +11,7 @@ city: Annapolis
 state: MD
 zip_code: 21403
 country: United States of America
-phone:
+phone: 443-333-1031
 
 # social settings
 500px_url:
@@ -35,14 +35,25 @@ kramdown:
 # build settings
 markdown: kramdown
 
+
+# defaults:
+#   - scope:
+#       path: "posts/post"
+#     values:
+#       type: "post"
+#   - scope:
+#       path: "projects/project"
+#     values:
+#       type: "project"
+
 menus:
   - Home: "/index.html"
   - About: "/about.html"
   - Contact: "/contact.html"
-  - Posts: "/posts.html"
-  - Projects: "/projects.html"
-  - Generic: "/generic.html"
-  - Elements: "/elements.html"
+  - Posts: "/posts/index.html"
+  # - Projects: "/projects/index.html"
+  # - Generic: "/generic.html"
+  # - Elements: "/elements.html"
   # - Log in: "#"
   # - Sign up: "#"
 
