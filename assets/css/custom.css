@@ -62,7 +62,7 @@
 .dots>div {
     width: 0.5em;
     height: 0.5em;
-    background-color: #f506e1;
+    background-color: #AB47BC;
     border-radius: 50%;
     animation: fade 1.5s alternate ease-in-out infinite;
 }

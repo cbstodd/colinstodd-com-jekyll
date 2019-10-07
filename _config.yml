@@ -5,7 +5,7 @@ email: cbstodd@harpua.co
 description: Colin Stodd's personal website focused on his career in web application and mobile development
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://blog.colinstodd.com" # the base hostname & protocol for your site
-author: Colin Stodd
+author: cbstodd
 street_address:
 city: Annapolis
 state: MD
@@ -35,10 +35,10 @@ kramdown:
 # build settings
 markdown: kramdown
 
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:title
+# collections:
+#   projects:
+#     output: true
+#     permalink: /:collection/:title
 
 # defaults:
 #   - scope:
