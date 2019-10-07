@@ -18,14 +18,28 @@ layout: default
       {% for post in posts %}
       {% if post.title != 404 %}
       <a href="{{ post.url | relative_url }}">
-        <hr>
+
         <header class="major">
           <h1>{{ post.title }}</h1>
         </header>
-        {% if post.image %}<span class="image main"><img src="{{ post.image }}"
-               alt="{{ post.title }}" /></span>{% endif %}
+
+        <div class="row uniform">
+          <div class="8u">
+              {% if post.description %}
+                {{ post.description }}
+              {% endif %}
+          </div>
+          <div class="4u">
+            {% if post.image %}
+            <img src="{{ post.image }}"
+                 alt="{{ post.title }}" class="image fit" />
+            {% endif %}
+          </div>
+        </div>
+
         {% if post.date %}<p>{{ post.date | date_to_string }}</p>{% endif %}
-        <p>{{ post.content }}</p>
+        <hr>
+        <!-- <p>{{ post.content }}</p> -->
         {% endif %}
         {% endfor %}
       </a>

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<!-- Wrapper -->
+<section id="wrapper">
+  <header>
+    <div class="inner">
+      <a href="{{ project.category | relative_url }}">
+        <h6>{{ project.category }}
+      </a>
+      <h2>{{ project.title }}</h2>
+      <h5><i class="fa fa-user"></i> {{ project.author }}</h5>
+      <h5><i class="fa fa-tags"></i> {{ project.tags }}</h5>
+       <h5><i class="fa fa-calendar-alt"></i> {{ project.date | date_to_string }}</h5>
+    </div>
+  </header>
+  <!-- Content -->
+  <div class="wrapper">
+    <div class="inner">
+      {{ content }}
+    </div>
+  </div>
+</section>

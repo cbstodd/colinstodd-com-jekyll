@@ -1,0 +1,27 @@
+I"3<p>I’ve recently been playing with <a href="http://materializecss.com/" target="_blank">Materailize CSS</a>, and It’s beautiful. Here’s how you install it in Angular.</p>
+
+<ol>
+  <li>Once you’ve created your project, open up your terminal and run:
+npm i materialize-css@next jquery –save</li>
+</ol>
+
+<p>This installs <a href="http://materializecss.com/" target="_blank">Materailize CSS</a> and <a href="https://jquery.com/" target="_blank">jQuery</a>.</p>
+
+<ol>
+  <li>Open up your <code class="highlighter-rouge">angular.json</code> file and add the style and scripts.</li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="s2">"./node_modules/materialize-css/dist/css/materialize.css"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"src/styles.css"</span><span class="w">
+</span><span class="p">]</span><span class="err">,</span><span class="w">
+  </span><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="s2">"./node_modules/jquery/dist/jquery.min.js"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"./node_modules/materialize-css/dist/js/materialize.js"</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>Restart your server and you should be ready to go!</li>
+</ol>
+:ET

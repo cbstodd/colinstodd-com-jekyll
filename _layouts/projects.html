@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<!-- Wrapper -->
+<section id="wrapper">
+  <header>
+    <div class="inner">
+      <a href="{{ page.category | relative_url }}">
+        <h2>{{ page.title }}</h2>
+      </a>
+      <p>{{ page.description }} </p>
+    </div>
+  </header>
+  <!-- Content -->
+  <div class="wrapper">
+    <div class="inner">
+      {% assign posts = site.posts %}
+      {% for post in posts %}
+      {% if project.title != 404 %}
+      <a href="{{ project.url | relative_url }}">
+        <hr>
+        <header class="major">
+          <h1>{{ project.title }}</h1>
+        </header>
+        {% if project.image %}<span class="image main"><img src="{{ project.image }}"
+               alt="{{ project.title }}" /></span>{% endif %}
+        {% if project.date %}<p>{{ project.date | date_to_string }}</p>{% endif %}
+        <p>{{ project.content }}</p>
+        {% endif %}
+        {% endfor %}
+      </a>
+    </div>
+  </div>
+</section>
