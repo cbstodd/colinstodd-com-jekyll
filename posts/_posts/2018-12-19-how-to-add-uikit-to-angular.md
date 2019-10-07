@@ -9,6 +9,7 @@ pinned: true
 featured: false
 image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fuikit-min.png?alt=media&token=405033ba-2f94-43cf-8b69-4a600e10f6ed"
 description: How to install UIKit in Angular 6+ using CSS or SASS/SCSS.
+permalink: /posts/how-to-add-uikit-to-angular
 ---
 
 I recently heard about [UIKit](https://getuikit.com/) from a friend and I decided to give it a spin. It's pretty amazing. Here's how you can install it in [Angular](https://angular.io/).

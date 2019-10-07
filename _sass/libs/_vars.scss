@@ -21,18 +21,9 @@ $size: (border-radius: 5px,
 // Font.
 
 
-// font-family: 'Montserrat', sans-serif;
-
-// font-family: 'Fira Sans', sans-serif;
-
-// font-family: 'Varela Round', sans-serif;
-
-// font-family: 'Asap', sans-serif;
-
-
-$font: (family: (Roboto, 'Source Sans Pro', Helvetica, sans-serif),
-	family-fixed: ('SF Mono', Menlo, 'Roboto Mono', 'Courier New', monospace),
-	family-heading: ('Varela Round', Helvetica, sans-serif),
+$font: (family: ('Roboto', 'Source Sans Pro', Helvetica, sans-serif),
+	family-fixed: ('SF Mono', 'Roboto Mono', Menlo, 'Courier New', monospace),
+	family-heading: ('Nunito', 'Helvetica Neue', sans-serif),
 	weight: 300,
 	weight-bold: 600,
 	weight-heading: 200,

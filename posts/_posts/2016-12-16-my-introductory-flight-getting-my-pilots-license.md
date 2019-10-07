@@ -9,6 +9,7 @@ pinned: true
 featured: false
 image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fcessna172-min.jpg?alt=media&token=24c8da61-ca7e-4dac-b183-58f395092581"
 description: Personal experience of my introductory flight
+permalink: /posts/introductory-flight-getting-my-pilots-license
 ---
 
 Since I can remember, It’s been a dream of mine to become a pilot and be able to get in my plane and fly to the beach or mountains. I have been playing <a href="https://en.wikipedia.org/wiki/Microsoft_Flight_Simulator_X" target="_blank">Microsoft SimulatorX</a> and now <a href="http://www.x-plane.com/" target="_blank">X-plane</a> for years. But I saw a Groupon pass for a discounted introductory flight at a nearby airport, and because it was the same time as my birthday (October 15th, go Libras) I decided that it was time.

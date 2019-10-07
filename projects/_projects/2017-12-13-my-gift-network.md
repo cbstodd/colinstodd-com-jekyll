@@ -10,6 +10,7 @@ pinned: true
 liveUrl: "https://mygiftnetwork.com/"
 githubUrl: "https://github.com/cbstodd/colperClub"
 description: Personal gift wish-list as a social network.
+permalink: /projects/my-gift-network
 ---
 
 This is my latest pride and joy as a PWA (Progressive Web Application). It's a gift wishlist slanted as a social network. As of now it's not a store, rather, a fancy gift-list creator. It's still in it's infancy but I feel it's reached it's MVP level, and I plan to incorporate popular online store API's, features, and possibly a browser extension.

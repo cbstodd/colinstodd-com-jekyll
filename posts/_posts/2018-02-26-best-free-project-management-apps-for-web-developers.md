@@ -9,6 +9,7 @@ pinned: true
 featured: false
 image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit/aevb9k5ytoxdb1lfoebf.png"
 description: My picks for the best free project management apps (for web developers) in 2019.
+permalink: /posts/best-free-project-management-apps-for-web-developers
 ---
 
 So I've been using project management software for the past few years. When I started programming I quickly began to realize that it became difficult to keep track of my ideas and remembering the bugs in my app. I began noticing on social media that other professionals were using some sort of project management software and that's where my quest began.

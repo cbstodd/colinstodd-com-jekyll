@@ -37,7 +37,7 @@ layout: default
           </div>
         </div>
 
-        {% if post.date %}<p>{{ post.date | date_to_string }}</p>{% endif %}
+        {% if post.date %}<p><i class="fa fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>{% endif %}
         <hr>
         <!-- <p>{{ post.content }}</p> -->
         {% endif %}

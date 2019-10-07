@@ -8,6 +8,7 @@ date:   2019-02-19 15:30:12 -0400
 featured: true
 image: "images/posts/favicon_generator_og_image_transp.png"
 description: How to use the Real Favicon Generator to add a Favicon and PWA icon to your Angular app.
+permalink: /posts/adding-real-favicon-generator-to-your-angular-app
 ---
 
 For just about all of my [Angular](https://angular.io/) applications I've used [Real Favicon Generator](https://realfavicongenerator.net/) to generate the files for my Favicon icon. It's a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I've found a quick and painless way to use both the Node and HTML5 tools. I'll also show you how to add [Progressive Web App (PWA)](https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093) meta tags so that you can add your newly created icons to your mobile homescreen. Lets get to it.

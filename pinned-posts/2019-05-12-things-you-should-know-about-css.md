@@ -9,6 +9,7 @@ pinned: false
 featured: true
 image: "/images/posts/css3.png"
 description: Most people use SASS/SCSS or LESS, but maybe you don't need to? Here are a couple of reasons I'm opting to use vanilla CSS instead of SCSS in my projects
+permalink: /posts/things-you-should-know-about-css
 ---
 
 Most people use SASS/SCSS or LESS,  but maybe you don't need to?  Here are a couple of reasons I'm opting to use vanilla CSS instead of SCSS in my projects.

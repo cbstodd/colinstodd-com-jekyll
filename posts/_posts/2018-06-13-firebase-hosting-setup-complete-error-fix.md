@@ -9,6 +9,7 @@ pinned: true
 featured: false
 image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit/v86saw7fsim04orhctll.png"
 description: fix "Firebase hosting setup complete" alert/error when deploying Angular 6 app to firebase hosting.
+permalink: /posts/firebase-hosting-setup-complete-error-fix
 ---
 
 I was just trying to post my AngularFire app to Firebase hosting and I was getting the ***"Firebase hosting setup complete"*** alert page. I couldn't find the fix online, so I'll post it here.

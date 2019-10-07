@@ -9,6 +9,7 @@ pinned: true
 featured: false
 image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit/hbjxq0s9jqhjgb2af7tc.png"
 description: Free (or almost free) list of Angular CLI resources.
+permalink: /posts/free-resources-to-learn-angular
 ---
 
 Angular 7 is out and its latest iteration has some differences (good ones) from its earlier candidates. It hasn't been out very long so it's hard to find updated tutorials on the web.

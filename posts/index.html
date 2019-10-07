@@ -1,8 +1,17 @@
 ---
-layout: default
+layout: posts
+title: Posts
+description: View all of Colin's Blog Posts.
 ---
+
+This is a full list of blog posts. To view them individually, click on the post image or title.
+
+
+<!-- ---
+layout: default
+--- -->
 <!-- Wrapper -->
-<section id="wrapper">
+<!-- <section id="wrapper">
   <header>
     <div class="inner">
       <a href="{{ page.category | relative_url }}">
@@ -12,7 +21,7 @@ layout: default
     </div>
   </header>
   <!-- Content -->
-  <div class="wrapper">
+  <!-- <div class="wrapper">
     <div class="inner">
       {% assign posts = site.posts %}
       {% for post in posts %}
@@ -25,9 +34,9 @@ layout: default
 
         <div class="row uniform">
           <div class="8u">
-              {% if post.description %}
-                {{ post.description }}
-              {% endif %}
+            {% if post.description %}
+            {{ post.description }}
+            {% endif %}
           </div>
           <div class="4u">
             {% if post.image %}
@@ -42,7 +51,7 @@ layout: default
         <!-- <p>{{ post.content }}</p> -->
         {% endif %}
         {% endfor %}
-      </a>
+      <!-- </a>
     </div>
   </div>
-</section>
+</section> -->

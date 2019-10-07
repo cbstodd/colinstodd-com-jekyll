@@ -9,6 +9,7 @@ pinned: true
 featured: false
 image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fmatcss-min.png?alt=media&token=ab6b71f7-ba40-40a5-8729-d5ead821e246"
 description: How to install Materialize CSS in Angular
+permalink: /posts/how-to-install-materialize-css-in-angular
 ---
 
 I've recently been playing with <a href="http://materializecss.com/" target="_blank">Materailize CSS</a>, and It's beautiful. Here's how you install it in Angular.

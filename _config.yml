@@ -1,10 +1,10 @@
 # site settings
-title: Colin B. Stodd
+title: Colin Stodd
 subtitle: Colin Stodd's Personal Website
 email: cbstodd@harpua.co
-description: Focused on his career in web application and mobile development
+description: Colin Stodd's personal website focused on his career in web application and mobile development
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://blog.colinstodd.com" # the base hostname & protocol for your site
 author: Colin Stodd
 street_address:
 city: Annapolis
@@ -35,6 +35,10 @@ kramdown:
 # build settings
 markdown: kramdown
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title
 
 # defaults:
 #   - scope:
@@ -47,11 +51,11 @@ markdown: kramdown
 #       type: "project"
 
 menus:
-  - Home: "/index.html"
-  - About: "/about.html"
-  - Contact: "/contact.html"
-  - Posts: "/posts/index.html"
-  # - Projects: "/projects/index.html"
+  - Home: "/"
+  - About: "/about"
+  - Contact: "/contact"
+  - Posts: "/posts"
+  # - Projects: "/projects"
   # - Generic: "/generic.html"
   # - Elements: "/elements.html"
   # - Log in: "#"
@@ -59,3 +63,33 @@ menus:
 
 sass:
   style: compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-environment-variables
+
+    # SEO / META:
+twitter:
+  username: cbstodd
+  card: summary_large_image
+
+facebook:
+  app_id: site.env.FACEBOOK_APP_ID
+  publisher: 1234
+  admins: 1234
+
+social:
+  name: Colin Stodd
+  links:
+    - https://twitter.com/cbstodd
+    - https://www.facebook.com/colin.stodd
+    - https://www.linkedin.com/in/colin.stodd
+    - https://github.com/cbstodd
+
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234

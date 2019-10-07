@@ -9,6 +9,7 @@ pinned: true
 featured: false
 image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit/zuwikjajlonkmghmowol.png"
 description: Example of a class in Ecmascript/ES6
+permalink: /posts/es6-class-example
 ---
 
 ES6 (The latest version of JavaScript) now supports classes. Here is a simple example of how to use it with a constructor function.

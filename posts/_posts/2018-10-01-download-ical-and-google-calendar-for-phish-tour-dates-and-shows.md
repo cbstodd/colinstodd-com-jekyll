@@ -9,9 +9,10 @@ pinned: true
 featured: false
 image: "https://5ojtv13o4by138ocv258q4xu7h-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Fall_Square.jpg"
 description: Download Phish tour iCal/Google calendar. The calendar has been updated for "2019 Fall tour" and the New Years Run.
+permalink: /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows
 ---
 
-```txt
+```css
 UPDATE:
 
 This calendar has been updated for the 2019 "Fall Tour Dates" and the New Years Run.
@@ -26,7 +27,7 @@ I was unable to find an updated iCal calendar on the web, so I created one mysel
 
 **Public Calendar link:**
 
-```txt
+```
 https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com/private-65ee2a07a45e7f416407f9d73caa1735/basic.ics
 ```
 

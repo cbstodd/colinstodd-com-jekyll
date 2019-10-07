@@ -9,6 +9,7 @@ pinned: true
 featured: false
 image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit,h_90,q_80/byltxmus32ax2cux67ll"
 description: This addon allows you to install Chrome extensions on Opera.
+permalink: /posts/add-chrome-extensions-to-opera-browser
 ---
 
 If you haven't heard, Mr. Trump and the Republican Congress have just passed a resolution which allows internet service providers to sell sensitive consumer data, such as browsing history without their permission. In short this means that you have less privacy than you once did.

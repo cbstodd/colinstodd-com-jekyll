@@ -11,6 +11,7 @@ permalink: /projects/reactjs-temperature-search
 liveUrl: "http://reactjs-temp.herokuapp.com/"
 githubUrl: "https://github.com/cbstodd/react_weather"
 description: A simple ReactJS application that allows you to search a city's temperature using Open Weather Map's api. Built with
+permalink: /projects/reactjs-temperature-search
 ---
 
 A simple ReactJS application that allows you to search a city's temperature using Open Weather Map's api. Built with

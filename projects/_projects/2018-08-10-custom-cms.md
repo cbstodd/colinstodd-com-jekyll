@@ -10,6 +10,7 @@ pinned: true
 liveUrl:
 githubUrl: "https://github.com/AmerGastroAssn/ddw-org"
 description: Custom Content Management System (CMS) Built with Angular 6, Bootstrap 4, Firebase and much more...
+permalink: /projects/custom-cms
 ---
 
 I built a custom CMS using Angular 6, Firebase (AngularFire), Bootstrap 4, ngx-bootstrap, Angular Material Design, Robotron (Serverside rendering), and more. The site will be visited by tens of thousands of people, with over a dozen active CMS users. I built 99% of the site. I received some help with CSS as a result to meeting a deadline. The CMS uses Roboton for serverside rendering (SEO, Graph QL).

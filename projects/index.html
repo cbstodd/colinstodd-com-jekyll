@@ -1,48 +1,7 @@
 ---
-layout: default
+layout: projects
+title: Projects
+description: A list of Colin's most recent projects.
 ---
-<!-- Wrapper -->
-<section id="wrapper">
-  <header>
-    <div class="inner">
-      <a href="{{ page.category | relative_url }}">
-        <h2>{{ page.title }}</h2>
-      </a>
-      <p>{{ page.description }} </p>
-    </div>
-  </header>
-  <!-- Content -->
-  <div class="wrapper">
-    <div class="inner">
-      {% assign projects = site.projects %}
-      {% for project in projects %}
-      {% if project.title != 404 %}
-      <a href="{{ project.url | relative_url }}">
 
-        <header class="major">
-          <h1>{{ project.title }}</h1>
-        </header>
-
-        <div class="row uniform">
-          <div class="8u">
-              {% if project.description %}
-                {{ project.description }}
-              {% endif %}
-          </div>
-          <div class="4u">
-            {% if project.image %}
-            <img src="{{ project.image }}"
-                 alt="{{ project.title }}" class="image fit" />
-            {% endif %}
-          </div>
-        </div>
-
-        {% if project.date %}<p>{{ project.date | date_to_string }}</p>{% endif %}
-        <hr>
-        <!-- <p>{{ project.content }}</p> -->
-        {% endif %}
-        {% endfor %}
-      </a>
-    </div>
-  </div>
-</section>
+View a list of Colin Stodd's most recent projects.

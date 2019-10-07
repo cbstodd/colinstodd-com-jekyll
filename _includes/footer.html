@@ -3,24 +3,29 @@
   <div class="inner">
     <h2 class="major" id="getInTouch">Get in touch</h2>
     <p>If you are contacting me about future projects or recruitment, the easiest way to get a hold of me is with the
-      message button below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
+      form below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
     </p>
-    <form method="post" action="#">
+    <form method="POST" action="https://getform.io/f/1c2abdba-fac6-4bdc-90c9-5fb74c77eebb">
       <div class="field">
-        <label for="name">Name</label>
+        <label for="name">Name*</label>
         <input type="text" name="name" id="name" />
       </div>
       <div class="field">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <label for="email">Email*</label>
+        <input type="email" name="_replyto" id="email" />
       </div>
       <div class="field">
-        <label for="message">Message</label>
+          <label for="tel">Phone Number (Optional)</label>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+      <div class="field">
+        <label for="message">Message*</label>
         <textarea name="message" id="message" rows="4"></textarea>
       </div>
       <ul class="actions">
         <li><input type="submit" value="Send Message" /></li>
       </ul>
+      <p>* Required</p>
     </form>
     <ul class="contact">
       <li class="fa-home">
