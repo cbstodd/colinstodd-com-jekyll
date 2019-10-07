@@ -7,7 +7,7 @@ title: My Introductory Flight Getting My Pilots License
 date:   2016-12-16 00:00:00 -0400
 pinned: true
 featured: false
-image: "images/posts/cessna172-min.jpg"
+image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fcessna172-min.jpg?alt=media&token=24c8da61-ca7e-4dac-b183-58f395092581"
 description: Personal experience of my introductory flight
 ---
 

@@ -7,7 +7,7 @@ title: How To Install Materialize CSS In Angular
 date:   2018-10-11 00:00:01 -0400
 pinned: true
 featured: false
-image: "images/posts/matcss-min.png"
+image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fmatcss-min.png?alt=media&token=ab6b71f7-ba40-40a5-8729-d5ead821e246"
 description: How to install Materialize CSS in Angular
 ---
 

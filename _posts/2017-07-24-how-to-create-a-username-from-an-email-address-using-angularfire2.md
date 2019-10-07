@@ -7,7 +7,7 @@ title: How To Create A Username From An Email Address Using AngularFire2
 date:   2017-07-24 00:00:00 -0400
 pinned: true
 featured: false
-image: "images/posts/colper.png"
+image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit,h_600,q_80/sskxe4hevg2utui8ce4z"
 description: How to create a username from an email address using AngularFire2's email/password authentication method.
 ---
 

@@ -7,7 +7,7 @@ title: Best Free Project Management Apps for Web Developers
 date:   2018-02-26 00:00:00 -0400
 pinned: true
 featured: false
-image: "images/posts/clickup.png"
+image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit/aevb9k5ytoxdb1lfoebf.png"
 description: My picks for the best free project management apps (for web developers) in 2019.
 ---
 

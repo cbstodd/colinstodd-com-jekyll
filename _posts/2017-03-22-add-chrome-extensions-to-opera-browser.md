@@ -7,7 +7,7 @@ title: Add Chrome Extensions To Opera Browser
 date:   2017-03-22 00:00:00 -0400
 pinned: true
 featured: false
-image: "images/posts/opera-chrome.png"
+image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit,h_90,q_80/byltxmus32ax2cux67ll"
 description: This addon allows you to install Chrome extensions on Opera.
 ---
 

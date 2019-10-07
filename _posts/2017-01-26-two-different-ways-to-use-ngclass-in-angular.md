@@ -7,7 +7,7 @@ title: Two Different Ways To Use NgClass In Angular
 date:   2017-01-28 00:00:00 -0400
 pinned: true
 featured: false
-image: "images/posts/angular.png"
+image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fangular_logo.png?alt=media&token=c049718f-eef9-4c4a-9ce9-73fcb3e271cc"
 description: Simple example of how to use [ngClass] in Angular
 ---
 

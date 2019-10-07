@@ -7,7 +7,7 @@ title: How to add UIKit to Angular
 date:   2019-02-19 15:30:12 -0400
 pinned: true
 featured: false
-image: "images/posts/uikit.png"
+image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fuikit-min.png?alt=media&token=405033ba-2f94-43cf-8b69-4a600e10f6ed"
 description: How to install UIKit in Angular 6+ using CSS or SASS/SCSS.
 ---
 

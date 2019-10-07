@@ -7,7 +7,7 @@ title: How To Add DotEnv To Webpack
 date:   2018-03-20 00:00:00 -0400
 pinned: true
 featured: false
-image: "images/posts/env.png"
+image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit,h_600,q_80/yl0jsaxseqm5iolfe4rb"
 description: This is how you can add dotenv to a project using Webpack.
 ---
 
