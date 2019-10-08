@@ -95,6 +95,9 @@ webmaster_verifications:
   yandex: 1234
   baidu: 1234
 
-
 disqus:
   shortname: colinstodd-v2
+
+# google:
+#   tag_manager:
+#     container_id: GTM-5KC3SGB
