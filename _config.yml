@@ -52,8 +52,8 @@ markdown: kramdown
 
 menus:
   - Home: "/"
-  - About: "/about"
-  - Contact: "/contact"
+  - About: "/about.html"
+  - Contact: "/contact.html"
   - Posts: "/posts"
   # - Projects: "/projects"
   # - Generic: "/generic.html"
@@ -94,3 +94,7 @@ webmaster_verifications:
   alexa: 1234
   yandex: 1234
   baidu: 1234
+
+
+disqus:
+  shortname: colinstodd-v2

@@ -3,7 +3,7 @@ layout: page
 title: About
 date:   yyyy-mm-dd 15:30:12 -0400
 categories:
-permalink: /about
+permalink: /about.html
 ---
 
 

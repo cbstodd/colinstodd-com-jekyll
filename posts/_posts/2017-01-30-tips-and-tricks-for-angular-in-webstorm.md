@@ -9,7 +9,8 @@ pinned: true
 featured: false
 image: "https://confluence.jetbrains.com/download/attachments/15797318/WI?version=2&amp;modificationDate=1449749629000&amp;api=v2"
 description: This is a 54 minute video of some very useful tips and tricks for navigating around your Angular 2 apps in WebStorm.
-permalink: /posts/tips-and-tricks-for-angular-in-webstorm
+permalink: /posts/tips-and-tricks-for-angular-in-webstorm.html
+comments: true
 redirect_from:
   - /posts/tips-and-tricks-for-angular-2-in-webstorm
 ---

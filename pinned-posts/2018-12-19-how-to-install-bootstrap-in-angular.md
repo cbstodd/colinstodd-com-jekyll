@@ -8,7 +8,7 @@ date:   2018-12-19 00:00:00 -0400
 featured: true
 image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fbootstrap_4-min.png?alt=media&token=b8a401bc-42a1-42fd-b045-bcb1e3312894"
 description: How to install Bootstrap 4 in Angular 6, 7, 8+.
-permalink: /posts/how-to-install-bootstrap-in-angular
+permalink: /posts/how-to-install-bootstrap-in-angular.html
 redirect_from:
   - /posts/how-to-install-bootstrap-4-in-angular-4-as-a-dependency
 ---

@@ -3,7 +3,7 @@ layout: page
 title: Contact
 date:   yyyy-mm-dd 15:30:12 -0400
 categories:
-permalink: /contact
+permalink: /contact.html
 ---
 
 To contact me, please use the form below or follow the numerous Social Media Links.

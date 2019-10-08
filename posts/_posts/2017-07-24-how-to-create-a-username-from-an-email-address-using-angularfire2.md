@@ -9,7 +9,8 @@ pinned: true
 featured: false
 image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit,h_600,q_80/sskxe4hevg2utui8ce4z"
 description: How to create a username from an email address using AngularFire2's email/password authentication method.
-permalink: /posts/how-to-create-a-username-from-an-email-address-using-angularfire2
+permalink: /posts/how-to-create-a-username-from-an-email-address-using-angularfire2.html
+comments: true
 ---
 
 I figured this out the other day so I thought I'd share how I used <a href="https://github.com/angular/angularfire2" target="_blank">AngularFire2</a>'s email/password observable to split the email into a username. There might be a better way to do it, but this is pretty straightforward.

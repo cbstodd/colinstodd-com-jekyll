@@ -10,6 +10,17 @@
       "Rakefile",
       "CNAME",
       "README.md"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|font|css|js|jpg|jpeg|gif|png|mp4|webm|ogg)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=2628000"
+          }
+        ]
+      }
     ]
   }
 }

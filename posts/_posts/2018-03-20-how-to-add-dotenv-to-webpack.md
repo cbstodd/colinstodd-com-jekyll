@@ -9,7 +9,8 @@ pinned: true
 featured: false
 image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit,h_600,q_80/yl0jsaxseqm5iolfe4rb"
 description: This is how you can add dotenv to a project using Webpack.
-permalink: /posts/how-to-add-dotenv-to-webpack
+permalink: /posts/how-to-add-dotenv-to-webpack.html
+comments: true
 ---
 
 dotenv allows you to store sensitive data variables locally (Secret Keys, etc), without having to include them directly in your app files.
