@@ -90,10 +90,7 @@ social:
 
 webmaster_verifications:
   google: 1234
-  bing: 1234
-  alexa: 1234
-  yandex: 1234
-  baidu: 1234
+  # bing: 1234
 
 disqus:
   shortname: colinstodd-v2
