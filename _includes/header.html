@@ -1,11 +1,14 @@
 <!-- Header -->
 {% if page.layout == 'home' %}
 <header id="header" class="alt">
-{% else %}
-<header id="header">
-{% endif %}
-  <h1>
-      <div class="dots-header">
+  {% else %}
+  <header id="header">
+    {% endif %}
+    <h1>
+      <a href="{{ "/" | relative_path }}">
+        <img src="{{ "favicon/favicon-32x32.png" | relative_url }}" alt="logo icon" class="cs-logo">
+      </a>
+      <!-- <div class="dots-header">
           <div></div>
           <div></div>
           <div></div>
@@ -15,10 +18,10 @@
           <div></div>
           <div></div>
           <div></div>
-        </div>
-    <a href="/index.html">{{ site.title }}</a>
-  </h1>
-  <nav>
-    <a href="#menu">Menu</a>
-  </nav>
-</header>
+        </div> -->
+      <a href="{{ "/" | relative_path }}" class="site-title">{{ site.title }}</a>
+    </h1>
+    <nav>
+      <a href="#menu">Menu</a>
+    </nav>
+  </header>

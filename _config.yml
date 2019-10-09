@@ -35,10 +35,10 @@ kramdown:
 # build settings
 markdown: kramdown
 
-# collections:
-#   projects:
-#     output: true
-#     permalink: /:collection/:title
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path
 
 # defaults:
 #   - scope:
@@ -54,7 +54,7 @@ menus:
   - Home: "/"
   - About: "/about.html"
   - Contact: "/contact.html"
-  - Posts: "/posts"
+  - Posts: "/posts/"
   # - Projects: "/projects"
   # - Generic: "/generic.html"
   # - Elements: "/elements.html"
