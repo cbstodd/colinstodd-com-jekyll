@@ -1,0 +1,6 @@
+I"ê<p>I built a custom CMS using Angular 6, Firebase (AngularFire), Bootstrap 4, ngx-bootstrap, Angular Material Design, Robotron (Serverside rendering), and more. The site will be visited by tens of thousands of people, with over a dozen active CMS users. I built 99% of the site. I received some help with CSS as a result to meeting a deadline. The CMS uses Roboton for serverside rendering (SEO, Graph QL).</p>
+
+<p>I used two way data-binding for instant page editing feedback for CMS users (seen in image). The CMS comes with image/file uploading, Meta update areas, a email/contact ticketing system, and much much more.</p>
+
+<p><img src="https://res.cloudinary.com/colinstodd-com/image/upload/gsuzeydqlrkntgdxofcc.png" class="image fit" /></p>
+:ET

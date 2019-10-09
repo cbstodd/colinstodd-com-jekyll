@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "colinstodd-com-jekyll"
+    "default": "colinstodd-com"
+  },
+  "targets": {
+    "colinstodd-com": {
+      "hosting": {
+        "frontend": [
+          "colinstodd-com"
+        ]
+      }
+    }
   }
 }

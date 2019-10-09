@@ -3,8 +3,8 @@ title: Colin Stodd
 subtitle: Colin Stodd's Personal Website
 email: cbstodd@harpua.co
 description: Colin Stodd's personal website focused on his career in web application and mobile development
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://blog.colinstodd.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://colinstodd.com" # the base hostname & protocol for your site
 author: cbstodd
 street_address:
 city: Annapolis
@@ -54,8 +54,8 @@ menus:
   - Home: "/"
   - About: "/about.html"
   - Contact: "/contact.html"
-  - Posts: "/posts/"
-  # - Projects: "/projects"
+  - Posts: "/posts.html"
+  - Projects: "/projects.html"
   # - Generic: "/generic.html"
   # - Elements: "/elements.html"
   # - Log in: "#"
@@ -95,6 +95,6 @@ webmaster_verifications:
 disqus:
   shortname: colinstodd-v2
 
-# google:
-#   tag_manager:
-#     container_id: GTM-5KC3SGB
+google:
+  tag_manager:
+    container_id: GTM-5KC3SGB

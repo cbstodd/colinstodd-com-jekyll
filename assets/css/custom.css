@@ -4,6 +4,7 @@ img.cs-logo {
     align-items: center;
     margin: 1em 2em 0 0;
     float: left;
+    max-width: 30px;
 }
 img.cs-logo-banner {
     justify-items: center;

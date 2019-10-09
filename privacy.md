@@ -3,6 +3,9 @@ layout: page
 title:  Privacy Policy
 date:   yyyy-mm-dd 15:30:12 -0400
 permalink: /privacy.html
+description: Privacy Policy for colinstodd.com
+image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/imageGallery%2F2019%2Fcolin_dog_square-min.jpg?alt=media&token=5d62febe-107a-4920-a474-dead2d21374a"
+author: cbstodd
 ---
 
 # Privacy Policy

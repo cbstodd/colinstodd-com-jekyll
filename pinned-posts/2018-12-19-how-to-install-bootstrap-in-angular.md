@@ -10,7 +10,8 @@ image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o
 description: How to install Bootstrap 4 in Angular 6, 7, 8+.
 permalink: /posts/how-to-install-bootstrap-in-angular.html
 redirect_from:
-  - /posts/how-to-install-bootstrap-4-in-angular-4-as-a-dependency
+  - /posts/how-to-install-bootstrap-4-in-angular-4-as-a-dependency/
+  - /posts/how-to-install-bootstrap-in-angular/
 ---
 There are other packages out there that you can use such as [ngx-bootstrap](https://github.com/valor-software/ngx-bootstrap), but this is the vanilla [Bootstrap](https://getbootstrap.com/) (including JavaScript) method.
 

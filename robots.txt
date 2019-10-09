@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /generic.html
+Disallow: /elements.html
+Disallow: /functions/
+
+Sitemap: https://colinstodd.com/sitemap.xml

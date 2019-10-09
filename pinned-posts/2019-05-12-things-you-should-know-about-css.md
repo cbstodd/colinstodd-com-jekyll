@@ -12,7 +12,7 @@ description: Most people use SASS/SCSS or LESS, but maybe you don't need to? Her
 permalink: /posts/things-you-should-know-about-css.html
 comments: true
 redirect_from:
-  - /posts/things-you-should-know-about-css
+  - /posts/things-you-should-know-about-css/
 ---
 
 Most people use SASS/SCSS or LESS,  but maybe you don't need to?  Here are a couple of reasons I'm opting to use vanilla CSS instead of SCSS in my projects.

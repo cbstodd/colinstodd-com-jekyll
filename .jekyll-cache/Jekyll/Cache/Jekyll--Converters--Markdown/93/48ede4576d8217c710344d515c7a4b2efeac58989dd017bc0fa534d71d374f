@@ -1,0 +1,6 @@
+I"�<p>This is my latest pride and joy as a PWA (Progressive Web Application). It’s a gift wishlist slanted as a social network. As of now it’s not a store, rather, a fancy gift-list creator. It’s still in it’s infancy but I feel it’s reached it’s MVP level, and I plan to incorporate popular online store API’s, features, and possibly a browser extension.</p>
+
+<p>The app was built with Angular 5, Bootstrap 4.beta, Firebase (AngularFire API), Angular Material Design, and is hosted on Google’s Cloud Platform via Firebase Hosting.</p>
+
+<p><img src="https://res.cloudinary.com/colinstodd-com/image/upload/gsuzeydqlrkntgdxofcc.png" class="image fit" /></p>
+:ET
