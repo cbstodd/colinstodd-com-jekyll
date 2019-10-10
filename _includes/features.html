@@ -1,4 +1,4 @@
-{% assign features = site.pages | where:"featured",true | sort:"order" %}
+{% assign features = site.pages | where:"featured",true | sort:"date" | reverse %}
 {% for feature in features %}
 {% assign is_alt = forloop.index | modulo:2 %}
 {% capture alt %}{% if is_alt == 0 %} alt{% endif %}{% endcapture %}

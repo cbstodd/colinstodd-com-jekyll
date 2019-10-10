@@ -1,5 +1,5 @@
   {% assign features = site.pages | where:"featured",true %}
-  {% assign posts_bundles = site.pages | where:"layout","posts" | sort:"order" %}
+  {% assign posts_bundles = site.pages | where:"layout","posts" | sort:"date" | reverse %}
   {% for posts in posts_bundles %}
   {% assign is_alt = forloop.index | plus: features.size | modulo:2 %}
   {% capture alt %}{% if is_alt == 0 %} alt{% endif %}{% endcapture %}
@@ -12,7 +12,7 @@
       </a>
       <p>{{ posts.description }}</p>
       <section class="features">
-        {% assign articles = site.posts | where:"category",posts.category | where:"pinned",true | sort:"order" %}
+        {% assign articles = site.posts | where:"category",posts.category | where:"pinned",true | sort:"date" | reverse %}
         {% for article in articles %}
         <article>
           <a href="{{ article.url | relative_url }}" class="image"><img src="{{ article.image }}" alt="" /></a>
