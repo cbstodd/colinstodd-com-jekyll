@@ -13,6 +13,7 @@ layout: default
       <h5><i class="fad fa-user"></i> {{ page.author }}</h5>
       <h5><i class="fad fa-tags"></i> {{ page.tags }}</h5>
       <h5><i class="fad fa-calendar-alt"></i> {{ page.date | date_to_string }}</h5>
+      <p style="float:right;">{% include facebook-like.html %}</p>
     </div>
   </header>
   <!-- Content -->
@@ -20,6 +21,7 @@ layout: default
     <div class="inner">
       {{ content }}
 
+      {% include google-post-ads.html %}
       {% if site.disqus.shortname %}
       {% include disqus_comments.html %}
       {% endif %}

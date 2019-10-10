@@ -76,7 +76,7 @@ twitter:
   card: summary_large_image
 
 facebook:
-  app_id: site.env.FACEBOOK_APP_ID
+  app_id: firebase.facebook_app_id.key
   publisher: 1234
   admins: colin.stodd
 

@@ -16,10 +16,10 @@ layout: default
 
   <div class="wrapper">
     <div class="inner">
-
       {% assign projects = site.projects | reverse %}
       {% for project in projects %}
       {% if project.title != 404 %}
+
       <section class="features">
         <article>
           <a href="{{ project.url | relative_url }}" class="image">
