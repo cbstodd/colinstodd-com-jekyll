@@ -7,8 +7,9 @@ date: 2017-12-13 00:00:01 -0400
 category: projects
 featured: true
 pinned: true
-liveUrl: "https://mygiftnetwork.com/"
-githubUrl: "https://github.com/cbstodd/colperClub"
+image: https://res.cloudinary.com/colinstodd-com/image/upload/gsuzeydqlrkntgdxofcc.png
+liveUrl: https://mygiftnetwork.com/
+githubUrl: https://github.com/cbstodd/colperClub
 description: Personal gift wish-list as a social network.
 permalink: /projects/my-gift-network.html
 ---
@@ -17,4 +18,4 @@ This is my latest pride and joy as a PWA (Progressive Web Application). It's a g
 
 The app was built with Angular 5, Bootstrap 4.beta, Firebase (AngularFire API), Angular Material Design, and is hosted on Google's Cloud Platform via Firebase Hosting.
 
-<img src="https://res.cloudinary.com/colinstodd-com/image/upload/gsuzeydqlrkntgdxofcc.png" class="image fit">
+<img src="{{ project.image }}" class="image fit">

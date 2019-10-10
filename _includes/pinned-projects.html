@@ -8,7 +8,7 @@
          class="wrapper{{ alt }} style{{ forloop.index | plus: features.size }}">
   <div class="inner">
     <a href="{{ projects.url | relative_url }}">
-      <h2 class="major">{{ projects.title }}</h2>
+      <h2 class="major"><i class="fad fa-code"></i> {{ projects.title }}</h2>
     </a>
     <p>{{ projects.description }}</p>
     <section class="features">
@@ -23,7 +23,7 @@
       {% endfor %}
     </section>
     <ul class="actions">
-      <li><a href="{{ projects.url | relative_url }}" class="button">Browse All</a></li>
+      <li><a href="{{ projects.url | relative_url }}" class="button"><i class="fad fa-code"></i> Browse All</a></li>
     </ul>
   </div>
 </section>

@@ -6,43 +6,42 @@ layout: default
   <header>
     <div class="inner">
       <a href="{{ page.category | relative_url }}">
-        <h2>{{ page.title }}</h2>
+        <h2><i class="fad fa-code"></i> {{ page.title }}</h2>
       </a>
       <p>{{ page.description }} </p>
+      <p>{{ page.summary }}</p>
     </div>
   </header>
   <!-- Content -->
+
   <div class="wrapper">
     <div class="inner">
-      {% assign projects = site.projects %}
+
+      {% assign projects = site.projects | reverse %}
       {% for project in projects %}
       {% if project.title != 404 %}
-      <a href="{{ project.url | relative_url }}">
-
-        <header class="major">
-          <h1>{{ project.title }}</h1>
-        </header>
-
-        <div class="row uniform">
-          <div class="8u">
-              {% if project.description %}
-                {{ project.description }}
-              {% endif %}
-          </div>
-          <div class="4u">
+      <section class="features">
+        <article>
+          <a href="{{ project.url | relative_url }}" class="image">
             {% if project.image %}
-            <img src="{{ project.image }}"
-                 alt="{{ project.title }}" class="image fit" />
+            <img src="{{ project.image }}" alt="{{ project.title }}">
             {% endif %}
-          </div>
-        </div>
+          </a>
+          <h3 class="major">{{ project.title }}</h3>
+          {% if project.date %}<p><i class="fad fa-calendar-alt"></i> {{ project.date | date_to_string }}</p>
+          {% endif %}
+          {% if project.description %}
+          <p>
+            {{ project.description }}
+          </p>
+          {% endif %}
+          <a href="{{ project.url | relative_url }}" class="special">Learn more</a>
+        </article>
+      </section>
+      {% endif %}
+      {% endfor %}
 
-        {% if project.date %}<p><i class="fa fa-calendar-alt"></i> {{ project.date | date_to_string }}</p>{% endif %}
-        <hr>
-        <!-- <p>{{ project.content }}</p> -->
-        {% endif %}
-        {% endfor %}
-      </a>
+
     </div>
   </div>
 </section>

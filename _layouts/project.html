@@ -10,14 +10,28 @@ layout: default
       </a>
       <img src="{{ page.image }}" alt="" class="image right" />
       <h2>{{ page.title }}</h2>
-      <h5><i class="fa fa-user"></i> {{ page.author }}</h5>
-      <h5><i class="fa fa-tags"></i> {{ page.tags }}</h5>
-      <h5><i class="fa fa-calendar-alt"></i> {{ page.date | date_to_string }}</h5>
+      <h5><i class="fad fa-user"></i> {{ page.author }}</h5>
+      <h5><i class="fad fa-tags"></i> {{ page.tags }}</h5>
+      <h5><i class="fad fa-calendar-alt"></i> {{ page.date | date_to_string }}</h5>
     </div>
   </header>
   <!-- Content -->
   <div class="wrapper">
     <div class="inner">
+      <p>
+        {% if page.liveUrl %}
+        <a href="{{ page.liveUrl }}" class="button default" target="_blank">
+          <i class="fad fa-laptop"></i> View it Live
+        </a>
+        {% endif %}
+
+        {% if page.githubUrl %}
+        <a href="{{ page.githubUrl }}" class="button default" target="_blank">
+          <i class="fab fa-github"></i> Github Repo
+        </a>
+        {% endif %}
+      </p>
+
       {{ content }}
     </div>
   </div>
