@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "colinstodd-com"
+    "default": "colinstodd-com",
+    "frontend": "colinstodd-com"
   },
   "targets": {
     "colinstodd-com": {

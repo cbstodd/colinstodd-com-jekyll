@@ -76,8 +76,8 @@ twitter:
   card: summary_large_image
 
 facebook:
-  app_id: firebase.facebook_app_id.key
-  publisher: 1234
+  app_id: 792796074135713
+  # publisher: 1234
   admins: colin.stodd
 
 social:
