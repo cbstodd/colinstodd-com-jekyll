@@ -7,7 +7,7 @@ title: Adding MongoDB To KeystoneJS
 date:   2017-03-01 00:00:00 -0400
 pinned: true
 featured: false
-image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit/xsp7s0ofqlpqzdeb2boc.png"
+image: images/posts/mlab.png
 description: How to connect your mLab MongoDB to your KeystoneJS app.
 permalink: /posts/adding-mongodb-to-keystonejs.html
 comments: true

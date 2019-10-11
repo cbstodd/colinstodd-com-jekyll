@@ -7,7 +7,7 @@ title: Download iCal and Google calendar for Phish tour dates and shows
 date:   2018-10-01 00:00:01 -0400
 pinned: true
 featured: false
-image: "https://5ojtv13o4by138ocv258q4xu7h-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Fall_Square.jpg"
+image: images/posts/phish-fall.jpg
 description: Download Phish tour iCal/Google calendar. The calendar has been updated for "2019 Fall tour" and the New Years Run.
 permalink: /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true

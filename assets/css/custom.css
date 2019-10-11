@@ -210,4 +210,6 @@ p.page-description {
     }
 }
 
-/*~  Social Styling ~*/
+img.rounded {
+    border-radius: 5px;
+}

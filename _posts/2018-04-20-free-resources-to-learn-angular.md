@@ -7,7 +7,7 @@ title: Free Resources To Learn Angular
 date:   2018-04-20 00:00:00 -0400
 pinned: true
 featured: false
-image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit/hbjxq0s9jqhjgb2af7tc.png"
+image: images/posts/ng-free-resources.png
 description: Free (or almost free) list of Angular CLI resources.
 permalink: /posts/free-resources-to-learn-angular.html
 comments: true

@@ -7,7 +7,7 @@ title: ES6 Subclass Example
 date:   2016-08-16 00:00:00 -0400
 pinned: true
 featured: false
-image: "https://res.cloudinary.com/colinstodd-com/image/upload/c_fit/zuwikjajlonkmghmowol.png"
+image: images/posts/es6.png
 description: An example of how to create a subclass (Super) in ES6
 permalink: /posts/es6-subclass-example.html
 comments: true

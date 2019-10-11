@@ -7,7 +7,7 @@ date: 2018-08-10 00:00:01 -0400
 category: projects
 featured: true
 pinned: true
-image: https://res.cloudinary.com/colinstodd-com/image/upload/v1537653127/fgyvacuepyvke0qbxhw0.png
+image: images/projects/custom-cms.png
 liveUrl:
 githubUrl: "https://github.com/AmerGastroAssn/ddw-org"
 description: Custom Content Management System (CMS) Built with Angular 6, Bootstrap 4, Firebase and much more...

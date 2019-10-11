@@ -7,7 +7,7 @@ date: 2017-12-13 00:00:01 -0400
 category: projects
 featured: true
 pinned: true
-image: https://res.cloudinary.com/colinstodd-com/image/upload/gsuzeydqlrkntgdxofcc.png
+image: images/projects/my-gift-network.png
 liveUrl: https://mygiftnetwork.com/
 githubUrl: https://github.com/cbstodd/colperClub
 description: Personal gift wish-list as a social network.

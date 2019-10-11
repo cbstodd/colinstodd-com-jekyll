@@ -8,7 +8,7 @@ layout: default
       <a href="{{ page.category | relative_url }}.html">
         <h6>{{ page.category }}</h6>
       </a>
-      <img src="{{ page.image }}" alt="" class="image right" />
+      <img src="{{ page.image | relative_url }}" alt="image" class="image right" />
       <h2>{{ page.title }}</h2>
       <h5><i class="fad fa-user"></i> {{ page.author }}</h5>
       <h5><i class="fad fa-tags"></i> {{ page.tags }}</h5>

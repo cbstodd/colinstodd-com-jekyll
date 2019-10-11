@@ -7,7 +7,7 @@ date: 2017-05-09 00:00:01 -0400
 category: projects
 featured: true
 pinned: true
-image: https://res.cloudinary.com/colinstodd-com/image/upload/ulkxmpkshc3g5gpgkfha.png
+image: images/projects/react-temp.png
 permalink: /projects/reactjs-temperature-search
 liveUrl: "http://reactjs-temp.herokuapp.com/"
 githubUrl: "https://github.com/cbstodd/react_weather"

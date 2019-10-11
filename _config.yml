@@ -69,6 +69,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-environment-variables
   - jekyll-redirect-from
+  - jekyll-compress-images
 
     # SEO / META:
 twitter:
@@ -98,3 +99,6 @@ disqus:
 google:
   tag_manager:
     container_id: GTM-5KC3SGB
+
+compress_images:
+  images_path: "images/**/*.{gif,png,jpg,jpeg,svg}"

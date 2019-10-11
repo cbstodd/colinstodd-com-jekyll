@@ -7,7 +7,7 @@ title: TypeScript And ES6 Babel Boilerplates
 date:   2017-03-05 00:00:00 -0400
 pinned: true
 featured: false
-image: "https://react-etc.net/thumbs/740x560c/2016-12/1480744224_typescript-logo.png"
+image: images/posts/typescript.png
 description: Typescript and Babel environment setup templates
 permalink: /posts/typescript-and-es6-babel-boilerplates.html
 comments: true

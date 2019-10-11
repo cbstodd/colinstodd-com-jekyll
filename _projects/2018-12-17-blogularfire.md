@@ -7,7 +7,7 @@ date: 2018-12-17 00:00:01 -0400
 category: projects
 featured: true
 pinned: true
-image: https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fblogularfire_screenshot.png?alt=media&token=15b6b735-90ef-4339-bfa4-357cd1fce7f2
+image: images/projects/blogularfire.png
 liveUrl:
 githubUrl: "https://github.com/cbstodd/BlogularFire"
 description: Custom blog/CMS built with Angular 7, Firebase's Firestore, Bootstrap 4, ngx-bootstrap and UIKit

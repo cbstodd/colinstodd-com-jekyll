@@ -7,7 +7,7 @@ title: Building Angular Apps With Webstorm
 date:   2017-03-02 00:00:00 -0400
 pinned: true
 featured: false
-image: "https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2019%2Fwebstormangular-min.png?alt=media&token=9914a740-a6e5-4d01-a5b9-ebd540311594"
+image: images/posts/webstorm-angular.png
 description: Tips for using Webstorm to build Angular apps
 permalink: /posts/building-angular-apps-with-webstorm.html
 comments: true
