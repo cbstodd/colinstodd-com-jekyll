@@ -135,9 +135,9 @@ p.page-description {
 
 
 /*~  Loader ~*/
-.cs-loader {
+/* .cs-loader {
     position: relative;
-    /* float: left; */
+    /* float: left;
     animation-delay: 0.25s;
     animation: fade 3s alternate ease-in-out infinite;
 }
@@ -182,7 +182,7 @@ p.page-description {
     to {
         transform: rotate(360deg);
     }
-}
+} */
 
 
 /*~  Media / Mobile Devices ~*/
