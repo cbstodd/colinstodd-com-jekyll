@@ -2,7 +2,7 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, Materialize CSS, Tutorial
+tags: [Angular, Materialize CSS, Tutorial]
 title: How To Install Materialize CSS In Angular
 date:   2018-10-11 00:00:01 -0400
 pinned: true
@@ -18,7 +18,7 @@ redirect_from:
 I've recently been playing with <a href="http://materializecss.com/" target="_blank">Materailize CSS</a>, and It's beautiful. Here's how you install it in Angular.
 
 1. Once you've created your project, open up your terminal and run:
-npm i materialize-css@next jquery --save
+`npm i materialize-css jquery --save`
 
 This installs <a href="http://materializecss.com/" target="_blank">Materailize CSS</a> and <a href="https://jquery.com/" target="_blank">jQuery</a>.
 

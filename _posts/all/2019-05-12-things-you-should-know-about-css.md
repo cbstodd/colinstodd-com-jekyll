@@ -2,7 +2,10 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: CSS, Tips & Tricks, SASS
+tags:
+  - CSS
+  - Tips & Tricks
+  - SASS
 title: Things You Should Know About CSS
 date:   2019-05-12 15:30:12 -0400
 pinned: true

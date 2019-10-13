@@ -1,8 +1,8 @@
-I"3<p>I’ve recently been playing with <a href="http://materializecss.com/" target="_blank">Materailize CSS</a>, and It’s beautiful. Here’s how you install it in Angular.</p>
+I"T<p>I’ve recently been playing with <a href="http://materializecss.com/" target="_blank">Materailize CSS</a>, and It’s beautiful. Here’s how you install it in Angular.</p>
 
 <ol>
   <li>Once you’ve created your project, open up your terminal and run:
-npm i materialize-css@next jquery –save</li>
+<code class="highlighter-rouge">npm i materialize-css jquery --save</code></li>
 </ol>
 
 <p>This installs <a href="http://materializecss.com/" target="_blank">Materailize CSS</a> and <a href="https://jquery.com/" target="_blank">jQuery</a>.</p>

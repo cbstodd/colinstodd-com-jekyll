@@ -56,6 +56,7 @@ menus:
   - Contact: "/contact.html"
   - Posts: "/posts.html"
   - Projects: "/projects.html"
+  - Technologies: "/technologies.html"
   # - Generic: "/generic.html"
   # - Elements: "/elements.html"
   # - Log in: "#"

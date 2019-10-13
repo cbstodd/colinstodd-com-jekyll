@@ -3,5 +3,6 @@ Allow: /
 Disallow: /generic.html
 Disallow: /elements.html
 Disallow: /functions/
+Disallow: functions/
 
 Sitemap: https://colinstodd.com/sitemap.xml
