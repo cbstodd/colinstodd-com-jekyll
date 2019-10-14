@@ -2,7 +2,9 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, Education
+tags:
+  - Angular,
+  - Education
 title: Free Resources To Learn Angular
 date:   2018-04-20 00:00:00 -0400
 pinned: true

@@ -2,7 +2,9 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, ngIf
+tags:
+  - Angular,
+  - ngIf
 title: How To Use *ngIf in Angular
 date:   2017-04-23 00:00:00 -0400
 pinned: true

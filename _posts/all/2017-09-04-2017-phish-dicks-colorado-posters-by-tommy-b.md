@@ -2,7 +2,13 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Phish, Dicks, Colorado, Posters, Tommy Bradel, 2017
+tags:
+  - Phish,
+  - Dicks,
+  - Colorado,
+  - Posters,
+  - Tommy Bradel,
+  - 2017
 title: Phish Dicks Colorado Posters By Tommy B
 date:   2017-09-04 00:00:00 -0400
 pinned: true

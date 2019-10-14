@@ -2,7 +2,9 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, Webstorm
+tags:
+  - Angular,
+  - Webstorm
 title: Adding MongoDB To KeystoneJS
 date:   2017-03-01 00:00:00 -0400
 pinned: true

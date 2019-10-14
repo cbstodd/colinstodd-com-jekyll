@@ -2,7 +2,10 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Webpack, .env, DotEnv
+tags:
+  - Webpack,
+  - .env,
+  - DotEnv
 title: How To Add DotEnv To Webpack
 date:   2018-03-20 00:00:00 -0400
 pinned: true

@@ -2,7 +2,10 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, UIKIT, Tutorial
+tags:
+  - Angular,
+  - UIKIT,
+  - Tutorial
 title: How to add UIKit to Angular
 date:   2019-02-19 15:30:12 -0400
 pinned: true

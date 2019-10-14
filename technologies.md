@@ -3,7 +3,7 @@ layout: page
 title:  Technologies
 date:   2019-10-11 15:43:00 -0400
 categories: css
-permalink: technologies
+permalink: technologies.html
 description: Technologies I use
 ---
 Below are some of the technologies that I have worked with or continue to work with today.

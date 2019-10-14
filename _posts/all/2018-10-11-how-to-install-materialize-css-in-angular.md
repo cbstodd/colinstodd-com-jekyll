@@ -2,7 +2,10 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: [Angular, Materialize CSS, Tutorial]
+tags:
+  - Angular,
+  - Materialize CSS,
+  - Tutorial
 title: How To Install Materialize CSS In Angular
 date:   2018-10-11 00:00:01 -0400
 pinned: true

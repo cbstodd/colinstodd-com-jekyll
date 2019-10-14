@@ -2,7 +2,9 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, Tips
+tags:
+  - Angular,
+  - Tips
 title: How To Create A Username From An Email Address Using AngularFire2
 date:   2017-07-24 00:00:00 -0400
 pinned: true

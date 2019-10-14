@@ -2,7 +2,10 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: ES6, Subclass, Example
+tags:
+  - ES6,
+  - Subclass,
+  - Example
 title: ES6 Subclass Example
 date:   2016-08-16 00:00:00 -0400
 pinned: true

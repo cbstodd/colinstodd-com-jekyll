@@ -2,7 +2,9 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, ngClass
+tags:
+  - Angular,
+  - ngClass
 title: Two Different Ways To Use NgClass In Angular
 date:   2017-01-28 00:00:00 -0400
 pinned: true

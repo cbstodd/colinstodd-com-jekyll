@@ -2,7 +2,12 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Opera, Chrome, Extensions, Tips, Tools
+tags:
+  - Opera,
+  - Chrome,
+  - Extensions,
+  - Tips,
+  - Tools
 title: Add Chrome Extensions To Opera Browser
 date:   2017-03-22 00:00:00 -0400
 pinned: true

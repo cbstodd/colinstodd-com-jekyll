@@ -2,7 +2,9 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Personal, Flying
+tags:
+  - Personal,
+  - Flying
 title: My Introductory Flight Getting My Pilots License
 date:   2016-12-16 00:00:00 -0400
 pinned: true

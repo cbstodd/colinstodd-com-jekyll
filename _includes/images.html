@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <div class="inner">
+        <div class="row uniform">
+            {% assign images = site.image-gallery %}
+            {% for image in images %}
+            <div class="3u">
+                <span class="image fit">
+                    <a href="{{ image.image_path }}" class="sb"  title="{{ image.title }}" >
+                        <img src="{{ image.image_path }}" class="image-gallery-img"/>
+                    </a>
+                </span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

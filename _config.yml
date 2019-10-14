@@ -39,6 +39,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path
+  image-gallery:
+    output: true
+    permalink: /image-gallery/:path
 
 # defaults:
 #   - scope:
@@ -103,3 +106,6 @@ google:
 
 compress_images:
   images_path: "images/**/*.{gif,png,jpg,jpeg,svg}"
+
+
+# Image Gallery:

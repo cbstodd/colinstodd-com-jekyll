@@ -2,7 +2,9 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, Webstorm
+tags:
+  - Angular,
+  - Webstorm
 title: Tips And Tricks For Angular In Webstorm
 date:   2017-01-30 00:00:00 -0400
 pinned: true

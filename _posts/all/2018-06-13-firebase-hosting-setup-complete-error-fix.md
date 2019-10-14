@@ -2,7 +2,10 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: Angular, Firebase, Errors
+tags:
+  - Angular,
+  - Firebase,
+  - Errors
 title: Firebase Hosting Setup Complete Error Fix
 date:   2018-06-13 00:00:01 -0400
 pinned: true

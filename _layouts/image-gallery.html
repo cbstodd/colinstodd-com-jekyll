@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<!-- Wrapper -->
+<section id="wrapper">
+  <header>
+    <div class="inner">
+      <a href="{{ page.category | relative_url }}">
+        <h2><i class="fad fa-images"></i> {{ page.title }}</h2>
+      </a>
+      <p>{{ page.description }} </p>
+    </div>
+  </header>
+  <!-- Content -->
+  {% include images.html %}
+</section>

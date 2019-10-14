@@ -2,7 +2,11 @@
 layout: post
 category: posts
 author: Colin Stodd
-tags: TypeScript, ES6, Template, Boilerplate
+tags:
+  - TypeScript,
+  - ES6,
+  - Template,
+  - Boilerplate
 title: TypeScript And ES6 Babel Boilerplates
 date:   2017-03-05 00:00:00 -0400
 pinned: true
