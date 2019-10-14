@@ -1,0 +1,107 @@
+I"	<p>Below are some of the technologies that I have worked with or continue to work with today.</p>
+
+<p>If you see something without a <i class="fad fa-check"></i>, that means I’m currently learning it.</p>
+
+<table class="table table-wrapper">
+	<thead>
+		<tr>
+			<th>Technologies</th>
+			<th>Proficient</th>
+			<th>Use often</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="https://angular.io/" target="_blank">Angular <i class="fad fa-external-link-alt"></i></a></td>
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		</tr>
+		<tr>
+			<td><a href="https://getbootstrap.com" target="_blank">Bootstrap <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://expressjs.com/" target="_blank">ExpressJS <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://firebase.google.com" target="_blank">Firebase <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://flutter.dev/" target="_blank">Flutter <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td></td>
+			<td></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://ionicframework.com/" target="_blank">Ionic <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://jekyllrb.com/" target="_blank">Jekyll <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://jquery.com/" target="_blank">jQuery <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://www.mongodb.com/" target="_blank">MongoDB <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://www.nativescript.org/" target="_blank">NativeScript <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://nodejs.org/en/" target="_blank">NodeJS <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://rubyonrails.org/" target="blank">Ruby on Rails <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://sass-lang.com/" target="_blank">SASS/SCSS <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://www.typescriptlang.org/" target="_blank">TypeScript <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+		<tr>
+			<td><a href="https://wordpress.com/" target="_blank">Wordpress <i class="fad fa-external-link-alt">&lt;/a&gt;&lt;/td&gt;
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></i></a></td></tr></tbody></table>
+:ET

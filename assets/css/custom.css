@@ -1,138 +1,137 @@
 /*~  Header ~*/
 img.cs-logo {
-    justify-items: center;
-    align-items: center;
-    margin: 1em 2em 0 0;
-    float: left;
-    max-width: 30px;
+  justify-items: center;
+  align-items: center;
+  margin: 1em 2em 0 0;
+  float: left;
+  max-width: 30px;
 }
 
 img.cs-logo-banner {
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 1.3em;
-    float: left;
-    max-width: 100px;
-    max-height: 100px;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 1.3em;
+  float: left;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 h2.banner-title {
-    /* background: -webkit-linear-gradient(#FF9B7B, #6D7385); */
-    background: -webkit-linear-gradient(#CCD5D5, #444853);
+    background: -webkit-linear-gradient(#ccd5d5, #444853);
+    color: transparent;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-h1>a.site-title {
-    /* background: -webkit-linear-gradient(#FF9B7B, #973D2A); */
-    background: -webkit-linear-gradient(#CCD5D5, #444853);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* animation-delay: 0.25s;
+h1 > a.site-title {
+  /* background: -webkit-linear-gradient(#FF9B7B, #973D2A); */
+  background: -webkit-linear-gradient(#ccd5d5, #444853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* animation-delay: 0.25s;
     animation: fade 3s alternate ease-in-out infinite; */
 }
 
 p.page-description {
-    /* background: -webkit-linear-gradient(#FFD9AD, #973D2A); */
-    background: -webkit-linear-gradient(#CCD5D5, #444853);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(#FFD9AD, #973D2A); */
+  background: -webkit-linear-gradient(#ccd5d5, #444853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dots-header {
-    width: 3em;
-    height: 3em;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin: 0.6em 2em 0 0;
-    float: left;
+  width: 3em;
+  height: 3em;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 0.6em 2em 0 0;
+  float: left;
 }
 
-.dots-header>div {
-    width: 0.5em;
-    height: 0.5em;
-    background-color: #8f898e;
-    border-radius: 50%;
-    animation: fade 1.5s alternate ease-in-out infinite;
+.dots-header > div {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #8f898e;
+  border-radius: 50%;
+  animation: fade 1.5s alternate ease-in-out infinite;
 }
 
-.dots-header>div:nth-of-type(2),
-.dots-header>div:nth-of-type(4) {
-    animation-delay: 0.25s;
+.dots-header > div:nth-of-type(2),
+.dots-header > div:nth-of-type(4) {
+  animation-delay: 0.25s;
 }
 
-.dots-header>div:nth-of-type(3),
-.dots-header>div:nth-of-type(5),
-.dots-header>div:nth-of-type(7) {
-    animation-delay: 0.5s;
+.dots-header > div:nth-of-type(3),
+.dots-header > div:nth-of-type(5),
+.dots-header > div:nth-of-type(7) {
+  animation-delay: 0.5s;
 }
 
-.dots-header>div:nth-of-type(6),
-.dots-header>div:nth-of-type(8) {
-    animation-delay: 0.75s;
+.dots-header > div:nth-of-type(6),
+.dots-header > div:nth-of-type(8) {
+  animation-delay: 0.75s;
 }
 
-.dots-header>div:nth-of-type(9) {
-    animation-delay: 1s;
+.dots-header > div:nth-of-type(9) {
+  animation-delay: 1s;
 }
 
 @keyframes fade {
-    to {
-        opacity: 0.2;
-    }
+  to {
+    opacity: 0.2;
+  }
 }
-
 
 /*~  Banner ~*/
 .dots {
-    width: 3em;
-    height: 3em;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin-right: 2rem;
-    float: left;
+  width: 3em;
+  height: 3em;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-right: 2rem;
+  float: left;
 }
 
-.dots>div {
-    width: 0.5em;
-    height: 0.5em;
-    background-color: #3cefff;
-    border-radius: 50%;
-    animation: fade 1.5s alternate ease-in-out infinite;
+.dots > div {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #3cefff;
+  border-radius: 50%;
+  animation: fade 1.5s alternate ease-in-out infinite;
 }
 
-.dots>div:nth-of-type(2),
-.dots>div:nth-of-type(4) {
-    animation-delay: 0.25s;
+.dots > div:nth-of-type(2),
+.dots > div:nth-of-type(4) {
+  animation-delay: 0.25s;
 }
 
-.dots>div:nth-of-type(3),
-.dots>div:nth-of-type(5),
-.dots>div:nth-of-type(7) {
-    animation-delay: 0.5s;
+.dots > div:nth-of-type(3),
+.dots > div:nth-of-type(5),
+.dots > div:nth-of-type(7) {
+  animation-delay: 0.5s;
 }
 
-.dots>div:nth-of-type(6),
-.dots>div:nth-of-type(8) {
-    animation-delay: 0.75s;
+.dots > div:nth-of-type(6),
+.dots > div:nth-of-type(8) {
+  animation-delay: 0.75s;
 }
 
-.dots>div:nth-of-type(9) {
-    animation-delay: 1s;
+.dots > div:nth-of-type(9) {
+  animation-delay: 1s;
 }
 
 @keyframes fade {
-    to {
-        opacity: 0.2;
-    }
+  to {
+    opacity: 0.2;
+  }
 }
-
 
 /*~  Loader ~*/
 /* .cs-loader {
@@ -184,32 +183,31 @@ p.page-description {
     }
 } */
 
-
 /*~  Media / Mobile Devices ~*/
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {
-    .dots-header {
-        width: 2em;
-        height: 2em;
-    }
+  .dots-header {
+    width: 2em;
+    height: 2em;
+  }
 
-    img.cs-logo {
-        justify-items: center;
-        align-items: center;
-        margin: 0.5em 2em 0 0;
-        float: left;
-    }
+  img.cs-logo {
+    justify-items: center;
+    align-items: center;
+    margin: 0.5em 2em 0 0;
+    float: left;
+  }
 }
 
 @media (min-width: 1681px) {
-    img.cs-logo {
-        justify-items: center;
-        align-items: center;
-        margin: 1.3em 2em 0 0;
-        float: left;
-    }
+  img.cs-logo {
+    justify-items: center;
+    align-items: center;
+    margin: 1.3em 2em 0 0;
+    float: left;
+  }
 }
 
 img.rounded {
-    border-radius: 5px;
+  border-radius: 5px;
 }

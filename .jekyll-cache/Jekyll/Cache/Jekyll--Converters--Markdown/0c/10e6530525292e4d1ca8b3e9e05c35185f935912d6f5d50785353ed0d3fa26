@@ -1,16 +1,6 @@
----
-layout: page
-title:  Technologies
-date:   2019-10-11 15:43:00 -0400
-categories: css
-permalink: technologies
-description: Technologies I use
----
-Below are some of the technologies that I have worked with or continue to work with today.
+I"+	<p>Below are some of the technologies that I have worked with or continue to work with today.</p>
 
-If you see something without a <i class="fad fa-check"></i>, that means I'm currently learning it.
-
-
+<p>If you see something without a <i class="fad fa-check"></i>, that means I’m currently learning it.</p>
 
 <table class="table table-wrapper">
 	<thead>
@@ -22,7 +12,7 @@ If you see something without a <i class="fad fa-check"></i>, that means I'm curr
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="https://angular.io/" target="_blank">Angular</a></td>
+			<td><a href="https://angular.io/" target="blank">Angular</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
@@ -32,84 +22,85 @@ If you see something without a <i class="fad fa-check"></i>, that means I'm curr
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
-			<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></td>
+			<td>CSS</td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
-			<td><a href="https://expressjs.com/" target="_blank">ExpressJS</a></td>
+			<td>ExpressJS</td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><a href="https://firebase.google.com" target="_blank">Firebase</a></td>
+			<td>Firebase</td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
-			<td><a href="https://flutter.dev/" target="_blank">Flutter</a></td>
+			<td>Flutter</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></td>
+			<td>HTML</td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
-			<td><a href="https://ionicframework.com/" target="_blank">Ionic</a></td>
+			<td>Ionic</td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></td>
+			<td>JavaScript</td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
-			<td><a href="https://jekyllrb.com/" target="_blank">Jekyll</a></td>
+			<td>Jekyll</td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
-			<td><a href="https://jquery.com/" target="_blank">jQuery</a></td>
+			<td>jQuery</td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></td>
+			<td>MongoDB</td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><a href="https://www.nativescript.org/" target="_blank">NativeScript</a></td>
+			<td>NativeScript</td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><a href="https://nodejs.org/en/" target="_blank">NodeJS</a></td>
+			<td>NodeJS</td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><a href="https://rubyonrails.org/" target="blank">Ruby on Rails</a></td>
+			<td>Ruby on Rails</td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><a href="https://sass-lang.com/" target="_blank">SASS/SCSS</a></td>
+			<td>SASS/SCSS</td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
-			<td><a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></td>
+			<td>TypeScript</td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
-			<td><a href="https://wordpress.com/" target="_blank">Wordpress</a></td>
+			<td>Wordpress</td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 	</tbody>
 </table>
+:ET

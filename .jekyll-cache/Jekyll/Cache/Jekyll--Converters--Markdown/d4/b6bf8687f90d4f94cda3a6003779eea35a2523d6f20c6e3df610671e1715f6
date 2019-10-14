@@ -1,16 +1,6 @@
----
-layout: page
-title:  Technologies
-date:   2019-10-11 15:43:00 -0400
-categories: css
-permalink: technologies
-description: Technologies I use
----
-Below are some of the technologies that I have worked with or continue to work with today.
+I"è<p>Below are some of the technologies that I have worked with or continue to work with today.</p>
 
-If you see something without a <i class="fad fa-check"></i>, that means I'm currently learning it.
-
-
+<p>If you see something without a <i class="fad fa-check"></i>, that means Iâ€™m currently learning it.</p>
 
 <table class="table table-wrapper">
 	<thead>
@@ -22,7 +12,7 @@ If you see something without a <i class="fad fa-check"></i>, that means I'm curr
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="https://angular.io/" target="_blank">Angular</a></td>
+			<td><a href="https://angular.io/" target="blank">Angular</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
@@ -113,3 +103,4 @@ If you see something without a <i class="fad fa-check"></i>, that means I'm curr
 		</tr>
 	</tbody>
 </table>
+:ET
