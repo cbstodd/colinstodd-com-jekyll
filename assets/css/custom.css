@@ -17,18 +17,22 @@ img.cs-logo-banner {
 }
 
 h2.banner-title {
-  background: -webkit-linear-gradient(#ccd5d5, #444853);
+  background-color: #36393f;
   color: transparent;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+  text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   background-clip: text;
 }
 
 h1 > a.site-title {
   /* background: -webkit-linear-gradient(#FF9B7B, #973D2A); */
-  background: -webkit-linear-gradient(#ccd5d5, #444853);
+  background-color: #36393f;
+  color: transparent;
+  text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  background-clip: text;
   /* animation-delay: 0.25s;
     animation: fade 3s alternate ease-in-out infinite; */
 }
@@ -133,56 +137,6 @@ p.page-description {
   }
 }
 
-/*~  Loader ~*/
-/* .cs-loader {
-    position: relative;
-    /* float: left;
-    animation-delay: 0.25s;
-    animation: fade 3s alternate ease-in-out infinite;
-}
-
-.cs-outer,
-.cs-middle,
-.cs-inner {
-    border: 3px solid transparent;
-    border-top-color: #3cefff;
-    border-right-color: #3cefff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.cs-outer {
-    width: 3.5em;
-    height: 3.5em;
-    margin-left: -1.75em;
-    margin-top: -1.75em;
-    animation: spin 2s linear infinite;
-}
-
-.cs-middle {
-    width: 2.1em;
-    height: 2.1em;
-    margin-left: -1.05em;
-    margin-top: -1.05em;
-    animation: spin 1.75s linear reverse infinite;
-}
-
-.cs-inner {
-    width: 0.8em;
-    height: 0.8em;
-    margin-left: -0.4em;
-    margin-top: -0.4em;
-    animation: spin 1.5s linear infinite;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-} */
-
 img.image-gallery-img:hover {
   color: #424242;
   -webkit-transition: all .3s ease-in;
@@ -195,7 +149,6 @@ img.image-gallery-img:hover {
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari and Chrome */
 }
-
 
 /*~  Media / Mobile Devices ~*/
 /* Small devices (landscape phones, less than 768px) */
