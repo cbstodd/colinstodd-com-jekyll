@@ -21,12 +21,6 @@ h2.banner-title {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* background-color: #36393f;
-  color: transparent;
-  text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text; */
 }
 
 h1 > a.site-title,
@@ -164,6 +158,20 @@ img.image-gallery-img:hover {
     align-items: center;
     margin: 0.5em 2em 0 0;
     float: left;
+  }
+
+  h2.banner-title {
+    background: -webkit-linear-gradient(#dfe2e2, #565b66);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p.page-description {
+    /* background: -webkit-linear-gradient(#FFD9AD, #973D2A); */
+    background: -webkit-linear-gradient(#ccd5d5, #ccd5d5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
