@@ -8,7 +8,33 @@ layout: default
       <a href="{{ page.category | relative_url }}">
         <h2><i class="fad fa-newspaper"></i> {{ page.title }}</h2>
       </a>
-      <p>{{ page.description }} </p>
+      <p>{{ page.description }}</p>
+      <div class="row">
+        <div class="3u">
+          <h5 class="post-cat-title">Post Categories:</h5>
+          <ul class="alt">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+            {% for category in categories_list %}
+                <li>
+                  <a class="no-dec" href="/posts/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}.html">
+                    <i class="fad fa-caret-square-right"></i>&nbsp;&nbsp;{{ category | camelcase }} ({{ site.tags[category].size }})
+                  </a>
+                </li>
+            {% endfor %}
+            {% else %}
+            {% for category in categories_list %}
+                <li>
+                  <a class="no-dec" href="/posts/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}.html">
+                    <i class="fad fa-caret-square-right"></i>&nbsp;&nbsp;{{ category[0] | camelcase }} ({{ category[1].size }})
+                  </a>
+                </li>
+            {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
   <!-- Content -->

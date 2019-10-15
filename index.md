@@ -3,7 +3,7 @@ layout: home
 title: Home
 landing-title: Colin B. Stodd
 description:  Percussionist, Application Developer & Co-Founder of <a href="https://harpua.co" target="_blank">Harpua, LLC.</a>
-image: 'images/bg.jpg'
+image: images/site/colin_dog_square-min.jpg
 author: Colin Stodd
 ---
 

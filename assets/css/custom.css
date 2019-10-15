@@ -17,24 +17,25 @@ img.cs-logo-banner {
 }
 
 h2.banner-title {
-  background-color: #36393f;
+  background: -webkit-linear-gradient(#ccd5d5, #444853);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* background-color: #36393f;
   color: transparent;
   text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
+  background-clip: text; */
 }
 
-h1 > a.site-title {
+h1 > a.site-title,
+h1 > a.site-title:hover {
   /* background: -webkit-linear-gradient(#FF9B7B, #973D2A); */
-  background-color: #36393f;
-  color: transparent;
-  text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background: -webkit-linear-gradient(#ccd5d5, #444853);
   background-clip: text;
-  /* animation-delay: 0.25s;
-    animation: fade 3s alternate ease-in-out infinite; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p.page-description {
@@ -177,4 +178,19 @@ img.image-gallery-img:hover {
 
 img.rounded {
   border-radius: 5px;
+}
+
+h5.post-cat-title {
+  /* text-align: right; */
+}
+
+ul.alt > li {
+  margin: 0;
+  text-decoration: none;
+  /* border-top: none !important; */
+  /* text-align: right; */
+}
+
+a.no-dec {
+  border-bottom: none;
 }

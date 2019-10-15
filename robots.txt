@@ -2,8 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /generic.html
 Disallow: /elements.html
-Disallow: /functions/
-Disallow: functions/
-Disallow: node_modules/
+Disallow: /functions
+Disallow: /image-gallery/
 
 Sitemap: https://colinstodd.com/sitemap.xml
