@@ -12,14 +12,12 @@ date:   2019-09-24 00:00:01 -0400
 pinned: true
 featured: false
 image: ../images/posts/phish-fall.jpg
-description: Download Phish tour iCal/Google calendar. The calendar has been updated for "2019 Fall tour" and the New Years Run.
+description: Download Phish tour iCal/Google calendar. The calendar has been updated for "Fall Tour Dates" and the New Years Run.
 permalink: /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
 redirect_from:
   - /blog/post/ical-calendar-for-phish-s-2017-tour-dates/
   - /posts/ical-calendar-for-phish-tour-dates-and-shows/
-# redirect_to:
-#   - https://colinstodd.com/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 ---
 
 ```css
@@ -33,7 +31,7 @@ show times.
 ```
 
 
-I was unable to find an updated iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application. For example, from a MAC, go in iCalendar and click ***File > New Calendar Subscription*** and paste this link into that input field:
+I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application. For example, from a MAC, go in iCalendar and click ***File > New Calendar Subscription*** and paste this link into that input field:
 
 **Public Calendar link:**
 

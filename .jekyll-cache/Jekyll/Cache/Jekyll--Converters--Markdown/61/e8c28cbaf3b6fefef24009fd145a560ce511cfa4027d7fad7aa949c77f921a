@@ -1,4 +1,4 @@
-I"�<p>There are other packages out there that you can use such as <a href="https://github.com/valor-software/ngx-bootstrap">ngx-bootstrap</a>, but this is the vanilla <a href="https://getbootstrap.com/">Bootstrap</a> (including JavaScript) method.</p>
+I"h<p>There are other packages out there that you can use such as <a href="https://github.com/valor-software/ngx-bootstrap" target="_blank" rel="noopener">ngx-bootstrap</a>, but this is the vanilla <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a> (including JavaScript) method.</p>
 
 <p>There are some slight differences from versions before Angular 6.</p>
 
@@ -10,7 +10,7 @@
 </code></pre></div></div>
 
 <ol>
-  <li>And you need to install it’s dependencies (<a href="https://jquery.com/">jQuery</a>) and (<a href="https://popper.js.org/">Popper.JS</a>):</li>
+  <li>And you need to install it’s dependencies (<a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a>) and (<a href="https://popper.js.org/" target="_blank" rel="noopener">Popper.JS</a>):</li>
 </ol>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>jquery popper.js <span class="nt">--save</span>

@@ -18,7 +18,7 @@ redirect_from:
   - /posts/fix-angular-firebase-hosting-setup-complete-error-warning-page/
 ---
 
-I was just trying to post my AngularFire app to Firebase hosting and I was getting the ***"Firebase hosting setup complete"*** alert page. I couldn't find the fix online, so I'll post it here.
+I was just trying to post my <a href="https://github.com/angular/angularfire2" target="_blank" rel="noopener">AngularFire</a> app to <a href="https://firebase.google.com/" target="_blank" rel="noopener">Firebase hosting</a> and I was getting the ***"Firebase hosting setup complete"*** alert page. I couldn't find the fix online, so I'll post it here.
 
 **The Problem:**
 

@@ -18,7 +18,7 @@ redirect_from:
   - /posts/how-to-add-uikit-to-angular/
 ---
 
-I recently heard about [UIKit](https://getuikit.com/) from a friend and I decided to give it a spin. It's pretty amazing. Here's how you can install it in [Angular](https://angular.io/).
+I recently heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and I decided to give it a spin. It's pretty amazing. Here's how you can install it in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>.
 
 1. from the root of your project you need to install jQuery and UIKit:
 

@@ -20,7 +20,7 @@ redirect_from:
 
 dotenv allows you to store sensitive data variables locally (Secret Keys, etc), without having to include them directly in your app files.
 
-This is based off of <a href="https://www.npmjs.com/package/dotenv-webpack" target="_blank">dotenv-webpack</a>'s NPM package.
+This is based off of <a href="https://www.npmjs.com/package/dotenv-webpack" target="_blank" rel="noopener">dotenv-webpack</a>'s NPM package.
 
 You first want to install dotenv-webpack via your terminal:
 

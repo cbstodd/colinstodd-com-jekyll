@@ -1,6 +1,6 @@
-I"X<p>dotenv allows you to store sensitive data variables locally (Secret Keys, etc), without having to include them directly in your app files.</p>
+I"g<p>dotenv allows you to store sensitive data variables locally (Secret Keys, etc), without having to include them directly in your app files.</p>
 
-<p>This is based off of <a href="https://www.npmjs.com/package/dotenv-webpack" target="_blank">dotenv-webpack</a>’s NPM package.</p>
+<p>This is based off of <a href="https://www.npmjs.com/package/dotenv-webpack" target="_blank" rel="noopener">dotenv-webpack</a>’s NPM package.</p>
 
 <p>You first want to install dotenv-webpack via your terminal:</p>
 

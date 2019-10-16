@@ -17,7 +17,7 @@ redirect_from:
     - /posts/introductory-flight-getting-my-pilots-license/
 ---
 
-Since I can remember, It’s been a dream of mine to become a pilot and be able to get in my plane and fly to the beach or mountains. I have been playing <a href="https://en.wikipedia.org/wiki/Microsoft_Flight_Simulator_X" target="_blank">Microsoft SimulatorX</a> and now <a href="http://www.x-plane.com/" target="_blank">X-plane</a> for years. But I saw a Groupon pass for a discounted introductory flight at a nearby airport, and because it was the same time as my birthday (October 15th, go Libras) I decided that it was time.
+Since I can remember, It’s been a dream of mine to become a pilot and be able to get in my plane and fly to the beach or mountains. I have been playing <a href="https://en.wikipedia.org/wiki/Microsoft_Flight_Simulator_X" target="_blank" rel="noopener">Microsoft SimulatorX</a> and now <a href="http://www.x-plane.com/" target="_blank" rel="noopener">X-plane</a> for years. But I saw a Groupon pass for a discounted introductory flight at a nearby airport, and because it was the same time as my birthday (October 15th, go Libras) I decided that it was time.
 
 I have a healthy fear of heights, so I was a bit nervous about how I would react to such a small and turbulent plane. But also because I felt like this was going to be a make or break moment on if I could realistically fulfill a lifelong dream... Well, I’m here to report that after my first flight, I’m still not 100% sure I’ll be able to continue on. It really freaked me out. I was better toward the end of the flight and my instructor said I did great. But make no mistake, I was terrified.
 

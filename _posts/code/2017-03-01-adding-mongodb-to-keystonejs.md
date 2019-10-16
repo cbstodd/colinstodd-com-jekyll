@@ -19,7 +19,7 @@ redirect_from:
 
  There isn't (that I can find) clear instructions on how to connect your mLab (MongoDB) database to your KeystoneJS app. I'm writing this to try and help future on-lookers. It's stupid simple, but there is one step I feel is missing on the KeystoneJS documentation .
 
-1. You first need to create a database. <a href="https://mlab.com/" target="_blank">mLab</a> gives you a free sandbox starter. Sign up for a account. Once you have created the account you need to create a database.
+1. You first need to create a database. <a href="https://mlab.com/" target="_blank" rel="noopener">mLab</a> gives you a free sandbox starter. Sign up for a account. Once you have created the account you need to create a database.
 
 2. Once you create the database, you have to make sure you create a default/admin user in order for it to work. Todo that you need to click on the newly created database, and add user; You can refer to (click on) the image at the top of the page.
 
@@ -69,6 +69,6 @@ keystone.init({
 ```
 
 
-The  `MONGO_URI` comes from the variable in your `.env` file we just updated. This just sets your database for each enviornment (development and production).
+The  `MONGO_URI` comes from the variable in your `.env` file we just updated. This just sets your database for each environment (development and production).
 
 Once you have these added, start your KeystoneJS server and you should be up and running.  Let me know if you have any questions.

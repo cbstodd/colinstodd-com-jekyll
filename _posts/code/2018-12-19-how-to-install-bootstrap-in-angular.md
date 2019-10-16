@@ -17,7 +17,7 @@ redirect_from:
   - /posts/how-to-install-bootstrap-4-in-angular-4-as-a-dependency/
   - /posts/how-to-install-bootstrap-in-angular/
 ---
-There are other packages out there that you can use such as [ngx-bootstrap](https://github.com/valor-software/ngx-bootstrap), but this is the vanilla [Bootstrap](https://getbootstrap.com/) (including JavaScript) method.
+There are other packages out there that you can use such as <a href="https://github.com/valor-software/ngx-bootstrap" target="_blank" rel="noopener">ngx-bootstrap</a>, but this is the vanilla <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a> (including JavaScript) method.
 
 There are some slight differences from versions before Angular 6.
 
@@ -27,7 +27,7 @@ There are some slight differences from versions before Angular 6.
 npm install bootstrap --save
 ```
 
-2. And you need to install it's dependencies ([jQuery](https://jquery.com/)) and ([Popper.JS](https://popper.js.org/)):
+2. And you need to install it's dependencies (<a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a>) and (<a href="https://popper.js.org/" target="_blank" rel="noopener">Popper.JS</a>):
 
 ```bash
 npm install jquery popper.js --save
