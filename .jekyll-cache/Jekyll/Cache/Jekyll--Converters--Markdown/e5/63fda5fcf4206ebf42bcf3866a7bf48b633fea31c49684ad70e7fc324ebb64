@@ -1,4 +1,4 @@
-I"�(<p>For just about all of my <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> applications I’ve used <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> to generate the files for my Favicon icon. It’s a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I’ve found a quick and painless way to use both the Node and HTML5 tools. I’ll also show you how to add <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093" target="_blank" rel="noopener">Progressive Web App (PWA)</a> meta tags so that you can add your newly created icons to your mobile home-screen. Lets get to it.</p>
+I"�(<p>For just about all of my <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> applications I’ve used <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> to generate the files for my Favicon icon. It’s a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I’ve found a quick and painless way to use both the Node and HTML5 tools. I’ll also show you how to add <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093" target="_blank" rel="noopener">Progressive Web App (PWA)</a> meta tags so that you can add your newly created icons to your mobile home-screen. Lets get to it.</p>
 
 <ol>
   <li>
@@ -12,14 +12,17 @@
   </li>
 </ol>
 
-<p class="12u$ image fit"><a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a></p>
+<p><a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">
+<img src="../../images/posts/real_favicon_with_arrows.png" class="image fit" />
+</a></p>
 
 <ol>
   <li>
-    <p>Now you’ll want to install the Real Favicon Generator CLI which helps to generate the files for you. So run <code class="highlighter-rouge">npm install -g cli-real-favicon</code></p>
+    <p>Now you’ll want to install the Real Favicon Generator CLI which helps to generate the files for you.<br />
+So run <code class="highlighter-rouge">npm install -g cli-real-favicon</code></p>
   </li>
   <li>
-    <p>Now that the CLI is installed, run this command <code class="highlighter-rouge">touch faviconDescription.json &amp;&amp; mkdir src/assets/outputDir</code>. This creates a generator file and output folder where the generator files are going to be placed in.</p>
+    <p>Now that the CLI is installed, run this command <br /> <code class="highlighter-rouge">touch faviconDescription.json &amp;&amp; mkdir src/assets/outputDir</code>. This creates a generator file and output folder where the generator files are going to be placed in.</p>
   </li>
   <li>
     <p>Now you’ll want to copy that source code on the RFG site into the newly created <code class="highlighter-rouge">faviconDescription.json</code> file. You’ll notice that there will be <code class="highlighter-rouge">TODO: Path to your master picture</code>.</p>

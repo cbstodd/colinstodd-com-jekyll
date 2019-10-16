@@ -26,16 +26,14 @@ For just about all of my <a href="https://angular.io/" target="_blank" rel="noop
 
 3. Once the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> does its thing, you'll want to click on the "NodeJS" tab as seen in the image below.
 
+<a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">
+<img src="../../images/posts/real_favicon_with_arrows.png" class="image fit" />
+</a>
 
-{:.12u$}
-{:.image.fit}
-<a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a>
+4. Now you'll want to install the Real Favicon Generator CLI which helps to generate the files for you.<br/>
+So run `npm install -g cli-real-favicon`
 
-
-
-4. Now you'll want to install the Real Favicon Generator CLI which helps to generate the files for you. So run `npm install -g cli-real-favicon`
-
-5. Now that the CLI is installed, run this command `touch faviconDescription.json && mkdir src/assets/outputDir`. This creates a generator file and output folder where the generator files are going to be placed in.
+5. Now that the CLI is installed, run this command <br/> `touch faviconDescription.json && mkdir src/assets/outputDir`. This creates a generator file and output folder where the generator files are going to be placed in.
 
 6. Now you'll want to copy that source code on the RFG site into the newly created `faviconDescription.json` file. You'll notice that there will be `TODO: Path to your master picture`.
 
