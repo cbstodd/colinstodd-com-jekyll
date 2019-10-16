@@ -8,11 +8,11 @@
     <form method="POST" action="https://getform.io/f/1c2abdba-fac6-4bdc-90c9-5fb74c77eebb">
       <div class="field">
         <label for="name">Name*</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" required minlength="3" />
       </div>
       <div class="field">
         <label for="email">Email*</label>
-        <input type="email" name="_replyto" id="email" />
+        <input type="email" name="_replyto" id="email" required email minlength="5" />
       </div>
       <div class="field">
         <label for="tel">Phone Number (Optional)</label>
@@ -20,7 +20,7 @@
       </div>
       <div class="field">
         <label for="message">Message*</label>
-        <textarea name="message" id="message" rows="4"></textarea>
+        <textarea name="message" id="message" rows="4" required minlength="8" maxlength="2500"></textarea>
       </div>
       <ul class="actions">
         <li><input type="submit" value="Send Message" /></li>

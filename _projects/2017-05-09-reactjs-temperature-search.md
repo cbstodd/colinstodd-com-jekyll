@@ -1,6 +1,6 @@
 ---
 layout: project
-title: YouGeReactJS Temperature Search
+title: ReactJS Temperature Search
 author: Colin Stodd
 tags: ReactJS, Open Weather Map, Bootstrap
 date: 2017-05-09 00:00:01 -0400
