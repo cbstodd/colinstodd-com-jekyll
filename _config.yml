@@ -1,5 +1,6 @@
 # site settings
 title: Colin Stodd
+name: Colin Stodd's personal website focused on his career in web application and mobile development
 subtitle: Colin Stodd's Personal Website
 email: cbstodd@harpua.co
 description: Colin Stodd's personal website focused on his career in web application and mobile development
@@ -43,16 +44,6 @@ collections:
     output: true
     permalink: /image-gallery/:path
 
-# defaults:
-#   - scope:
-#       path: "posts/post"
-#     values:
-#       type: "post"
-#   - scope:
-#       path: "projects/project"
-#     values:
-#       type: "project"
-
 menus:
   - Home: "/"
   - About: "/about.html"
@@ -74,6 +65,7 @@ plugins:
   - jekyll-environment-variables
   - jekyll-redirect-from
   - jekyll-compress-images
+  - jekyll-feed
 
     # SEO / META:
 twitter:
@@ -108,4 +100,11 @@ compress_images:
   images_path: "images/**/*.{gif,png,jpg,jpeg,svg}"
 
 
-# Image Gallery:
+# ATOM Feed:
+feed:
+  collections:
+    - posts
+    - projects
+
+
+
