@@ -1,6 +1,6 @@
 ---
 layout: post
-category: code
+category: personal
 author: Colin Stodd
 tags:
   - Personal,
@@ -11,10 +11,11 @@ pinned: true
 featured: false
 image: ../images/posts/cessna172-min.jpg
 description: Personal experience of my introductory flight
-permalink: /posts/introductory-flight-getting-my-pilots-license.html
+permalink: /posts/code/introductory-flight-getting-my-pilots-license.html
 comments: true
 redirect_from:
-    - /posts/introductory-flight-getting-my-pilots-license/
+  - /posts/introductory-flight-getting-my-pilots-license.html
+  - /posts/introductory-flight-getting-my-pilots-license/
 ---
 
 Since I can remember, It’s been a dream of mine to become a pilot and be able to get in my plane and fly to the beach or mountains. I have been playing <a href="https://en.wikipedia.org/wiki/Microsoft_Flight_Simulator_X" target="_blank" rel="noopener">Microsoft SimulatorX</a> and now <a href="http://www.x-plane.com/" target="_blank" rel="noopener">X-plane</a> for years. But I saw a Groupon pass for a discounted introductory flight at a nearby airport, and because it was the same time as my birthday (October 15th, go Libras) I decided that it was time.

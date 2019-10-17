@@ -12,9 +12,10 @@ pinned: true
 featured: false
 image: ../images/posts/matcss-min.png
 description: How to install Materialize CSS in Angular
-permalink: /posts/how-to-install-materialize-css-in-angular.html
+permalink: /posts/code/how-to-install-materialize-css-in-angular.html
 comments: true
 redirect_from:
+  - /posts/how-to-install-materialize-css-in-angular.html
   - /posts/how-to-install-materialize-css-in-angular-6/
 ---
 

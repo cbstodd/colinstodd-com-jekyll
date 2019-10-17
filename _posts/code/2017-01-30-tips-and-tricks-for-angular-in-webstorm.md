@@ -11,9 +11,10 @@ pinned: true
 featured: false
 image: ../images/posts/webstorm-angular.png
 description: This is a 54 minute video of some very useful tips and tricks for navigating around your Angular 2 apps in WebStorm.
-permalink: /posts/tips-and-tricks-for-angular-in-webstorm.html
+permalink: /posts/code/tips-and-tricks-for-angular-in-webstorm.html
 comments: true
 redirect_from:
+  - /posts/tips-and-tricks-for-angular-in-webstorm.html
   - /posts/tips-and-tricks-for-angular-2-in-webstorm/
 ---
 

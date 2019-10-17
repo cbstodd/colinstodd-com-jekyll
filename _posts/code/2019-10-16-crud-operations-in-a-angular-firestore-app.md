@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic CRUD Operations Used In A AngularFirestore Application
+title: CRUD Operations In A Angular Firestore App
 author: Colin Stodd
 description: CRUD snippets that I tend to reuse in every Angular service
 featured: true
@@ -10,19 +10,17 @@ date:   2019-10-16 22:30:00 -0400
 categories: code
 tags:
   - Angular,
-  - Firebase,
-  - AngularFirestore2
   - Firestore,
   - Observables,
   - UID,
   - CRUD
 comments: true
-# permalink:
+permalink: /posts/code/crud-operations-in-a-angular-firestore-app.html
+redirect_from:
+  - /posts/crud-operations-in-a-angular-firestore-app.html
 ---
 
-I've been building a bunch of <a href="https://github.com/angular/angularfire2" target="_blank" rel="noopener">AngularFirestore2</a> apps recently (Loving it BTW), but I've come to realize that I'm really just copying and pasting much of the functionality of my services and renaming the `Item.ts` types and Observable names. Anyway, I figured I'd post these common functions mainly for easy access (for myself), but I thought maybe you guys could find the code useful as well.
-
-Who knows, maybe this becomes some sort of documentation cheat-sheet of some sort down the line.
+I've been building a bunch of <a href="https://github.com/angular/angularfire2" target="_blank" rel="noopener">AngularFirestore2</a> apps recently (Loving it BTW), but I've come to realize that I'm really just copying and pasting much of the functionality of my services and renaming the `Item.ts` types and Observable names. Anyway, I figured I'd post these common functions mainly for easy access (for myself), but I thought maybe you guys could find the code useful as well. Who knows, maybe this becomes a documentation cheat-sheet down the line.
 
 For the sake of simplicity and reusability (you can do a find a replace to reuse) I'm going to call each "object" or "type" an **`Item`**; so you should be able to use your favorite <a href="https://code.visualstudio.com/" target="_blank" rel="noopener" title="Visual Studio Code">text editor</a> or <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener" title="Webstorm">IDE</a> to update to whatever you need.
 
@@ -174,8 +172,8 @@ export class ItemService {
 
   constructor(private afs: AngularFirestore) {}
 
-  deleteTag(id: string): void {
-      this.itemDoc = this.afs.doc<Tag>(`items/${id}`);
+  deleteItem(id: string): void {
+      this.itemDoc = this.afs.doc<Item>(`items/${id}`);
       this.itemDoc.delete()
           .then(() => {
             // Do Something with Success

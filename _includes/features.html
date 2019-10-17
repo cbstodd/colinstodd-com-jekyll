@@ -5,8 +5,8 @@
 <!-- feature-{{ forloop.index }} -->
 <section id="feature-{{ forloop.index }}" class="wrapper{{ alt }} spotlight style{{ forloop.index }}">
   <div class="inner">
-    <a href="{{ feature.url | relative_url }}" class="image" title="{{ feature.title }}">
-      <img src="{{ feature.image }}" alt="{{ feature.title }}" />
+    <a href="{{ feature.url | relative_url }}" title="{{ feature.title }}" class="image featured-image-link">
+      <img src="{{ feature.image }}" alt="{{ feature.title }}" class="featured-image" />
     </a>
     <div class="content">
       <h2 class="major">

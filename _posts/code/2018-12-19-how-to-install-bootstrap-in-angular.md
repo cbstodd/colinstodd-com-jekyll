@@ -9,11 +9,12 @@ tags:
 title: How to install Bootstrap in Angular
 date:   2018-12-19 00:00:00 -0400
 pinned: true
-featured: true
+featured: false
 image: ../images/posts/bootstrap.png
 description: How to install Bootstrap 4 in Angular 6, 7, 8+.
-permalink: /posts/how-to-install-bootstrap-in-angular.html
+permalink: /posts/code/how-to-install-bootstrap-in-angular.html
 redirect_from:
+  - /posts/how-to-install-bootstrap-in-angular.html
   - /posts/how-to-install-bootstrap-4-in-angular-4-as-a-dependency/
   - /posts/how-to-install-bootstrap-in-angular/
 ---

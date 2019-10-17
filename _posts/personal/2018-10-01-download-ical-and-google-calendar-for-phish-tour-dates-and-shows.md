@@ -13,9 +13,10 @@ pinned: true
 featured: false
 image: ../images/posts/phish-fall.jpg
 description: Download Phish tour iCal/Google calendar. The calendar has been updated for "Fall Tour Dates" and the New Years Run.
-permalink: /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
+permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
 redirect_from:
+  - /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
   - /blog/post/ical-calendar-for-phish-s-2017-tour-dates/
   - /posts/ical-calendar-for-phish-tour-dates-and-shows/
 ---

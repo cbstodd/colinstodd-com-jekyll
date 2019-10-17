@@ -13,10 +13,11 @@ pinned: true
 featured: false
 image: ../images/posts/typescript.png
 description: Typescript and Babel environment setup templates
-permalink: /posts/typescript-and-es6-babel-boilerplates.html
+permalink: /posts/code/typescript-and-es6-babel-boilerplates.html
 comments: true
 redirect_from:
-   - /posts/typescript-and-es6-babel-boilerplates/
+  - /posts/typescript-and-es6-babel-boilerplates.html
+  - /posts/typescript-and-es6-babel-boilerplates/
 ---
 
 Setting up your development environment with <a href="http://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> and <a href="https://www.javascript.com/" target="_blank" rel="noopener">ES6 (JavaScript 2015)</a> using <a href="https://babeljs.io/" target="_blank" rel="noopener">Babel</a> can be time consuming.  So I have created simple apps to help you get both types of environments up and running with a few lines of code from your terminal.  I've included the commonly used librarys: Bootstrap 3, jQuery and the module loader SystemJS to tie everything together. Let me know if you run in to any problems.

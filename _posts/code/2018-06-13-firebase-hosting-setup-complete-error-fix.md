@@ -12,9 +12,10 @@ pinned: true
 featured: false
 image: ../images/posts/firebase-setup-warning.png
 description: fix "Firebase hosting setup complete" alert/error when deploying Angular 6 app to firebase hosting.
-permalink: /posts/firebase-hosting-setup-complete-error-fix.html
+permalink: /posts/code/firebase-hosting-setup-complete-error-fix.html
 comments: true
 redirect_from:
+  - /posts/firebase-hosting-setup-complete-error-fix.html
   - /posts/fix-angular-firebase-hosting-setup-complete-error-warning-page/
 ---
 

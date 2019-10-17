@@ -37,12 +37,14 @@ kramdown:
 markdown: kramdown
 
 collections:
+  posts:
+    output: true
+    permalink: /posts/:categories/:path
   projects:
     output: true
     permalink: /projects/:path
   image-gallery:
-    output: true
-    permalink: /image-gallery/:path
+    output: false
 
 menus:
   - Home: "/"

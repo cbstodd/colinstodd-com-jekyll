@@ -11,9 +11,10 @@ pinned: true
 featured: false
 image: ../images/posts/angular.png
 description: Simple example of how to use *ngif.
-permalink: /posts/how-to-use-ngif-in-angular.html
+permalink: /posts/code/how-to-use-ngif-in-angular.html
 comments: true
 redirect_from:
+  - /posts/how-to-use-ngif-in-angular.html
   - /posts/how-to-use-ngif-in-angular-4/
 ---
 

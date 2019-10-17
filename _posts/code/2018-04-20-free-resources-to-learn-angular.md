@@ -11,9 +11,10 @@ pinned: true
 featured: false
 image: ../images/posts/ng-free-resources.png
 description: Free (or almost free) list of Angular CLI resources.
-permalink: /posts/free-resources-to-learn-angular.html
+permalink: /posts/code/free-resources-to-learn-angular.html
 comments: true
 redirect_from:
+  - /posts/free-resources-to-learn-angular.html
   - /posts/free-resources-to-learn-angular/
 ---
 

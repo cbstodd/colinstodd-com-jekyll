@@ -12,10 +12,11 @@ pinned: true
 featured: false
 image: ../images/posts/es6.png
 description: An example of how to create a subclass (Super) in ES6
-permalink: /posts/es6-subclass-example.html
+permalink: /posts/code/es6-subclass-example.html
 comments: true
 redirect_from:
-    - /posts/es6-subclass-example/
+  - /posts/es6-subclass-example.html
+  - /posts/es6-subclass-example/
 ---
 
 You can extend or import/assign classes within a class. Here is a example of that.

@@ -101,7 +101,7 @@ p.page-description {
 .dots > div {
   width: 0.5em;
   height: 0.5em;
-  background-color: #FF19E1;
+  background-color: #ff19e1;
   border-radius: 50%;
   animation: fade 1.5s alternate ease-in-out infinite;
 }
@@ -147,6 +147,25 @@ img.image-gallery-img:hover {
 
 /*~  POSTS ~*/
 h2.major > a.feature-title {
+  border-bottom: none;
+}
+
+img.image.right {
+  z-index: 10;
+}
+
+a.cat-link {
+  border-bottom: none;
+}
+
+a.cat-link:hover {
+  border-bottom: none;
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Featured Image */
+a.image.featured-image-link:hover,
+a.button:hover {
   border-bottom: none;
 }
 

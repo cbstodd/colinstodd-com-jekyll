@@ -11,10 +11,11 @@ pinned: true
 featured: false
 image: ../images/posts/angular.png
 description: Simple example of how to use [ngClass] in Angular
-permalink: /posts/two-different-ways-to-use-ngclass-in-angular.html
+permalink: /posts/code/two-different-ways-to-use-ngclass-in-angular.html
 comments: true
 redirect_from:
-    - /posts/two-different-ways-to-use-ngclass-in-angular/
+  - /posts/two-different-ways-to-use-ngclass-in-angular.html
+  - /posts/two-different-ways-to-use-ngclass-in-angular/
 ---
 
 `ngClass` functions as though `ngIf` is built into the statement. The class binds and defaults to truthy. So if `showPerson` is true, it will bind, or else it will not. But you can declare the else with a falsey statement by using `!` not.

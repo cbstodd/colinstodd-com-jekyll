@@ -12,9 +12,10 @@ pinned: true
 featured: false
 image: ../images/posts/env.png
 description: This is how you can add dotenv to a project using Webpack.
-permalink: /posts/how-to-add-dotenv-to-webpack.html
+permalink: /posts/code/how-to-add-dotenv-to-webpack.html
 comments: true
 redirect_from:
+  - /posts/how-to-add-dotenv-to-webpack.html
   - /posts/how-to-add-dotenv-to-webpack/
 ---
 

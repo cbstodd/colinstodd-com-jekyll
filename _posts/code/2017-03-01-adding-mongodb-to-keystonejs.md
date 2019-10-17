@@ -11,10 +11,11 @@ pinned: true
 featured: false
 image: ../images/posts/mlab.png
 description: How to connect your mLab MongoDB to your KeystoneJS app.
-permalink: /posts/adding-mongodb-to-keystonejs.html
+permalink: /posts/code/adding-mongodb-to-keystonejs.html
 comments: true
 redirect_from:
-    - /posts/adding-mongodb-to-keystonejs/
+  - /posts/adding-mongodb-to-keystonejs.html
+  - /posts/adding-mongodb-to-keystonejs/
 ---
 
  There isn't (that I can find) clear instructions on how to connect your mLab (MongoDB) database to your KeystoneJS app. I'm writing this to try and help future on-lookers. It's stupid simple, but there is one step I feel is missing on the KeystoneJS documentation .
