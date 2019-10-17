@@ -4,7 +4,7 @@ title: Basic CRUD Operations Used In A AngularFirestore Application
 author: Colin Stodd
 description: CRUD snippets that I tend to reuse in every Angular service
 featured: true
-pinned: true
+pinned: false
 image: "../../images/posts/angularfire.png"
 date:   2019-10-16 12:30:00 -0400
 categories: code

@@ -1,2 +1,0 @@
-I"<p>I’ve been building a bunch of <a href="https://github.com/angular/angularfire2" target="_blank" rel="noopener">AngularFirestore2</a> apps recently (Loving it BTW), but I’ve come to realize that I’m really just copying and pasting much of the functionality of my services and renaming the <code class="highlighter-rouge">Item.ts</code> and Observable names. Anyway, I figured I’d post these common functions mainly for easy access (for myself), but I figured you might be able to get some use from them as well.</p>
-:ET
