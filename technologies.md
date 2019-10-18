@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Technologies
-date:   2019-10-11 15:43:00 -0400
+date: 2019-10-17 15:30:12 -0400
 categories: css
 permalink: technologies.html
 description: Technologies I use

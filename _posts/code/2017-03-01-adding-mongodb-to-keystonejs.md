@@ -1,13 +1,13 @@
 ---
 layout: post
-category: code
+categories: code
 author: Colin Stodd
 tags:
   - Angular,
   - Webstorm
 title: Adding MongoDB To KeystoneJS
-date:   2017-03-01 00:00:00 -0400
-pinned: true
+date: 2017-03-01 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/mlab.png
 description: How to connect your mLab MongoDB to your KeystoneJS app.

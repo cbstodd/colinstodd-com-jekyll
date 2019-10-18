@@ -4,14 +4,16 @@ title: My Gift Network
 author: Colin Stodd
 tags: Angular, Angular Material, Bootstrap
 date: 2017-12-13 00:00:01 -0400
-category: projects
+category: angular
 featured: true
-pinned: true
+pinned: false
 image: images/projects/my-gift-network.png
 liveUrl: https://mygiftnetwork.com/
 githubUrl: https://github.com/cbstodd/colperClub
 description: Personal gift wish-list as a social network.
-permalink: /projects/my-gift-network.html
+permalink: /projects/angular/my-gift-network.html
+redirect_from:
+  - /projects/my-gift-network.html
 ---
 
 This is my latest pride and joy as a PWA (Progressive Web Application). It's a gift wishlist slanted as a social network. As of now it's not a store, rather, a fancy gift-list creator. It's still in it's infancy but I feel it's reached it's MVP level, and I plan to incorporate popular online store API's, features, and possibly a browser extension.

@@ -10,16 +10,29 @@ layout: default
       </a>
       <p>{{ page.description }} </p>
       <p>{{ page.summary }}</p>
+
+      <div class="row">
+        <div class="6u">
+          <h5 class="post-cat-title">Project Categories:</h5>
+          {% assign project_categories = site.projects | group_by: 'category' | sort: 'name' %}
+          <ul class="alt">
+          {% for item in project_categories %}
+            <li>
+            <i class="fad fa-caret-circle-right"></i>  <a href="/projects/{{ item.name }}.html" class="no-dec capitalize">{{item.name}}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+
     </div>
   </header>
   <!-- Content -->
-
   <div class="wrapper">
     <div class="inner">
       {% assign projects = site.projects | reverse %}
       {% for project in projects %}
       {% if project.title != 404 %}
-
       <section class="features">
         <article>
           <a href="{{ project.url | relative_url }}" class="image">
@@ -40,8 +53,6 @@ layout: default
       </section>
       {% endif %}
       {% endfor %}
-
-
     </div>
   </div>
 </section>

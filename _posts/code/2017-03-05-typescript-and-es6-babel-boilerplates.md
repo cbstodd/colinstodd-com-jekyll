@@ -1,6 +1,6 @@
 ---
 layout: post
-category: code
+categories: code
 author: Colin Stodd
 tags:
   - TypeScript,
@@ -8,8 +8,8 @@ tags:
   - Template,
   - Boilerplate
 title: TypeScript And ES6 Babel Boilerplates
-date:   2017-03-05 00:00:00 -0400
-pinned: true
+date: 2017-03-05 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/typescript.png
 description: Typescript and Babel environment setup templates

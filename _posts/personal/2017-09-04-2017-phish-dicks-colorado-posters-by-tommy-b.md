@@ -1,6 +1,6 @@
 ---
 layout: post
-category: personal
+categories: personal
 author: Colin Stodd
 tags:
   - Phish,
@@ -10,8 +10,8 @@ tags:
   - Tommy Bradel,
   - 2017
 title: Phish Dicks Colorado Posters By Tommy B
-date:   2017-09-04 00:00:00 -0400
-pinned: true
+date: 2017-09-04 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/tommy-b.jpg
 description: You can buy our 2017 Phish Dicks posters created by Tommy Bradel on Etsy.

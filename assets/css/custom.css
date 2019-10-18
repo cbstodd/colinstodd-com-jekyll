@@ -1,3 +1,8 @@
+/* Site wide */
+.capitalize {
+  text-transform: capitalize;
+}
+
 /*~  Header ~*/
 img.cs-logo {
   justify-items: center;

@@ -1,13 +1,13 @@
 ---
 layout: post
-category: code
+categories: code
 author: Colin Stodd
 tags:
   - Angular,
   - Education
 title: Free Resources To Learn Angular
-date:   2018-04-20 00:00:00 -0400
-pinned: true
+date: 2018-04-20 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/ng-free-resources.png
 description: Free (or almost free) list of Angular CLI resources.

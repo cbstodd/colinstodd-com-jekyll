@@ -1,13 +1,13 @@
 ---
 layout: post
-category: code
+categories: code
 author: Colin Stodd
 tags:
   - Angular,
   - Webstorm
 title: Building Angular Apps With Webstorm
-date:   2017-03-02 00:00:00 -0400
-pinned: true
+date: 2017-03-02 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/webstorm-angular.png
 description: Tips for using Webstorm to build Angular apps

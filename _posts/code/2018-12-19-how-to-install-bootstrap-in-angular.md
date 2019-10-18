@@ -1,14 +1,14 @@
 ---
 layout: post
-category: code
+categories: code
 author: Colin Stodd
 tags:
   - Angular,
   - Bootstrap 4,
   - Tutorial
 title: How to install Bootstrap in Angular
-date:   2018-12-19 00:00:00 -0400
-pinned: true
+date: 2018-12-19 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/bootstrap.png
 description: How to install Bootstrap 4 in Angular 6, 7, 8+.

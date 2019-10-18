@@ -5,11 +5,16 @@ layout: default
 <section id="wrapper">
   <header>
     <div class="inner">
-      <a href="{{ page.category | relative_url }}.html">
+      <a href="/projects/{{ page.category }}.html">
         <h6>{{ page.category }}</h6>
       </a>
       <img src="{{ page.image | relative_url }}" alt="image" class="image right" />
       <h2>{{ page.title }}</h2>
+      <h5>
+        <a href="/projects/{{ page.categories }}.html" class="cat-link">
+          <i class="fad fa-folder-tree"></i> {{ page.categories }}
+        </a>
+      </h5>
       <h5><i class="fad fa-user"></i> {{ page.author }}</h5>
       <h5><i class="fad fa-tags"></i> {{ page.tags }}</h5>
       <h5><i class="fad fa-calendar-alt"></i> {{ page.date | date_to_string }}</h5>

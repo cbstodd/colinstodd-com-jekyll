@@ -1,6 +1,6 @@
 ---
 layout: post
-category: personal
+categories: personal
 author: Colin Stodd
 tags:
   - Phish,
@@ -8,11 +8,11 @@ tags:
   - iCal,
   - Shows
 title: Download iCal and Google calendar for Phish tour dates and shows
-date:   2019-09-24 00:00:01 -0400
-pinned: true
+date: 2019-09-24 00:00:01 -0400
+pinned: false
 featured: false
 image: ../images/posts/phish-fall.jpg
-description: Download Phish tour iCal/Google calendar. The calendar has been updated for "Fall Tour Dates" and the New Years Run.
+description: Download Phish tour iCal/Google calendar. The calendar has been updated for "Fall Tour Dates" and the "New Years Run".
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
 redirect_from:
@@ -24,7 +24,7 @@ redirect_from:
 ```css
 UPDATE:
 
-This calendar has been updated for the 2019 "Fall Tour Dates" and the New Years Run.
+This calendar has been updated for the 2019 "Fall Tour Dates" and the "New Years Run".
 
 There is a two hour alert prior to when the lot opens (if one is specified),
 otherwise, times are set to when the doors open. Check each event detail for door and

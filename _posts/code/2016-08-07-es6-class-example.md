@@ -1,14 +1,14 @@
 ---
 layout: post
-category: code
+categories: code
 author: Colin Stodd
 tags:
   - ES6,
   - Class,
   - Example
 title: ES6 Class Example
-date:   2016-08-16 00:00:00 -0400
-pinned: true
+date: 2016-08-16 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/es6.png
 description: Example of a class in Ecmascript/ES6

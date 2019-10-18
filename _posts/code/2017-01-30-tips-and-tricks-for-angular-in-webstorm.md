@@ -1,13 +1,13 @@
 ---
 layout: post
-category: code
+categories: code
 author: Colin Stodd
 tags:
   - Angular,
   - Webstorm
 title: Tips And Tricks For Angular In Webstorm
-date:   2017-01-30 00:00:00 -0400
-pinned: true
+date: 2017-01-30 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/webstorm-angular.png
 description: This is a 54 minute video of some very useful tips and tricks for navigating around your Angular 2 apps in WebStorm.

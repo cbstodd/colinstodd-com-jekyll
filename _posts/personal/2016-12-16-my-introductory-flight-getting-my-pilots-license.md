@@ -1,13 +1,13 @@
 ---
 layout: post
-category: personal
+categories: personal
 author: Colin Stodd
 tags:
   - Personal,
   - Flying
 title: My Introductory Flight Getting My Pilots License
-date:   2016-12-16 00:00:00 -0400
-pinned: true
+date: 2016-12-16 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/cessna172-min.jpg
 description: Personal experience of my introductory flight

@@ -9,15 +9,16 @@ layout: default
         <h2><i class="fad fa-newspaper"></i> {{ page.title }}</h2>
       </a>
       <p>{{ page.description }}</p>
+      <p>{{ page.summary }}</p>
       <div class="row">
         <div class="6u">
           <h5 class="post-cat-title">Post Categories:</h5>
           <ul class="alt">
-            {% assign categories_list = site.categories %}
+            {% assign categories_list = site.categories | sort %}
             {% if categories_list.first[0] == null %}
             {% for category in categories_list %}
                 <li>
-                  <a class="no-dec" href="/posts/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}.html">
+                  <a class="no-dec capitalize" href="/posts/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}.html">
                     <i class="fad fa-caret-square-right"></i>&nbsp;&nbsp;{{ category | camelcase }} ({{ site.tags[category].size }})
                   </a>
                 </li>
@@ -25,7 +26,7 @@ layout: default
             {% else %}
             {% for category in categories_list %}
                 <li>
-                  <a class="no-dec" href="/posts/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}.html">
+                  <a class="no-dec capitalize" href="/posts/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}.html">
                     <i class="fad fa-caret-square-right"></i>&nbsp;&nbsp;{{ category[0] | camelcase }} ({{ category[1].size }})
                   </a>
                 </li>

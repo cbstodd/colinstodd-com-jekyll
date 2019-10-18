@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CRUD Operations In A Angular Firestore App
+title: Common Angular Firestore CRUD Functions
 author: Colin Stodd
 description: CRUD snippets that I tend to reuse in every Angular service
 featured: true
 pinned: false
 image: "../../images/posts/angularfire.png"
-date:   2019-10-16 22:30:00 -0400
+date: 2019-10-16 22:30:00 -0400
 categories: code
 tags:
   - Angular,
@@ -15,8 +15,9 @@ tags:
   - UID,
   - CRUD
 comments: true
-permalink: /posts/code/crud-operations-in-a-angular-firestore-app.html
+permalink: /posts/code/common-angular-firestore-crud-functions.html
 redirect_from:
+  - /posts/code/crud-operations-in-a-angular-firestore-app.html
   - /posts/crud-operations-in-a-angular-firestore-app.html
 ---
 

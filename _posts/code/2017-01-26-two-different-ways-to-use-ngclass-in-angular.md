@@ -1,13 +1,13 @@
 ---
 layout: post
-category: code
+categories: code
 author: Colin Stodd
 tags:
   - Angular,
   - ngClass
 title: Two Different Ways To Use NgClass In Angular
-date:   2017-01-28 00:00:00 -0400
-pinned: true
+date: 2017-01-28 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/angular.png
 description: Simple example of how to use [ngClass] in Angular

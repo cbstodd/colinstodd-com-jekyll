@@ -1,7 +1,7 @@
 ---
 layout: image-gallery
 title: Images
-date: 2019-10-13 15:30:12 -0400
+date: 2019-10-17 15:30:12 -0400
 description: Images of Colin
 author: Colin Stodd
 permalink: /image-gallery.html

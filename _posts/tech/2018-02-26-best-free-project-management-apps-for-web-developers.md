@@ -1,6 +1,6 @@
 ---
 layout: post
-category: tech
+categories: tech
 author: Colin Stodd
 tags:
   - Clickup,
@@ -8,8 +8,8 @@ tags:
   - Tools,
   - Development
 title: Best Free Project Management Apps for Web Developers
-date:   2018-02-26 00:00:00 -0400
-pinned: true
+date: 2018-02-26 00:00:00 -0400
+pinned: false
 featured: false
 image: ../images/posts/clickup.png
 description: My picks for the best free project management apps (for web developers) in 2019.
