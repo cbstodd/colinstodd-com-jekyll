@@ -26,7 +26,8 @@ layout: default
     <div class="inner">
       {{ content }}
 
-      {% include google-post-ads.html %}
+      <p>{% include google-post-ads.html %}</p>
+
       {% if site.disqus.shortname %}
       {% include disqus_comments.html %}
       {% endif %}

@@ -49,7 +49,7 @@ collections:
 menus:
   - Home: "/"
   - About: "/about.html"
-  - Contact: "/contact.html"
+  - Contact: "#getInTouch"
   - Posts: "/posts.html"
   - Projects: "/projects.html"
   - Technologies: "/technologies.html"

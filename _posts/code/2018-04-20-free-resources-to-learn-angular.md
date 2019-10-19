@@ -9,7 +9,7 @@ title: Free Resources To Learn Angular
 date: 2018-04-20 00:00:00 -0400
 pinned: false
 featured: false
-image: ../images/posts/ng-free-resources.png
+image: "/images/posts/ng-free-resources_min.png"
 description: Free (or almost free) list of Angular CLI resources.
 permalink: /posts/code/free-resources-to-learn-angular.html
 comments: true
