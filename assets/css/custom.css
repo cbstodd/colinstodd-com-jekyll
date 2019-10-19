@@ -168,6 +168,10 @@ a.cat-link:hover {
   color: rgb(255, 255, 255) !important;
 }
 
+a > img:hover {
+  border-bottom: none;
+}
+
 /* Featured Image */
 a.image.featured-image-link:hover,
 a.button:hover {

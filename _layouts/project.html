@@ -40,6 +40,14 @@ layout: default
 
       {{ content }}
 
+      {% if page.screenshot %}
+      <div class="row">
+          <div class="6u">
+              <img src="{{ page.screenshot }}" alt="screenshot" class="image fit">
+          </div>
+      </div>
+      {% endif %}
+
       {% include google-post-ads.html %}
       {% if site.disqus.shortname %}
       {% include disqus_comments.html %}
