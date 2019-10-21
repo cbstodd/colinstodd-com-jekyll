@@ -66,6 +66,6 @@ function myFunction() {
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Calendar Link Copied. Enjoy the shows!!!");
+  alert("🐠 Calendar Link Copied 🐠 Now paste it into your calendar app. Enjoy the shows! 🍄 🌈 🌵 🥳 🐲");
 }
 </script>

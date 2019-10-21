@@ -1,4 +1,4 @@
-I"�<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">UPDATE</span><span class="o">:</span>
+I"?<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">UPDATE</span><span class="o">:</span>
 
 <span class="nt">This</span> <span class="nt">calendar</span> <span class="nt">has</span> <span class="nt">been</span> <span class="nt">updated</span> <span class="nt">for</span> <span class="nt">the</span> <span class="nt">2019</span> <span class="s1">"Fall Tour Dates"</span> <span class="nt">and</span> <span class="nt">the</span> <span class="s1">"New Years Run"</span><span class="o">.</span>
 
@@ -39,7 +39,7 @@ function myFunction() {
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Calendar Link Copied. Enjoy the shows!!!");
+  alert("🐠 Calendar Link Copied 🐠 Now paste it into your calendar app. Enjoy the shows! 🍄 🌈 🌵 🥳 🐲");
 }
 </script>
 

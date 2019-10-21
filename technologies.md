@@ -6,9 +6,7 @@ categories: css
 permalink: technologies.html
 description: Technologies I use
 ---
-Below are some of the technologies that I have worked with or continue to work with today.
-
-If you see something without a  <i class="fad fa-check"></i>, that means I'm currently learning it.
+Below are some of the technologies that I have worked with, continue to use daily or something I'm learning or intend to learn in the near future.
 
 
 
@@ -18,6 +16,7 @@ If you see something without a  <i class="fad fa-check"></i>, that means I'm cur
 			<th>Technologies</th>
 			<th>Proficient</th>
 			<th>Use often</th>
+			<th>Learning</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -25,91 +24,127 @@ If you see something without a  <i class="fad fa-check"></i>, that means I'm cur
 			<td><a href="https://angular.io/" target="_blank" rel="noopener">Angular</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://getbootstrap.com" target="_blank" rel="noopener">Bootstrap</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">CSS</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="https://dart.dev/" target="_blank" rel="noopener">Dart</a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
 			<td><a href="https://expressjs.com/" target="_blank" rel="noopener">ExpressJS</a></td>
 			<td><i class="fad fa-check"></i></td>
-			<td></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://firebase.google.com" target="_blank" rel="noopener">Firebase</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a></td>
 			<td></td>
 			<td></td>
+			<td><i class="fad fa-check"></i></td>
+		</tr>
+		<tr>
+			<td><a href="https://golang.org/" target="_blank" rel="noopener">Go</a></td>
+			<td></td>
+			<td></td>
+			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
 			<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">HTML</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://ionicframework.com/" target="_blank" rel="noopener">Ionic</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">JavaScript</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://www.mongodb.com/" target="_blank" rel="noopener">MongoDB</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://www.nativescript.org/" target="_blank" rel="noopener">NativeScript</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="https://python.org/" target="_blank" rel="noopener">Python</a></td>
+			<td></td>
+			<td></td>
+			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
 			<td><a href="https://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://sass-lang.com/" target="_blank" rel="noopener">SASS/SCSS</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td><a href="https://wordpress.com/" target="_blank" rel="noopener">Wordpress</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
 		</tr>
 	</tbody>
 </table>

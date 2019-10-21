@@ -6,7 +6,8 @@ description: CRUD snippets that I tend to reuse in every Angular service
 featured: true
 pinned: false
 image: "../../images/posts/angularfire.png"
-date: 2019-10-16 22:30:00 -0400
+date: 2019-10-19 22:30:00 -0400
+updatedAt: 2019-10-19 22:30:00 -0400
 categories: code
 tags:
   - Angular,
@@ -23,7 +24,7 @@ redirect_from:
 
 I've been building a bunch of <a href="https://github.com/angular/angularfire2" target="_blank" rel="noopener">AngularFirestore2</a> apps recently (Loving it BTW), but I've come to realize that I'm really just copying and pasting much of the functionality of my services and renaming the `Item.ts` types and Observable names. Anyway, I figured I'd post these common functions mainly for easy access (for myself), but I thought maybe you guys could find the code useful as well. Who knows, maybe this becomes a documentation cheat-sheet down the line.
 
-For the sake of simplicity and reusability (you can do a find a replace to reuse) I'm going to call each "object" or "type" an **`Item`**; so you should be able to use your favorite <a href="https://code.visualstudio.com/" target="_blank" rel="noopener" title="Visual Studio Code">text editor</a> or <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener" title="Webstorm">IDE</a> to update to whatever you need.
+For the sake of simplicity and reusability (just do a find and replace) I'm going to call each "object" or "type" an **`Item`**; so you should be able to use your favorite <a href="https://code.visualstudio.com/" target="_blank" rel="noopener" title="Visual Studio Code">text editor</a> or <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener" title="Webstorm">IDE</a> to update to whatever you need.
 
 All of the code is meant to be placed in your service. Going off of the `Item` naming convention, it would be
 `item.service.ts`
