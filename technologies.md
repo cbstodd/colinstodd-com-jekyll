@@ -13,7 +13,7 @@ Below are some of the technologies that I have worked with, continue to use dail
 <table class="table table-wrapper">
 	<thead>
 		<tr>
-			<th>Technologies</th>
+			<th>Languages</th>
 			<th>Proficient</th>
 			<th>Use often</th>
 			<th>Learning</th>

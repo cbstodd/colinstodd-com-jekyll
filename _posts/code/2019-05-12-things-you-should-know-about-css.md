@@ -9,7 +9,7 @@ tags:
 title: Things You Should Know About CSS
 date: 2019-05-12 15:30:12 -0400
 pinned: false
-featured: true
+featured: false
 image: ../images/posts/css3.png
 description: Most people use SASS/SCSS or LESS, but maybe you don't need to? Here are a couple of reasons I'm opting to use vanilla CSS instead of SCSS in my projects
 permalink: /posts/code/things-you-should-know-about-css.html
