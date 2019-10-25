@@ -28,7 +28,7 @@ Many people had to play with these settings because not every external display i
 
 
 ### First:
-You'll want to note if you have your font smoothing enabled or disabled in your `Settings` > `General` tab as seen in the image. This also plays a role... I'm leaving mine on, but I've seen others that had to turn theirs off.
+You'll want to note if you have your font smoothing enabled or disabled in your `Settings` > `General` tab as seen in the image. This also plays a role... I turned mine off.
 
 <div class="row">
   <div class="8u$">
@@ -36,8 +36,25 @@ You'll want to note if you have your font smoothing enabled or disabled in your 
   </div>
 </div>
 
+And then you can turn off font smoothing system wide:
 
-So I use <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> and the <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">IntelliJ IDEA</a>'s IDE's--mostly (sometimes <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text</a>), and my <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> fonts were thinner than normal. To fix those, I had to run these four commands in my terminal. Note that the trailing `0` can be changed to either `1`, `2` or `3` depending on the thickness you are looking for.
+```bash
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
+```
+
+And then I ran the code below to add strong font smoothing:
+
+```bash
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
+```
+
+Log out, and log back in.
+
+If this worked, great; if not, you can try these options below. My setup is still not perfect (some apps are still weird, as in some websites show really thin fonts), but I can live with what I have. You might have to play around with a few different combinations.  I really hope <a href="https://apple.com/support" target="_blank" rel="noopener">Apple</a> addresses this in the near future, it's become really annoying.
+
+
+---
+I had issues with my text editor fonts. I use <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> and the <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">IntelliJ IDEA</a>'s IDE's--mostly (sometimes <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text</a>), and my <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> fonts were thinner than normal. To fix those, I had to run these four commands in my terminal. Note that the trailing `0` can be changed to either `1`, `2` or `3` depending on the thickness you are looking for.
 
 ### VSCode Commands:
 
