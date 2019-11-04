@@ -6,7 +6,7 @@ tags: Angular, Angular Material, Bootstrap
 date: 2017-12-13 00:00:01 -0400
 category: angular
 featured: true
-pinned: false
+pinned: true
 image: images/projects/my-gift-network.png
 liveUrl: https://mygiftnetwork.com/
 githubUrl: https://github.com/cbstodd/colperClub
