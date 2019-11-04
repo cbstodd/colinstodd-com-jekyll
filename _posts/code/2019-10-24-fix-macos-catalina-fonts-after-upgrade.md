@@ -2,12 +2,12 @@
 layout: post
 title: Fix MacOS Catalina Fonts After Upgrade
 author: Colin Stodd
-description: How to fix blurry/thin fonts after upgrading to Mac OS <a href="https://www.apple.com/macos/catalina/" target="_blank" rel="noopener">Catalina</a>
+description: How to fix blurry/thin fonts after upgrading to Mac OS Catalina
 featured: true
 pinned: false
 image: "../../images/posts/catalina_icon_min.png"
-date: 2019-10-24 21:00:00 -0400
-updatedAt: 2019-10-24 21:00:00 -0400
+date: 2019-11-03 00:00:01 -0400
+updatedAt: 2019-11-03 00:00:01 -0400
 categories: code
 tags:
   - OSX,
@@ -59,11 +59,20 @@ I had issues with my text editor fonts. I use <a href="https://code.visualstudio
 ### VSCode Commands:
 
 ```bash
-# Terminal:
 defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
 defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0
 defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
 defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
+```
+
+---
+### Webstorm Commands:
+
+```bash
+defaults write com.jetbrains.webstorm CGFontRenderingFontSmoothingDisabled 0
+defaults write com.jetbrains.webstorm.helper CGFontRenderingFontSmoothingDisabled 0
+defaults write com.jetbrains.webstorm.helper.EH CGFontRenderingFontSmoothingDisabled 0
+defaults write com.jetbrains.webstorm.helper.NP CGFontRenderingFontSmoothingDisabled 0
 ```
 ___
 If you want to change the smoothing thickness of the fonts globally, you can do so with one of these commands; depending on the number you want:
