@@ -7,7 +7,7 @@ featured: false
 pinned: false
 image: "/images/projects/colinstodd_com_jekyll.png"
 date: 2019-10-19 15:30:12 -0400
-updatedAt: 2019-10-19 15:30:12 -0400
+updated: 2019-10-19 15:30:12 -0400
 category: jekyll
 tags:
   - jekyll
