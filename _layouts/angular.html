@@ -5,9 +5,9 @@ layout: default
 <section id="wrapper">
   <header>
     <div class="inner">
-        <a href="/projects.html">
-          <h4><i class="fad fa-arrow-alt-circle-left"></i> All Projects</h4>
-        </a>
+      <a href="/projects.html">
+        <h4><i class="fad fa-arrow-alt-circle-left"></i> All Projects</h4>
+      </a>
       <a href="{{ page.category | relative_url }}">
         <h2><i class="fab fa-angular"></i> {{ page.title }}</h2>
       </a>
@@ -17,9 +17,10 @@ layout: default
   <!-- Content -->
   <div class="wrapper">
     <div class="inner">
-    {% assign category = site.projects %}
-    {% assign projects = site.projects | where: 'category', 'angular' %}
-    {% for entry in projects %}
+      {% assign category = site.projects %}
+      {% assign ng_projects = site.projects | where: 'category', 'angular' %}
+      {% assign projects = ng_projects | sort: 'updated' | reverse %}
+      {% for entry in projects %}
       <a href="{{ entry.url | relative_url }}">
         <header class="major">
           <h1>{{ entry.title }}</h1>
@@ -41,10 +42,7 @@ layout: default
         </div>
       </a>
       <hr>
-    {% endfor %}
+      {% endfor %}
     </div>
   </div>
 </section>
-
-
-<!--~ OLD ~-->

@@ -1,10 +1,10 @@
 ---
 layout: page
 title:  Technologies
-date: 2019-10-22 11:30:12 -0400
+date: 2019-11-06 00:30:12 -0400
 categories: css
 permalink: technologies.html
-description: Technologies I use
+description: Technologies, Languages & Libraries I use
 ---
 Below are some of the technologies that I have worked with, continue to use daily or something I'm learning or intend to learn in the near future.
 

@@ -3,29 +3,30 @@ layout: default
 ---
 <!-- Wrapper -->
 <section id="wrapper">
-    <header>
-        <div class="inner">
-          <a href="{{ page.category | relative_url }}">
-            <h2><i class="fad fa-code"></i> {{ page.title }}</h2>
-          </a>
-          <p>{{ page.description }} </p>
-          <p>{{ page.summary }}</p>
+  <header>
+    <div class="inner">
+      <a href="{{ page.category | relative_url }}">
+        <h2><i class="fad fa-code"></i> {{ page.title }}</h2>
+      </a>
+      <p>{{ page.description }} </p>
+      <p>{{ page.summary }}</p>
 
-          <div class="row">
-            <div class="6u">
-              <h5 class="post-cat-title">Project Categories:</h5>
-              {% assign project_categories = site.projects | group_by: 'category' | sort: 'name' %}
-              <ul class="alt">
-              {% for item in project_categories %}
-                <li>
-                <i class="fad fa-caret-circle-right"></i>  <a href="/projects/{{ item.name }}.html" class="no-dec capitalize">{{item.name}}</a>
-                </li>
-              {% endfor %}
-              </ul>
-            </div>
-          </div>
+      <div class="row">
+        <div class="6u">
+          <h5 class="post-cat-title">Project Categories:</h5>
+          {% assign project_categories = site.projects | group_by: 'category' | sort: 'name' %}
+          <ul class="alt">
+            {% for item in project_categories %}
+            <li>
+              <i class="fad fa-caret-circle-right"></i> <a href="/projects/{{ item.name }}.html"
+                 class="no-dec capitalize">{{item.name}}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
   <!-- Content -->
   <div class="wrapper">
     <div class="inner">
@@ -96,8 +97,8 @@ layout: default
 
     </div>
   </header> -->
-  <!-- Content -->
-  <!-- <div class="wrapper">
+<!-- Content -->
+<!-- <div class="wrapper">
     <div class="inner">
       {% assign projects = site.projects | reverse %}
       {% for project in projects %}
@@ -126,5 +127,3 @@ layout: default
   </div>
 </section>
 -->
-
-

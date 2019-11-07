@@ -4,6 +4,7 @@ title: My Gift Network
 author: Colin Stodd
 tags: Angular, Angular Material, Bootstrap
 date: 2017-12-13 00:00:01 -0400
+updated: 2017-12-13 00:00:01 -0400
 category: angular
 featured: true
 pinned: true
