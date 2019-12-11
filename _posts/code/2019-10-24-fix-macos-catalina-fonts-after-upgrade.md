@@ -28,7 +28,7 @@ Many people had to play with these settings because not every external display i
 
 
 ### First:
-You'll want to note if you have your font smoothing enabled or disabled in your `Settings` > `General` tab as seen in the image. This also plays a role... I turned mine off.
+You'll want to note if you have your font smoothing enabled or disabled in your `Settings` > `General` tab as seen in the image. This also plays a role... I left mine on.
 
 <div class="row">
   <div class="8u$">
