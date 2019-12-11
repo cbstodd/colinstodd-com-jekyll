@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: "../../images/posts/catalina_icon_min.png"
 date: 2019-11-03 00:00:01 -0400
-updatedAt: 2019-11-03 00:00:01 -0400
+updatedAt: 2019-12-10 00:00:01 -0400
 categories: code
 tags:
   - OSX,
@@ -36,7 +36,7 @@ You'll want to note if you have your font smoothing enabled or disabled in your 
   </div>
 </div>
 
-And then you can turn off font smoothing system wide:
+You can turn on font smoothing system wide by running the command below in your favorite terminal application `/Applications/Utilities/Terminal.app`; the `-g` stands for "global". If you know the app (examples shown down the page for text editors) you can apply these commands to those apps specifically versus the entire (global) OS/system.... ***Side Note: I've found that apps built with Electron behave differently than native OSX apps***:
 
 ```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
@@ -106,6 +106,6 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
 ```
 
 
-I'm yet to find a fix for the IntelliJ IDE's. I know it would be similar to the VSCode snippets but I haven't found one that works yet. If you know, please contact me or let me know in the comments so that I can include those. Also, if you have any more info, I'm happy to work with you to post those on this page.  Hope this helps some of you!
+I'm yet to find a fix for the IntelliJ IDE. I know it would be similar to the WebStorm and VSCode snippets, but I haven't found one that works yet. If you know, please contact me or let me know in the comments so that I can include those here to help future on-lookers. Also, if you have any more info, I'm happy to work with you to post those on this page.  Hope this helps some of you!
 
 Happy Coding!!!! 😃
