@@ -10,8 +10,11 @@ author: cbstodd
 
 # Privacy Policy
 
-I do not collect any information other than if you decide to contact me or comment on this site. If you comment on a post or contact me you agree to allow me store your name, email, phone number (If Provided). The only reason I would ever use that information would be to contact you back regarding your comment/s. You also agree to allow me to use Google Analytics to track your browsing behaviors. Should you disagree with any of the aforementioned, please do not comment, send a message, and I ask that you do not continue to use this site.
+Other than <a href="https://analytics.google.com/" target="_blank" rel="noopener">Google Analytics</a> or if you decide to contact me or comment on this site I do not store any of your information.
+
+If you comment on a post or contact me you agree to allow me store your name, email, phone number (If Provided). The only reason I would ever use that information would be to contact you back regarding your comment/s. You also agree to allow me to use <a href="https://analytics.google.com/" target="_blank" rel="noopener">Google Analytics</a> to track your browsing behaviors. Should you disagree with any of the aforementioned, please do not comment, send a message and I kindly ask that you discontinue your use of this site.
 
 Regards,
 
-- Colin Stodd, Owner.
+**Colin Stodd** <br/>
+*(Owner of this website and domain)*
