@@ -32,7 +32,7 @@ Nowadays, I spend most of my time working with the "Full Stack", with a focus on
 <span class="image right">
 <img src="{{ page.image2 }}" alt="Colin & Tommy in Tennessee w/ Damn Right!" title="Colin & Tommy in Tennessee w/ Damn Right!">
 </span>
-<p>I've recently (2019) been recording percussion tracks for some albums and EP's which has me back in the music world; But for the time being, I'm staying away from live performances, opting for the comfort of my <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener">Logic Pro X</a> Studio 😃.</p>
+<p>I've recently (2019) been recording percussion tracks on albums/EP's which has me back in the world of music; But for the time being, I'm staying away from live performances opting for the comfort of my <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener">Logic Pro X</a> Studio 😃.</p>
 
 <p>
 Lastly, If you see some "H" logo, that's the logo for <a href="https://harpua.co/" target="_blank" title="Harpua, LLC" rel="noopener">Harpua, LLC</a> which I co-founded with a great developer friend of mine, and if you see something with "Colper", that's a nickname that I've had since I was young...
