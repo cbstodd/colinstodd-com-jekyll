@@ -17,19 +17,23 @@ layout: default
             {% assign categories_list = site.categories | sort %}
             {% if categories_list.first[0] == null %}
             {% for category in categories_list %}
-                <li>
-                  <a class="no-dec capitalize" href="/posts/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}.html">
-                    <i class="fad fa-caret-square-right"></i>&nbsp;&nbsp;{{ category | camelcase }} ({{ site.tags[category].size }})
-                  </a>
-                </li>
+            <li>
+              <a class="no-dec capitalize"
+                 href="/posts/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}.html">
+                <i class="fad fa-caret-square-right"></i>&nbsp;&nbsp;{{ category | camelcase }}
+                ({{ site.tags[category].size }})
+              </a>
+            </li>
             {% endfor %}
             {% else %}
             {% for category in categories_list %}
-                <li>
-                  <a class="no-dec capitalize" href="/posts/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}.html">
-                    <i class="fad fa-caret-square-right"></i>&nbsp;&nbsp;{{ category[0] | camelcase }} ({{ category[1].size }})
-                  </a>
-                </li>
+            <li>
+              <a class="no-dec capitalize"
+                 href="/posts/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}.html">
+                <i class="fad fa-caret-square-right"></i>&nbsp;&nbsp;{{ category[0] | camelcase }}
+                ({{ category[1].size }})
+              </a>
+            </li>
             {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}
@@ -52,7 +56,11 @@ layout: default
 
         <div class="row uniform">
           <div class="8u">
-            {% if post.date %}<p><i class="fad fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>{% endif %}
+            {% if post.updatedAt %}
+            <p><i class="fad fa-pen-alt"></i> {{ post.updatedAt | date_to_string }}</p>
+            {% else post.date %}
+            <p><i class="fad fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>
+            {% endif %}
             {% if post.description %}
             {{ post.description }}
             {% endif %}

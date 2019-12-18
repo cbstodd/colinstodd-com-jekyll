@@ -28,9 +28,13 @@ layout: default
 
         <div class="row uniform">
           <div class="8u">
-            {% if entry.date %}<p><i class="fad fa-calendar-alt"></i> {{ entry.date | date_to_string }}</p>{% endif %}
-            {% if entry.description %}
-            {{ entry.description }}
+            {% if post.updatedAt %}
+            <p><i class="fad fa-pen-alt"></i> {{ post.updatedAt | date_to_string }}</p>
+            {% else post.date %}
+            <p><i class="fad fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>
+            {% endif %}
+            {% if post.description %}
+            {{ post.description }}
             {% endif %}
           </div>
           <div class="4u">

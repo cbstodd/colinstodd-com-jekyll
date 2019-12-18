@@ -10,7 +10,8 @@ tags:
   - Tommy Bradel,
   - 2017
 title: Phish Dicks Colorado Posters By Tommy B
-date: 2017-09-04 00:00:00 -0400
+date: 2017-09-04 00:00:01 -0400
+updatedAt:
 pinned: false
 featured: false
 image: "/images/posts/tommy-b_min.jpeg"

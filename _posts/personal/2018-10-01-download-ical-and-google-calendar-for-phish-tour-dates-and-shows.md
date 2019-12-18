@@ -8,7 +8,8 @@ tags:
   - iCal,
   - Shows
 title: Download iCal and Google calendar for Phish tour dates and shows
-date: 2019-11-01 00:00:01 -0400
+date: 2017-02-01 00:00:01 -0400
+updatedAt: 2019-11-01 00:00:01 -0400
 pinned: false
 featured: false
 image: "/images/posts/phish-fall_min.jpeg"

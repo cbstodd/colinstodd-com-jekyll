@@ -5,9 +5,9 @@ layout: default
 <section id="wrapper">
   <header>
     <div class="inner">
-        <a href="/posts.html">
-          <h4><i class="fad fa-arrow-alt-circle-left"></i> All Posts</h4>
-        </a>
+      <a href="/posts.html">
+        <h4><i class="fad fa-arrow-alt-circle-left"></i> All Posts</h4>
+      </a>
       <a href="{{ page.category | relative_url }}">
         <h2><i class="fad fa-memory"></i> {{ page.title }}</h2>
       </a>
@@ -28,7 +28,11 @@ layout: default
 
         <div class="row uniform">
           <div class="8u">
-            {% if post.date %}<p><i class="fad fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>{% endif %}
+            {% if post.updatedAt %}
+            <p><i class="fad fa-pen-alt"></i> {{ post.updatedAt | date_to_string }}</p>
+            {% else post.date %}
+            <p><i class="fad fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>
+            {% endif %}
             {% if post.description %}
             {{ post.description }}
             {% endif %}
