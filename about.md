@@ -29,7 +29,7 @@ Other than writing software, my other passion in life is music. I played percuss
 Nowadays, I spend most of my time working with the "Full Stack", with a focus on front-end technologies such as <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>, <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> and <a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a>. I almost always use a CSS library like <a href="http://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>, and I've been dabbling into the mobile world via <a href="https://dart.dev/" target="blank" rel="noopener">Dart</a>/<a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a> and <a href="https://ionicframework.com/" target="_blank" rel="noopener">Ionic</a>.  I guess you could say my stack of choice has become "AngularFlutterFire".
 </p>
 
-<p>You can view a list of the programming languages, frameworks and libraries I work with by visiting my <a href="/technologies">Technologies page</a>. </p>
+<p>You can view a list of the programming languages, frameworks and libraries I work with by visiting my <a href="/technologies.html">Technologies page</a>. </p>
 
 <span class="image right">
 <img src="{{ page.image2 }}" alt="Colin & Tommy in Tennessee w/ Damn Right!" title="Colin & Tommy in Tennessee w/ Damn Right!">
