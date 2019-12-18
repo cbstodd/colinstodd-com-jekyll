@@ -11,7 +11,7 @@ tags:
   - 2017
 title: Phish Dicks Colorado Posters By Tommy B
 date: 2017-09-04 00:00:01 -0400
-updatedAt:
+updated:
 pinned: false
 featured: false
 image: "/images/posts/tommy-b_min.jpeg"
