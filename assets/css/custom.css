@@ -178,6 +178,29 @@ a.button:hover {
   border-bottom: none;
 }
 
+img.rounded {
+  border-radius: 5px;
+}
+
+h5.post-cat-title {
+  /* text-align: right; */
+}
+
+ul.alt > li {
+  margin: 0;
+  text-decoration: none;
+  /* border-top: none !important; */
+  /* text-align: right; */
+}
+
+a.no-dec {
+  border-bottom: none;
+}
+
+.highlighter-rouge {
+  overflow: scroll;
+}
+
 /*~  Media / Mobile Devices ~*/
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {
@@ -215,23 +238,4 @@ a.button:hover {
     margin: 1.3em 2em 0 0;
     float: left;
   }
-}
-
-img.rounded {
-  border-radius: 5px;
-}
-
-h5.post-cat-title {
-  /* text-align: right; */
-}
-
-ul.alt > li {
-  margin: 0;
-  text-decoration: none;
-  /* border-top: none !important; */
-  /* text-align: right; */
-}
-
-a.no-dec {
-  border-bottom: none;
 }
