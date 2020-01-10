@@ -70,7 +70,7 @@
     text-transform: uppercase;
   }
 
-  @include breakpoint(large) {
+  @include breakpoint(x-large) {
     @include padding(7em, 0, (0, 0, _size(wrapper-edges, large) * 0.5, 0));
 
     background-color: _palette(bg);
@@ -80,7 +80,7 @@
         transparentize(_palette(bg), 0.08),
         transparentize(_palette(bg), 0.08)
       ),
-      url('../../images/site/ng_conf_2019_min.jpeg');
+      url('../../images/site/annapolis_city_dock.jpeg');
 
     background-size: auto, cover;
 
