@@ -17,19 +17,23 @@ redirect_from:
 <span class="image left">
 <img src="{{ page.image }}" alt="Colin Stodd with friends dog" title="Colin Stodd with friends dog">
 </span>
-If you landed on this page I assume you have some interest in who I am. And since I'm not cool enough (yet) to have my own Wikipedia page, I'll share this bit on my personal site. In short, I’m a percussion player turned web application developer. In 2014 I moved from my hometown of Annapolis Maryland to work in the D.C. area with the <a href="https://www.gastro.org" target="_blank" rel="noopener">American Gastroenterological Association</a>.
+If you landed on this page I assume you have some interest in who I am. And since I'm not cool enough (yet) to have my own Wikipedia page, I'll share this bit on my personal site. In short, I’m a percussion player turned web application & mobile developer.
 </p>
-<p>
-Other than writing software, my other passion in life is music. I played percussion with two bands ("<a href="https://music.apple.com/us/album/dead-city-radio/346165288" target="_blank" rel="noopener">Earthtone</a>" and "<a href="https://damnrightmusic.bandcamp.com/" target="_blank" rel="noopener">Damn Right!</a>") for about 10 years; but I knew I wanted more in life so I took a job with the <a href="http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home" target="_blank" rel="noopener">Maryland General Assembly</a> in Annapolis, MD. While working at the MGA I began teaching myself to program using online resources, but I decided to get a more 'formal' education, Which led me to <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener">Ruby</a> and <a href="http://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a>. In August of 2014 I completed a back-end development course at <a href="https://betamore.com/en" target="_blank" rel="noopener">Betamore Academy</a> in Baltimore Maryland which helped me get to where I am today.
-</p>
-
-
 
 <p>
-Nowadays, I spend most of my time working with the "Full Stack", with a focus on front-end technologies such as <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>, <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> and <a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a>. I almost always use a CSS library like <a href="http://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>, and I've been dabbling into the mobile world via <a href="https://dart.dev/" target="blank" rel="noopener">Dart</a>/<a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a> and <a href="https://ionicframework.com/" target="_blank" rel="noopener">Ionic</a>.  I guess you could say my stack of choice has become "AngularFlutterFire".
+Other than writing software, my other passion in life is music. I played percussion with two bands <a href="https://damnrightmusic.bandcamp.com/" target="_blank" rel="noopener">Damn Right!</a> and <a href="https://music.apple.com/us/album/dead-city-radio/346165288" target="_blank" rel="noopener">Earthtone</a> for about 10 years; but I knew I wanted more in life so I took a job with the <a href="http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home" target="_blank" rel="noopener">Maryland General Assembly</a> in Annapolis, MD.
 </p>
 
-<p>You can view a list of the programming languages, frameworks and libraries I work with by visiting my <a href="/technologies.html">Technologies page</a>. </p>
+<p>
+While working at the MGA I began teaching myself to program using online resources, but I decided to get a "formal" education, which led me to <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener">Ruby</a> and <a href="http://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a>. In August of 2014, I completed a back-end development course at <a href="https://betamore.com/en" target="_blank" rel="noopener">Betamore Academy</a> in Baltimore Maryland which helped me get to where I am today.
+</p>
+
+<p>In 2014 I moved from my hometown of Annapolis Maryland to work in the D.C. area with the <a href="https://www.gastro.org" target="_blank" rel="noopener">American Gastroenterological Association</a>.</p>
+<p>
+Nowadays, I'm back in Annapolis, and I spend most of my time working with the "Full Stack", with a focus on front-end technologies such as <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>, <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> and <a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a>. I almost always use a CSS library like <a href="http://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>, and I've been dabbling into the mobile world via <a href="https://dart.dev/" target="blank" rel="noopener">Dart</a>/<a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a> and <a href="https://ionicframework.com/" target="_blank" rel="noopener">Ionic</a>.  I guess you could say my stack of choice has become "Angular-Flutter-Firebase". Knowing Angular, Flutter and Firebase allows me to build anything in an extremely cost-effective and scalable manner.
+</p>
+
+<p>You can view a list of the programming languages, frameworks, and libraries I work with by visiting my <a href="/technologies.html">Technologies page</a>. </p>
 
 <span class="image right">
 <img src="{{ page.image2 }}" alt="Colin & Tommy in Tennessee w/ Damn Right!" title="Colin & Tommy in Tennessee w/ Damn Right!">

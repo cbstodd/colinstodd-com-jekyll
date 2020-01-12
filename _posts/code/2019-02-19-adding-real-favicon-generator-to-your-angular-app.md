@@ -19,7 +19,7 @@ redirect_from:
   - /posts/adding-real-favicon-generator-to-your-angular-app/
 ---
 
-For just about all of my <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> applications I've used <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> to generate the files for my Favicon icon. It's a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I've found a quick and painless way to use both the Node and HTML5 tools. I'll also show you how to add <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093" target="_blank" rel="noopener">Progressive Web App (PWA)</a> meta tags so that you can add your newly created icons to your mobile home-screen. Lets get to it.
+For just about all of my <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> applications I've used <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator (RFG)</a> to generate the files for my Favicon icon. It's a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I've found a quick and painless way to use both the Node and HTML5 tools. I'll also show you how to add <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093" target="_blank" rel="noopener">Progressive Web App (PWA)</a> meta tags so that you can add your newly created icons to your mobile home-screen. Lets get to it.
 
 1. Head over to the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> site and upload your icon. Note that your icon should have even/square dimensions and be at least 260px wide/high.
 
@@ -89,4 +89,4 @@ real-favicon generate faviconDescription.json faviconData.json src/assets/output
     <meta name="msapplication-starturl" content="/">
 ```
 
-If you run into any issues or have any question please let me know in the comments.
+If you run into any issues or have any questions please let me know in the comments.

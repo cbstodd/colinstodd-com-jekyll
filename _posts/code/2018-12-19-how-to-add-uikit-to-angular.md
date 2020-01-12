@@ -28,12 +28,10 @@ I recently heard about <a href="https://getuikit.com" target="_blank" rel="noope
 2. Open up your `angular.json` file and add the styles and scripts:
 
 ```json
-
 "styles": [
         "src/styles.css",
         "./node_modules/uikit/dist/css/uikit.min.css",
         "./node_modules/uikit/dist/css/uikit-core.min.css"
-
     ],
     "scripts": [
         "./node_modules/jquery/dist/jquery.min.js",
@@ -77,7 +75,7 @@ Now open your `styles.scss` file and import UIKit and your custom/mixin/variable
 @import "../../node_modules/uikit/src/scss/variables-theme";
 @import "../../node_modules/uikit/src/scss/mixins-theme";
 @import "../../node_modules/uikit/src/scss/uikit-theme";
-
+/* Custom Variables */
 @import 'variables';
 @import 'mixins';
 @import 'custom';

@@ -1,4 +1,4 @@
-I"H<p>I recently heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and I decided to give it a spin. It’s pretty amazing. Here’s how you can install it in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>.</p>
+I"]<p>I recently heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and I decided to give it a spin. It’s pretty amazing. Here’s how you can install it in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>.</p>
 
 <ol>
   <li>from the root of your project you need to install jQuery and UIKit:</li>
@@ -10,12 +10,10 @@
   <li>Open up your <code class="highlighter-rouge">angular.json</code> file and add the styles and scripts:</li>
 </ol>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
-</span><span class="nl">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="s2">"src/styles.css"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"./node_modules/uikit/dist/css/uikit.min.css"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"./node_modules/uikit/dist/css/uikit-core.min.css"</span><span class="w">
-
     </span><span class="p">]</span><span class="err">,</span><span class="w">
     </span><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="s2">"./node_modules/jquery/dist/jquery.min.js"</span><span class="p">,</span><span class="w">
@@ -59,7 +57,7 @@
 <span class="k">@import</span> <span class="s2">"../../node_modules/uikit/src/scss/variables-theme"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"../../node_modules/uikit/src/scss/mixins-theme"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"../../node_modules/uikit/src/scss/uikit-theme"</span><span class="p">;</span>
-
+<span class="cm">/* Custom Variables */</span>
 <span class="k">@import</span> <span class="s1">'variables'</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">'mixins'</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">'custom'</span><span class="p">;</span>

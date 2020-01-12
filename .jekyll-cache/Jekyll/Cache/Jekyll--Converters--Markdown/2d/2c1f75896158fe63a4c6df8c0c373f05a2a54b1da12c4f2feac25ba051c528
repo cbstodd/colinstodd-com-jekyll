@@ -1,14 +1,4 @@
----
-layout: page
-title:  Technologies
-date: 2019-11-06 00:30:12 -0400
-categories: css
-permalink: technologies.html
-description: Technologies, Languages & Libraries I use
----
-Below are some of the technologies that I have worked with, continue to use daily or something I'm learning or intend to learn in the near future.
-
-
+I"²<p>Below are some of the technologies that I have worked with, continue to use daily or something Iâ€™m learning or intend to learn in the near future.</p>
 
 <table class="table table-wrapper">
 	<thead>
@@ -135,7 +125,7 @@ Below are some of the technologies that I have worked with, continue to use dail
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td><a href="https://svelte.dev/" target="_blank" rel="noopener">Svelte</a></td>
+			<td><a href="https://sass-lang.com/" target="_blank" rel="noopener">Svelte</a></td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td><i class="fad fa-check"></i></td>
@@ -160,3 +150,4 @@ Below are some of the technologies that I have worked with, continue to use dail
 		</tr>
 	</tbody>
 </table>
+:ET
