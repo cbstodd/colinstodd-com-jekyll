@@ -17,23 +17,23 @@ textarea {
   line-height: 1.65;
 
   @include breakpoint(xlarge) {
-    font-size: 13pt;
+    font-size: 14pt;
   }
 
   @include breakpoint(large) {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 
   @include breakpoint(medium) {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 
   @include breakpoint(small) {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 
   @include breakpoint(xsmall) {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 }
 
@@ -210,9 +210,13 @@ pre {
 }
 
 hr {
-  border: 0;
-  border-bottom: solid 2px _palette(border);
+  // border: 0;
+  // border-bottom: solid 2px _palette(border);
   margin: (_size(element-margin) * 1.25) 0;
+  border: 0;
+  height: 0;
+  border-top: 1px solid #1F2430;
+  border-bottom: 1px solid #46516B;
 
   &.major {
     margin: (_size(element-margin) * 2) 0;

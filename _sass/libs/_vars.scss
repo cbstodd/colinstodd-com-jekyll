@@ -14,7 +14,7 @@ $size: (
 );
 // Font.
 $font: (
-  family: (Roboto, 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif),
+  family: ('Source Sans Pro', 'Helvetica Neue', Arial, sans-serif),
   family-fixed:
     (
       'SFMono-Regular',
@@ -33,8 +33,8 @@ $font: (
 // Palette.
 $palette: (
   bg: #31394b,
-  fg: #c0c4cf,
-  fg-bold: #c0c4cf,
+  fg: #AFB7C9,
+  fg-bold: #AFB7C9,
   fg-light: rgba(255, 255, 255, 0.35),
   border: rgba(255, 255, 255, 0.125),
   border-bg: rgba(255, 255, 255, 0.025),
