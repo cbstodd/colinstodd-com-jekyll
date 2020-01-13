@@ -106,7 +106,7 @@ p.page-description {
 .dots > div {
   width: 0.5em;
   height: 0.5em;
-  background-color: #B41DD9;
+  background-color: #eb018c;
   border-radius: 50%;
   animation: fade 1.5s alternate ease-in-out infinite;
 }
