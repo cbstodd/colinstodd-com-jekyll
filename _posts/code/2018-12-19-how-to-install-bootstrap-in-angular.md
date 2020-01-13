@@ -22,19 +22,19 @@ There are other packages out there that you can use such as <a href="https://git
 
 There are some slight differences from versions before Angular 6.
 
-1. From the root of your project, run in your terminal:
+1.From the root of your project, run in your terminal:
 
 ```bash
 npm install bootstrap --save
 ```
 
-2. And you need to install it's dependencies (<a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a>) and (<a href="https://popper.js.org/" target="_blank" rel="noopener">Popper.JS</a>):
+2.And you need to install it's dependencies (<a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a>) and (<a href="https://popper.js.org/" target="_blank" rel="noopener">Popper.JS</a>):
 
 ```bash
 npm install jquery popper.js --save
 ```
 
-3. Open up your `angular.json` file to find and add the style and scripts:
+3.Open up your `angular.json` file to find and add the style and scripts:
 
 ```json
 "styles": [
@@ -62,7 +62,7 @@ npm install jquery popper.js --save
   ],
 ```
 
-4. Restart your server and you should be ready to code! (If using CSS)
+4.Restart your server and you should be ready to code! (If using CSS)
 
 **With SASS you need to make one last step. Place the line below in your styles.scss file (imports bootstrap)**
 

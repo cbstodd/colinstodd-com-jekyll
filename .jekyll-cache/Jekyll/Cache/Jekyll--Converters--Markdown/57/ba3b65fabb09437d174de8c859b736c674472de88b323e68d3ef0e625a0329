@@ -1,14 +1,10 @@
-I"]<p>I recently heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and I decided to give it a spin. It’s pretty amazing. Here’s how you can install it in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>.</p>
+I"6<p>I recently heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and I decided to give it a spin. It’s pretty amazing. Here’s how you can install it in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>.</p>
 
-<ol>
-  <li>from the root of your project you need to install jQuery and UIKit:</li>
-</ol>
+<p>1.from the root of your project you need to install jQuery and UIKit:</p>
 
 <p><code class="highlighter-rouge">npm install jquery uikit --save</code></p>
 
-<ol>
-  <li>Open up your <code class="highlighter-rouge">angular.json</code> file and add the styles and scripts:</li>
-</ol>
+<p>2.Open up your <code class="highlighter-rouge">angular.json</code> file and add the styles and scripts:</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="s2">"src/styles.css"</span><span class="p">,</span><span class="w">
@@ -22,9 +18,7 @@
     </span><span class="p">]</span><span class="w">
 </span></code></pre></div></div>
 
-<ol>
-  <li>Restart your server and you should be ready to code!</li>
-</ol>
+<p>3.Restart your server and you should be ready to code!</p>
 
 <hr />
 

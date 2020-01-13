@@ -21,11 +21,11 @@ redirect_from:
 
 I recently heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and I decided to give it a spin. It's pretty amazing. Here's how you can install it in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>.
 
-1. from the root of your project you need to install jQuery and UIKit:
+1.from the root of your project you need to install jQuery and UIKit:
 
 `npm install jquery uikit --save`
 
-2. Open up your `angular.json` file and add the styles and scripts:
+2.Open up your `angular.json` file and add the styles and scripts:
 
 ```json
 "styles": [
@@ -40,7 +40,7 @@ I recently heard about <a href="https://getuikit.com" target="_blank" rel="noope
     ]
 ```
 
-3. Restart your server and you should be ready to code!
+3.Restart your server and you should be ready to code!
 
 ---
 
