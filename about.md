@@ -41,7 +41,7 @@ Nowadays, I'm back in Annapolis, and I spend most of my time working with the "F
 <p>I've recently (2019) been recording percussion tracks on albums/EP's which has me back in the world of music; But for the time being, I'm staying away from live performances opting for the comfort of my <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener">Logic Pro X</a> Studio 😃.</p>
 
 <p>
-Lastly, If you see some "H" logo, that's the logo for <a href="https://harpua.co/" target="_blank" title="Harpua, LLC" rel="noopener">Harpua, LLC</a> which I co-founded with a great developer friend of mine, and if you see something with "Colper", that's a nickname that I've had since I was young...
+Lastly, If you see some "H" logo, that's the logo for <a href="https://harpua.co/" target="_blank" title="Harpua, LLC" rel="noopener">Harpua, LLC</a> which I co-founded with a great developer friend of mine. If you see something with "Colper", that's a nickname that I've had since I was young, and if you dont know, I'm a huge <a href="https://phish.com/" target="_blank" rel="noopner" title="Phish">Phish</a> fan. I travel a few times a year with friends to see them in various locations in and around the United States...
 </p>
 
 
