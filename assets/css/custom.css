@@ -7,10 +7,10 @@
 img.cs-logo {
   justify-items: center;
   align-items: center;
-  margin: 0.3em 1.5em 1em 1em;
+  margin: 0.8em 1.5em 1em 1em;
   padding-bottom: 1em;
   float: left;
-  max-width: 50px;
+  max-width: 35px;
 }
 
 img.cs-logo-banner {
@@ -32,17 +32,11 @@ h2.banner-title {
 h1 > a.site-title,
 h1 > a.site-title:hover {
   /* background: -webkit-linear-gradient(#FF9B7B, #973D2A); */
-  /* background: -webkit-linear-gradient(#505b78, #444853);
+  /* background: -webkit-linear-gradient(#ccd5d5, #444853); */
+  background-color: #afb7c9;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  /*  New Inset  */
-  background-color: #505b78;
-  color: transparent;
-  text-shadow: 0px 2px 3px #505b7869;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p.page-description {
@@ -220,7 +214,7 @@ a.no-dec {
   img.cs-logo {
     justify-items: center;
     align-items: center;
-    margin: 0 1.5em 0 0;
+    margin: 0.5em 1.5em 0 0;
     float: left;
   }
 
@@ -243,7 +237,7 @@ a.no-dec {
   img.cs-logo {
     justify-items: center;
     align-items: center;
-    margin: 0.7em 2em 0 0;
+    margin: 1em 2em 0 0;
     float: left;
   }
 }
