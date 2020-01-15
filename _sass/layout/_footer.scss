@@ -58,7 +58,7 @@
     }
   }
 
-  @include breakpoint(x-large) {
+  @include breakpoint(xlarge) {
     background-color: _palette(bg);
 
     background-image: linear-gradient(
@@ -66,10 +66,11 @@
         transparentize(_palette(bg), 0.2),
         transparentize(_palette(bg), 0.2)
       ),
-      // url('../../images/site/msg_sail-min.jpg');
       url('../../images/site/pic07_lg_min.jpeg');
 
     background-size: auto, cover;
+
+    background-attachment: fixed, fixed;
 
     background-position: center, center;
 

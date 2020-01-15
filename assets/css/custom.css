@@ -199,10 +199,6 @@ a.no-dec {
   border-bottom: none;
 }
 
-.highlighter-rouge {
-  overflow: scroll;
-}
-
 /*~  Media / Mobile Devices ~*/
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {

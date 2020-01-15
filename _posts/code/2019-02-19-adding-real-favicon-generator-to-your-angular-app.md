@@ -25,7 +25,7 @@ For just about all of my <a href="https://angular.io/" target="_blank" rel="noop
 
 2.Set your icon settings; which basically allows you to play with the margin size, background size and what it will look like as a PWA icon on your mobile devices.
 
-3.Once the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> does its thing, you'll want to click on the "NodeJS" tab as seen in the image below.
+3.Once the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> does its thing, you'll want to click on the "Node CLI" tab as seen in the image below.
 
 <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">
 <img src="../../images/posts/real_favicon_with_arrows.png" class="image fit" />

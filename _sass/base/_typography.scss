@@ -195,6 +195,9 @@ code {
   padding: 0.25em 0.65em;
 }
 
+.highlighter-rouge {
+  overflow: scroll;
+}
 pre {
   -webkit-overflow-scrolling: touch;
   font-family: _font(family-fixed);
@@ -215,8 +218,8 @@ hr {
   margin: (_size(element-margin) * 1.25) 0;
   border: 0;
   height: 0;
-  border-top: 1px solid #1F2430;
-  border-bottom: 1px solid #46516B;
+  border-top: 1px solid #1f2430;
+  border-bottom: 1px solid #46516b;
 
   &.major {
     margin: (_size(element-margin) * 2) 0;
