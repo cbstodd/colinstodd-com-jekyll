@@ -16,12 +16,11 @@ redirect_from:
 <p>
 <span class="image left">
 <img src="{{ page.image }}" alt="Colin Stodd with friends dog" title="Colin Stodd with friends dog">
-</span>
-If you landed on this page I assume you have some interest in who I am. And since I'm not cool enough (yet) to have my own Wikipedia page, I'll share this bit on my personal site. In short, I’m a percussion player turned web application & mobile developer.
+</span>This site is based on my career in software development, but if you landed on this page I assume you have some interest in who I am; And since I'm not cool enough (yet) to have my own <a href="https://en.wikipedia.org/wiki/Special:Search?search=colin+stodd&go=Go&ns0=1" target="_blank" rel="noopener">Wikipedia page</a>, I'll share this bit on my personal site. In short, I’m a percussion player turned web application & mobile developer.
 </p>
 
 <p>
-Other than writing software, my other passion in life is music. I played percussion with two bands <a href="https://damnrightmusic.bandcamp.com/" target="_blank" rel="noopener">Damn Right!</a> and <a href="https://music.apple.com/us/album/dead-city-radio/346165288" target="_blank" rel="noopener">Earthtone</a> for about 10 years; but I knew I wanted more in life so I took a job with the <a href="http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home" target="_blank" rel="noopener">Maryland General Assembly</a> in Annapolis, MD.
+Other than writing software my other passion in life is music. I played percussion with two bands: <a href="https://damnrightmusic.bandcamp.com/" target="_blank" rel="noopener">Damn Right!</a> and <a href="https://music.apple.com/us/album/dead-city-radio/346165288" target="_blank" rel="noopener">Earthtone</a> for about 10 years; but I knew I wanted more in life so I took a job with the <a href="http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home" target="_blank" rel="noopener">Maryland General Assembly</a> in Annapolis, MD.
 </p>
 
 <p>
@@ -30,7 +29,7 @@ While working at the MGA I began teaching myself to program using online resourc
 
 <p>In 2014 I moved from my hometown of Annapolis Maryland to work in the D.C. area with the <a href="https://www.gastro.org" target="_blank" rel="noopener">American Gastroenterological Association</a>.</p>
 <p>
-Nowadays, I'm back in Annapolis, and I spend most of my time working with the "Full Stack", with a focus on front-end technologies such as <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>, <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> and <a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a>. I almost always use a CSS library like <a href="http://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>, and I've been dabbling into the mobile world via <a href="https://dart.dev/" target="blank" rel="noopener">Dart</a>/<a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a> and <a href="https://ionicframework.com/" target="_blank" rel="noopener">Ionic</a>.  I guess you could say my stack of choice has become "Angular-Flutter-Firebase". Knowing Angular, Flutter and Firebase allows me to build anything in an extremely cost-effective and scalable manner.
+Nowadays, I'm back in Annapolis (still with <a href="https://www.gastro.org" target="_blank" rel="noopener">AGA</a>), but I spend most of my time working with the "Full Stack", focusing on front-end technologies such as <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>, <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> and <a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a>. I almost always use a CSS library like <a href="http://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>, and I've been dabbling into the mobile world via <a href="https://dart.dev/" target="blank" rel="noopener">Dart</a>/<a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a> and <a href="https://ionicframework.com/" target="_blank" rel="noopener">Ionic</a>.  I guess you could say my stack of choice has become "Angular-Flutter-Firebase". Knowing Angular, Flutter and Firebase allows me to build anything in an extremely cost-effective and scalable manner.
 </p>
 
 <p>You can view a list of the programming languages, frameworks, and libraries I work with by visiting my <a href="/technologies.html">Technologies page</a>. </p>
@@ -41,7 +40,7 @@ Nowadays, I'm back in Annapolis, and I spend most of my time working with the "F
 <p>I've recently (2019) been recording percussion tracks on albums/EP's which has me back in the world of music; But for the time being, I'm staying away from live performances opting for the comfort of my <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener">Logic Pro X</a> Studio 😃.</p>
 
 <p>
-Lastly, If you see some "H" logo, that's the logo for <a href="https://harpua.co/" target="_blank" title="Harpua, LLC" rel="noopener">Harpua, LLC</a> which I co-founded with a great developer friend of mine. If you see something with "Colper", that's a nickname that I've had since I was young, and if you dont know, I'm a huge <a href="https://phish.com/" target="_blank" rel="noopner" title="Phish">Phish</a> fan. I travel a few times a year with friends to see them in various locations in and around the United States...
+Lastly, If you see some "H" logo, that's the logo for <a href="https://harpua.co/" target="_blank" title="Harpua, LLC" rel="noopener">Harpua, LLC</a> which I co-founded with a great developer friend of mine. If you see something with "Colper", that's a nickname that I've had since I was young, and best of all, I'm a huge <a href="https://phish.com/" target="_blank" rel="noopner" title="Phish">Phish</a> fan. I travel a few times a year with friends to see them in various locations in and around the United States...
 </p>
 
 
