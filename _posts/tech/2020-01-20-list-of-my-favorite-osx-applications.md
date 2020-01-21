@@ -9,7 +9,7 @@ featured: false
 pinned: false
 image: /images/posts/ticktick_min.png
 date: 2020-01-20 00:00:01 -0400
-categories: Personal
+categories: tech
 tags:
   - Tools
   - Tips & Tricks
@@ -62,7 +62,7 @@ Maybe it’s because I’m a web developer, but people often ask me about the ap
 <span class="image right">
 <img src="https://brave.com/wp-content/uploads/2018/10/a25he_image1.png" alt="brave browser">
 </span>
-***<a href="https://brave.com/" target="_blank" rel="noopener">Brave</a>***:<br/>There has been a lot of controversy about Google’s <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Chrome browser</a>. Most recently the notion to remove functionality of extensions like ad-blockers and tracker-blockers. As a result, I started looking at other browsers and came across Brave, which is basically a re-packaged Chrome browser that is built on the open-source <a href="https://www.chromium.org/" target="_blank" rel="noopener">Chromium project</a>. Brave was founded by <a href="https://en.wikipedia.org/wiki/Brendan_Eich" target="_blank" rel="noopener">Brendan Eich</a> who is the creator of <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener">JavaScript</a> and co-founder of the <a href="https://www.mozilla.org/en-US/about/history/" target="_blank" rel="noopener">Mozilla project</a>. Brave has taken a different approach to ads via a rewards system. You can also install any Chrome extensions natively. So it’s like a better performing, safer and more private Chrome.
+***<a href="https://brave.com/" target="_blank" rel="noopener">Brave</a>***:<br/>There has been a lot of controversy about Google’s <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Chrome browser</a>. Most recently the notion to <a href="https://www.wired.com/story/google-chrome-ad-blockers-extensions-api/" target="_blank" rel="noopener">remove functionality of extensions like ad-blockers and tracker-blockers</a>. As a result, I started looking at other browsers and came across Brave, which is basically a re-packaged Chrome browser that is built on the open-source <a href="https://www.chromium.org/" target="_blank" rel="noopener">Chromium project</a>. Brave was founded by <a href="https://en.wikipedia.org/wiki/Brendan_Eich" target="_blank" rel="noopener">Brendan Eich</a> who is the creator of <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener">JavaScript</a> and co-founder of the <a href="https://www.mozilla.org/en-US/about/history/" target="_blank" rel="noopener">Mozilla project</a>. Brave has taken a different approach to ads via a rewards system. You can also install any Chrome extensions natively. So it’s like a better performing, safer and more private Chrome.
 
 I also use <a href="https://www.opera.com/" target="_blank" rel="noopener">Opera Browser</a>. Much like Brave, Opera is built on the Chromium project but it comes with many useful features like a side panel for apps like Twitter and Instagram, and with <a href="https://colinstodd.com/posts/code/add-chrome-extensions-to-opera-browser.html" target="_top" rel="noopener">this extension</a> you can install any of the Chrome store extensions. My only concern with Opera is that it was recently acquired by Chinese investors. However, it's still a part of Norway, so I hope that they are abiding by Norwegian laws.
 
@@ -92,7 +92,7 @@ I can also recommend <a href="https://www.mozilla.org/en-US/firefox/" target="_b
 
 <br/>
 <span class="image right">
-<img src="https://www.jetbrains.com/webstorm/img/screenshots/webstorm-main.png" alt="webstorm">
+<img src="https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2017/08/ionic-debug.png" alt="webstorm">
 </span>
 Specifically to web development and coding, in general, I highly recommend <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> as a text editor and <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a> as an IDE. I use both for different use-cases. For quick editing and small projects I like to use VSCode; It’s lightweight and has a plethora of extensions. For larger applications I use Webstorm. The IntelliSense and baked-in features can’t be beaten. It’s a resource-hog, but when building larger applications, I can’t imagine using anything other than a <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">Jetbrain application</a>.
 
