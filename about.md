@@ -4,7 +4,7 @@ title: About
 date: 2019-10-17 15:30:12 -0400
 categories:
 description: Learn more about Colin Stodd
-image: "/images/site/colin_dog_square-min.jpg"
+image: images/site/colin_dog_square-min.jpg
 image2: "/images/pages/colin_tommy_tennessee_damn_right.jpg"
 author: cbstodd
 permalink: /about.html

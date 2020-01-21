@@ -2,6 +2,7 @@
 layout: page
 title:  Technologies
 date: 2019-11-06 00:30:12 -0400
+image: images/pages/code-laptop.png
 categories: css
 permalink: technologies.html
 description: Technologies, Languages & Libraries I use
