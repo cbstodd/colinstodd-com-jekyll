@@ -11,7 +11,7 @@ title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2020-01-03 00:00:01 -0400
 updated: 2020-01-03 00:00:01 -0400
 pinned: false
-featured: false
+featured: true
 image: "/images/posts/PRM20-MH-EmailBox.png"
 description: Download Phish tour iCal/Google calendar. The calendar has been updated for the "Riviera Maya" shows.
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html

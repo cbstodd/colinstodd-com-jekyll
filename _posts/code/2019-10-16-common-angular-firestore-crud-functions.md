@@ -3,7 +3,7 @@ layout: post
 title: Common Angular Firestore CRUD Functions
 author: Colin Stodd
 description: CRUD snippets that I tend to reuse in every Angular service
-featured: true
+featured: false
 pinned: false
 image: "../../images/posts/angularfire.png"
 date: 2019-10-19 22:30:00 -0400
