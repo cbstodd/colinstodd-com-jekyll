@@ -2,12 +2,13 @@
 layout: page
 title:  Technologies
 date: 2019-11-06 00:30:12 -0400
+updated: 2020-01-20 00:30:12 -0400
 image: images/pages/code-laptop.png
 categories: css
 permalink: technologies.html
 description: Technologies, Languages & Libraries I use
 ---
-Below are some of the technologies that I have worked with, continue to use daily or something I'm learning or intend to learn in the near future.
+Below are some of the technologies that I have worked with, continue to use daily or something I'm learning or intend to learn in the near future.  You'll notice some like "Dart" which is marked at "Proficient" and also "Learning". The notion behind this is that I've been studying them and feel proficient with them, but that there's also a great deal more that I intend to learn.
 
 
 
@@ -41,7 +42,7 @@ Below are some of the technologies that I have worked with, continue to use dail
 		</tr>
 		<tr>
 			<td><a href="https://dart.dev/" target="_blank" rel="noopener">Dart</a></td>
-			<td>&nbsp;</td>
+			<td><i class="fad fa-check"></i></td>
 			<td>&nbsp;</td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
@@ -59,12 +60,18 @@ Below are some of the technologies that I have worked with, continue to use dail
 		</tr>
 		<tr>
 			<td><a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a></td>
-			<td></td>
+			<td><i class="fad fa-check"></i></td>
 			<td></td>
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
 			<td><a href="https://golang.org/" target="_blank" rel="noopener">Go</a></td>
+			<td></td>
+			<td></td>
+			<td><i class="fad fa-check"></i></td>
+		</tr>
+		<tr>
+			<td><a href="https://graphql.org/" target="_blank" rel="noopener">GraphQL</a></td>
 			<td></td>
 			<td></td>
 			<td><i class="fad fa-check"></i></td>
@@ -124,6 +131,18 @@ Below are some of the technologies that I have worked with, continue to use dail
 			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
+			<td><a href="https://reactjs.org/" target="_blank" rel="noopener">ReactJS</a></td>
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+			<td><i class="fad fa-check"></i></td>
+		</tr>
+		<tr>
+			<td><a href="https://rxjs-dev.firebaseapp.com/" target="_blank" rel="noopener">RxJS</a></td>
+			<td><i class="fad fa-check"></i></td>
+			<td></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
 			<td><a href="https://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
@@ -152,6 +171,12 @@ Below are some of the technologies that I have worked with, continue to use dail
 			<td><i class="fad fa-check"></i></td>
 			<td><i class="fad fa-check"></i></td>
 			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="https://vuejs.org/" target="_blank" rel="noopener">VueJS</a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
 			<td><a href="https://wordpress.com/" target="_blank" rel="noopener">Wordpress</a></td>
