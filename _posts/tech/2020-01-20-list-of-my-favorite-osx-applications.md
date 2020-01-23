@@ -5,16 +5,17 @@ title: List of my favorite OSX applications
 author: Colin Stodd
 description: A compilation of OSX applications that help keep me productive and organized.
 permalink: /posts/tech/list-of-my-favorite-osx-applications.html
-featured: false
+featured: true
 pinned: false
 image: /images/posts/ticktick_min.png
 date: 2020-01-20 00:00:01 -0400
+updated: 2020-01-22 00:00:30 -0400
 categories: tech
 tags:
-  - Tools
-  - Tips & Tricks
-  - Applications
-  - OSX
+  - Tools,
+  - Tips & Tricks,
+  - Applications,
+  - OSX,
   - Productivity
 comments: true
 ---
@@ -80,7 +81,7 @@ I can also recommend <a href="https://www.mozilla.org/en-US/firefox/" target="_b
 <span class="image right">
 <img src="https://9to5mac.com/wp-content/uploads/sites/6/2017/03/friday-5-alfred-3.jpg?quality=82&strip=all&w=1600" alt="alfred osx">
 </span>
-***<a href="https://www.alfredapp.com/" target="_blank" rel="noopener">Alfred</a>***:<br/>This is basically Spotlight on steroids. I purchased the “Powerpack” to unlock more features, but Alfred is a great tool that when set-up properly, can make your workflow much more powerful.
+***<a href="https://www.alfredapp.com/" target="_blank" rel="noopener">Alfred</a>***:<br/>This is basically Spotlight on steroids. I purchased the “Powerpack” to unlock more features like Workflows which allows you to control many aspects of your mac from the search box. Alfred is a great tool that when set-up properly, can make your workflow much more powerful. If you decide to purchase the Powerpack I recommend you check out some pre-configured Workflows from a community site called <a href="http://www.packal.org/" target="_blank" rel="noopener">Packal</a>. All of those Workflows are free.
 
 
 <br/>
