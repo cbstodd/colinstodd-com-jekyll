@@ -40,7 +40,7 @@ layout: default
           <div class="4u">
             {% if entry.image %}
             <img src="{{ entry.image | relative_url }}"
-                 alt="{{ entry.title }}" class="image fit" />
+                 alt="{{ entry.title }}" class="image fit" loading="lazy" />
             {% endif %}
           </div>
         </div>
