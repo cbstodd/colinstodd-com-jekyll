@@ -8,12 +8,12 @@ tags:
   - iCal,
   - Shows
 title: Download iCal and Google calendar for Phish tour dates and shows
-date: 2020-01-03 00:00:01 -0400
-updated: 2020-01-03 00:00:01 -0400
+date: 2020-01-23 12:01:00 -0400
+updated: 2020-01-23 12:01:00 -0400
 pinned: false
 featured: true
-image: "/images/posts/PRM20-MH-EmailBox.png"
-description: Download Phish tour iCal/Google calendar. The calendar has been updated for the "Riviera Maya" shows.
+image: "/images/posts/phish_summer_tour_2020.jpg"
+description: Download Phish tour iCal/Google calendar. This calendar has been updated for the "2020 Summer Tour".
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
 redirect_from:
@@ -26,7 +26,8 @@ ical_link: "https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig
 ```css
 UPDATE:
 
-This calendar has been updated for the "Riviera Maya" shows.
+This calendar has been updated for the "2020 Summer Tour".
+Alerts are set two hours before Show Time.
 
 ```
 
@@ -34,9 +35,9 @@ This calendar has been updated for the "Riviera Maya" shows.
 I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
 
 ## Examples:
-***For iCalendar (MAC)***: Go in iCalendar and click ***File > New Calendar Subscription*** and paste the link below into that input field.
+***iCalendar (MAC)***: Go in iCalendar and click `File > New Calendar Subscription` and paste the link below into that input field.
 
-***For Google Calendar***: Go into <a href="https://calendar.google.com/calendar" target="_blank" rel="noopener" title="Click to open Google Calendar">Google Calendar</a>, on the bottom left hand side you'll see "Other Calendars" > Click the  <i class="fal fa-plus"></i>  and select "From URL" and paste the link into that input.
+***Google Calendar***: Go into <a href="https://calendar.google.com/calendar" target="_blank" rel="noopener" title="Click to open Google Calendar">Google Calendar</a>, on the bottom left hand side you'll see `Other Calendars` > Click the   <i class="fal fa-plus" style="padding:0 0.5em;"></i>   and select `From URL` and paste the URL below into that input.
 
 **Public Calendar link:**
 <input type="text" value="{{ page.ical_link }}" id="calendarLink">
@@ -46,7 +47,7 @@ I was unable to find an updated <a href="https://phish.com/tours" target="_blank
   </button>
 </p>
 
-You should now see the show dates with details populate on your calendar. I will try and keep this calendar updated should they add more dates this year. If you see something missing or off, please let me know in the comments.
+You should now see the show dates with details populate on your calendar. I will try and keep this calendar updated should they add more dates. If you see something missing or off, please let me know in the comments.
 
 <iframe style="border: 0;" src="https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com&amp;ctz=America/New_York" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
