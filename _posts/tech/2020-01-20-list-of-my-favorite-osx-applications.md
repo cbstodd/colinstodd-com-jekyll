@@ -9,7 +9,7 @@ featured: true
 pinned: false
 image: /images/posts/ticktick_min.png
 date: 2020-01-20 00:00:01 -0400
-updated: 2020-01-22 00:00:30 -0400
+last_modified_at: 2020-01-22 00:00:30 -0400
 categories: tech
 tags:
   - Tools,
@@ -20,7 +20,7 @@ tags:
 comments: true
 ---
 
-People often ask me about the applications I use for software development, so I’ve decided to create a list of my favorite Mac OSX applications. Many of these apps are development tools, but others help me outside of software development.  This list is specifically for MAC OSX, but most of them are cross-platform and can be used on Windows, Linux, iOS and Android. The list is in no particular order, and I want to note that none of these companies have asked for my endorsement, nor are any of these links part of an affiliate program. I just wanted to share some of the tools that help keep my crazy life productive and organized.
+People often ask me about the applications I use for software development, so I’ve decided to create a list of my favorite Mac OSX applications. Many of these apps are development tools but others help me outside of software development.  This list is specifically for MAC OSX, but most of them are cross-platform and can be used on Windows, Linux, iOS and Android. The list is in no particular order, and I want to note that none of these companies have asked for my endorsement, nor are any of these links part of an affiliate program. I just wanted to share some of the tools that help keep my crazy life productive and organized.
 
 <span class="image right">
 <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Bitwarden_Desktop_MacOS.png" alt="bitwarden">
@@ -95,7 +95,8 @@ I can also recommend <a href="https://www.mozilla.org/en-US/firefox/" target="_b
 <span class="image right">
 <img loading="lazy" src="https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2017/08/ionic-debug.png" alt="webstorm">
 </span>
-Specifically to web development and coding, in general, I highly recommend <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> as a text editor and <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a> as an IDE. I use both for different use-cases. For quick editing and small projects I like to use VSCode; It’s lightweight and has a plethora of extensions. For larger applications I use Webstorm. The IntelliSense and baked-in features can’t be beaten. It’s a resource-hog, but when building larger applications, I can’t imagine using anything other than a <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">Jetbrain application</a>.
+***<a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a> & <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a>:***<br/>
+Specifically to web development and coding in general, I highly recommend <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> as a text editor and <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a> as an IDE. I use both for different use-cases. For quick editing and small projects I like to use VSCode; It’s lightweight and has a plethora of extensions. For larger applications I use Webstorm. The IntelliSense and baked-in features can’t be beaten. It’s a resource-hog, but when building larger applications, I can’t imagine using anything other than a <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">Jetbrain application</a>.
 
 
 <br/>

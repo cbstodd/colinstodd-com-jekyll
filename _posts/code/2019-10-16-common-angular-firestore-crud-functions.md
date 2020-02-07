@@ -7,14 +7,16 @@ featured: false
 pinned: false
 image: "../../images/posts/angularfire.png"
 date: 2019-10-19 22:30:00 -0400
-updatedAt: 2019-10-19 22:30:00 -0400
+last_modified_at: 2020-02-06 22:30:00 -0400
 categories: code
 tags:
   - Angular,
   - Firestore,
   - Observables,
   - UID,
-  - CRUD
+  - CRUD,
+  - Services,
+  - Examples
 comments: true
 permalink: /posts/code/common-angular-firestore-crud-functions.html
 redirect_from:
@@ -43,7 +45,7 @@ export class ItemService {
 
   constructor(private afs: AngularFirestore) {}
 
-  getAllitems(): Observable<Item[]> {
+  getAllItems(): Observable<Item[]> {
     this.itemCollection = this.afs.collection<Item>('items', (ref) => {
         return ref.orderBy('name', 'asc');
     });
@@ -60,7 +62,7 @@ export class ItemService {
 ```typescript
 export class ItemService {
 
-  itemCollection: AngularFirestoreDocument<Item>;
+  itemDoc: AngularFirestoreDocument<Item>;
   item$: Observable<Item>;
 
   constructor(private afs: AngularFirestore) {}
@@ -170,7 +172,7 @@ export class ItemService {
 ```typescript
 export class ItemService {
 
-  itemCollection: AngularFirestoreDocument<Item>;
+  itemDoc: AngularFirestoreDocument<Item>;
 
   constructor(private afs: AngularFirestore) {}
 

@@ -19,8 +19,8 @@ layout: default
       <h5><i class="fad fa-tags"></i> {{ page.tags }}</h5>
       <h5 title="Published Date"><i class="fad fa-calendar-alt"></i> {{ page.date | date_to_string }} (Published)
       </h5>
-      {% if page.updated %}
-      <h5 title="Updated Date"><i class="fad fa-pen-alt"></i> {{ page.updated | date_to_string }} (Updated)</h5>
+      {% if page.last_modified_at %}
+      <h5 title="Updated Date"><i class="fad fa-pen-alt"></i> {{ page.last_modified_at | date_to_string }} (Updated Date)</h5>
       {% endif %}
       <p style="float:right;">{% include facebook-like.html %}</p>
     </div>

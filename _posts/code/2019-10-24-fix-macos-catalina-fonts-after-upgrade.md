@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: "../../images/posts/catalina_icon_min.png"
 date: 2019-11-03 00:00:01 -0400
-updated: 2019-12-10 00:00:01 -0400
+last_modified_at: 2019-12-10 00:00:01 -0400
 categories: code
 tags:
   - OSX,

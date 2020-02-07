@@ -19,7 +19,7 @@ layout: default
     <div class="inner">
       {% assign category = site.projects %}
       {% assign react_projects = site.projects | where: 'category', 'react' %}
-      {% assign projects = react_projects | sort: 'updated' | reverse %}
+      {% assign projects = react_projects | sort: 'last_modified_at' | reverse %}
       {% for entry in projects %}
       <a href="{{ entry.url | relative_url }}">
         <header class="major">
@@ -28,13 +28,13 @@ layout: default
 
         <div class="row uniform">
           <div class="8u">
-            {% if post.updated %}
-            <p><i class="fad fa-pen-alt"></i> {{ post.updated | date_to_string }}</p>
-            {% else post.date %}
-            <p><i class="fad fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>
+            {% if entry.last_modified_at %}
+            <p><i class="fad fa-pen-alt"></i> {{ entry.last_modified_at | date_to_string }}</p>
+            {% else entry.date %}
+            <p><i class="fad fa-calendar-alt"></i> {{ entry.date | date_to_string }}</p>
             {% endif %}
-            {% if post.description %}
-            {{ post.description }}
+            {% if entry.description %}
+            {{ entry.description }}
             {% endif %}
           </div>
           <div class="4u">

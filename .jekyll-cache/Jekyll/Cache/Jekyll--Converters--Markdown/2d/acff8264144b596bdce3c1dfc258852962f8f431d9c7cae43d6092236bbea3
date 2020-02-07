@@ -1,4 +1,4 @@
-I"�R<p>I’ve been building a bunch of <a href="https://github.com/angular/angularfire2" target="_blank" rel="noopener">AngularFirestore2</a> apps recently (Loving it BTW), but I’ve come to realize that I’m really just copying and pasting much of the functionality of my services and renaming the <code class="highlighter-rouge">Item.ts</code> types and Observable names. Anyway, I figured I’d post these common functions mainly for easy access (for myself), but I thought maybe you guys could find the code useful as well. Who knows, maybe this becomes a documentation cheat-sheet down the line.</p>
+I"�R<p>I’ve been building a bunch of <a href="https://github.com/angular/angularfire2" target="_blank" rel="noopener">AngularFirestore2</a> apps recently (Loving it BTW), but I’ve come to realize that I’m really just copying and pasting much of the functionality of my services and renaming the <code class="highlighter-rouge">Item.ts</code> types and Observable names. Anyway, I figured I’d post these common functions mainly for easy access (for myself), but I thought maybe you guys could find the code useful as well. Who knows, maybe this becomes a documentation cheat-sheet down the line.</p>
 
 <p>For the sake of simplicity and reusability (just do a find and replace) I’m going to call each “object” or “type” an <strong><code class="highlighter-rouge">Item</code></strong>; so you should be able to use your favorite <a href="https://code.visualstudio.com/" target="_blank" rel="noopener" title="Visual Studio Code">text editor</a> or <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener" title="Webstorm">IDE</a> to update to whatever you need.</p>
 
@@ -18,7 +18,7 @@
 
   <span class="kd">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">afs</span><span class="p">:</span> <span class="nx">AngularFirestore</span><span class="p">)</span> <span class="p">{}</span>
 
-  <span class="nx">getAllitems</span><span class="p">():</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Item</span><span class="p">[]</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="nx">getAllItems</span><span class="p">():</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Item</span><span class="p">[]</span><span class="o">&gt;</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">itemCollection</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">afs</span><span class="p">.</span><span class="nx">collection</span><span class="o">&lt;</span><span class="nx">Item</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">items</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">ref</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
         <span class="k">return</span> <span class="nx">ref</span><span class="p">.</span><span class="nx">orderBy</span><span class="p">(</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">asc</span><span class="dl">'</span><span class="p">);</span>
     <span class="p">});</span>
@@ -34,7 +34,7 @@
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">ItemService</span> <span class="p">{</span>
 
-  <span class="nl">itemCollection</span><span class="p">:</span> <span class="nx">AngularFirestoreDocument</span><span class="o">&lt;</span><span class="nx">Item</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="nl">itemDoc</span><span class="p">:</span> <span class="nx">AngularFirestoreDocument</span><span class="o">&lt;</span><span class="nx">Item</span><span class="o">&gt;</span><span class="p">;</span>
   <span class="nx">item$</span><span class="p">:</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Item</span><span class="o">&gt;</span><span class="p">;</span>
 
   <span class="kd">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">afs</span><span class="p">:</span> <span class="nx">AngularFirestore</span><span class="p">)</span> <span class="p">{}</span>
@@ -141,7 +141,7 @@
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">ItemService</span> <span class="p">{</span>
 
-  <span class="nl">itemCollection</span><span class="p">:</span> <span class="nx">AngularFirestoreDocument</span><span class="o">&lt;</span><span class="nx">Item</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="nl">itemDoc</span><span class="p">:</span> <span class="nx">AngularFirestoreDocument</span><span class="o">&lt;</span><span class="nx">Item</span><span class="o">&gt;</span><span class="p">;</span>
 
   <span class="kd">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">afs</span><span class="p">:</span> <span class="nx">AngularFirestore</span><span class="p">)</span> <span class="p">{}</span>
 

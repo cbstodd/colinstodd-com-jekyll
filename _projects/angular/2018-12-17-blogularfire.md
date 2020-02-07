@@ -4,7 +4,7 @@ title: BlogularFire
 author: Colin Stodd
 tags: Angular, Firebase, UIKit
 date: 2018-12-17 00:00:01 -0400
-updated: 2018-12-17 00:00:01 -0400
+last_modified_at:
 category: angular
 featured: true
 pinned: false

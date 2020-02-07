@@ -4,7 +4,7 @@ title: Custom CMS
 author: Colin Stodd
 tags: Angular, Firebase
 date: 2018-08-10 00:00:01 -0400
-updated: 2018-08-10 00:00:01 -0400
+last_modified_at:
 category: angular
 featured: true
 pinned: true

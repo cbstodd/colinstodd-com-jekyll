@@ -9,7 +9,7 @@ tags:
   - Shows
 title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2020-01-23 12:01:00 -0400
-updated: 2020-01-23 12:01:00 -0400
+last_modified_at: 2020-01-23 12:01:00 -0400
 pinned: false
 featured: true
 image: "/images/posts/phish_summer_tour_2020.jpg"

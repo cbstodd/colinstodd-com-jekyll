@@ -6,17 +6,17 @@ email: cbstodd@harpua.co
 description: Colin Stodd's personal website focused on his career in web application and mobile development
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://colinstodd.com" # the base hostname & protocol for your site
-author: cbstodd
+author: Colin Stodd
 street_address:
 city: Annapolis
 state: MD
-zip_code: 21403
+zip_code:
 country: United States of America
 phone: 443-333-1031
 
 # social settings
 500px_url:
-facebook_url:
+facebook_url: https://www.facebook.com/colin.stodd
 github_url: https://github.com/cbstodd
 googleplus_url: https://plus.google.com/u/0/+cbstodd
 instagram_url: https://instagram.com/cbstodd
@@ -86,6 +86,8 @@ social:
     - https://www.facebook.com/colin.stodd
     - https://www.linkedin.com/in/colin-stodd
     - https://github.com/cbstodd
+    - https://medium.com/@cbstodd
+    - https://www.instagram.com/cbstodd
 
 webmaster_verifications:
   google: 1234

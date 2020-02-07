@@ -8,7 +8,7 @@ layout: default
       <a href="/projects/{{ page.category }}.html">
         <h6>{{ page.category }}</h6>
       </a>
-      <img src="{{ page.image | relative_url }}" alt="image" class="image right" />
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="image right" />
       <h2>{{ page.title }}</h2>
       <h5>
         <a href="/projects/{{ page.categories }}.html" class="cat-link">
@@ -17,7 +17,11 @@ layout: default
       </h5>
       <h5><i class="fad fa-user"></i> {{ page.author }}</h5>
       <h5><i class="fad fa-tags"></i> {{ page.tags }}</h5>
-      <h5><i class="fad fa-calendar-alt"></i> {{ page.date | date_to_string }}</h5>
+      <h5 title="Published Date"><i class="fad fa-calendar-alt"></i> {{ page.date | date_to_string }} (Published)
+      </h5>
+      {% if page.last_modified_at %}
+      <h5 title="Updated Date"><i class="fad fa-pen-alt"></i> {{ page.last_modified_at | date_to_string }} (Updated Date)</h5>
+      {% endif %}
       <p style="float:right;">{% include facebook-like.html %}</p>
     </div>
   </header>
@@ -42,9 +46,9 @@ layout: default
 
       {% if page.screenshot %}
       <div class="row">
-          <div class="6u">
-              <img src="{{ page.screenshot }}" alt="screenshot" class="image fit">
-          </div>
+        <div class="6u">
+          <img src="{{ page.screenshot }}" alt="screenshot" class="image fit">
+        </div>
       </div>
       {% endif %}
 

@@ -4,7 +4,7 @@ title: ReactJS Temperature Search
 author: Colin Stodd
 tags: ReactJS, Open Weather Map, Bootstrap
 date: 2017-05-09 00:00:01 -0400
-updated: 2017-05-09 00:00:01 -0400
+last_modified_at:
 category: react
 featured: true
 pinned: false
