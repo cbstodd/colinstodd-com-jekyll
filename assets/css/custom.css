@@ -152,6 +152,49 @@ img.image-gallery-img:hover {
   -webkit-transform: scale(1.15); /* Safari and Chrome */
 }
 
+h5.neu-alert {
+  border-radius: 23px;
+  background: #31394b;
+  box-shadow: inset -11px 11px 22px #2a3040, inset 11px -11px 22px #384256;
+  padding: 3em;
+  line-height: 2em;
+}
+
+.neu-text {
+  border: solid 2px rgba(255,255,255,0.125);
+  border-radius: 23px;
+  background: #31394b;
+  box-shadow: inset -11px 11px 22px #2a3040, inset 11px -11px 22px #384256;
+  padding: 0.4em 0.65em;
+  margin: 0 0.4em;
+  line-height: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+
+.text-pink {
+  color: #c10062;
+}
+.text-blue-grey {
+  color: #6978a0;
+}
+.text-blue {
+  color: #4c5c95;
+}
+
+.fixed-font {
+  font-family: 'SFMono-Regular', 'Roboto Mono Medium', Menlo, 'Courier',
+    monospace;
+}
+
 /*~  POSTS ~*/
 h2.major > a.feature-title {
   border-bottom: none;
@@ -182,10 +225,6 @@ a.button:hover {
 
 img.rounded {
   border-radius: 5px;
-}
-
-h5.post-cat-title {
-  /* text-align: right; */
 }
 
 ul.alt > li {
@@ -226,6 +265,16 @@ a.no-dec {
     background: -webkit-linear-gradient(#ccd5d5, #ccd5d5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .mb-3 {
+    margin-bottom: 0.3rem;
+  }
+  .mt-3 {
+    margin-top: 0.3rem;
+  }
+  .m-3 {
+    margin: 1.3rem 0;
   }
 }
 

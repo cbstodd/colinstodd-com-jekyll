@@ -38,14 +38,14 @@ textarea {
 }
 
 a {
-  @include vendor('transition', 'color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out');
-  border-bottom: dotted 2px _palette(fg-light);
+  border-bottom: dashed 2px _palette(fg-light);
   color: _palette(fg-bold);
   text-decoration: none;
 
   &:hover {
+    @include vendor('transition', 'color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out');
     // border-bottom-color: #ffffff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px dotted #fff;
     color: _palette(fg-bold) !important;
   }
 
@@ -186,13 +186,16 @@ blockquote {
 }
 
 code {
-  background: _palette(border-bg);
+  // background: _palette(border-bg);
   border-radius: _size(border-radius);
   border: solid 2px _palette(border);
   font-family: _font(family-fixed);
   font-size: 0.9em;
   margin: 0 0.25em;
-  padding: 0.25em 0.65em;
+  padding: 0.4em 0.65em;
+  border-radius: 23px;
+  background: #31394b;
+  box-shadow: inset -5px 5px 10px #2a3040, inset 5px -5px 10px #384256;
 }
 
 .highlighter-rouge {

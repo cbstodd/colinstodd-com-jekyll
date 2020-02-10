@@ -46,9 +46,9 @@ input[type="tel"],
 select,
 textarea {
   @include vendor('appearance', 'none');
-  background: _palette(border-bg);
-  border-radius: _size(border-radius);
-  border: none;
+  // background: _palette(border-bg);
+  // border-radius: _size(border-radius);
+  // border: none;
   border: solid 2px _palette(border);
   color: inherit;
   display: block;
@@ -56,9 +56,15 @@ textarea {
   padding: 0 1em;
   text-decoration: none;
   width: 100%;
+  border-radius: 10px;
+  background: #31394b;
+  box-shadow: inset -5px 5px 10px #2a3040, inset 5px -5px 10px #384256;
 
   &:invalid {
     box-shadow: none;
+    border-radius: 10px;
+    background: #31394b;
+    box-shadow: inset -5px 5px 10px #2a3040, inset 5px -5px 10px #384256;
   }
 
   &:focus {

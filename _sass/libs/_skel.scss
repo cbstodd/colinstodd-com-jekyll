@@ -717,7 +717,12 @@ $vendor-values: ('filter',
 		}
 
 		a {
-			background-color: transparent
+			// background-color: transparent
+
+			// display: block;
+			// color: white;
+			// text-decoration: none;
+			// position: relative;
 		}
 
 		a:active,
@@ -726,7 +731,12 @@ $vendor-values: ('filter',
 		}
 
 		abbr[title] {
-			border-bottom: 1px dotted
+			// border-bottom: 1px dotted
+
+			// display: block;
+			// color: white;
+			// text-decoration: none;
+			// position: relative;
 		}
 
 		b,

@@ -23,27 +23,29 @@ redirect_from:
 ical_link: "https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com/private-65ee2a07a45e7f416407f9d73caa1735/basic.ics"
 ---
 
-```css
-UPDATE:
 
+<h5 class="neu-alert m-3 text-blue-grey">
+<i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE <i class="fad fa-calendar-alt"></i> {{ page.last_modified_at | date_to_string }}<br/>
+<hr/>
 This calendar has been updated for the "2020 Summer Tour".
 Alerts are set two hours before Show Time.
+</h5>
 
-```
+
 
 
 I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
 
 ## Examples:
-***iCalendar (MAC)***: Go in iCalendar and click `File > New Calendar Subscription` and paste the link below into that input field.
+<h4 class="text-blue-grey"><i class="fab fa-apple"></i> Calendar (Apple/iCal):</h4>Go in iCalendar and click `File > New Calendar Subscription` and paste the link below into that input field.
 
-***Google Calendar***: Go into <a href="https://calendar.google.com/calendar" target="_blank" rel="noopener" title="Click to open Google Calendar">Google Calendar</a>, on the bottom left hand side you'll see `Other Calendars` > Click the   <i class="fal fa-plus" style="padding:0 0.5em;"></i>   and select `From URL` and paste the URL below into that input.
+<h4 class="text-blue-grey"><i class="fab fa-google"></i> Google Calendar:</h4>Go into <a href="https://calendar.google.com/calendar" target="_blank" rel="noopener" title="Click to open Google Calendar">Google Calendar</a>, on the bottom left hand side you'll see `Other Calendars` then click the <i class="fal fa-plus neu-text"></i> and <br/>select `From URL` and paste the URL below into that input.
 
-**Public Calendar link:**
-<input type="text" value="{{ page.ical_link }}" id="calendarLink">
+**Public Calendar URL:**
+<input type="text" value="{{ page.ical_link }}" id="calendarLink" class="fixed-font">
 <p>
   <button onclick="myFunction()" class="button special">
-    <i class="fad fa-clipboard"></i> Copy Link
+    <i class="fad fa-clipboard"></i> Copy URL
   </button>
 </p>
 

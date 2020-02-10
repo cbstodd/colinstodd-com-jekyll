@@ -1,0 +1,47 @@
+I"t
+<h5 class="neu-alert m-3 text-blue-grey">
+<i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE <i class="fad fa-calendar-alt"></i> 23 Jan 2020<br />
+<hr />
+This calendar has been updated for the "2020 Summer Tour".
+Alerts are set two hours before Show Time.
+</h5>
+
+<p>I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I’m sharing it with you. All you need to do is copy and paste this link into your calendar application.</p>
+
+<h2 id="examples">Examples:</h2>
+<h4 class="text-blue-grey"><i class="fab fa-apple"></i> Calendar (Apple/iCal):</h4>
+<p>Go in iCalendar and click <code class="highlighter-rouge">File &gt; New Calendar Subscription</code> and paste the link below into that input field.</p>
+
+<h4 class="text-blue-grey"><i class="fab fa-google"></i> Google Calendar:</h4>
+<p>Go into <a href="https://calendar.google.com/calendar" target="_blank" rel="noopener" title="Click to open Google Calendar">Google Calendar</a>, on the bottom left hand side you’ll see <code class="highlighter-rouge">Other Calendars</code> then click the <i class="fal fa-plus neu-text"></i> and <br />select <code class="highlighter-rouge">From URL</code> and paste the URL below into that input.</p>
+
+<p><strong>Public Calendar URL:</strong>
+<input type="text" value="https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com/private-65ee2a07a45e7f416407f9d73caa1735/basic.ics" id="calendarLink" class="fixed-font" /></p>
+<p>
+  <button onclick="myFunction()" class="button special">
+    <i class="fad fa-clipboard"></i> Copy URL
+  </button>
+</p>
+
+<p>You should now see the show dates with details populate on your calendar. I will try and keep this calendar updated should they add more dates. If you see something missing or off, please let me know in the comments.</p>
+
+<iframe style="border: 0;" src="https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com&amp;ctz=America/New_York" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+<script type="text/javascript">
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("calendarLink");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("🐠 Calendar Link Copied 🐠 Now paste it into your calendar app. Enjoy the shows! 🍄 🌈 🌵 🥳 🐲");
+}
+</script>
+
+:ET
