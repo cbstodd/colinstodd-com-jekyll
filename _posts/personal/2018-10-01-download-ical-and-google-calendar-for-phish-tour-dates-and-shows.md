@@ -20,11 +20,11 @@ redirect_from:
   - /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
   - /blog/post/ical-calendar-for-phish-s-2017-tour-dates/
   - /posts/ical-calendar-for-phish-tour-dates-and-shows/
-ical_link: "https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com/private-65ee2a07a45e7f416407f9d73caa1735/basic.ics"
+ical_link: "https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com/public/basic.ics"
 ---
 
 
-<h5 class="neu-alert m-3 text-blue-grey">
+<h5 class="neu-alert mb-3 text-blue-grey">
 <i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE <i class="fad fa-calendar-alt"></i> {{ page.last_modified_at | date_to_string }}<br/>
 <hr/>
 This calendar has been updated for the "2020 Summer Tour".
@@ -51,7 +51,7 @@ I was unable to find an updated <a href="https://phish.com/tours" target="_blank
 
 You should now see the show dates with details populate on your calendar. I will try and keep this calendar updated should they add more dates. If you see something missing or off, please let me know in the comments.
 
-<iframe style="border: 0;" src="https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com&amp;ctz=America/New_York" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe style="border: 0;" src="https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com&ctz=America%2FNew_York" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 
 <script type="text/javascript">
