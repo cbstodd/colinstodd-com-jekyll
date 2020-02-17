@@ -9,17 +9,20 @@ categories: css
 permalink: technologies.html
 description: Technologies, Languages & Libraries I use
 ---
-Below are some of the technologies that I have worked with, continue to use daily or something I'm learning or intend to learn in the near future.  You'll notice some like "Dart" which is marked at "Proficient" and also "Learning". The notion behind this is that I've been studying them and feel proficient with them, but that there's also a great deal more that I intend to learn.
+These are some of the technologies that I have worked with, continue to use daily or something I'm learning or intend to learn in the near future.
 
+My programming stack of choice has become <a href="https://angular.io/" target="_blank" rel="noopener" title="Angular">Angular</a>, <a href="https://firebase.google.com/" target="_blank" rel="noopener" title="Firebase">Firebase</a> (<a href="https://github.com/angular/angularfire" target="_blank" rel="noopener" title="AngularFire">AngularFire</a>), and now <a href="https://flutter.dev/" target="_blank" rel="noopener" title="Flutter">Flutter</a>/<a href="https://dart.dev/" target="_blank" rel="noopener" title="Dart">Dart</a>. With these main technologies I'm able to build pretty much anything on the web and mobile platforms.
 
+<hr>
+<br/>
 
 <table class="table table-wrapper">
 	<thead>
 		<tr>
-			<th>Languages</th>
-			<th>Proficient</th>
-			<th>Use often</th>
-			<th>Learning</th>
+			<th><i class="fad fa-books"></i> Languages</th>
+			<th><i class="fad fa-badge-check"></i> Proficient</th>
+			<th><i class="fad fa-tools"></i> Use often</th>
+			<th><i class="fad fa-road"></i> Learning</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -141,7 +144,7 @@ Below are some of the technologies that I have worked with, continue to use dail
 			<td><a href="https://rxjs-dev.firebaseapp.com/" target="_blank" rel="noopener">RxJS</a></td>
 			<td><i class="fad fa-check"></i></td>
 			<td></td>
-			<td>&nbsp;</td>
+			<td><i class="fad fa-check"></i></td>
 		</tr>
 		<tr>
 			<td><a href="https://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a></td>
