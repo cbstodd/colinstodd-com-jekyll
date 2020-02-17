@@ -22,6 +22,8 @@ comments: true
 
 People often ask me about the applications I use for software development, so Iâ€™ve decided to create a list of my favorite Mac OSX applications. Many of these apps are development tools but others help me outside of software development.  This list is specifically for MAC OSX, but most of them are cross-platform and can be used on Windows, Linux, iOS and Android. The list is in no particular order, and I want to note that none of these companies have asked for my endorsement, nor are any of these links part of an affiliate program. I just wanted to share some of the tools that help keep my crazy life productive and organized.
 
+<hr>
+
 <span class="image right">
 <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Bitwarden_Desktop_MacOS.png" alt="bitwarden">
 </span>
@@ -29,7 +31,6 @@ People often ask me about the applications I use for software development, so Iâ
 
 
 <hr>
-<br/>
 
 <span class="image right">
 <img loading="lazy" src="/images/posts/ticktick_osx.png" alt="ticktick">
@@ -63,14 +64,12 @@ People often ask me about the applications I use for software development, so Iâ
 <span class="image right">
 <img loading="lazy" src="/images/posts/hyper.png" alt="Hyper.js Terminal">
 </span>
-Another interesting Terminal application on the development scene is <a href="https://hyper.is" target="_blank" rel="noopener" title="Hyper.is">Hyper</a>. Hyper is a <a href="https://www.electronjs.org/" target="_blank" rel="noopener" title="Electron App">Electron app</a>, which means it wont have the native performance, but I've een told it's very beginner friendly.
-<br/>
-<br/>
-<br/>
-<br/>
-<hr>
+An alternative to iTerm2 is <a href="https://hyper.is" target="_blank" rel="noopener" title="Hyper.is">Hyper</a>. Hyper is a <a href="https://www.electronjs.org/" target="_blank" rel="noopener" title="Electron App">Electron app</a>, which means it will likely use more RAM and wont be as performant as Apple's native Terminal app or iTerm2; Nevertheless, customizing the terminal is simple if you're used to working with a JSON file. I haven't put Hyper through much testing but I've been told that it's a great option for beginner developers.
 
 <br/>
+
+<hr>
+
 <span class="image right">
 <img loading="lazy" src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/59/13/8e59137d-d322-41d5-309d-0e8366542cf1/pr_source.jpg/643x0w.jpg" alt="snippets lab">
 </span>
@@ -78,7 +77,6 @@ Another interesting Terminal application on the development scene is <a href="ht
 
 <hr>
 
-<br/>
 <span class="image right">
 <img loading="lazy" src="https://brave.com/wp-content/uploads/2018/10/a25he_image1.png" alt="brave browser">
 </span>
@@ -90,7 +88,6 @@ I can also recommend <a href="https://www.mozilla.org/en-US/firefox/" target="_b
 
 <hr>
 
-<br/>
 <span class="image right">
 <img loading="lazy" src="https://lh3.googleusercontent.com/JKWZYRe_7OkKz70IXaXv6TZdgBc2EKIT-AGANDQ0Kg_vDvuJv0ZRUmtro0Wx1FCVGbqpQ2JbOg=w640-h400-e365" alt="grammarly">
 </span>
@@ -98,7 +95,6 @@ I can also recommend <a href="https://www.mozilla.org/en-US/firefox/" target="_b
 
 <hr>
 
-<br/>
 <span class="image right">
 <img loading="lazy" src="https://9to5mac.com/wp-content/uploads/sites/6/2017/03/friday-5-alfred-3.jpg?quality=82&strip=all&w=1600" alt="alfred osx">
 </span>
@@ -106,7 +102,6 @@ I can also recommend <a href="https://www.mozilla.org/en-US/firefox/" target="_b
 
 <hr>
 
-<br/>
 <span class="image right">
 <img loading="lazy" src="https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/ef/e9/86/efe9868a-6246-44d1-0a50-dac5c2064b81/mzl.vdtpgelc.jpg/643x0w.jpg" alt="Airmail 4" title="Airmail 4">
 </span>
@@ -114,7 +109,6 @@ I can also recommend <a href="https://www.mozilla.org/en-US/firefox/" target="_b
 
 <hr>
 
-<br/>
 <span class="image right">
 <img loading="lazy" src="https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2017/08/ionic-debug.png" alt="webstorm">
 </span>
@@ -125,31 +119,30 @@ I use both for different use-cases. For quick editing and small projects I like 
 
 <hr>
 
-<br/>
+
 <span class="image right">
 <img loading="lazy" src="https://clockify.me/assets/images/best-time-tracking-apps/toggl-apps.png" alt="toggl">
 </span>
 <a href="https://toggl.com/" target="_blank" rel="noopener">Toggl</a>:<br/>This is a time-tracking desktop and browser extension application. It does a few things other than tracking time (like reports, invoice creations, etc), but it does those things really well.
 
-
-
-<br/>
 <br/>
 <br/>
 <hr>
-<br/>
+
 <span class="image right">
 <img loading="lazy" src="https://is5-ssl.mzstatic.com/image/thumb/Purple6/v4/c0/0b/4f/c00b4ffa-a942-1ffa-d1f0-6da2cfa7e928/mzl.fkhegzvv.png/643x0w.png" alt="skitch osx">
 </span>
 <a href="https://apps.apple.com/us/app/skitch-snap-mark-up-share/id425955336?mt=12" target="_blank" rel="noopener">Skitch</a>:<br/> Is a desktop application that allows you to take screenshots to quickly and easily add markup to screenshots and images.
 
-
-
 <br/>
 <br/>
 <hr>
-<br/>
-<br/>
+
+
 And there you have it. These are the apps that I have running nearly every time I boot-up one of my MACs. If you have any suggestions I encourage you to let me know in the comments.
 
 Be sure to subscribe below as I plan on writing a post for browser extensions and many other things computer and code related.
+
+
+<br/>
+<br/>

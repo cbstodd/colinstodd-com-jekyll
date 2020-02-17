@@ -1,7 +1,8 @@
 ---
 layout: page
 title: About
-date: 2019-10-17 15:30:12 -0400
+date: 2020-02-17 00:30:12 -0400
+last_modified_at: 2020-02-17 00:30:12 -0400
 icon: "fad fa-address-card"
 categories:
 description: Learn more about Colin Stodd
@@ -17,16 +18,15 @@ redirect_from:
 <p>
 <span class="image left">
 <img src="{{ page.image }}" alt="Colin Stodd with friends dog" title="Colin Stodd with friends dog">
-</span>This site is primarily focused on my career in Software Development, but if you landed here I assume you have some interest in who I am. So I'll share a little more about myself since It's my personal site. In short, I’m a percussion player turned web application & mobile developer.
+</span>This site was created primarily for my career in Software Development, but since you're here I assume you have some interest in who I am... In short, I’m a percussion player turned web application & mobile developer.
 </p>
 
 <p>
-Other than writing software my other passion in life is music. I played percussion with two bands: <a href="https://damnrightmusic.bandcamp.com/" target="_blank" rel="noopener">Damn Right!</a> and <a href="https://music.apple.com/us/album/dead-city-radio/346165288" target="_blank" rel="noopener">Earthtone</a> for about 10 years; However, I knew I wanted more than just music in my life so I took a job with the <a href="http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home" target="_blank" rel="noopener">Maryland General Assembly (MGA)</a> in Annapolis, MD.
+Other than writing software my other passion in life is music. I played percussion with two bands: <a href="https://damnrightmusic.bandcamp.com/" target="_blank" rel="noopener">Damn Right!</a> and <a href="https://music.apple.com/us/album/dead-city-radio/346165288" target="_blank" rel="noopener">Earthtone</a> for about 10 years. However, I wanted to do more than music, so I started my "working" career at the <a href="http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home" target="_blank" rel="noopener">Maryland General Assembly (MGA)</a> in Annapolis, MD.
 </p>
 
 <p>
-While working at the MGA I began teaching myself to program using online resources, but I decided to get a "formal" education, which led me to <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener">Ruby</a> and <a href="http://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a>. In August of 2014, I completed a back-end development course at <a href="https://betamore.com/en" target="_blank" rel="noopener">Betamore Academy</a> in Baltimore Maryland which helped me get to where I am today; and it was about that time when I
-got bitten by the "coding bug".</p>
+While working at the MGA I began teaching myself to program using online resources, but I decided to get a "formal" education, which led me to <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener">Ruby</a> and <a href="http://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a>. In August of 2014, I completed a back-end development course at <a href="https://betamore.com/en" target="_blank" rel="noopener">Betamore Academy</a> in Baltimore Maryland which helped me get to where I am today.</p>
 
 <p>In 2014 I moved from my hometown of Annapolis Maryland to work in the D.C. area with the <a href="https://www.gastro.org" target="_blank" rel="noopener">American Gastroenterological Association (AGA)</a>.</p>
 <p>
@@ -38,7 +38,7 @@ Nowadays, I'm back in Annapolis (still with <a href="https://www.gastro.org" tar
 <span class="image right">
 <img src="{{ page.image2 }}" alt="Colin & Tommy in Tennessee w/ Damn Right!" title="Colin & Tommy in Tennessee w/ Damn Right!">
 </span>
-<p>I've recently (2019-2020) been recording percussion tracks on albums & Experimental Projects (EP's) which has me back in the world of music; But for the time being I'm staying away from live performances opting for the comfort of my <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener">Logic Pro X</a> Studio 😃.</p>
+<p>I've recently (2019-2020) been recording percussion on albums & Experimental Projects (EP's) which has me back in the world of music; But for the time being I'm staying away from live performances opting for the comfort of my <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener">Logic Pro X</a> Studio 😃.</p>
 
 <p>
 Lastly, If you see some "H" logo, that's the logo for <a href="https://harpua.co/" target="_blank" title="Harpua, LLC" rel="noopener">Harpua, LLC</a> which I co-founded with a great developer friend of mine. If you see something with "Colper", that's a nickname that I've had since I was young, and last but not least, I'm a huge <a href="https://phish.com/" target="_blank" rel="noopner" title="Phish">Phish</a> fan. I travel a few times a year with friends to see them in various locations in and around the United States...
