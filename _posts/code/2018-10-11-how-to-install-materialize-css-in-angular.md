@@ -17,6 +17,7 @@ comments: true
 redirect_from:
   - /posts/how-to-install-materialize-css-in-angular.html
   - /posts/how-to-install-materialize-css-in-angular-6/
+  - /blog/post/how-to-install-materialize-css-in-angular-5
 ---
 
 I've recently been playing with <a href="http://materializecss.com/" target="_blank" rel="noopener">Materailize CSS</a>, and It's beautiful. Here's how you install it in Angular.

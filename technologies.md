@@ -3,6 +3,7 @@ layout: page
 title:  Technologies
 date: 2019-11-06 00:30:12 -0400
 updated: 2020-01-20 00:30:12 -0400
+icon: "fad fa-laptop-code"
 image: images/pages/code-laptop.png
 categories: css
 permalink: technologies.html

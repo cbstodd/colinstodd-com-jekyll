@@ -29,10 +29,10 @@
     }
 
     .copyright {
-      border-top: solid 2px _palette(border);
+      // border-top: solid 2px _palette(border);
       list-style: none;
-      margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
-      padding: _size(element-margin) 0 0 0;
+      // margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
+      // padding: _size(element-margin) 0 0 0;
       width: 100%;
 
       li {
@@ -98,7 +98,7 @@
       }
 
       .copyright {
-        margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
+        // margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
       }
     }
   }
@@ -126,7 +126,7 @@
         li {
           border-left: 0;
           display: block;
-          margin: 1em 0 0 0;
+          // margin: 1em 0 0 0;
           padding-left: 0;
           line-height: 1.5em;
 
