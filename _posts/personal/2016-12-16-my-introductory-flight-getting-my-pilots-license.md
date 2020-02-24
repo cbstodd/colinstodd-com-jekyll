@@ -11,7 +11,7 @@ pinned: false
 featured: false
 image: ../images/posts/cessna172-min.jpg
 description: Personal experience of my introductory flight
-permalink: /posts/code/introductory-flight-getting-my-pilots-license.html
+permalink: /posts/personal/introductory-flight-getting-my-pilots-license.html
 comments: true
 redirect_from:
   - /posts/introductory-flight-getting-my-pilots-license.html

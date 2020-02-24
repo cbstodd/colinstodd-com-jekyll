@@ -7,6 +7,7 @@ featured: false
 pinned: false
 image: ../../images/posts/dart_logo.png
 date: 2020-01-31 00:20:00 -0400
+last_modified_at: 2020-02-23 00:20:00 -0400
 categories: code
 tags:
   - Dart,
@@ -18,7 +19,7 @@ comments: true
 permalink: /posts/code/pretty-print-json-in-dart.html
 ---
 
-For the past 4-6 months I've been learning <a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a>, which is framework for building mobile (but now also <a href="https://flutter.dev/web" target="_blank" rel="noopener">web</a>) apps on both iOS and Android devices using the same codebase. I'll let you do the research on <a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a> but if you landed on this page, there's probably a good chance you already know about <a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a>. Nevertheless, below is a function to help you "pretty-print" JSON data into your <a href="https://dart.dev/" target="_blank" rel="noopener">Dart</a> terminal.
+I've started learning <a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a>, which is a framework for building mobile (but now also <a href="https://flutter.dev/web" target="_blank" rel="noopener">web</a>) apps on both iOS and Android devices using the same codebase. I'll let you do the research on <a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a> but if you landed on this page, there's probably a good chance you already know about <a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a>. Nevertheless, below is a function to help you "pretty-print" JSON data into your <a href="https://dart.dev/" target="_blank" rel="noopener">Dart</a> terminal.
 
 FYI: <a href="https://dart.dev/" target="_blank" rel="noopener">Dart</a> is the programming language that <a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a> uses, which are both created and maintained by <a href="https://www.google.com/" target="_blank" rel="noopener">Google</a>.
 

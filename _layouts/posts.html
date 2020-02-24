@@ -45,7 +45,7 @@ layout: default
   <!-- Content -->
   <div class="wrapper">
     <div class="inner">
-      {% assign posts = site.posts %}
+      {% assign posts = site.posts | sort: 'last_modified_at' | reverse %}
       {% for post in posts %}
       {% if post.title != 404 %}
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">

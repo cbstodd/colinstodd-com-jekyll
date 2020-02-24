@@ -1,0 +1,41 @@
+I"¿<p>Here is a simple example of how to use <code class="highlighter-rouge">*ngIf</code> in Angular.</p>
+
+<h3 id="component-typescript">Component (TypeScript):</h3>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">oddNumbers</span><span class="p">:</span> <span class="nx">number</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">];</span>
+<span class="nl">evenNumbers</span><span class="p">:</span> <span class="nx">number</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">];</span>
+<span class="nl">isOnlyOdd</span><span class="p">:</span> <span class="nx">boolean</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="nl">oddText</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">odd</span><span class="dl">'</span><span class="p">;</span>
+<span class="nl">evenText</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">even</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="view-html">View (HTML):</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+          isObutton class="btn btn-primary" (click)="onlyOdd = !onlyOdd"&gt;Only show
+              isOspan *ngIf="!onlyOdd"&gt;{oddText}<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">*ngIf=</span><span class="s">"onlyOdd"</span><span class="nt">&gt;</span>{evenText}<span class="nt">&lt;/span&gt;</span> numbers
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+              isOdiv *ngIf="onlyOdd"&gt;
+                  <span class="nt">&lt;h5&gt;</span>Odd numbers<span class="nt">&lt;/h5&gt;</span>
+                  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">*ngFor=</span><span class="s">"let odd of oddNumbers"</span><span class="nt">&gt;</span>
+                      { odd }
+                  <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              isOdiv *ngIf="!onlyOdd"&gt;
+                  <span class="nt">&lt;h5&gt;</span>Even numbers<span class="nt">&lt;/h5&gt;</span>
+                  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">*ngFor=</span><span class="s">"let even of evenNumbers"</span><span class="nt">&gt;</span>
+                       { even }
+                  <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+:ET

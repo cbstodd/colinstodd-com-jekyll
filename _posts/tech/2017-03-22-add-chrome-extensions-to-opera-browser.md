@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: code
+categories: tech
 author: Colin Stodd
 tags:
   - Opera,
@@ -14,9 +14,10 @@ pinned: false
 featured: false
 image: ../images/posts/opera-chrome.png
 description: This addon allows you to install Chrome extensions on Opera.
-permalink: /posts/code/add-chrome-extensions-to-opera-browser.html
+permalink: /posts/tech/add-chrome-extensions-to-opera-browser.html
 comments: true
 redirect_from:
+  - /posts/code/add-chrome-extensions-to-opera-browser.html
   - /posts/add-chrome-extensions-to-opera-browser.html
   - /posts/add-chrome-extensions-to-opera-browser/
 ---

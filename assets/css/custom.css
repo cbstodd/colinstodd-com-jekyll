@@ -23,27 +23,16 @@ img.cs-logo-banner {
 }
 
 h2.banner-title {
-  background: -webkit-linear-gradient(#ccd5d5, #444853);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #afb7c9;
 }
 
 h1 > a.site-title,
 h1 > a.site-title:hover {
-  /* background: -webkit-linear-gradient(#FF9B7B, #973D2A); */
-  /* background: -webkit-linear-gradient(#ccd5d5, #444853); */
-  background-color: #afb7c9;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #afb7c9;
 }
 
 p.page-description {
-  /* background: -webkit-linear-gradient(#FFD9AD, #973D2A); */
-  background: -webkit-linear-gradient(#ccd5d5, #444853);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #afb7c9;
 }
 
 .dots-header {
@@ -93,6 +82,14 @@ p.page-description {
 }
 
 /*~  Banner ~*/
+.bounce-top {
+  -webkit-animation: bounce-top .9s both;
+  animation: bounce-top .9s both;
+}
+.bounce-bottom {
+  -webkit-animation: bounce-bottom .9s both;
+  animation: bounce-bottom .9s both;
+}
 .dots {
   width: 3em;
   height: 3em;
@@ -156,12 +153,12 @@ h5.neu-alert {
   border-radius: 23px;
   background: #31394b;
   box-shadow: inset -11px 11px 22px #2a3040, inset 11px -11px 22px #384256;
-  padding: 3em;
+  padding: 5em 4em;
   line-height: 2em;
 }
 
 .neu-text {
-  border: solid 2px rgba(255,255,255,0.125);
+  border: solid 2px rgba(255, 255, 255, 0.125);
   border-radius: 23px;
   background: #31394b;
   box-shadow: inset -11px 11px 22px #2a3040, inset 11px -11px 22px #384256;
@@ -243,7 +240,6 @@ ul.contact > li > h4 > a {
   border-bottom: none;
 }
 
-
 /*~  Media / Mobile Devices ~*/
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {
@@ -260,10 +256,10 @@ ul.contact > li > h4 > a {
   }
 
   h2.banner-title {
-    background: -webkit-linear-gradient(#dfe2e2, #565b66);
+    /* background: -webkit-linear-gradient(#dfe2e2, #565b66);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
   }
 
   p.page-description {
