@@ -31,7 +31,7 @@ redirect_from:
 MONGO_URI=mongodb://YOUR_USERNAME:YOUR_PASSWORD@ds12345.mlab.com:54321/colinstoddcom
 ```
 
-4.Now this is the part that is left out of the documentation. In your keystone.js file you need to add:
+4.Now this is the part that is left out of the documentation. In your `keystone.js` file you need to add:
 
 ```javascript
 'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI || 'mongodb://localhost/colinstodd',
