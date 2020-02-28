@@ -6,8 +6,8 @@ description: How to fix blurry/thin fonts after upgrading to Mac OS Catalina
 featured: true
 pinned: false
 image: "../../images/posts/catalina_icon_min.png"
-date: 2019-11-03 00:00:01 -0400
-last_modified_at: 2020-02-23 00:10:00 -0400
+date: 2019-11-03 00:00:01 -05:00
+last_modified_at: 2020-02-23 00:10:00 -05:00
 categories: tech
 tags:
   - OSX,

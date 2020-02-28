@@ -3,8 +3,8 @@ layout: project
 title: BlogularFire
 author: Colin Stodd
 tags: Angular, Firebase, UIKit
-date: 2018-12-17 00:00:01 -0400
-last_modified_at:
+date: 2018-12-17 00:00:01 -05:00
+last_modified_at: 2018-12-17 00:00:01 -05:00
 category: angular
 featured: true
 pinned: false

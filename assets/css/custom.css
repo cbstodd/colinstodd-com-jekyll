@@ -201,6 +201,10 @@ img.image.right {
   z-index: 10;
 }
 
+img.post-image {
+  max-height: 350px;
+}
+
 a.cat-link {
   border-bottom: none;
 }

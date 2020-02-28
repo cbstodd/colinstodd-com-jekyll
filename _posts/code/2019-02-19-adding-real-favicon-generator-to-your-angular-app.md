@@ -7,7 +7,8 @@ tags:
   - Tutorial,
   - Real Favicon Generator
 title: Adding Real Favicon Generator To Your Angular App
-date: 2019-02-19 15:30:12 -0400
+date: 2019-02-19 15:30:12 -05:00
+last_modified_at: 2019-02-19 15:30:12 -05:00
 pinned: false
 featured: true
 image: ../images/posts/favicon_generator_og_image_transp.png

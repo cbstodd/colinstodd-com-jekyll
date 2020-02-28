@@ -7,7 +7,8 @@ tags:
   - Materialize CSS,
   - Tutorial
 title: How To Install Materialize CSS In Angular
-date: 2018-10-11 00:00:01 -0400
+date: 2018-10-11 00:00:01 -05:00
+last_modified_at: 2018-10-11 00:00:01 -05:00
 pinned: false
 featured: false
 image: ../images/posts/matcss-min.png

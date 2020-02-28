@@ -8,7 +8,8 @@ tags:
   - Template,
   - Boilerplate
 title: TypeScript And ES6 Babel Boilerplates
-date: 2017-03-05 00:00:00 -0400
+date: 2017-03-05 00:00:00 -05:00
+last_modified_at: 2017-03-05 00:00:00 -05:00
 pinned: false
 featured: false
 image: ../images/posts/typescript.png

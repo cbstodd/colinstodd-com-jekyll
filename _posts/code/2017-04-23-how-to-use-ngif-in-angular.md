@@ -6,7 +6,8 @@ tags:
   - Angular,
   - ngIf
 title: How To Use *ngIf in Angular
-date: 2017-04-23 00:00:00 -0400
+date: 2017-04-23 00:00:00 -05:00
+last_modified_at: 2017-04-23 00:00:00 -05:00
 pinned: false
 featured: false
 image: ../images/posts/angular.png

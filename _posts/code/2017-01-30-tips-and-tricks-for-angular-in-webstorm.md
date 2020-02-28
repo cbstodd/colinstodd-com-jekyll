@@ -6,7 +6,8 @@ tags:
   - Angular,
   - Webstorm
 title: Tips And Tricks For Angular In Webstorm
-date: 2017-01-30 00:00:00 -0400
+date: 2017-01-30 00:00:00 -05:00
+last_modified_at: 2017-01-30 00:00:00 -05:00
 pinned: false
 featured: false
 image: ../images/posts/webstorm-angular.png

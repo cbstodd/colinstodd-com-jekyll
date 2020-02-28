@@ -7,7 +7,8 @@ tags:
   - Firebase,
   - Errors
 title: Firebase Hosting Setup Complete Error Fix
-date: 2018-06-13 00:00:01 -0400
+date: 2018-06-13 00:00:01 -05:00
+last_modified_at: 2018-06-13 00:00:01 -05:00
 pinned: false
 featured: false
 image: ../images/posts/firebase-setup-warning.png

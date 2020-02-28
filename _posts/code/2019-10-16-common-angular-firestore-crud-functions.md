@@ -6,8 +6,8 @@ description: CRUD snippets that I tend to reuse in every Angular service
 featured: false
 pinned: false
 image: "../../images/posts/angularfire.png"
-date: 2019-10-19 22:30:00 -0400
-last_modified_at: 2020-02-06 22:30:00 -0400
+date: 2019-10-19 22:30:00 -05:00
+last_modified_at: 2020-02-06 22:30:00 -05:00
 categories: code
 tags:
   - Angular,
