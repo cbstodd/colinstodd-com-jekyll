@@ -18,6 +18,7 @@ comments: true
 redirect_from:
   - /posts/how-to-add-uikit-to-angular.html
   - /posts/how-to-add-uikit-to-angular/
+  - /posts/how-to-add-uikit-to-angular
 ---
 
 I recently heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and I decided to give it a spin. It's pretty amazing. Here's how you can install it in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>.

@@ -20,6 +20,7 @@ redirect_from:
   - /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
   - /blog/post/ical-calendar-for-phish-s-2017-tour-dates/
   - /posts/ical-calendar-for-phish-tour-dates-and-shows/
+  - /posts/ical-calendar-for-phish-tour-dates-and-shows
 ical_link: "https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com/public/basic.ics"
 ---
 
