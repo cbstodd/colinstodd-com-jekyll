@@ -94,7 +94,7 @@ webmaster_verifications:
   # bing: 1234
 
 disqus:
-  shortname: colinstodd-com
+  shortname: colinstodd-v2
 
 google:
   tag_manager:
