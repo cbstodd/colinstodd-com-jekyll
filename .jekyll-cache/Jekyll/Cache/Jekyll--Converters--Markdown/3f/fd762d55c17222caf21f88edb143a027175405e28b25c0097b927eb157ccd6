@@ -1,0 +1,74 @@
+I"<p>In order for you to be able to connect to your <a href="https://github.com" target="_blank" rel="noopener">Github</a> account or to SSH into applications you are going to be required to generate an SH1 key.</p>
+
+<p>Here is how you generate SSH key pairs in MacOS.</p>
+
+<ol>
+  <li>
+    <p>Open up your <a href="https://www.iterm2.com/" target="_blank">favorite terminal</a> or the default MacOS terminal: <code class="highlighter-rouge">Applications</code> &gt; <code class="highlighter-rouge">Utilities</code> &gt; <code class="highlighter-rouge">Terminal</code></p>
+  </li>
+  <li>
+    <p>You’ll first want to check and see if you already have an SSH key created. You can check by running this in your terminal:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> <span class="nt">-al</span> ~/.ssh
+</code></pre></div></div>
+
+<p>If you see something with the file and <code class="highlighter-rouge">.pub</code> file name of:</p>
+
+<p><code class="highlighter-rouge">id_rsa</code> and <code class="highlighter-rouge">id_rsa.pub</code></p>
+
+<p><img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="fit" /></p>
+
+<p>This means you have one created in it’s default location, so you can use that one (see how below) or you can generate a new one.</p>
+
+<p>If you don’t see those files, then you’ll want to generate a new key. To do so for something like CPanel follow these instructions (Scroll down for GitHub instructions):</p>
+
+<hr />
+
+<h3 id="c-panel"><strong>C Panel</strong></h3>
+
+<ol>
+  <li>
+    <p>Type this into your terminal and the press the <code class="highlighter-rouge">return</code> key:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh-keygen <span class="nt">-t</span> rsa
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You will now be prompted to tell the the prompt where you want your key be placed/located. If you leave it blank and press <code class="highlighter-rouge">return</code> key, it will place the key in it’s default location (Recommended). If you decide to place the key in a different location, just remember to make a note of where you place your key. If you leave it blank and press <code class="highlighter-rouge">return</code> it will place your key in:</p>
+
+    <p><code class="highlighter-rouge">/home/user/.ssh/id_rsa</code></p>
+  </li>
+  <li>
+    <p>Now you will be prompted to enter a password to access the key (Note: The password is <strong>not</strong> required, you can leave blank and press <code class="highlighter-rouge">return</code>). Also, note that you will not see the characters when you are typing the password. This is for your own safety.</p>
+  </li>
+  <li>
+    <p>After you press <code class="highlighter-rouge">return</code>, your SSH key will have been created and located in:</p>
+
+    <p><code class="highlighter-rouge">/home/user/.ssh/id_rsa.pub</code></p>
+  </li>
+  <li>
+    <p>Depending on what you are using the passkey for you can upload/use by going into something like C Panel or Github by using this command:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add /home/user/.ssh/id_rsa
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="github">Github:</h3>
+
+<ol>
+  <li>You’ll want to open your terminal app and run the following command (but with your Github account email address):</li>
+</ol>
+
+<p>ssh-keygen -t rsa -b 4096 -C “your_github_email@example.com”</p>
+
+<ol>
+  <li>Now you’ll be asked where you want to save your key (I recommend that you leave this blank to have it placed in your default location):</li>
+</ol>
+
+<p><code class="highlighter-rouge">(/Users/yourUsername/.ssh/id_rsa): [Press return]</code></p>
+:ET
