@@ -1,4 +1,4 @@
-I"�,<p>In order for you to be able to connect to your <a href="https://github.com" target="_blank" rel="noopener">Github</a> account or to SSH into applications you are going to be required to generate an SH1 key.</p>
+I"�-<p>In order for you to be able to connect to your <a href="https://github.com" target="_blank" rel="noopener">Github</a> account or to SSH into applications you are going to be required to generate an SH1 key.</p>
 
 <p>Here is how you generate SSH key pairs in MacOS.</p>
 
@@ -16,16 +16,18 @@
 
 <p>If you see files named <code class="highlighter-rouge">id_rsa</code> and <code class="highlighter-rouge">id_rsa.pub</code> or like what’s in the image below</p>
 
-<p><img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="fit" /></p>
+<p><img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="image right" /></p>
 
-<p>This means one has already been created in it’s default location, so you can use that one (see how use below) or you can generate a new one.</p>
+<p>This means a key has already been created in it’s default location (Yay, less work!), so you can use that key (<a href="#add-ssh-to-github">see how use below</a>) or you can generate a new one.</p>
 
-<p>If you don’t see those files, then you’ll want to generate a new key. To do so for something like CPanel follow these instructions (<a href="#add-ssh-to-github">Scroll down for GitHub instructions</a>):</p>
+<p>If you don’t see those files, then you’ll want to generate a new key. For something such as CPanel, start in the next section.</p>
+
+<p>If all you need to do is add your key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a> then <a href="#add-ssh-to-github">Scroll down</a> for instructions.</p>
 
 <hr />
 
 <p><a href="https://cpanel.net/" target="_blank" rel="noopener" title="cPanel" style="border-bottom:none;">
-    <i class="fab fa-cpanel" alt="cPanel" title="cPanel instructions" style="font-size:5em; border-bottom:none;"></i>
+    <i class="fab fa-cpanel text-green" alt="cPanel" title="cPanel instructions" style="font-size:5em; border-bottom:none;"></i>
 </a></p>
 
 <ol>
@@ -59,7 +61,7 @@
 <hr />
 
 <p><a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" title="GitHub instructions" style="border-bottom:none;">
-    <i class="fab fa-github-alt" alt="github" title="GitHub instructions" style="font-size:4em;"></i>
+    <i class="fab fa-github-alt text-green" alt="github" title="GitHub instructions" style="font-size:4em;"></i>
 </a></p>
 
 <ol>
@@ -87,8 +89,12 @@
 
 <hr />
 
-<p><i class="fad fa-terminal" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i></p>
-<h3 id="adding-your-ssh-key-to-the-ssh-agent-">Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener"><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></a></h3>
+<p><i class="fad fa-terminal text-green" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i></p>
+<h3 id="adding-your-ssh-key-to-the-ssh-agent-1">Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a></h3>
+
+<p class="neu-alert text-brown">
+Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="text-yellow">GitHub help pages</a>. They can explain things better than I can but wanted to combine their work with the helpful and simple instructions above.
+</p>
 
 <h4 id="important-note-from-github-docs"><em>Important note from Github Docs:</em></h4>
 
@@ -123,15 +129,12 @@
   </li>
 </ol>
 
-<!-- 5. Use <a href="https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account" target="_blank" rel="noopener">this tutorial from Github</a> to add your SSH key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a>. They explain it better than I can.
-<div id="add-ssh-to-github"> -->
-
 <hr />
 
 <div id="add-ssh-to-github"></div>
 
-<p><i class="fad fa-key" alt="Adding your new SSH Key to GitHub" title="Adding your new SSH key to GitHub" style="font-size:3em;"></i></p>
-<h3 id="adding-your-new-ssh-key-to-your-github-account-">Adding Your New SSH Key To Your GitHub Account <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener"><sup id="fnref:1:1"><a href="#fn:1" class="footnote">1</a></sup></a></h3>
+<p><i class="fad fa-key text-green" alt="Adding your new SSH Key to GitHub" title="Adding your new SSH key to GitHub" style="font-size:3em;"></i></p>
+<h3 id="adding-your-new-ssh-key-to-your-github-account-1">Adding Your New SSH Key To Your GitHub Account <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a></h3>
 
 <ol>
   <li>
@@ -142,8 +145,8 @@
 </code></pre></div>    </div>
   </li>
 </ol>
-<p class="neu-alert text-yellow">
-<b class="text-yellow">Tip:</b><br /><em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
+<p class="neu-alert text-blue-grey">
+<b class="text-blue-grey">Tip:</b><br /><em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
 </p>
 
 <ol>
@@ -182,15 +185,13 @@
   </li>
 </ol>
 
+<p>And you should now be good to go. I hope you found this article useful, if so, please leave a comment or <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus Response</a> below so that I know how things things went for you.</p>
+
 <hr />
 
-<p><strong><em>Footnotes:</em></strong></p>
+<div class="neu-alert">
+<p class="text-green"><i class="fad fa-people-carry"></i> <em>Footnotes:</em></p>
 
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Github Help. <a href="#fnref:1" class="reversefootnote">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
-    </li>
-  </ol>
+[^1]: Github Help Page.
 </div>
 :ET

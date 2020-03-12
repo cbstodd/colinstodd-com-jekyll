@@ -1,13 +1,15 @@
 ---
 layout: post
+draft: false
 title: Generate SH1 Keys on MacOS
 author: Colin Stodd
-description: Tutorial showing you how to generate Sh1/SSH key pairs on MacOS
+description: Tutorial on how to generate Sh1/SSH key pairs on MacOS
+permalink: /posts/code/generate-sh1-keys-on-macos.html
 featured: true
 pinned: false
 image: /images/posts/ssh_key.jpg
-date: 2020-03-10 00:00:10 -05:00
-last_modified_at:
+date: 2020-03-11 10:00:00 -05:00
+last_modified_at: 2020-03-11 10:00:00 -05:00
 categories: code
 tags:
   - SSH,
@@ -15,9 +17,8 @@ tags:
   - MacOS,
   - SH1
 comments: true
-permalink: /posts/code/generate-sh1-keys-on-macos
-
 ---
+
 In order for you to be able to connect to your <a href="https://github.com" target="_blank" rel="noopener">Github</a> account or to SSH into applications you are going to be required to generate an SH1 key.
 
 Here is how you generate SSH key pairs in MacOS.
@@ -32,11 +33,13 @@ ls -al ~/.ssh
 
 If you see files named `id_rsa` and `id_rsa.pub` or like what's in the image below
 
-<img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="fit">
+<img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="image right">
 
-This means one has already been created in it's default location, so you can use that one (see how use below) or you can generate a new one.
+This means a key has already been created in it's default location (Yay, less work!), so you can use that key (<a href="#add-ssh-to-github">see how use below</a>) or you can generate a new one.
 
-If you don't see those files, then you'll want to generate a new key. To do so for something like CPanel follow these instructions (<a href="#add-ssh-to-github">Scroll down for GitHub instructions</a>):
+If you don't see those files, then you'll want to generate a new key. For something such as CPanel, start in the next section.
+
+If all you need to do is add your key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a> then <a href="#add-ssh-to-github">Scroll down</a> for instructions.
 
 <hr/>
 <a href="https://cpanel.net/"
@@ -135,8 +138,6 @@ Much of the remaining two sections were taken directly from the <a href="https:/
     ssh-add -K ~/.ssh/id_rsa
     ```
 
-<!-- 5. Use <a href="https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account" target="_blank" rel="noopener">this tutorial from Github</a> to add your SSH key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a>. They explain it better than I can.
-<div id="add-ssh-to-github"> -->
 
 <hr/>
 <div id="add-ssh-to-github"></div>
@@ -190,10 +191,12 @@ Much of the remaining two sections were taken directly from the <a href="https:/
 
 
 
-I hope you found this article useful, if so, please leave a comment or <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus Response</a> below so that I know how things things went for you.
+And you should now be good to go. I hope you found this article useful, if so, please leave a comment or <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus Response</a> below so that I know how things things went for you.
 
 <hr/>
 
-<h2 class="text-green"><i class="fad fa-people-carry"></i> <em>Footnotes:</em></h2>
+<div class="neu-alert">
+<p class="text-green"><i class="fad fa-people-carry"></i> <em>Footnotes:</em></p>
 
-[^1]: Github Help.
+[^1]: Github Help Page.
+</div>
