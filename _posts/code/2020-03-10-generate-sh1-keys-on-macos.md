@@ -36,7 +36,7 @@ If you see files named `id_rsa` and `id_rsa.pub` or like what's in the image bel
 
 This means one has already been created in it's default location, so you can use that one (see how use below) or you can generate a new one.
 
-If you don't see those files, then you'll want to generate a new key. To do so for something like CPanel follow these instructions (Scroll down for GitHub instructions):
+If you don't see those files, then you'll want to generate a new key. To do so for something like CPanel follow these instructions (<a href="#add-ssh-to-github">Scroll down for GitHub instructions</a>):
 
 <hr/>
 <a href="https://cpanel.net/"
@@ -44,7 +44,7 @@ If you don't see those files, then you'll want to generate a new key. To do so f
    rel="noopener"
    title="cPanel"
    style="border-bottom:none;">
-    <i class="fab fa-cpanel" alt="cPanel" title="cPanel instructions" style="font-size:5em; border-bottom:none;"></i>
+    <i class="fab fa-cpanel text-green" alt="cPanel" title="cPanel instructions" style="font-size:5em; border-bottom:none;"></i>
 </a>
 
 1. For cPanel you'll want to run this in your terminal and the press the `return` key:
@@ -75,7 +75,7 @@ ssh-add /home/user/.ssh/id_rsa
    rel="noopener"
    title="GitHub instructions"
    style="border-bottom:none;">
-    <i class="fab fa-github-alt" alt="github" title="GitHub instructions" style="font-size:4em;"></i>
+    <i class="fab fa-github-alt text-green" alt="github" title="GitHub instructions" style="font-size:4em;"></i>
 </a>
 
 1.  For <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" title="GitHub">GitHub</a> you'll want to open your terminal app and run the following command (but with your Github account email address):
@@ -97,8 +97,12 @@ This creates a new ssh key with `your_github_email` address.
 
 <hr/>
 
-<i class="fad fa-terminal" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i>
+<i class="fad fa-terminal text-green" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i>
 ### Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
+
+<p class="neu-alert text-brown">
+Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="text-yellow">GitHub help pages</a>. They can explain things better than I can but wanted to combine their work with the helpful and simple instructions above.
+</p>
 
 #### _Important note from Github Docs:_
 
@@ -131,12 +135,65 @@ This creates a new ssh key with `your_github_email` address.
     ssh-add -K ~/.ssh/id_rsa
     ```
 
-5. Use <a href="https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account" target="_blank" rel="noopener">this tutorial from Github</a> to add your SSH key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a>. They explain it better than I can.
+<!-- 5. Use <a href="https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account" target="_blank" rel="noopener">this tutorial from Github</a> to add your SSH key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a>. They explain it better than I can.
+<div id="add-ssh-to-github"> -->
+
+<hr/>
+<div id="add-ssh-to-github"></div>
+
+<i class="fad fa-key text-green" alt="Adding your new SSH Key to GitHub" title="Adding your new SSH key to GitHub" style="font-size:3em;"></i>
+### Adding Your New SSH Key To Your GitHub Account <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
+
+1. Copy the SSH key to your clipboard.
+
+    If your SSH key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+    ```bash
+    pbcopy < ~/.ssh/id_rsa.pub  # Copies the contents of the id_rsa.pub file to your clipboard
+    ```
+<p class="neu-alert text-blue-grey">
+<b class="text-blue-grey">Tip:</b><br/><em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
+</p>
 
 
+2. In the upper-right corner of any page, click your profile photo, then click Settings:
+    <div class="row">
+    <img src="https://help.github.com/assets/images/help/settings/userbar-account-settings.png" class="image left" style="display:block;">
+    </div>
+
+3. In the user settings sidebar, click SSH and GPG keys:
+    <div class="row">
+    <img src="https://help.github.com/assets/images/help/settings/settings-sidebar-ssh-keys.png" class="image left" style="display:block;">
+    </div>
+
+4. Click New SSH key or Add SSH key:
+    <div class="row">
+    <img src="https://help.github.com/assets/images/help/settings/ssh-add-ssh-key.png" class="image left" style="display:block;">
+    </div>
+
+5. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+
+6. Paste your key into the "Key" field:
+    <div class="row">
+    <img src="https://help.github.com/assets/images/help/settings/ssh-key-paste.png" class="image left" style="display:block;">
+    </div>
+
+7. Click Add SSH key:
+    <div class="row">
+    <img src="https://help.github.com/assets/images/help/settings/ssh-add-key.png" class="image left" style="display:block;">
+    </div>
+
+8. If prompted, confirm your GitHub password:
+    <div class="row">
+    <img src="https://help.github.com/assets/images/help/settings/sudo_mode_popup.png" class="image left" style="display:block;">
+    </div>
+
+
+
+
+I hope you found this article useful, if so, please leave a comment or <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus Response</a> below so that I know how things things went for you.
 
 <hr/>
 
-***Footnotes:***
+<h2 class="text-green"><i class="fad fa-people-carry"></i> <em>Footnotes:</em></h2>
 
 [^1]: Github Help.

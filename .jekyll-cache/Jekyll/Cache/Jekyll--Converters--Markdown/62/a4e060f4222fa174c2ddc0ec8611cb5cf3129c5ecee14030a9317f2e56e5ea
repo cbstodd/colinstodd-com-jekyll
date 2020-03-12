@@ -1,0 +1,160 @@
+I"�&<p>In order for you to be able to connect to your <a href="https://github.com" target="_blank" rel="noopener">Github</a> account or to SSH into applications you are going to be required to generate an SH1 key.</p>
+
+<p>Here is how you generate SSH key pairs in MacOS.</p>
+
+<ol>
+  <li>
+    <p>Open up your <a href="https://www.iterm2.com/" target="_blank">favorite terminal</a> or the default MacOS terminal: <code class="highlighter-rouge">Applications</code> &gt; <code class="highlighter-rouge">Utilities</code> &gt; <code class="highlighter-rouge">Terminal</code></p>
+  </li>
+  <li>
+    <p>You’ll first want to check and see if you already have an SSH key created. You can check by running this in your terminal:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> <span class="nt">-al</span> ~/.ssh
+</code></pre></div></div>
+
+<p>If you see files named <code class="highlighter-rouge">id_rsa</code> and <code class="highlighter-rouge">id_rsa.pub</code> or like what’s in the image below</p>
+
+<p><img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="fit" /></p>
+
+<p>This means one has already been created in it’s default location, so you can use that one (see how use below) or you can generate a new one.</p>
+
+<p>If you don’t see those files, then you’ll want to generate a new key. To do so for something like CPanel follow these instructions (<a href="#add-ssh-to-github">Scroll down for GitHub instructions</a>):</p>
+
+<hr />
+
+<p><a href="https://cpanel.net/" target="_blank" rel="noopener" title="cPanel" style="border-bottom:none;">
+    <i class="fab fa-cpanel" alt="cPanel" title="cPanel instructions" style="font-size:5em; border-bottom:none;"></i>
+</a></p>
+
+<ol>
+  <li>
+    <p>For cPanel you’ll want to run this in your terminal and the press the <code class="highlighter-rouge">return</code> key:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh-keygen <span class="nt">-t</span> rsa
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You will now be prompted to tell the the prompt where you want your key be placed/located. If you leave it blank and press <code class="highlighter-rouge">return</code> key, it will place the key in it’s default location (Recommended). If you decide to place the key in a different location, just remember to make a note of where you place your key. If you leave it blank and press <code class="highlighter-rouge">return</code> it will place your key in:</p>
+
+    <p><code class="highlighter-rouge">/home/user/.ssh/id_rsa</code></p>
+  </li>
+  <li>
+    <p>Now you will be prompted to enter a password to access the key (Note: The password is <strong>not</strong> required, you can leave blank and press <code class="highlighter-rouge">return</code>). Also, note that you will not see the characters when you are typing the password. This is for your own safety.</p>
+  </li>
+  <li>
+    <p>After you press <code class="highlighter-rouge">return</code>, your SSH key will have been created and located in:</p>
+
+    <p><code class="highlighter-rouge">/home/user/.ssh/id_rsa.pub</code></p>
+  </li>
+  <li>
+    <p>Depending on what you are using the passkey for you can upload/use by going into something like C Panel or Github by using this command:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add /home/user/.ssh/id_rsa
+</code></pre></div></div>
+
+<hr />
+
+<p><a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" title="GitHub instructions" style="border-bottom:none;">
+    <i class="fab fa-github-alt" alt="github" title="GitHub instructions" style="font-size:4em;"></i>
+</a></p>
+
+<ol>
+  <li>
+    <p>For <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" title="GitHub">GitHub</a> you’ll want to open your terminal app and run the following command (but with your Github account email address):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_github_email@example.com"</span>
+</code></pre></div>    </div>
+    <p>This creates a new ssh key with <code class="highlighter-rouge">your_github_email</code> address.</p>
+  </li>
+  <li>
+    <p>Now you’ll be asked where you want to save your key (I recommend that you leave this blank to have it placed in your default location):</p>
+  </li>
+</ol>
+
+<p><code class="highlighter-rouge">(/Users/yourUsername/.ssh/id_rsa): [Press return]</code></p>
+
+<ol>
+  <li>Next, a prompt will ask for a passphrase/password. Again, this is optional and you won’t be able to see the password you type.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>Enter passphrase <span class="o">(</span>empty <span class="k">for </span>no passphrase<span class="o">)</span>: typePasswordHere
+<span class="nv">$ </span>Enter same passphrase again: typeSamePasswordAgain
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<hr />
+
+<p><i class="fad fa-terminal" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i></p>
+<h3 id="adding-your-ssh-key-to-the-ssh-agent-">Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener"><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></a></h3>
+
+<h4 id="important-note-from-github-docs"><em>Important note from Github Docs:</em></h4>
+
+<blockquote>
+  <p>Before adding a new SSH key to the ssh-agent to manage your keys, you should have checked for existing SSH keys and generated a new SSH key. When adding your SSH key to the agent, use the default macOS ssh-add command, and not an application installed by macports, homebrew, or some other external source.</p>
+</blockquote>
+
+<ol>
+  <li>Start the ssh-agent in the background:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>ssh-agent <span class="nt">-s</span><span class="si">)</span><span class="s2">"</span>
+
+ <span class="o">&gt;</span> Agent pid 59566
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If you’re using <strong>macOS Sierra 10.12.2</strong> or later, you will need to modify your <code class="highlighter-rouge">~/.ssh/config</code> file to automatically load keys into the ssh-agent and store passphrases in your keychain.
+ <strong>Open using VSCode:</strong></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> code ~/.ssh/config
+</code></pre></div>    </div>
+  </li>
+  <li>Update the <code class="highlighter-rouge">~/.ssh/config</code>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Host <span class="k">*</span>
+ AddKeysToAgent <span class="nb">yes
+ </span>UseKeychain <span class="nb">yes
+ </span>IdentityFile ~/.ssh/id_rsa
+</code></pre></div>    </div>
+  </li>
+  <li>Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh-add <span class="nt">-K</span> ~/.ssh/id_rsa
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<!-- 5. Use <a href="https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account" target="_blank" rel="noopener">this tutorial from Github</a> to add your SSH key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a>. They explain it better than I can.
+<div id="add-ssh-to-github"> -->
+
+<hr />
+
+<div id="add-ssh-to-github"></div>
+
+<p><i class="fad fa-key" alt="Adding your new SSH Key to GitHub" title="Adding your new SSH key to GitHub" style="font-size:3em;"></i></p>
+<h3 id="adding-your-new-ssh-key-to-your-github-account-">Adding Your New SSH Key To Your GitHub Account <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener"><sup id="fnref:1:1"><a href="#fn:1" class="footnote">1</a></sup></a></h3>
+
+<ol>
+  <li>
+    <p>Copy the SSH key to your clipboard.</p>
+
+    <p>If your SSH key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don’t add any newlines or whitespace.</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pbcopy &lt; ~/.ssh/id_rsa.pub  <span class="c"># Copies the contents of the id_rsa.pub file to your clipboard</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+<p class="neu-alert text-yellow">
+<b><u>Tip:</u></b> <em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
+</p>
+
+<hr />
+
+<p><strong><em>Footnotes:</em></strong></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Github Help. <a href="#fnref:1" class="reversefootnote">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>
+:ET

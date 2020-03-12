@@ -149,11 +149,22 @@ img.image-gallery-img:hover {
   -webkit-transform: scale(1.15); /* Safari and Chrome */
 }
 
+h2.neu-alert,
+h3.neu-alert,
+h4.neu-alert,
 h5.neu-alert {
   border-radius: 23px;
   background: #31394b;
   box-shadow: inset -11px 11px 22px #2a3040, inset 11px -11px 22px #384256;
   padding: 5em 4em;
+  line-height: 2em;
+}
+
+p.neu-alert {
+  border-radius: 23px;
+  background: #31394b;
+  box-shadow: inset -11px 11px 22px #2a3040, inset 11px -11px 22px #384256;
+  padding: 2em;
   line-height: 2em;
 }
 
@@ -185,6 +196,15 @@ h5.neu-alert {
 }
 .text-blue {
   color: #4c5c95;
+}
+.text-yellow {
+  color: #f9a51b;
+}
+.text-brown {
+  color: #8B5E0E;
+}
+.text-green {
+  color: #768e39;
 }
 
 .fixed-font {
