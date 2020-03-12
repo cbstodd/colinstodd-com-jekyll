@@ -39,7 +39,9 @@ This means a key has already been created in it's default location (Yay, less wo
 
 If you don't see those files, then you'll want to generate a new key. For something such as CPanel, start in the next section.
 
-If all you need to do is add your key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a> then <a href="#add-ssh-to-github">Scroll down</a> for instructions.
+<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
+<em>If all you need to do is add your key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a> then <a href="#add-ssh-to-github">Scroll down <i class="fad fa-level-down-alt"></i></a> for instructions.</em>
+</p>
 
 <hr/>
 <a href="https://cpanel.net/"
@@ -103,8 +105,8 @@ This creates a new ssh key with `your_github_email` address.
 <i class="fad fa-terminal text-green" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i>
 ### Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
 
-<p class="neu-alert text-brown">
-Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="text-yellow">GitHub help pages</a>. They can explain things better than I can but wanted to combine their work with the helpful and simple instructions above.
+<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
+<em>Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="">GitHub help pages</a>. They can explain things better than I can but wanted to combine their work with the helpful and simple instructions above.</em>
 </p>
 
 #### _Important note from Github Docs:_
@@ -151,7 +153,7 @@ Much of the remaining two sections were taken directly from the <a href="https:/
     ```bash
     pbcopy < ~/.ssh/id_rsa.pub  # Copies the contents of the id_rsa.pub file to your clipboard
     ```
-<p class="neu-alert text-blue-grey">
+<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
 <b class="text-blue-grey">Tip:</b><br/><em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
 </p>
 
@@ -195,8 +197,6 @@ And you should now be good to go. I hope you found this article useful, if so, p
 
 <hr/>
 
-<div class="neu-alert">
-<p class="text-green"><i class="fad fa-people-carry"></i> <em>Footnotes:</em></p>
 
-[^1]: Github Help Page.
-</div>
+<h4 class="text-green"><i class="fad fa-comment-alt-edit"></i> Footnotes:</h4>
+[^1]: <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" title="GitHub Pages"><i class="fab fa-github"></i> Github Help Page.</a>
