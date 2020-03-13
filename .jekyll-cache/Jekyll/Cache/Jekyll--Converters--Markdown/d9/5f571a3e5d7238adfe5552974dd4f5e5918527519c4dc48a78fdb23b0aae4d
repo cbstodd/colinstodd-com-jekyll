@@ -1,4 +1,4 @@
-I"i0<p>In order for you to be able to connect to your <a href="https://github.com" target="_blank" rel="noopener">Github</a> account or to SSH into applications you are going to be required to generate an SH1 key.</p>
+I"�1<p>In order for you to be able to connect to your <a href="https://github.com" target="_blank" rel="noopener">Github</a> account or to SSH into applications you are going to be required to generate an SH1 key.</p>
 
 <p>Here is how you generate SSH key pairs in MacOS.</p>
 
@@ -16,13 +16,14 @@
 
 <p>If you see files named <code class="highlighter-rouge">id_rsa</code> and <code class="highlighter-rouge">id_rsa.pub</code> or like what’s in the image below</p>
 
-<p><img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="image right" /></p>
+<!-- Trigger the Modal -->
+<p><img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="image right mobile-full" id="myImg" /></p>
 
 <p>This means a key has already been created in it’s default location (Yay, less work!), so you can use that key (<a href="#add-ssh-to-github">see how use below</a>) or you can generate a new one.</p>
 
 <p>If you don’t see those files, then you’ll want to generate a new key. For something such as CPanel, start in the next section.</p>
 
-<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
+<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Note:<br />
 <em>If all you need to do is add your key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a> then <a href="#add-ssh-to-github">Scroll down <i class="fad fa-level-down-alt"></i></a> for instructions.</em>
 </p>
 
@@ -76,13 +77,12 @@
   </li>
   <li>
     <p>Now you’ll be asked where you want to save your key (I recommend that you leave this blank to have it placed in your default location):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">(</span>/Users/yourUsername/.ssh/id_rsa<span class="o">)</span>: <span class="o">[</span>Press <span class="k">return</span><span class="o">]</span>
+</code></pre></div>    </div>
   </li>
-</ol>
-
-<p><code class="highlighter-rouge">(/Users/yourUsername/.ssh/id_rsa): [Press return]</code></p>
-
-<ol>
-  <li>Next, a prompt will ask for a passphrase/password. Again, this is optional and you won’t be able to see the password you type.
+  <li>
+    <p>Next, a prompt will ask for a passphrase/password. Again, this is optional and you won’t be able to see the password you type.</p>
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>Enter passphrase <span class="o">(</span>empty <span class="k">for </span>no passphrase<span class="o">)</span>: typePasswordHere
 <span class="nv">$ </span>Enter same passphrase again: typeSamePasswordAgain
 </code></pre></div>    </div>
@@ -94,8 +94,8 @@
 <p><i class="fad fa-terminal text-green" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i></p>
 <h3 id="adding-your-ssh-key-to-the-ssh-agent-">Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener"><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></a></h3>
 
-<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
-<em>Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="">GitHub help pages</a>. They can explain things better than I can but wanted to combine their work with the helpful and simple instructions above.</em>
+<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Note:<br />
+<em>Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="">GitHub help pages</a>. I'm lazy and they explain things better, but I wanted to combine their work with the stuff I added above for ease-of-access.</em>
 </p>
 
 <h4 id="important-note-from-github-docs"><em>Important note from Github Docs:</em></h4>
@@ -118,7 +118,9 @@
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> code ~/.ssh/config
 </code></pre></div>    </div>
   </li>
-  <li>Update the <code class="highlighter-rouge">~/.ssh/config</code>:
+  <li>
+    <p>Update the <code class="highlighter-rouge">~/.ssh/config</code>:</p>
+
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Host <span class="k">*</span>
  AddKeysToAgent <span class="nb">yes
  </span>UseKeychain <span class="nb">yes
@@ -148,7 +150,7 @@
   </li>
 </ol>
 <p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
-<b class="text-blue-grey">Tip:</b><br /><em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
+&nbsp;&nbsp;<b class="text-blue-grey">Tip:</b><br /><em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
 </p>
 
 <ol>
@@ -191,7 +193,7 @@
 
 <hr />
 
-<h4 class="text-green"><i class="fad fa-comment-alt-edit"></i>&nbsp;Footnotes:</h4>
+<h4 class="text-green"><i class="fad fa-comment-alt-edit"></i> Footnotes:</h4>
 <div class="footnotes">
   <ol>
     <li id="fn:1">

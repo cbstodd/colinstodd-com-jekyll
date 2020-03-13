@@ -33,13 +33,14 @@ ls -al ~/.ssh
 
 If you see files named `id_rsa` and `id_rsa.pub` or like what's in the image below
 
-<img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="image right">
+<!-- Trigger the Modal -->
+<img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="image right mobile-full" id="myImg">
 
 This means a key has already been created in it's default location (Yay, less work!), so you can use that key (<a href="#add-ssh-to-github">see how use below</a>) or you can generate a new one.
 
 If you don't see those files, then you'll want to generate a new key. For something such as CPanel, start in the next section.
 
-<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
+<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Note:<br/>
 <em>If all you need to do is add your key to <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GitHub</a> then <a href="#add-ssh-to-github">Scroll down <i class="fad fa-level-down-alt"></i></a> for instructions.</em>
 </p>
 
@@ -92,7 +93,9 @@ This creates a new ssh key with `your_github_email` address.
 
 2. Now you'll be asked where you want to save your key (I recommend that you leave this blank to have it placed in your default location):
 
- `(/Users/yourUsername/.ssh/id_rsa): [Press return]`
+    ```bash
+    (/Users/yourUsername/.ssh/id_rsa): [Press return]
+    ```
 
 3. Next, a prompt will ask for a passphrase/password. Again, this is optional and you won't be able to see the password you type.
     ```bash
@@ -105,8 +108,8 @@ This creates a new ssh key with `your_github_email` address.
 <i class="fad fa-terminal text-green" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i>
 ### Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
 
-<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
-<em>Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="">GitHub help pages</a>. They can explain things better than I can but wanted to combine their work with the helpful and simple instructions above.</em>
+<p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Note:<br/>
+<em>Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="">GitHub help pages</a>. I'm lazy and they explain things better, but I wanted to combine their work with the stuff I added above for ease-of-access.</em>
 </p>
 
 #### _Important note from Github Docs:_
@@ -128,6 +131,7 @@ This creates a new ssh key with `your_github_email` address.
     ```
 
 3. Update the `~/.ssh/config`:
+
     ```bash
     Host *
     AddKeysToAgent yes
@@ -154,7 +158,7 @@ This creates a new ssh key with `your_github_email` address.
     pbcopy < ~/.ssh/id_rsa.pub  # Copies the contents of the id_rsa.pub file to your clipboard
     ```
 <p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>
-<b class="text-blue-grey">Tip:</b><br/><em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
+&nbsp;&nbsp;<b class="text-blue-grey">Tip:</b><br/><em>If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.</em>
 </p>
 
 
