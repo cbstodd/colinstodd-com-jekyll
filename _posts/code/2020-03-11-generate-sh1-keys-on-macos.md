@@ -1,6 +1,6 @@
 ---
 layout: post
-draft: false
+categories: code
 title: Generate SH1 Keys on MacOS
 author: Colin Stodd
 description: Tutorial on how to generate Sh1/SSH key pairs on MacOS
@@ -10,7 +10,6 @@ pinned: false
 image: /images/posts/ssh_key.jpg
 date: 2020-03-11 10:00:00 -05:00
 last_modified_at: 2020-03-11 10:00:00 -05:00
-categories: code
 tags:
   - SSH,
   - Key Pair,
@@ -27,14 +26,13 @@ Here is how you generate SSH key pairs in MacOS.
 
 2. You'll first want to check and see if you already have an SSH key created. You can check by running this in your terminal:
 
-```bash
-ls -al ~/.ssh
-```
+    ```bash
+    ls -al ~/.ssh
+    ```
 
-If you see files named `id_rsa` and `id_rsa.pub` or like what's in the image below
+    If you see files named `id_rsa` and `id_rsa.pub` or like what's in the image below
 
-<!-- Trigger the Modal -->
-<img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="image right mobile-full" id="myImg">
+<img src="/images/posts/ssh_key_pair_blurred.png" alt="id_rsa id_rsa.pub screenshot" class="image right mobile-full">
 
 This means a key has already been created in it's default location (Yay, less work!), so you can use that key (<a href="#add-ssh-to-github">see how use below</a>) or you can generate a new one.
 
@@ -81,8 +79,12 @@ ssh-add /home/user/.ssh/id_rsa
    rel="noopener"
    title="GitHub instructions"
    style="border-bottom:none;">
-    <i class="fab fa-github-alt text-green" alt="github" title="GitHub instructions" style="font-size:4em;"></i>
+    <i class="fab fa-github-alt text-green"
+       alt="github"
+       title="GitHub instructions"
+       style="font-size:4em;"></i>
 </a>
+<h3 class="text-green">GitHub</h3>
 
 1.  For <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" title="GitHub">GitHub</a> you'll want to open your terminal app and run the following command (but with your Github account email address):
 
@@ -99,14 +101,16 @@ This creates a new ssh key with `your_github_email` address.
 
 3. Next, a prompt will ask for a passphrase/password. Again, this is optional and you won't be able to see the password you type.
     ```bash
-   $ Enter passphrase (empty for no passphrase): typePasswordHere
-   $ Enter same passphrase again: typeSamePasswordAgain
+   Enter passphrase (empty for no passphrase): typePasswordHere
+   Enter same passphrase again: typeSamePasswordAgain
     ```
 
 <hr/>
 
 <i class="fad fa-terminal text-green" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i>
-### Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
+<h3 class="text-green">
+Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
+</h3>
 
 <p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Note:<br/>
 <em>Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="">GitHub help pages</a>. I'm lazy and they explain things better, but I wanted to combine their work with the stuff I added above for ease-of-access.</em>
@@ -149,7 +153,9 @@ This creates a new ssh key with `your_github_email` address.
 <div id="add-ssh-to-github"></div>
 
 <i class="fad fa-key text-green" alt="Adding your new SSH Key to GitHub" title="Adding your new SSH key to GitHub" style="font-size:3em;"></i>
-### Adding Your New SSH Key To Your GitHub Account <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
+<h3 class="text-green">
+Adding Your New SSH Key To Your GitHub Account <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
+</h3>
 
 1. Copy the SSH key to your clipboard.
 

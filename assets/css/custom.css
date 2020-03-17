@@ -196,22 +196,22 @@ p.neu-alert,
 }
 
 .text-pink {
-  color: #c10062;
+  color: #c10062 !important;
 }
 .text-blue-grey {
-  color: #6978a0;
+  color: #6978a0 !important;
 }
 .text-blue {
-  color: #4c5c95;
+  color: #4c5c95 !important;
 }
 .text-yellow {
-  color: #f9a51b;
+  color: #f9a51b !important;
 }
 .text-brown {
-  color: #8b5e0e;
+  color: #8b5e0e !important;
 }
 .text-green {
-  color: #768e39;
+  color: #768e39 !important;
 }
 
 .fixed-font {
