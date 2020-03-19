@@ -241,8 +241,8 @@ hr.banner {
   margin: (_size(element-margin) * 1.25) 0;
   border: 0;
   height: 0;
-  border-top: 1px solid #1f2430;
-  border-bottom: 1px solid #50586f;
+  border-top: 1px solid #171c25;
+  border-bottom: 1px solid #39425A;
 
   &.major {
     border: 0;
@@ -268,7 +268,7 @@ hr.footer {
     height: 0;
     border-top: 1px solid #1f2430;
     border-bottom: 1px solid #46516b;
-    // margin: (_size(element-margin) * 2) 0;
+    margin: (_size(element-margin) * 2) 0;
   }
 }
 

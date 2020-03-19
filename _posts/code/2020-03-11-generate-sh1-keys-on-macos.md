@@ -109,14 +109,14 @@ This creates a new ssh key with `your_github_email` address.
 
 <i class="fad fa-terminal text-green" alt="Adding your SSH Key" title="Adding your SSH key to the ssh-agent" style="font-size:3em;"></i>
 <h3 class="text-green">
-Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
+Adding your SSH key to the ssh-agent
 </h3>
 
 <p class="neu-alert text-blue-grey"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Note:<br/>
 <em>Much of the remaining two sections were taken directly from the <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" class="">GitHub help pages</a>. I'm lazy and they explain things better, but I wanted to combine their work with the stuff I added above for ease-of-access.</em>
 </p>
 
-#### _Important note from Github Docs:_
+#### _Important note from Github Docs:_ [^1]
 
 > Before adding a new SSH key to the ssh-agent to manage your keys, you should have checked for existing SSH keys and generated a new SSH key. When adding your SSH key to the agent, use the default macOS ssh-add command, and not an application installed by macports, homebrew, or some other external source.
 
@@ -153,11 +153,13 @@ Adding your SSH key to the ssh-agent <a href="https://help.github.com/en/github/
 <div id="add-ssh-to-github"></div>
 
 <i class="fad fa-key text-green" alt="Adding your new SSH Key to GitHub" title="Adding your new SSH key to GitHub" style="font-size:3em;"></i>
+
 <h3 class="text-green">
-Adding Your New SSH Key To Your GitHub Account <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">[^1]</a>
+Adding Your New SSH Key To Your GitHub Account
 </h3>
 
-1. Copy the SSH key to your clipboard.
+
+1. Copy the SSH key to your clipboard [^1].
 
     If your SSH key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
     ```bash
@@ -207,6 +209,10 @@ And you should now be good to go. I hope you found this article useful, if so, p
 
 <hr/>
 
+[^1]: GitHubPages
+
 
 <h4 class="text-green"><i class="fad fa-comment-alt-edit"></i> Footnotes:</h4>
-[^1]: <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener" title="GitHub Pages"><i class="fab fa-github"></i> Github Help Page.</a>
+
+
+
