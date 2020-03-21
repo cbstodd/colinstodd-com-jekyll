@@ -8,7 +8,7 @@ tags:
   - Tutorial
 title: How to add UIKit to Angular
 date: 2019-02-19 15:30:12 -05:00
-last_modified_at: 2019-02-19 15:30:12 -05:00
+last_modified_at: 2020-03-21 10:30:12 -05:00
 pinned: false
 featured: true
 image: ../images/posts/uikit.png
@@ -21,72 +21,91 @@ redirect_from:
   - /posts/how-to-add-uikit-to-angular
 ---
 
-I recently heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and I decided to give it a spin. It's pretty amazing. Here's how you can install it in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>.
+I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and really liked it! If you do a little digging on their website you'll see that they have a <a href="https://www.npmjs.com/package/uikit" target="_blank" rel="noopener">NPM package</a>. <br/>This post shows you how to install <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> using either CSS or <a href="#scss">SCSS/SASS <i class="fad fa-level-down-alt"></i></a>.
 
-1.from the root of your project you need to install jQuery and UIKit:
 
-`npm install jquery uikit --save`
+1. From the root of your project you need to install <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> and <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a>:
 
-2.Open up your `angular.json` file and add the styles and scripts:
+    ```bash
+    npm install jquery uikit --S
+    ```
 
-```json
-"styles": [
-        "src/styles.css",
-        "./node_modules/uikit/dist/css/uikit.min.css",
-        "./node_modules/uikit/dist/css/uikit-core.min.css"
-    ],
-    "scripts": [
-        "./node_modules/jquery/dist/jquery.min.js",
-        "./node_modules/uikit/dist/js/uikit.min.js",
-        "./node_modules/uikit/dist/js/uikit-icons.min.js"
-    ]
-```
 
-3.Restart your server and you should be ready to code!
+2. Open up your `angular.json` file and add the styles and scripts:
+
+    ```json
+    "styles": [
+            "src/styles.css",
+            "./node_modules/uikit/dist/css/uikit.min.css",
+            "./node_modules/uikit/dist/css/uikit-core.min.css"
+        ],
+        "scripts": [
+            "./node_modules/jquery/dist/jquery.min.js",
+            "./node_modules/uikit/dist/js/uikit.min.js",
+            "./node_modules/uikit/dist/js/uikit-icons.min.js"
+        ]
+    ```
+
+    <div id="scss" name="scss"></div>
+
+3. Since we updated `angular.json` you'll have to restart your server.
 
 ---
 
-**If you're using SCSS (SASS)**
+<i class="fab fa-sass text-pink header-icon" title="SASS"></i>
 
-Do the first step above, but your `angular.json` file shoule be:
+#### _If you're using SCSS or SASS:_
 
-```json
-"styles": [
-    "src/styles/styles.scss"
-  ],
-  "stylePreprocessorOptions": {
-    "includePaths": [
-      "src/styles"
-    ]
-  },
-  "scripts": [
-    "./node_modules/jquery/dist/jquery.min.js",
-    "./node_modules/uikit/dist/js/uikit.min.js",
-    "./node_modules/uikit/dist/js/uikit-icons.min.js"
-  ]
-```
+1. From the root of your project you need to install <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> and <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a>:
 
-Now create a `styles` directory/folder in your `/src` folder. So it should be `src/styles`.
+    ```bash
+    npm install jquery uikit --S
+    ```
 
-Now move your `styles.scss` file into that folder and also create and add your variables, mixins and custom files to that folder using the following naming convention: `_variables.scss`, `_mixins.scss` and `_custom.scss`.
+2. Update your `angular.json` file with the same code snippet below in two places `"build"` and `"test"`:
 
-Now open your `styles.scss` file and import UIKit and your custom/mixin/variable files:
+    ```json
+    "styles": [
+        "src/styles/styles.scss"
+      ],
+      // See blurb (link) below regarding this.
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "src/styles"
+        ]
+      },
+      "scripts": [
+        "./node_modules/jquery/dist/jquery.min.js",
+        "./node_modules/uikit/dist/js/uikit.min.js",
+        "./node_modules/uikit/dist/js/uikit-icons.min.js"
+      ]
+    ```
 
-```scss
-/* UIkit */
-@import "../../node_modules/uikit/src/scss/variables-theme";
-@import "../../node_modules/uikit/src/scss/mixins-theme";
-@import "../../node_modules/uikit/src/scss/uikit-theme";
-/* Custom Variables */
-@import 'variables';
-@import 'mixins';
-@import 'custom';
-```
+    <div class="blurb"><i class="fad fa-books fa-lg"></i>&nbsp;&nbsp;&nbsp;  To read more about  <code>stylePreprocessorOptions</code> go to  &nbsp;<a href="https://github.com/angular/angular-cli/wiki/stories-global-styles" target="_blank" rel="noopener"> Angular/CLI README  <i class="fad fa-external-link-alt"></i></a>. &nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc in Angular.</div>
 
-To use your variables in other components in your angular app, you'll have to import it into every `component-name.component.scss` file like so:
 
-```scss
-@import '~src/styles/variables';
-```
+3. Create a `styles` directory/folder in `/src`. So it should be `src/styles`.
 
-And dont forget to restart your server.
+4. Now move your `styles.scss` file into that directory and create your variables, mixins and custom files to that `src/styles` directory using the following naming convention: `_variables.scss`, `_mixins.scss` and `_custom.scss`.
+
+5. Now open your `styles.scss` file and import <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a> and your custom/mixin/variable files:
+
+    ```scss
+    /* UIKit */
+    @import "../../node_modules/uikit/src/scss/variables";
+    @import "../../node_modules/uikit/src/scss/mixins-theme";
+    @import "../../node_modules/uikit/src/scss/uikit-theme";
+    /* Custom Variables */
+    @import 'variables';
+    @import 'mixins';
+    @import 'custom';
+    ```
+
+6. To use your variables in other components, you'll have to import it into every <br/>
+`component-name.component.scss` file like so:
+
+    ```scss
+    @import '~src/styles/variables';
+    ```
+
+7. Since we updated `angular.json` you'll have to restart your server.
