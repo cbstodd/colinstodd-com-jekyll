@@ -23,6 +23,9 @@ redirect_from:
 
 I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and really liked it! If you do a little digging on their website you'll see that they have a <a href="https://www.npmjs.com/package/uikit" target="_blank" rel="noopener">NPM package</a>. <br/>This post shows you how to install <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> using either CSS or <a href="#scss">SCSS/SASS <i class="fad fa-level-down-alt"></i></a>.
 
+<i class="fab fa-css3 text-pink header-icon" title="CSS 3"></i>
+
+#### _If you're using CSS:_
 
 1. From the root of your project you need to install <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> and <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a>:
 
