@@ -34,7 +34,7 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
     ```
 
 
-2. Open up your `angular.json` file and add the styles and scripts:
+2. Update your `angular.json` file with the same code snippet below in two places: Underneath `"build"` and `"test"`:
 
     ```json
     "styles": [
@@ -65,7 +65,7 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
     npm install jquery uikit --S
     ```
 
-2. Update your `angular.json` file with the same code snippet below in two places `"build"` and `"test"`:
+2. Update your `angular.json` file with the same code snippet below in two places. Underneath `"build"` and `"test"`:
 
     ```json
     "styles": [

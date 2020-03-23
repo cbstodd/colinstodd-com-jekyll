@@ -7,8 +7,8 @@ tags:
   - Tips & Tricks,
   - SASS
 title: Things You Should Know About CSS
-date: 2019-05-12 00:00:00 -05:00
-last_modified_at: 2019-05-12 00:00:00 -05:00
+date: 2019-05-12 00:00:10 -05:00
+last_modified_at: 2019-05-12 00:00:10 -05:00
 pinned: false
 featured: false
 image: ../images/posts/css3.png

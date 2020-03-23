@@ -7,8 +7,8 @@ tags:
   - .env,
   - DotEnv
 title: How To Add DotEnv To Webpack
-date: 2018-03-20 00:00:00 -05:00
-last_modified_at: 2018-03-20 00:00:00 -05:00
+date: 2018-03-20 00:00:10 -05:00
+last_modified_at: 2018-03-20 00:00:10 -05:00
 pinned: false
 featured: false
 image: ../images/posts/env.png

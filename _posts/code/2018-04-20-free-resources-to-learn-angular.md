@@ -6,8 +6,8 @@ tags:
   - Angular,
   - Education
 title: Free Resources To Learn Angular
-date: 2018-04-20 00:00:00 -05:00
-last_modified_at: 2020-01-13 00:00:01 -05:00
+date: 2018-04-20 00:00:10 -05:00
+last_modified_at: 2020-01-13 00:00:10 -05:00
 pinned: false
 featured: false
 image: "/images/posts/ng-free-resources_min.png"

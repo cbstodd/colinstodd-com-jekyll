@@ -1,4 +1,5 @@
 {
     "workbench.settings.useSplitJSON": true,
-    "workbench.settings.openDefaultSettings": true
+    "workbench.settings.openDefaultSettings": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true
 }

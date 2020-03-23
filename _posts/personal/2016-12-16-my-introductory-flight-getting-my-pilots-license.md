@@ -6,8 +6,8 @@ tags:
   - Personal,
   - Flying
 title: My Introductory Flight Getting My Pilots License
-date: 2016-12-16 00:00:00 -05:00
-last_modified_date: 2016-12-16 00:00:00 -05:00
+date: 2016-12-16 00:00:10 -05:00
+last_modified_date: 2016-12-16 00:00:10 -05:00
 pinned: false
 featured: false
 image: ../images/posts/cessna172-min.jpg

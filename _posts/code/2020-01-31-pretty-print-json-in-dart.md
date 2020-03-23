@@ -7,7 +7,7 @@ featured: false
 pinned: false
 image: ../../images/posts/dart_logo.png
 date: 2020-01-31 00:20:00 -05:00
-last_modified_at: 2020-02-23 00:00:00 -05:00
+last_modified_at: 2020-02-23 00:20:00 -05:00
 categories: code
 tags:
   - Dart,

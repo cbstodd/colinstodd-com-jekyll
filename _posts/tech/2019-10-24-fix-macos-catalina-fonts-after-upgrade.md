@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: "../../images/posts/catalina_icon_min.png"
 date: 2019-11-03 00:00:01 -05:00
-last_modified_at: 2020-03-21 00:10:00 -05:00
+last_modified_at: 2020-03-22 08:00:00 -05:00
 categories: tech
 tags:
   - OSX,
@@ -26,19 +26,23 @@ I recently upgraded my MAC from <a href="https://support.apple.com/macos/mojave"
 
 Many people had to play with these settings because not every external display is the same, so what I've posted here might not fit your setup exactly. It took some trial and error, but hopefully these commands will help you. As you'll see below, everything can be reverted (<a href="#revert">see the bottom of the page</a>) and the commands won't do any serious damage to your MAC.
 
-***Note: That after every time you run these commands, you'll have to log out of your computer and log back in for it to take effect. You can do so by pressing*** `command` + `shift` + `Q`.
+<div class="blurb"><i class="fad fa-comment-alt-exclamation fa-lg text-gold"></i>&nbsp;&nbsp;&nbsp;Note: Every time you run one of these commands, you'll have to log out to see the changes. You can do so by pressing <code>command</code> + <code>shift</code> + <code>Q</code>.</div>
+___
 
-
-### First:
-You'll want to note if you have your font smoothing enabled or disabled in your `Settings` > `General` tab as seen in the image. This also plays a role... I left mine on.
+## What Worked For Me:
+You'll want to check to see if you have your font smoothing enabled or disabled in your `Settings` > `General` tab as seen in the image. This also plays a role... I left mine on.
 
 <div class="row">
   <div class="8u$">
-    <img src="../../images/posts/font_smoothing_toggle_min.png" class="image fit" title="font smoothing osx catalina">
+    <img src="../../images/posts/use_font_smoothing_pink_arrow.png" class="image fit" title="font smoothing osx catalina">
   </div>
 </div>
 
-You can turn on font smoothing system wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener">favorite terminal application</a> `/Applications/Utilities/Terminal.app`; the `-g` stands for "global". If you know the app (examples shown down the page for text editors) you can apply these commands to those apps specifically versus the entire (global) OS/system.... ***Side Note: I've found that apps built with Electron behave differently than native OSX apps***:
+Even though you checked the checkbox in settings, We're going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> `/Applications/Utilities/Terminal.app`.&nbsp;The `-g` stands for `global`. If you know the location of your apps' source files (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors) you can apply these commands to those apps specifically versus the entire (global) OS/system....
+
+<div class="blurb">
+<i class="fad fa-comment-alt-exclamation fa-lg text-gold"></i>&nbsp;&nbsp;&nbsp;FYI: I've found that most apps built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener">Electron</a> need adjustments, whereas the native OSX apps look fine.
+</div>
 
 ```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
@@ -57,7 +61,9 @@ If this worked; great! If not, you can try these options below. My setup is stil
 ---
 ## Adjusting Fonts Globally:
 
-If you want to change the smoothing thickness of the fonts globally, you can do so with one of these commands; depending on the number you want:
+If you're at this section you're probably not happy with the results above 😞. What you'll most likely need to do is try different combinations. I recommend that you write down what worked and where it worked. e.g. if what we ran above helped with OS X's fonts but messed up some apps then take note of that so you can apply commands to those specific apps (basically debug). Im not exaggerating when I say that I spent nearly 8 hours doing this (also searching for answers which is why I'm writing this post).
+
+Nevertheless, You can change the smoothing thickness of the fonts globally with one of these commands; depending on the number/smoothing intensity you want:
 
 `1` - **Light** font smoothing
 ```bash
@@ -71,6 +77,8 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 ```bash
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 ```
+
+<div id="textEditors" name="textEditors"></div>
 ___
 ## Text Editors:
 
@@ -85,7 +93,7 @@ defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabl
 defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
 ```
 
----
+
 ### Webstorm Commands:
 
 ```bash

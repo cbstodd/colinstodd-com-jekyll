@@ -32,7 +32,7 @@ For just about all of my <a href="https://angular.io/" target="_blank" rel="noop
     <img src="../../images/posts/real_favicon_with_arrows.png" class="image fit" />
     </a>
 
-4. Now you'll want to install the Real Favicon Generator CLI which helps to generate the files for you.
+4. Now you'll want to install the Real Favicon Generator CLI globally which helps to generate the files for you.
 So run:
     ```bash
     npm install -g cli-real-favicon
@@ -42,11 +42,11 @@ So run:
     ```bash
     touch faviconDescription.json && mkdir src/assets/outputDir
     ```
-    This creates a generator file and output folder where the generator files are going to be placed in.
+    This creates a generator file and output directory where the generator files are going to be placed in.
 
 6. Now you'll want to copy that source code on the RFG site into the newly created `faviconDescription.json` file. You'll notice that there will be `TODO: Path to your master picture`.
 
-7. You'll need to add your original icon that you uploaded to RFG into the newly created `src/assets/outputDir` folder. I named my image `favicon.png` so my path looks like this:
+7. You'll need to add your original icon that you uploaded to RFG into the newly created `src/assets/outputDir` directory. I named my image `favicon.png` so my path looks like this:
 
     ```json
     {
@@ -61,6 +61,11 @@ So run:
     ```bash
     real-favicon generate faviconDescription.json faviconData.json src/assets/outputDir
     ```
+
+    <div class="blurb"><i class="fad fa-whistle fa-lg text-gold"></i>&nbsp;&nbsp;
+    Before reaching out to me with an error, please double and triple-check that you followed my instructions carefully. (1) Did you add your original pic to the output directory? (2) Did you copy the correct path?... I've tested this multiple times so I'm confident that it's working as expected. Nevertheless, if after checking your code and you still cannot get it to work, feel free to <a href="#getInTouch">contact me</a>.
+    </div>
+
 9. If everything went correctly you should now see your icons in your `src/assets/outputDir` directory.
 10. Now go into your `angular.json` file and make sure it has the path to your favicon in the assets like so:
 
