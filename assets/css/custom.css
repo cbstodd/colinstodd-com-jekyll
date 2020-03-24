@@ -303,6 +303,19 @@ a.no-dec {
   border-bottom: none;
 }
 
+/* Inset Text */
+.text-inset {
+  font-weight: 900;
+  font-size: 1.3em;
+  margin-bottom: 0;
+  background-color: #212A39;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(56, 65, 86, 0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
 /* Footer / Contact */
 ul.contact > li > h4 > a {
   border-bottom: none;
@@ -345,6 +358,36 @@ ul.contact > li > h4 > a {
   }
   .m-3 {
     margin: 1.3rem 0;
+  }
+  .neu-alert {
+    font-size: 0.8em;
+  }
+
+  .blurb {
+    color: #7c8496;
+    font-size: 0.8em;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 2.5em;
+    padding: 1em 1.2em;
+    margin: 1em 0;
+    border-radius: 15px;
+    background: #2a3244;
+    box-shadow: inset -5px 5px 12px #1b212c,
+                inset 5px -5px 12px #313a50;
+    border-top: 1px solid #181F2A;
+    border-right: 1px solid #181F2A;
+    border-left: 1px solid #384258;
+    border-bottom: 1px solid #384258;
+  }
+
+  .blurb > code {
+    color: #afb7c9;
+    font-weight: 400;
+    font-style: normal;
+    overflow-wrap: break-word;
+    -ms-overflow-wrap: break-word;
+    -moz-overflow-wrap: break-word;
   }
 }
 

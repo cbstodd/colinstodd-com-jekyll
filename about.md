@@ -44,10 +44,10 @@ Nowadays, I'm back in Annapolis (still with <a href="https://www.gastro.org" tar
 Lastly, If you see some "H" logo, that's the logo for <a href="https://harpua.co/" target="_blank" title="Harpua, LLC" rel="noopener">Harpua, LLC</a> which I co-founded with a great developer friend of mine. If you see something with "Colper", that's a nickname that I've had since I was young, and last but not least, I'm a huge <a href="https://phish.com/" target="_blank" rel="noopner" title="Phish">Phish</a> fan. I travel a few times a year with friends to see them in various locations in and around the United States...
 </p>
 
-<h5 class="neu-alert mt-3">
+<!-- <h5 class="neu-alert mt-3 text-yellow">
 <i class="fab fa-npm fa-lg" title="Node Package Manager (npm)" alt="npm"></i> If you have the technical abilities and would like more details than what's written above, I encourage you to install this <a href="https://www.npmjs.com/package/cbstodd-cli" target="_blank" rel="noopener">command line application (CLI)</a> that I
 built and deployed to  <a href="https://www.npmjs.com/package/cbstodd-cli" target="_blank" rel="noopener" title="Node Package Manager (npm)">NodeJS Package Manager <i class="fab fa-npm fa-lg" alt="npm"></i></a>.
-</h5>
+</h5> -->
 
 
 

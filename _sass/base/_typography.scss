@@ -283,3 +283,10 @@ hr.footer {
 .align-right {
   text-align: right;
 }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+  code {
+    font-size: 0.8em;
+  }
+}

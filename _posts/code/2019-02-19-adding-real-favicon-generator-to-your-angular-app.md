@@ -20,13 +20,13 @@ redirect_from:
   - /posts/adding-real-favicon-generator-to-your-angular-app/
 ---
 
-For just about all of my <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> applications I've used <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator (RFG)</a> to generate the files for my Favicon icon. It's a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I've found a quick and painless way to use both the Node and HTML5 tools. I'll also show you how to add <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093" target="_blank" rel="noopener">Progressive Web App (PWA)</a> meta tags so that you can add your newly created icons to your mobile home-screen. Lets get to it.
+For just about all of my <a href="https://angular.io/" target="_blank" rel="noopener" title="Angular">Angular</a> applications I've used <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener" title="Real Favicon Generator">Real Favicon Generator (RFG)</a> to generate the files for my Favicon icon. It's a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I've found a quick and painless way to use both the Node and HTML5 tools. I'll also show you how to add <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093" target="_blank" rel="noopener" title="Medium">Progressive Web App (PWA)</a> meta tags so that you can add your newly created icons to your mobile home-screen. Lets get to it.
 
-1. Head over to the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> site and upload your icon. Note that your icon should have even/square dimensions and be at least 260px wide/high.
+1. Head over to the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener" title="Real Favicon Generator">Real Favicon Generator</a> site and upload your icon. Note that your icon should have even/square dimensions and be at least 260px wide/high.
 
 2. Set your icon settings; which basically allows you to play with the margin size, background size and what it will look like as a PWA icon on your mobile devices.
 
-3. Once the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">Real Favicon Generator</a> does its thing, you'll want to click on the "Node CLI" tab as seen in the image below.
+3. Once the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener" title="Real Favicon Generator">Real Favicon Generator</a> does its thing, you'll want to click on the "Node CLI" tab as seen in the image below.
 
     <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">
     <img src="../../images/posts/real_favicon_with_arrows.png" class="image fit" />
@@ -38,7 +38,7 @@ So run:
     npm install -g cli-real-favicon
     ```
 
-5. Now that the CLI is installed, run this command:
+5. Now that the CLI is installed, run this command from the root of your <a href="https://angular.io/" target="_blank" rel="noopener" title="Angular">Angular</a> app:
     ```bash
     touch faviconDescription.json && mkdir src/assets/outputDir
     ```

@@ -14,11 +14,12 @@ layout: default
   <div class="wrapper">
     <div class="inner">
       {% if page.last_modified_at %}
-      <p class="text-blue-grey">
-        Updated:  <i class="fad fa-calendar-edit"></i> {{ page.last_modified_at | date_to_string }}
-      </p>
       {% endif %}
       {{ content }}
+      <p class="text-inset">
+      <i class="fa fa-calendar-edit text-inset"></i>  Page Last Updated:  {{ page.last_modified_at | date_to_string }}
+      </p>
+      <hr>
       {% include google-post-ads.html %}
     </div>
   </div>

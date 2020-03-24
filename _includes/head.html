@@ -1,33 +1,36 @@
 <head>
 	<!-- Google Tag Manager -->
 	<script>
-		(function (w,d,s,l,i) {
+		( function ( w,d,s,l,i ) {
 			w[l] = w[l] || [];
-			w[l].push({
+			w[l].push( {
 				'gtm.start': new Date().getTime(),
 				event: 'gtm.js'
-			});
-			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
+			} );
+			var f = d.getElementsByTagName( s )[0],
+				j = d.createElement( s ),
 				dl = l != 'dataLayer' ? '&l=' + l : '';
 			j.async = true;
 			j.src =
 				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-			f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-5KC3SGB');
+			f.parentNode.insertBefore( j,f );
+		} )( window,document,'script','dataLayer','GTM-5KC3SGB' );
 	</script>
 	<!-- End Google Tag Manager -->
 	<title>{{ page.title }} | {{ site.title }}</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | relative_url }}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | relative_url }}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | relative_url }}">
-	<link rel="manifest" href="{{ "favicon/site.webmanifest" | relative_url }}">
-	<meta name="msapplication-config" content="{{ "favicon/browserconfig.xml" | relative_url }}">
-	<link rel="mask-icon" href="{{ "favicon/safari-pinned-tab.svg" | relative_url }}" color="#384053">
-	<meta name="msapplication-TileColor" content="#eeeeee">
-	<meta name="theme-color" content="#eeeeee">
+	<!--~ Favicon ~-->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png?v=yyQKGrYykG" | relative_url }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png?v=yyQKGrYykG" | relative_url }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png?v=yyQKGrYykG" | relative_url }}">
+	<link rel="manifest" href="{{ "favicon/site.webmanifest?v=yyQKGrYykG" | relative_url }}">
+	<link rel="mask-icon" href="{{ "favicon/safari-pinned-tab.svg?v=yyQKGrYykG" | relative_url }}" color="#31394b">
+	<link rel="shortcut icon" href="{{ "favicon/favicon.ico?v=yyQKGrYykG" | relative_url }}">
+	<meta name="apple-mobile-web-app-title" content="Colin Stodd">
+	<meta name="application-name" content="Colin Stodd">
+	<meta name="msapplication-TileColor" content="#31394b">
+	<meta name="theme-color" content="#31394b">
 	<meta name="msvalidate.01" content="91EDE404FB4B17668EDEEDDD5F4722BD" />
 	<link rel="icon" type="image/x-icon" href="{{ "favicon/favicon.ico" | relative_url }}">
 	<!-- * PWA * -->
