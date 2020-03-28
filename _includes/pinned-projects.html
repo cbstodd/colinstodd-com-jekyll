@@ -1,5 +1,5 @@
 {% assign features = site.pages | where:"featured",true %}
-{% assign projects_bundles = site.pages | where:"layout","projects" | sort:"order" %}
+{% assign projects_bundles = site.pages | where:"layout","projects" | sort:"order" | reverse %}
 {% for projects in projects_bundles %}
 {% assign is_alt = forloop.index | plus: features.size | modulo:2 %}
 {% capture alt %}{% if is_alt == 0 %} alt{% endif %}{% endcapture %}

@@ -6,8 +6,8 @@ tags:
   - Angular,
   - Webstorm
 title: Building Angular Apps With Webstorm
-date: 2017-03-02 00:00:10 -05:00
-last_modified_at: 2017-03-02 00:00:10 -05:00
+date: 2017-03-02 00:00:10 -0500
+last_modified_at: 2017-03-02 00:00:10 -0500
 pinned: false
 featured: false
 image: ../images/posts/webstorm-angular.png

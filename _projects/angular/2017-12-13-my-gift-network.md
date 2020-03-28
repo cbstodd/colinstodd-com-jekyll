@@ -1,14 +1,14 @@
 ---
 layout: project
-title: My Gift Network
+category: angular
 author: Colin Stodd
 tags: Angular, Angular Material, Bootstrap
-date: 2017-12-13 00:00:01 -05:00
-last_modified_at: 2017-12-13 00:00:01 -05:00
-category: angular
-featured: true
+title: My Gift Network
+date: 2017-12-13 00:00:01 -0500
+last_modified_at: 2020-02-17 00:10:01 -0500
 pinned: true
-image: images/projects/my-gift-network.png
+featured: false
+image: ../images/projects/my-gift-network.png
 liveUrl: https://mygiftnetwork.com/
 githubUrl: https://github.com/cbstodd/colperClub
 description: Personal gift wish-list as a social network.

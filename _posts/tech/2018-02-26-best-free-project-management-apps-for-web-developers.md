@@ -8,8 +8,8 @@ tags:
   - Tools,
   - Development
 title: Best Free Project Management Apps for Web Developers
-date: 2018-02-26 00:00:10 -05:00
-last_modified_date: 2018-02-26 00:00:10 -05:00
+date: 2018-02-26 00:00:10 -0500
+last_modified_date: 2018-02-26 00:00:10 -0500
 pinned: false
 featured: false
 image: "/images/posts/clickup_min.png"

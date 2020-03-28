@@ -3,8 +3,8 @@ layout: project
 title: ReactJS Temperature Search
 author: Colin Stodd
 tags: ReactJS, Open Weather Map, Bootstrap
-date: 2017-05-09 00:00:01 -05:00
-last_modified_at: 2017-05-09 00:00:01 -05:00
+date: 2017-05-09 00:00:01 -0500
+last_modified_at: 2017-05-09 00:00:01 -0500
 category: react
 featured: true
 pinned: false

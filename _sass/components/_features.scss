@@ -19,7 +19,7 @@
       (
         _size(section-spacing, large) * 0.5
       ) 0;
-    width: calc(100% - #{_size(section-spacing, large) * 0.5});
+    width: calc(50% - #{_size(section-spacing, large) * 0.5});
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -37,6 +37,7 @@
       img {
         border-radius: _size(border-radius) _size(border-radius) 0 0;
         width: 100%;
+        max-height:auto;
       }
     }
   }

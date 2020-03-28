@@ -9,8 +9,8 @@ tags:
   - Tips,
   - Tools
 title: Add Chrome Extensions To Opera Browser
-date: 2017-03-22 00:00:10 -05:00
-last_modified_date: 2017-03-22 00:00:10 -05:00
+date: 2017-03-22 00:00:10 -0500
+last_modified_date: 2017-03-22 00:00:10 -0500
 pinned: false
 featured: false
 image: ../images/posts/opera-chrome.png

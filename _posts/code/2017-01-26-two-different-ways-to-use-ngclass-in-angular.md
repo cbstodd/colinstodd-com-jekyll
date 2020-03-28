@@ -6,8 +6,8 @@ tags:
   - Angular,
   - ngClass
 title: Two Different Ways To Use NgClass In Angular
-date: 2017-01-28 00:00:10 -05:00
-last_modified_at: 2017-01-28 00:00:10 -05:00
+date: 2017-01-28 00:00:10 -0500
+last_modified_at: 2017-01-28 00:00:10 -0500
 pinned: false
 featured: false
 image: ../images/posts/angular.png

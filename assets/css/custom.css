@@ -306,9 +306,9 @@ a.no-dec {
 /* Inset Text */
 .text-inset {
   font-weight: 900;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: 0;
-  background-color: #212A39;
+  background-color: rgb(24, 31, 43);
   color: transparent;
   text-shadow: 0px 2px 3px rgba(56, 65, 86, 0.5);
   -webkit-background-clip: text;

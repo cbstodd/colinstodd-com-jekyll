@@ -6,8 +6,8 @@ description: Latest version of this website built with Jekyll 4.0.0
 featured: false
 pinned: false
 image: "/images/projects/colinstodd_com_jekyll.png"
-date: 2019-10-19 15:30:12 -05:00
-last_modified_at: 2020-03-22 00:10:02 -05:00
+date: 2019-10-19 15:30:12 -0500
+last_modified_at: 2020-03-22 00:10:02 -0500
 category: jekyll
 tags:
   - jekyll

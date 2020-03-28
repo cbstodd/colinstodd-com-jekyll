@@ -7,8 +7,8 @@ tags:
   - UIKIT,
   - Tutorial
 title: How to add UIKit to Angular
-date: 2019-02-19 15:30:12 -05:00
-last_modified_at: 2020-03-21 10:30:12 -05:00
+date: 2019-02-19 15:30:12 -0500
+last_modified_at: 2020-03-28 00:30:12 -0500
 pinned: false
 featured: true
 image: ../images/posts/uikit.png
@@ -71,10 +71,11 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
     "styles": [
         "src/styles/styles.scss"
       ],
-      // See blurb (link) below regarding this.
+      // See blurb (link) below regarding this (And delete this comment).
       "stylePreprocessorOptions": {
         "includePaths": [
-          "src/styles"
+          "src/styles",
+          "./node_modules/uikit/src/scss"
         ]
       },
       "scripts": [
@@ -97,19 +98,20 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
     ```scss
     /* UIKit */
     @import "../../node_modules/uikit/src/scss/variables";
-    @import "../../node_modules/uikit/src/scss/mixins-theme";
-    @import "../../node_modules/uikit/src/scss/uikit-theme";
+    @import "../../node_modules/uikit/src/scss/mixins";
+    @import "../../node_modules/uikit/src/scss/uikit";
     /* Custom Variables */
     @import 'variables';
     @import 'mixins';
     @import 'custom';
     ```
 
-6. To use your variables in other components, you'll have to import it into every <br/>
-`component-name.component.scss` file like so:
+6. To use your variables in other components, you'll have to import them into every
+`component-name.component.scss` file like so. But because we added the `/styles` directory to `"stylePreprocessorOptions"` in our `angular.json` file, we can leave off the path which makes things much cleaner:
 
     ```scss
-    @import '~src/styles/variables';
+    /* component-name.component.scss */
+    @import 'variables';
     ```
 
 7. Since we updated `angular.json` you'll have to restart your server.

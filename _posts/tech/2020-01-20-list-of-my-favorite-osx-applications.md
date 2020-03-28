@@ -8,8 +8,8 @@ permalink: /posts/tech/list-of-my-favorite-osx-applications.html
 featured: false
 pinned: false
 image: /images/posts/ticktick_osx.png
-date: 2020-01-20 00:00:10 -05:00
-last_modified_at: 2020-02-27 00:00:10 -05:00
+date: 2020-01-20 00:00:10 -0500
+last_modified_at: 2020-02-27 00:00:10 -0500
 categories: tech
 tags:
   - Tools,

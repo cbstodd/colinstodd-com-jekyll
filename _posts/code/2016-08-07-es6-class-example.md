@@ -7,8 +7,8 @@ tags:
   - Class,
   - Example
 title: ES6 Class Example
-date: 2016-08-16 00:00:10 -05:00
-last_modified_at: 2016-08-16 00:00:10 -05:00
+date: 2016-08-16 00:00:10 -0500
+last_modified_at: 2016-08-16 00:00:10 -0500
 pinned: false
 featured: false
 image: ../images/posts/es6.png

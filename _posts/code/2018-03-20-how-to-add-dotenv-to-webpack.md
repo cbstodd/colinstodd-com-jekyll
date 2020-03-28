@@ -7,8 +7,8 @@ tags:
   - .env,
   - DotEnv
 title: How To Add DotEnv To Webpack
-date: 2018-03-20 00:00:10 -05:00
-last_modified_at: 2020-03-23 00:10:00 -05:00
+date: 2018-03-20 00:10:10 -0500
+last_modified_at: 2020-03-27 00:30:00 -0500
 pinned: false
 featured: false
 image: ../images/posts/env.png
@@ -62,17 +62,35 @@ This is based off of <a href="https://www.npmjs.com/package/dotenv-webpack" targ
 
 
     <div class="blurb">
-    <i class="fad fa-exclamation-triangle text-yellow fa-lg"></i>&nbsp;&nbsp;  Depending on what you are building, you may or may-NOT need to require the <code class="javascript">require('dotenv').config();</code> code snippet below in your root <code>.js</code> file. It depends on if you are using <code>fs</code>.
+    <i class="fad fa-exclamation-triangle text-yellow fa-lg"></i>&nbsp;&nbsp; There seems to be a <a href="https://github.com/webpack-contrib/css-loader/issues/447" target="_blank" rel="noopener">bug</a> with either <code>fs</code> or <code>dotenv-webpack</code> that gives you this error: <br>
+    <code class="text-pink">Error: Can't resolve 'fs' in</code>. Nevertheless, I've included the work-around below.
     </div>
 
-5. In your main project folder ie `index.js`, add this line of code to require dotenv.
+    <strong><span class="text-yellow">(Work-around)</span></strong>: Also include this to your `webpack.config.js` file if getting the aforementioned error:
+
+    ```javascript
+    module.exports = {
+        // Add
+        node: {
+          fs: 'empty'
+        },
+        ...
+        ...
+        ...
+    ```
+
+6. In your main project folder ie `index.js`, add this line of code to require dotenv.
 
     ```javascript
     require('dotenv').config(); // See Blurb/Alert above
     ```
 
-6. And you can test to see that it's working by logging it to your console like so:
+7. And you can test to see that it's working by logging it to your console like so:
 
     ```javascript
     console.log(process.env.SECRET_KEY_EXAMPLE);
     ```
+
+Please let me know in the comments that everything is working for you guys. I noticed the up-votes on the first comment that it wasn't working, but I think I found the culprit and posted the fix above, but to be certain I'd appreciate it if you could let me know... <br>
+Thanks,<br>
+-Colin.

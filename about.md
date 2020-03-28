@@ -18,13 +18,13 @@ redirect_from:
 <p>
 <span class="image left">
 <img src="{{ page.image }}" alt="Colin Stodd with friends dog" title="Colin Stodd with friends dog">
-</span>Thank you for visiting <a href="{{ site.url }}" target="_top" rel="canonical">colinstodd.com</a>. This site was built for my career in Software Development, but I'll try and give you a little background into where I come from and what I'm working on today.</p>
-<p>In short, I’m a percussion player turned web application and mobile developer.</p>
+</span>Thank you for visiting <a href="{{ site.url }}" target="_top" rel="canonical">colinstodd.com</a>. This site was built for my career in Software Development, but I'll assume that if you're here you're probably looking to find a little background info into where I come from and what I'm working on today.</p>
+<p><b>TLDR</b>/<b>In short</b>, I’m a percussion player turned web application and mobile developer. ☑️</p>
 
-<p>I received a bachelors degree from <a href="https://www.salisbury.edu/" target='_blank' rel='noopener' title='Salisbury University'>Salisbury University</a>, and prior to that I went to <a href="https://www.stmarysannapolis.org/" target="_blank" rel="noopener" title="St. Mary's High School (Annapolis)">St. Mary's High School</a> in Annapolis, which is where I started my musical career.</p>
+<p>Prior to receiving a bachelors degree from <a href="https://www.salisbury.edu/" target='_blank' rel='noopener' title='Salisbury University'>Salisbury University</a>, I attended <a href="https://www.stmarysannapolis.org/" target="_blank" rel="noopener" title="St. Mary's High School (Annapolis)">St. Mary's High School</a> in Annapolis, which is where I started my musical journey.</p>
 
 <p>
-I played percussion with two bands: <a href="https://damnrightmusic.bandcamp.com/" target="_blank" rel="noopener">Damn Right!</a> and <a href="https://music.apple.com/us/album/dead-city-radio/346165288" target="_blank" rel="noopener">Earthtone</a> for about 10 years, but I've always had interests in things outside of music, so I accepted a position with the <a href="http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home" target="_blank" rel="noopener">Maryland General Assembly (MGA)</a> in Annapolis, MD.
+ I played percussion with two bands: <a href="https://damnrightmusic.bandcamp.com/" target="_blank" rel="noopener">Damn Right!</a> and <a href="https://music.apple.com/us/album/dead-city-radio/346165288" target="_blank" rel="noopener">Earthtone</a> for about 10 years. It started in the last years of St. Mary's, through all of College and years thereafter; but I've always had interests outside of music so I accepted a position with the <a href="http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home" target="_blank" rel="noopener">Maryland General Assembly (MGA)</a> in Annapolis, MD, which helped me discover what would become my other passion in life (writing code).
 </p>
 
 <p>
@@ -40,7 +40,7 @@ Nowadays, I'm back in Annapolis (still with <a href="https://www.gastro.org" tar
 <span class="image right">
 <img src="{{ page.image2 }}" alt="Colin & Tommy in Tennessee w/ Damn Right!" title="Colin & Tommy in Tennessee w/ Damn Right!">
 </span>
-<p>I've recently (2019-2020) been dipping my hands back into the world of music, recording percussion on albums & Experimental Projects (EP's). I haven't been playing live but I've enjoyed working in the comfort of my <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener">Logic Pro X</a> Studio. However, I have been flirting with the idea to play live again (not full time), so we shall see 😃.</p>
+<p>I've recently (2019-2020) started playing music again, recording percussion on albums & Experimental Projects (EP's). I haven't been playing live but I've enjoyed working in the comfort of my <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener">Logic Pro X</a> Studio. However, I have been flirting with the idea to play live again (not full time), so we shall see 😃.</p>
 
 <p>
 Lastly, If you see some "H" logo, that's the logo for <a href="https://harpua.co/" target="_blank" title="Harpua, LLC" rel="noopener">Harpua, LLC</a> which I co-founded with a great developer friend of mine. If you see something with "Colper", that's a nickname that I've had since I was young; and I'm a huge <a href="https://phish.com/" target="_blank" rel="noopner" title="Phish">Phish</a> fan. I travel a few times a year with friends to see them in various locations in and around the United States...

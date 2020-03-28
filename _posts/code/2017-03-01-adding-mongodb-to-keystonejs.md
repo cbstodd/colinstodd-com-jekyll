@@ -6,8 +6,8 @@ tags:
   - Angular,
   - Webstorm
 title: Adding MongoDB To KeystoneJS
-date: 2017-03-01 00:00:10 -05:00
-last_modified_at: 2017-03-01 00:00:10 -05:00
+date: 2017-03-01 00:00:10 -0500
+last_modified_at: 2017-03-01 00:00:10 -0500
 pinned: false
 featured: false
 image: ../images/posts/mlab.png
