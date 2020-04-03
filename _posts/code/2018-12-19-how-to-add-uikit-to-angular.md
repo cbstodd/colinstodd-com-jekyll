@@ -8,7 +8,7 @@ tags:
   - Tutorial
 title: How to add UIKit to Angular
 date: 2019-02-19 15:30:12 -0500
-last_modified_at: 2020-03-28 00:30:12 -0500
+last_modified_at: 2020-04-01 12:30:12 -0500
 pinned: false
 featured: true
 image: ../images/posts/uikit.png
@@ -96,18 +96,18 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
 5. Now open your `styles.scss` file and import <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a> and your custom/mixin/variable files:
 
     ```scss
-    /* UIKit */
-    @import "../../node_modules/uikit/src/scss/variables";
-    @import "../../node_modules/uikit/src/scss/mixins";
-    @import "../../node_modules/uikit/src/scss/uikit";
     /* Custom Variables */
     @import 'variables';
     @import 'mixins';
     @import 'custom';
+    /* UIKit */
+    @import "variables-theme.scss";
+    @import "mixins-theme.scss";
+    @import "uikit-theme.scss";
     ```
 
 6. To use your variables in other components, you'll have to import them into every
-`component-name.component.scss` file like so. But because we added the `/styles` directory to `"stylePreprocessorOptions"` in our `angular.json` file, we can leave off the path which makes things much cleaner:
+`component-name.component.scss` file like so. But because we added the `src/styles` and the `"./node_modules/uikit/src/scss"` to `"stylePreprocessorOptions"` in our `angular.json` file, we can leave off the path in our style files because they are compiled globally (read the blurb above) which makes things much cleaner:
 
     ```scss
     /* component-name.component.scss */
