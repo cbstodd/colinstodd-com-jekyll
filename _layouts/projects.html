@@ -13,16 +13,26 @@ layout: default
 
       <div class="row">
         <div class="6u">
-          <h5 class="project-cat-title">Project Categories:</h5>
-          {% assign project_categories = site.projects | group_by: 'category' | sort: 'name' %}
-          <ul class="alt">
-            {% for item in project_categories %}
-            <li>
-              <i class="fad fa-caret-circle-right"></i> <a href="/projects/{{ item.name }}.html"
-                 class="no-dec capitalize">{{item.name}}</a>
-            </li>
-            {% endfor %}
-          </ul>
+          <table class="table table-wrapper">
+            <thead>
+              <tr>
+                <th><i class="fad fa-folders"></i> Categories:</th>
+              </tr>
+            </thead>
+            {% assign project_categories = site.projects | group_by: 'category' | sort: 'name' %}
+            <tbody>
+              {% for item in project_categories %}
+              <tr>
+                <td>
+                  <i class="fad fa-folder"></i> <a href="/projects/{{ item.name }}.html"
+                     class="no-dec capitalize">{{item.name}}</a>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <!--~ Old ~-->
+
         </div>
       </div>
     </div>
