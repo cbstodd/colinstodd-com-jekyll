@@ -7,7 +7,7 @@ featured: false
 pinned: false
 image: "../../images/posts/angularfire.png"
 date: 2019-10-19 22:30:00 -0500
-last_modified_at: 2020-04-02 15:30:00 -0500
+last_modified_at: 2020-04-07 10:30:00 -0500
 categories: code
 tags:
   - Angular,
@@ -179,12 +179,12 @@ export class ItemService {
   constructor(private afs: AngularFirestore) {}
 
   deleteItem(id: string): void {
-      this.itemDoc = this.afs.doc<Item>(`items/${id}`);
-      this.itemDoc.delete()
-          .then(() => {
-            // Do Something with Success
-          }))
-          .catch((error) => console.error(`myERROR: `, error));
+    this.itemDoc = this.afs.doc<Item>(`items/${id}`);
+    this.itemDoc.delete()
+        .then(() => {
+          // Do Something with Success
+        })
+        .catch((error) => console.error(`myERROR: `, error));
   }
 
 }
