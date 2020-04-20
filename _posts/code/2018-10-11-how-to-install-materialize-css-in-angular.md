@@ -11,7 +11,7 @@ date: 2018-10-11 00:00:01 -0500
 last_modified_at: 2020-03-28 00:10:00 -0500
 pinned: true
 featured: false
-image: ../images/posts/matcss-min.png
+image: images/posts/matcss-min.png
 description: Tutorial on how to install Materialize CSS in Angular using Ngx-Materalize or vanilla Materialize CSS.
 permalink: /posts/code/how-to-install-materialize-css-in-angular.html
 comments: true

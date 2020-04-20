@@ -10,7 +10,7 @@ date: 2016-12-16 00:00:10 -0500
 last_modified_date: 2016-12-16 00:00:10 -0500
 pinned: false
 featured: false
-image: ../images/posts/cessna172-min.jpg
+image: images/posts/cessna172-min.jpg
 description: Personal experience of my introductory flight
 permalink: /posts/personal/introductory-flight-getting-my-pilots-license.html
 comments: true

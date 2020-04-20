@@ -12,7 +12,7 @@ date: 2017-03-05 00:00:10 -0500
 last_modified_at: 2017-03-05 00:00:10 -0500
 pinned: false
 featured: false
-image: ../images/posts/typescript.png
+image: images/posts/typescript.png
 description: Typescript and Babel environment setup templates
 permalink: /posts/code/typescript-and-es6-babel-boilerplates.html
 comments: true

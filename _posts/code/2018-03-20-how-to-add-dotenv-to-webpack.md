@@ -11,7 +11,7 @@ date: 2018-03-20 00:10:10 -0500
 last_modified_at: 2020-03-27 00:30:00 -0500
 pinned: false
 featured: false
-image: ../images/posts/env.png
+image: images/posts/env.png
 description: This is how you can add dotenv to a project using Webpack.
 permalink: /posts/code/how-to-add-dotenv-to-webpack.html
 comments: true

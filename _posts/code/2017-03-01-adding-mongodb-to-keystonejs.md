@@ -10,7 +10,7 @@ date: 2017-03-01 00:00:10 -0500
 last_modified_at: 2017-03-01 00:00:10 -0500
 pinned: false
 featured: false
-image: ../images/posts/mlab.png
+image: images/posts/mlab.png
 description: How to connect your mLab MongoDB to your KeystoneJS app.
 permalink: /posts/code/adding-mongodb-to-keystonejs.html
 comments: true

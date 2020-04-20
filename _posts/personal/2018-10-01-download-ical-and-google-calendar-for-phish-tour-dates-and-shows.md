@@ -9,11 +9,11 @@ tags:
   - Shows
 title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2020-01-23 12:01:00 -0500
-last_modified_at: 2020-01-23 12:01:00 -0500
+last_modified_at: 2020-04-08 09:01:00 -0500
 pinned: false
 featured: true
-image: "/images/posts/phish_summer_tour_2020.jpg"
-description: Download Phish tour iCal/Google calendar. This calendar has been updated for the "2020 Summer Tour".
+image: images/posts/dinner_and_movie.png
+description: Download Phish tour iCal/Google calendar. This calendar has been updated to include the "Dinner And A Movie".
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
 redirect_from:
@@ -28,7 +28,7 @@ ical_link: "https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig
 <h5 class="neu-alert mb-3 text-blue-grey">
 <i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE <i class="fad fa-calendar-alt"></i> {{ page.last_modified_at | date_to_string }}<br/>
 <hr/>
-This calendar has been updated for the "2020 Summer Tour".
+This calendar has been updated to include the "Dinner And A Movie".
 Alerts are set two hours before Show Time.
 </h5>
 
@@ -36,6 +36,8 @@ Alerts are set two hours before Show Time.
 
 
 I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
+
+-----
 
 ## Examples:
 <h4 class="text-blue-grey"><i class="fab fa-apple"></i> Calendar (Apple/iCal):</h4>Go in iCalendar and click `File > New Calendar Subscription` and paste the link below into that input field.
@@ -49,6 +51,8 @@ I was unable to find an updated <a href="https://phish.com/tours" target="_blank
     <i class="fad fa-clipboard"></i> Copy URL
   </button>
 </p>
+
+-----
 
 You should now see the show dates with details populate on your calendar. I will try and keep this calendar updated should they add more dates. If you see something missing or off, please let me know in the comments.
 

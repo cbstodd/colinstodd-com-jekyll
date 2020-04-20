@@ -10,7 +10,7 @@ date: 2017-03-02 00:00:10 -0500
 last_modified_at: 2017-03-02 00:00:10 -0500
 pinned: false
 featured: false
-image: ../images/posts/webstorm-angular.png
+image: images/posts/webstorm-angular.png
 description: Tips for using Webstorm to build Angular apps
 permalink: /posts/code/building-angular-apps-with-webstorm.html
 comments: true
