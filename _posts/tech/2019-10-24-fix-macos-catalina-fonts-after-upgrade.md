@@ -80,11 +80,17 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 
 <div id="textEditors" name="textEditors"></div>
 ___
-## Text Editors:
+## Text Editors and Apps:
 
 I had issues with my text editor fonts. I use <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> and the <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">IntelliJ IDEA</a>'s IDE's--mostly (sometimes <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text</a>), and my <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> fonts were thinner than normal. To fix those, I had to run these four commands in my terminal. Note that the trailing `0` can be changed to either `1`, `2` or `3` depending on the thickness you are looking for.
 
-### VSCode Commands:
+<div class="blurb mt-3 mb-3">
+  <i class="fad fa-file-import text-yellow"></i> If you are having troubles fixing other apps you might be able to find them and tun these commands similarly below. For example:
+  you should be able to locate the specific apps by going to into <code>Finder</code> > <code>Go</code> > <code>God to the folder:</code> and then you'll want to try and locate the file font's that you ant to locate by searching somewhere in <code>~/Library/Application Support/</code>
+
+</div>
+
+### VSCode:
 
 ```bash
 defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
@@ -94,7 +100,7 @@ defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabl
 ```
 
 
-### Webstorm Commands:
+### Webstorm:
 
 ```bash
 defaults write com.jetbrains.webstorm CGFontRenderingFontSmoothingDisabled 0
