@@ -3,13 +3,13 @@ layout: post
 categories: personal
 author: Colin Stodd
 tags:
-  - Phish,
+  - Phish,7
   - Google Calendar,
   - iCal,
   - Shows
 title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2020-01-23 12:01:00 -0500
-last_modified_at: 2020-04-21 09:01:00 -0500
+last_modified_at: 2020-04-27 23:01:00 -0500
 pinned: false
 featured: true
 image: images/posts/dinner_and_movie.png
@@ -34,6 +34,8 @@ Alerts are set two hours before Show Time.
 
 
 I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
+
+<iframe width="auto" height="560" src="https://www.youtube.com/embed/wqlb_nywTGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="fit image" allowfullscreen></iframe>
 
 -----
 
