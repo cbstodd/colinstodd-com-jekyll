@@ -3,13 +3,14 @@ layout: post
 categories: personal
 author: Colin Stodd
 tags:
-  - Phish,7
+  - Phish,
   - Google Calendar,
   - iCal,
   - Shows
+  - Tour
 title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2020-01-23 12:01:00 -0500
-last_modified_at: 2020-04-27 23:01:00 -0500
+last_modified_at: 2020-05-01 23:01:00 -0500
 pinned: false
 featured: true
 image: images/posts/dinner_and_movie.png
@@ -27,17 +28,21 @@ ical_link: "https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig
 
 <h5 class="neu-alert mb-3 text-blue-grey">
 <i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE <i class="fad fa-calendar-alt"></i> {{ page.last_modified_at | date_to_string }}<br/>
-<hr/>
-This calendar has been updated to include the "Dinner And A Movie".
-Alerts are set two hours before Show Time.
+  <hr/>
+  <span>From <a href="https://phish.com/news/summer-tour-rescheduled-for-2021/" target="_blank" rel="_noopener" title="Go to Phish's website to read for yourself">Phish's Email/Website <i class="fad fa-external-link-square"></i></a></span><br>
+  <span class="text-yellow"><i class="fad fa-fish"></i> 1.  Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates...</span> <br>
+  <span class="text-yellow"><i class="fad fa-fish"></i> 2</span>.  Not sure what's going on with "Dinner And A Movie"'s feature after this next Tuesday, but I'll let you know when I find out, or please let me know below 🤟. <br>
+  <span class="text-yellow"><i class="fad fa-fish"></i>3</span>.  I will update next years dates soon enough. <br>
+  <span class="text-yellow"><i class="fad fa-fish"></i>4</span>.  Be safe and and kind Pham. Love all (Yep, even Antelope Greg and the tarpers).
 </h5>
 
 
-I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
 
-<iframe width="auto" height="560" src="https://www.youtube.com/embed/wqlb_nywTGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="fit image" allowfullscreen></iframe>
+<iframe width="auto" height="608" src="https://www.youtube.com/embed/AG9-7XBwPTY" class="fit image" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -----
+
+I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
 
 ## Examples:
 <h4 class="text-blue-grey"><i class="fab fa-apple"></i> Calendar (Apple/iCal):</h4>Go in iCalendar and click `File > New Calendar Subscription` and paste the link below into that input field.
