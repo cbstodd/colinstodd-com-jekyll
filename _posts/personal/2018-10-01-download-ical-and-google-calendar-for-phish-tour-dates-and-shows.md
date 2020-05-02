@@ -14,7 +14,7 @@ last_modified_at: 2020-05-01 23:01:00 -0500
 pinned: false
 featured: true
 image: images/posts/dinner_and_movie.png
-description: Download Phish tour iCal/Google calendar. This calendar has been updated to include the "Dinner And A Movie".
+description: Download Phish tour iCal/Google calendar. This calendar has been updated to include the "Dinner And A Movie"; also info regarding their rescheduled summer tour.
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
 redirect_from:
