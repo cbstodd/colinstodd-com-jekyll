@@ -11,7 +11,7 @@ date: 2016-08-16 00:00:10 -0500
 last_modified_at: 2016-08-16 00:00:10 -0500
 pinned: false
 featured: false
-image: images/posts/es6.png
+image: ../images/posts/es6.png
 description: Example of a class in Ecmascript/ES6
 permalink: /posts/code/es6-class-example.html
 comments: true

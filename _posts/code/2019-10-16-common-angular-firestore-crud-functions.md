@@ -5,8 +5,8 @@ author: Colin Stodd
 description: CRUD snippets that I tend to reuse in every Angular service
 featured: false
 pinned: false
-image: images/posts/angularfire.png
-date: 2019-10-19 22:30:00 -0500
+image: ../images/posts/angularfire.png
+date: 2019-10-16 00:30:00 -0500
 last_modified_at: 2020-04-07 10:30:00 -0500
 categories: code
 tags:

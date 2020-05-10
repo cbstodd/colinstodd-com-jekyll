@@ -15,7 +15,7 @@ last_modified_date: 2017-09-04 00:00:01 -0500
 last_modified_at:
 pinned: false
 featured: false
-image: images/posts/tommy-b_min.jpeg
+image: ../images/posts/tommy-b_min.jpeg
 description: You can buy our 2017 Phish Dicks posters created by Tommy Bradel on Etsy.
 permalink: /posts/personal/phish-dicks-colorado-posters-by-tommy-b.html
 comments: true

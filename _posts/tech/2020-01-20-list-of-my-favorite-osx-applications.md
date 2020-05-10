@@ -4,7 +4,7 @@ draft: false
 title: List of my favorite OSX applications
 author: Colin Stodd
 description: A compilation of OSX applications that help keep me productive and organized.
-image: images/posts/ticktick_osx.png
+image: ../images/posts/ticktick_osx.png
 featured: false
 pinned: false
 date: 2020-01-20 00:00:10 -0500

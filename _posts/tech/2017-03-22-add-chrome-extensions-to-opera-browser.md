@@ -13,7 +13,7 @@ date: 2017-03-22 00:00:10 -0500
 last_modified_date: 2017-03-22 00:00:10 -0500
 pinned: false
 featured: false
-image: images/posts/opera-chrome.png
+image: ../images/posts/opera-chrome.png
 description: This addon allows you to install Chrome extensions on Opera.
 permalink: /posts/tech/add-chrome-extensions-to-opera-browser.html
 comments: true

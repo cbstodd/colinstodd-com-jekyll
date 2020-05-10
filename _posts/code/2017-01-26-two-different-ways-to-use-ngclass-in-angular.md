@@ -10,7 +10,7 @@ date: 2017-01-28 00:00:10 -0500
 last_modified_at: 2017-01-28 00:00:10 -0500
 pinned: false
 featured: false
-image: images/posts/angular.png
+image: ../images/posts/angular.png
 description: Simple example of how to use [ngClass] in Angular
 permalink: /posts/code/two-different-ways-to-use-ngclass-in-angular.html
 comments: true

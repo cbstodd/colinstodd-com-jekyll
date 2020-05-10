@@ -10,7 +10,7 @@ date: 2018-04-20 00:00:10 -0500
 last_modified_at: 2020-01-13 00:00:10 -0500
 pinned: false
 featured: false
-image: images/posts/ng-free-resources_min.png
+image: ../images/posts/ng-free-resources_min.png
 description: Free (or almost free) list of Angular CLI resources.
 permalink: /posts/code/free-resources-to-learn-angular.html
 comments: true

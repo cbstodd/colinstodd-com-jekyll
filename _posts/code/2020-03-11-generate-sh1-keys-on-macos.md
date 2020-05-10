@@ -7,7 +7,7 @@ description: Tutorial on how to generate Sh1/SSH key pairs on MacOS
 permalink: /posts/code/generate-sh1-keys-on-macos.html
 featured: false
 pinned: false
-image: /images/posts/ssh_key.jpg
+image: ../images/posts/ssh_key.jpg
 date: 2020-03-11 00:00:10 -0500
 last_modified_at: 2020-03-11 00:00:10 -0500
 tags:

@@ -78,7 +78,7 @@ layout: default
           </div>
           <div class="4u">
             {% if post.image %}
-            <img src="{{ post.image }}"
+            <img src="{{ post.image | relative_url }}"
                  alt="{{ post.title }}"
                  title="{{ post.title }}"
                  class="image post-image fit"

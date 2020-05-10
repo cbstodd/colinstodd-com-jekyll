@@ -10,7 +10,7 @@ date: 2017-07-24 00:00:10 -0500
 last_modified_at: 2017-07-24 00:00:10 -0500
 pinned: false
 featured: false
-image: images/posts/colper.png
+image: ../images/posts/colper.png
 description: How to create a username from an email address using AngularFire2's email/password authentication method.
 permalink: /posts/code/how-to-create-a-username-from-an-email-address-using-angularfire2.html
 comments: true

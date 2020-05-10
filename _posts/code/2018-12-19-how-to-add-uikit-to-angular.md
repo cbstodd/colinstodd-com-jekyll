@@ -11,7 +11,7 @@ date: 2019-02-19 15:30:12 -0500
 last_modified_at: 2020-04-01 12:30:12 -0500
 pinned: false
 featured: true
-image: images/posts/uikit.png
+image: ../images/posts/uikit.png
 description: How to install UIKit in Angular 6+ using CSS or SASS/SCSS.
 permalink: /posts/code/how-to-add-uikit-to-angular.html
 comments: true

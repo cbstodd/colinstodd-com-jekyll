@@ -8,7 +8,7 @@ last_modified_at: 2018-12-17 00:00:01 -0500
 category: angular
 featured: true
 pinned: false
-image: images/projects/blogularfire.png
+image: ../images/projects/blogularfire.png
 liveUrl:
 githubUrl: "https://github.com/cbstodd/BlogularFire"
 description: Custom blog/CMS built with Angular 7, Firebase's Firestore, Bootstrap 4, ngx-bootstrap and UIKit

@@ -11,7 +11,7 @@ date: 2018-12-19 00:00:10 -0500
 last_modified_at: 2020-03-28 00:10:00 -0500
 pinned: true
 featured: false
-image: images/posts/bootstrap.png
+image: ../images/posts/bootstrap.png
 description: A tutorial on how to install Bootstrap 4 in Angular 6+ (works with the latest version 9.1 +) using CSS or SCSS/SASS.
 permalink: /posts/code/how-to-install-bootstrap-in-angular.html
 redirect_from:

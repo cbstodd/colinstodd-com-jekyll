@@ -8,7 +8,7 @@ date: 2017-12-13 00:00:01 -0500
 last_modified_at: 2020-02-17 00:10:01 -0500
 pinned: true
 featured: false
-image: images/projects/my-gift-network.png
+image: ../images/projects/my-gift-network.png
 liveUrl: https://mygiftnetwork.com/
 githubUrl: https://github.com/cbstodd/colperClub
 description: Personal gift wish-list as a social network.
