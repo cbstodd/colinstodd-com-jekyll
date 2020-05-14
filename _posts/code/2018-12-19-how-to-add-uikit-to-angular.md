@@ -8,7 +8,7 @@ tags:
   - Tutorial
 title: How to add UIKit to Angular
 date: 2019-02-19 15:30:12 -0500
-last_modified_at: 2020-04-01 12:30:12 -0500
+last_modified_at: 2020-05-13 12:30:12 -0500
 pinned: false
 featured: true
 image: ../images/posts/uikit.png
@@ -23,14 +23,18 @@ redirect_from:
 
 I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> from a friend and really liked it! If you do a little digging on their website you'll see that they have a <a href="https://www.npmjs.com/package/uikit" target="_blank" rel="noopener">NPM package</a>. <br/>This post shows you how to install <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> using either CSS or <a href="#scss">SCSS/SASS <i class="fad fa-level-down-alt"></i></a>.
 
+<div class="neu-alert mb-3">
+<i class="fad fa-hands-wash fa-lg"></i>  Thanks to a <a href="http://disq.us/p/2975tzk" target="_blank" rel="noopener">commenter</a> for pointing out that <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> is no longer needed as a dependency, so now all you need is the <a href="https://getuikit.com" target="_blank" rel="noopener">UIKit</a> package.
+</div>
+
 <i class="fab fa-css3 text-pink header-icon" title="CSS 3"></i>
 
 #### _If you're using CSS:_
 
-1. From the root of your project you need to install <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> and <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a>:
+1. From the root of your project you need to install <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a>:
 
     ```bash
-    npm install jquery uikit --S
+    npm install uikit --S
     ```
 
 
@@ -43,7 +47,6 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
             "./node_modules/uikit/dist/css/uikit-core.min.css"
         ],
         "scripts": [
-            "./node_modules/jquery/dist/jquery.min.js",
             "./node_modules/uikit/dist/js/uikit.min.js",
             "./node_modules/uikit/dist/js/uikit-icons.min.js"
         ]
@@ -59,10 +62,10 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
 
 #### _If you're using SCSS or SASS:_
 
-1. From the root of your project you need to install <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> and <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a>:
+1. From the root of your project you need to install <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a>:
 
     ```bash
-    npm install jquery uikit --S
+    npm install uikit --S
     ```
 
 2. Update your `angular.json` file with the same code snippet below in two places. Underneath `"build"` and `"test"`:
@@ -79,7 +82,6 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
         ]
       },
       "scripts": [
-        "./node_modules/jquery/dist/jquery.min.js",
         "./node_modules/uikit/dist/js/uikit.min.js",
         "./node_modules/uikit/dist/js/uikit-icons.min.js"
       ]
