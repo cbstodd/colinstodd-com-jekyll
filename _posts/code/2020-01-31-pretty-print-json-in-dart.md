@@ -5,7 +5,7 @@ author: Colin Stodd
 description: Function that allows you to pretty-print JSON in your Dart console.
 featured: false
 pinned: false
-image: ../../images/posts/dart_logo.png
+image: ../images/posts/dart_logo.png
 date: 2020-01-31 00:20:00 -0500
 last_modified_at: 2020-02-23 00:20:00 -0500
 categories: code

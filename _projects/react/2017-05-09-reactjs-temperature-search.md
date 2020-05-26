@@ -8,7 +8,7 @@ last_modified_at: 2017-05-09 00:00:01 -0500
 category: react
 featured: true
 pinned: false
-image: images/projects/react-temp.png
+image: ../images/projects/react-temp.png
 liveUrl: "http://reactjs-temp.herokuapp.com/"
 githubUrl: "https://github.com/cbstodd/react_weather"
 description: A simple ReactJS application that allows you to search a city's temperature using Open Weather Map's api. Built with

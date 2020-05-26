@@ -8,7 +8,7 @@ last_modified_at: 2018-08-10 00:00:01 -0500
 category: angular
 featured: true
 pinned: true
-image: images/projects/custom-cms.png
+image: ../images/projects/custom-cms.png
 liveUrl:
 githubUrl: "https://github.com/AmerGastroAssn/ddw-org"
 description: Custom Content Management System (CMS) Built with Angular 6, Bootstrap 4, Firebase and much more...

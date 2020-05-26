@@ -5,8 +5,8 @@ author: Colin Stodd
 description: How to fix blurry/thin fonts after upgrading to Mac OS Catalina
 featured: true
 pinned: false
-image: "../../images/posts/catalina_icon_min.png"
-date: 2019-11-03 00:00:01 -0500
+image: ../images/posts/catalina_icon_min.png
+date: 2019-10-24 00:00:01 -0500
 last_modified_at: 2020-03-22 08:00:00 -0500
 categories: tech
 tags:
@@ -80,11 +80,12 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 
 <div id="textEditors" name="textEditors"></div>
 ___
-## Text Editors:
+## Text Editors and Apps:
 
 I had issues with my text editor fonts. I use <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> and the <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">IntelliJ IDEA</a>'s IDE's--mostly (sometimes <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text</a>), and my <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> fonts were thinner than normal. To fix those, I had to run these four commands in my terminal. Note that the trailing `0` can be changed to either `1`, `2` or `3` depending on the thickness you are looking for.
 
-### VSCode Commands:
+
+### VSCode:
 
 ```bash
 defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
@@ -94,7 +95,7 @@ defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabl
 ```
 
 
-### Webstorm Commands:
+### Webstorm:
 
 ```bash
 defaults write com.jetbrains.webstorm CGFontRenderingFontSmoothingDisabled 0
