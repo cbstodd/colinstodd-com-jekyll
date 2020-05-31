@@ -98,7 +98,7 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
 5. Now open your `styles.scss` file and import <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a> and your custom/mixin/variable files:
 
     ```scss
-    /* Custom Variables */
+    /* Custom SCSS/SASS Files */
     @import 'variables';
     @import 'mixins';
     @import 'custom';
