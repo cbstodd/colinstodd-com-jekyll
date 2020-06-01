@@ -8,11 +8,11 @@
 				event: 'gtm.js'
 			});
 			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
-				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j = d.createElement(s),
+			dl = l != 'dataLayer' ? '&l=' + l : '';
 			j.async = true;
 			j.src =
-				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
 			f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-5KC3SGB');
 	</script>
@@ -44,11 +44,14 @@
 	<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}/><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}/><![endif]-->
+	<!-- Animate.css -->
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<!-- * FontAwesome * -->
 	<link rel="stylesheet"
-		  href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
-		  integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH"
-		  crossorigin="anonymous">
+	href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+	integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH"
+	crossorigin="anonymous">
 	<link rel="stylesheet" href="../../assets/css/smoothbox.css">
 	<meta property="og:type" content="website" />
 	{% feed_meta %}
