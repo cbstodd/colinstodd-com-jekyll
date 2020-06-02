@@ -6,7 +6,7 @@ layout: default
   <header>
     <div class="inner">
       <a href="{{ page.category | relative_url }}">
-        <h2><i class="fad fa-newspaper"></i> {{ page.title }}</h2>
+        <h2><i class="fad fa-thumbtack"></i> {{ page.title }}</h2>
       </a>
       <p>{{ page.description }}</p>
       <p>{{ page.summary }}</p>
@@ -68,7 +68,7 @@ layout: default
         <div class="row uniform">
           <div class="8u">
             {% if post.last_modified_at %}
-            <p><i class="fad fa-pencil-alt"></i> {{ post.last_modified_at | date_to_string }}</p>
+            <p><i class="fad fa-calendar-edit"></i> {{ post.last_modified_at | date_to_string }}</p>
             {% else post.date %}
             <p><i class="fad fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>
             {% endif %}

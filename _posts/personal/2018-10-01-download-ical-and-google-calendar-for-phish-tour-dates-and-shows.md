@@ -33,7 +33,7 @@ gcal_link: "https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srj
   <span class="text-green">From <a href="https://phish.com/news/summer-tour-rescheduled-for-2021/" target="_blank" rel="_noopener" class="text-green" title="Go to Phish's website to read for yourself">Phish's Email/Website <i class="fad fa-external-link-square"></i></a></span><br>
   <span class="text-green"><i class="fad fa-fish"></i> "Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates..."</span> <br>
   <hr/>
-  <i class="fad fa-angle-double-right fa-lg"></i> As requested, and because I love 3.5 of you; As long as Phish keeps providing these free streams I'll keep adding those to the calendar. <br/>
+  <i class="fad fa-angle-double-right fa-lgs"></i> As requested, and because I love 3.5 of you; As long as Phish keeps providing these free streams I'll keep adding those to the calendar. <br/>
   <i class="fad fa-angle-double-right fa-lg"></i> And yes, I'll be updating next years' dates soon enough.
 </div>
 

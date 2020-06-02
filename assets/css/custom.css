@@ -1,7 +1,8 @@
 /* Site wide */
 
 :root {
-  --main-blue: #2a303f;
+  --font-grey: #afb7c9;
+  --main-blue: #242a38;
   --pink: #c10062;
   --blue-grey: #6978a0;
   --blue: #4c5c95;
@@ -35,16 +36,16 @@ img.cs-logo-banner {
 }
 
 h2.banner-title {
-  color: #afb7c9;
+  color: var(--font-grey);
 }
 
 h1 > a.site-title,
 h1 > a.site-title:hover {
-  color: #afb7c9;
+  color: var(--font-grey);
 }
 
 p.page-description {
-  color: #afb7c9;
+  color: var(--font-grey);
 }
 
 .dots-header {
@@ -212,7 +213,7 @@ p.neu-alert,
 }
 
 .blurb > code {
-  color: #afb7c9;
+  color: var(--font-grey);
   font-weight: 400;
   font-style: normal;
 }
@@ -264,62 +265,13 @@ p.neu-alert,
     monospace;
 }
 
-/* Highlighted/Selected Text */
-code::selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue) !important;
+*::selection {
+  background-color: var(--main-blue) !important;
+  color: inherit;
 }
-code::-moz-selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue) !important;
-}
-p::selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue) !important;
-}
-p::-moz-selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue) !important;
-}
-a::selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue-grey) !important;
-}
-a::-moz-selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue-grey) !important;
-}
-.neu-alert > *::selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue-grey) !important;
-}
-.neu-alert > *::-moz-selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue-grey) !important;
-}
-.blurb > *::selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue-grey) !important;
-}
-.blurb > *::-moz-selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--blue-grey) !important;
-}
-pre > code > *::selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--green) !important;
-}
-pre > code > *::-moz-selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--green) !important;
-}
-input#calendarLink::selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--greend) !important;
-}
-input#calendarLink::-moz-selection {
-  background: var(--main-blue) !important; /* WebKit/Blink Browsers */
-  color: var(--green) !important;
+*::-moz-selection {
+  background-color: var(--main-blue) !important;
+  color: inherit;
 }
 
 /*~  POSTS ~*/
@@ -447,7 +399,7 @@ ul.contact > li > h4 > a {
   }
 
   .blurb > code {
-    color: #afb7c9;
+    color: var(--font-grey);
     font-weight: 400;
     font-style: normal;
     overflow-wrap: break-word;

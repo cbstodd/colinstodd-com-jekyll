@@ -8,7 +8,7 @@ tags:
   - Tutorial
 title: How To Install Materialize CSS In Angular
 date: 2018-10-11 00:00:01 -0500
-last_modified_at: 2020-03-28 00:10:00 -0500
+last_modified_at: 2020-06-02 00:00:10 -0500
 pinned: true
 featured: false
 image: ../images/posts/matcss-min.png
@@ -40,8 +40,8 @@ I've recently been playing with <a href="http://materializecss.com/" target="_bl
       "node_modules/materialize-css/dist/css/materialize.min.css"
     ],
       "scripts": [
-      "./node_modules/jquery/dist/jquery.min.js",
-      "./node_modules/materialize-css/dist/js/materialize.js"
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/materialize-css/dist/js/materialize.min.js"
     ]
     ```
 
@@ -132,12 +132,12 @@ Now you should be on your way to using Materialize CSS with Angular using <a hre
 
     ```json
     "styles": [
-      "./node_modules/materialize-css/dist/css/materialize.css",
+      "node_modules/materialize-css/dist/css/materialize.css",
       "src/styles.css"
     ],
       "scripts": [
-      "./node_modules/jquery/dist/jquery.min.js",
-      "./node_modules/materialize-css/dist/js/materialize.js"
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/materialize-css/dist/js/materialize.min.js"
     ]
     ```
 
