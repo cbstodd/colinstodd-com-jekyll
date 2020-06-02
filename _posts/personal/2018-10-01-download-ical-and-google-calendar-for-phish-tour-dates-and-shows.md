@@ -31,17 +31,17 @@ gcal_link: "https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srj
 <i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE <i class="fad fa-calendar-alt"></i> {{ page.last_modified_at | date_to_string }}<br/>
   <hr/>
   <span class="text-green">From <a href="https://phish.com/news/summer-tour-rescheduled-for-2021/" target="_blank" rel="_noopener" class="text-green" title="Go to Phish's website to read for yourself">Phish's Email/Website <i class="fad fa-external-link-square"></i></a></span><br>
-  <span class="text-green"><i class="fad fa-fish"></i> "Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates..."</span> <br>
+  <span class="text-green">"Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates..."</span> <br>
   <hr/>
-  <i class="fad fa-angle-double-right fa-lgs"></i> As requested, and because I love 3.5 of you; As long as Phish keeps providing these free streams I'll keep adding those to the calendar. <br/>
-  <i class="fad fa-angle-double-right fa-lg"></i> And yes, I'll be updating next years' dates soon enough.
+  <i class="fad fa-angle-double-right fa-lg"></i> As long as Phish provides these streams I'll do my best to keep updating the info for each night. <br/>
+  <i class="fad fa-angle-double-right fa-lg"></i> Yes, I'll be updating next years' dates -- soon enough.
 </div>
 
 
 I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
 
 <div class="blurb">
-  <i class="fad fa-comment-exclamation fa-lg"></i>&nbsp; Technology is always changing and I've had some people tell me that the "public calendar link" would not work on one platform and some times the other platform, so I've provided links for both (Same exact info) &nbsp;<i class="fab fa-apple"></i>&nbsp; Apple and &nbsp;<i class="fab fa-google"></i>&nbsp; Google; So you'll now notice that there's two sections (one for each) below. I'll also note that these instructions are assuming you are on a laptop or desktop computer, not a mobile device.  Let me know if you run into any issues. <br/>- Colper
+  <i class="fad fa-comment-exclamation fa-lg"></i>&nbsp; I've had people tell me that the "public calendar link" would not work on one platform and some times the other platform, so I've provided links for both (Same exact info) &nbsp;<i class="fab fa-apple"></i>&nbsp; Apple and &nbsp;<i class="fab fa-google"></i>&nbsp; Google; So you'll now notice that there's two sections (one for each) below. I'll also note that these instructions are assuming you are on a laptop or desktop computer, not a mobile device.  Let me know if you run into any issues. <br/>- Colper
 </div>
 
 ## Examples:
