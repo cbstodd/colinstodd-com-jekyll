@@ -8,7 +8,7 @@ tags:
   - Tutorial
 title: How To Install Materialize CSS In Angular
 date: 2018-10-11 00:00:01 -0500
-last_modified_at: 2020-06-02 00:00:10 -0500
+last_modified_at: 2020-06-01 00:10:10 -0500
 pinned: true
 featured: false
 image: ../images/posts/matcss-min.png
@@ -21,7 +21,7 @@ redirect_from:
   - /blog/post/how-to-install-materialize-css-in-angular-5
 ---
 
-I've recently been playing with <a href="http://materializecss.com/" target="_blank" rel="noopener">Materialize CSS</a>, and I've been loving it. I originally wrote this post to show you how to install the vanilla <a href="http://materializecss.com/" target="_blank" rel="noopener">Materialize CSS</a> in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> (<a href="#vanilla-install">still here in the second section <i class="fad fa-level-down-alt"></i></a>) however, I discovered the open source project: <a href="https://sherweb.github.io/ngx-materialize/home" target="_blank" rel="noopener">ngx-materalize</a> and I highly recommend using this package if you are using Materialize CSS with <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>. It makes development much cleaner and easier than the vanilla version. Here's how you can install it.
+<a href="http://materializecss.com/" target="_blank" rel="noopener">Materialize CSS</a> has been a great tool for quick and elegant front-end development. I originally wrote this post to show you how to install the vanilla <a href="http://materializecss.com/" target="_blank" rel="noopener">Materialize CSS</a> in <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a> (<a href="#vanilla-install">still here in the second section <i class="fad fa-level-down-alt"></i></a>) however, I discovered the open source project: <a href="https://sherweb.github.io/ngx-materialize/home" target="_blank" rel="noopener">ngx-materalize</a> and I highly recommend using this package if you are using Materialize CSS with <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>. It may not be as quick to get started, but in the long run you will end up saving a bunch of time and frustration using it's built-in features. It makes development much cleaner and easier than the vanilla version. Here's how you can install it.
 
 1. Once you've created your project, open up your terminal and run:
 
@@ -119,7 +119,7 @@ Now you should be on your way to using Materialize CSS with Angular using <a hre
 
 <hr>
 
-### If you would like to install the vanilla version of MaterializeCSS, go this route:
+### If you would like to install the vanilla version of MaterializeCSS:
 
 1. Once you’ve created your project, open up your terminal and run:
 
