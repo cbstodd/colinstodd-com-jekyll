@@ -8,7 +8,7 @@ tags:
   - Tutorial
 title: How To Install Materialize CSS In Angular
 date: 2018-10-11 00:00:01 -0500
-last_modified_at: 2020-06-01 00:10:10 -0500
+last_modified_at: 2020-06-04 00:00:10 -0500
 pinned: true
 featured: false
 image: ../images/posts/matcss-min.png
@@ -128,12 +128,20 @@ Now you should be on your way to using Materialize CSS with Angular using <a hre
      ```
     This installs <a href="http://materializecss.com/" target="_blank" rel="noopener">Materailize CSS</a> and <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a>
 
-2. Open up your `angular.json` file and add the style and scripts.
+2. If you want to use the <a href="https://google.github.io/material-design-icons/#icon-font-for-the-web" target="_blank" rel="noopener">Material Design</a> icons add this to the your `index.html` file:
+
+    ```html
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    ```
+
+    You can <a href="https://google.github.io/material-design-icons/#icon-font-for-the-web" target="_blank" rel="noopener">host the icons</a> yourself but I prefer a CDN as it's likely people have it downloaded to their browser's cache and any new fonts are automatically updated/added, but you may want to host them yourself if you are building an app that needs to work offline (e.g. a Progressive Web App (PWA)). If that's the case you can go to the <a href="https://google.github.io/material-design-icons/#icon-font-for-the-web" target="_blank" rel="noopener">Material Design site</a> for directions on how to do that.
+
+3. Open up your `angular.json` file and add the style and scripts.
 
     ```json
     "styles": [
-      "node_modules/materialize-css/dist/css/materialize.css",
-      "src/styles.css"
+      "src/styles.css",
+      "node_modules/materialize-css/dist/css/materialize.min.css"
     ],
       "scripts": [
       "node_modules/jquery/dist/jquery.min.js",
@@ -141,7 +149,7 @@ Now you should be on your way to using Materialize CSS with Angular using <a hre
     ]
     ```
 
-3. Restart your server and you should be ready to go!
+4. Restart your server and you should be ready to go!
 
 
 
