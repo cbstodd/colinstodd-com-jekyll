@@ -303,6 +303,13 @@ a.button:hover {
   border-bottom: none !important;
 }
 
+img.pinned-image {
+  max-width: 60%;
+  max-height: 60%;
+  left: 23%;
+  padding: 1em 0;
+}
+
 img.rounded {
   border-radius: 5px;
 }

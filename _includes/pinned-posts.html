@@ -5,7 +5,7 @@
 {% capture alt %}{% if is_alt == 0 %} alt{% endif %}{% endcapture %}
 <!-- Pinned Posts -->
 <section id="pinned-posts-{{ posts.category }}"
-         class="wrapper{{ alt }} style{{ forloop.index | plus: features.size }}">
+         class="wrapper{{ alt }}">
   <div class="inner">
     <a href="{{ posts.url | relative_url }}">
       <h2 class="major"><i class="fad fa-thumbtack"></i> Pinned {{ posts.title }}</h2>
@@ -14,7 +14,8 @@
       {% assign articles = site.posts | where:"category",posts.category | where:"pinned",true | sort:"date" | reverse %}
       {% for article in articles %}
       <article>
-        <a href="{{ article.url | relative_url }}" class="pinned-post-link"><img src="{{ article.image }}" class="image"
+        <a href="{{ article.url | relative_url }}" class="pinned-post-link">
+          <img src="{{ article.image }}" class="image pinned-image"
                alt="{{ article.title }}" /></a>
         <h3 class="major">{{ article.title }}</h3>
         <p>{{ article.description }}</p>
