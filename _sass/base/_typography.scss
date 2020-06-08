@@ -122,6 +122,7 @@ h6 {
   font-weight: _font(weight-heading-bold);
   margin: 0 0 (_size(element-margin) * 0.5) 0;
   text-transform: uppercase;
+  letter-spacing: _font(kern-heading);
 
   a {
     color: inherit;
@@ -133,15 +134,17 @@ h6 {
   }
 
   &.major {
+    // font-size: 1.2em;
+    letter-spacing: _font(header-spacing);
     // padding-bottom: 1em;
     // border-bottom: solid 2px _palette(border);
   }
 }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: _font(header-spacing);
-}
+// h2 {
+//   font-size: 1.2em;
+//   letter-spacing: _font(header-spacing);
+// }
 
 h3 {
   font-size: 0.9em;

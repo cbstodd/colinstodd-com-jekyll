@@ -5,7 +5,7 @@ layout: default
 <section id="wrapper">
   <header>
     <div class="inner">
-      <h2><i class="{{page.icon}}"></i> {{ page.title }}</h2>
+      <h2 class="major"><i class="{{page.icon}}"></i> {{ page.title }}</h2>
       <hr class="banner">
       <p>{{ page.description }} </p>
     </div>
@@ -17,7 +17,7 @@ layout: default
       {% endif %}
       {{ content }}
       <p class="text-inset">
-      <i class="fa fa-calendar-edit text-inset"></i>  Page Last Updated:  {{ page.last_modified_at | date_to_string }}
+        <i class="fa fa-calendar-edit text-inset"></i> Page Last Updated: {{ page.last_modified_at | date_to_string }}
       </p>
       <hr>
       {% include google-post-ads.html %}
