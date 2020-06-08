@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2020-06-06 08:00:00 -0400
+last_modified_at: 2020-06-07 08:00:00 -0400
 categories: tech
 tags:
   - OSX,
@@ -26,7 +26,7 @@ I recently upgraded my MAC from <a href="https://support.apple.com/macos/mojave"
 
 Many people had to play with these settings because not every external display is the same, so what I've posted here might not fit your setup exactly. It took some trial and error, but hopefully these commands will help you. As you'll see below, everything can be reverted (<a href="#revert">see the bottom of the page</a>) and the commands won't do any serious damage to your MAC.
 
-<div class="blurb"><i class="fad fa-comment-alt-exclamation fa-lg text-gold"></i>&nbsp;&nbsp; Note: Every time you run one of these commands, you'll have to log out to see the changes. You can do so by pressing <code>command</code> + <code>shift</code> + <code>Q</code>.</div>
+<div class="blurb"><i class="fad fa-comment-alt-exclamation fa-lg text-yellow"></i>&nbsp;&nbsp; Note: Every time you run one of these commands, you'll have to log out to see the changes. You can do so by pressing <code>command</code> + <code>shift</code> + <code>Q</code>.</div>
 ___
 
 ## What Worked For Me:
@@ -45,7 +45,7 @@ You'll want to check to see if you have your font smoothing enabled or disabled 
 Even though you checked the checkbox in settings, We're going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> `/Applications/Utilities/Terminal.app`. The `-g` stands for `global`.  <a href="#textEditors" title="Scroll down fix individual apps">Further down</a> in the tutorial I show you how to change the fonts on a per-app basis (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors) so that you can apply these commands to those apps specifically versus the entire (global) OS/system....
 
 <div class="blurb">
-<i class="fad fa-comment-alt-exclamation fa-lg text-gold"></i>&nbsp;&nbsp; FYI: I've found that most apps built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener">Electron</a> need adjustments, whereas the native OSX apps look fine.
+<i class="fad fa-info-circle fa-lg text-yellow"></i>&nbsp;&nbsp; FYI: I've found that most apps built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener">Electron</a> need adjustments, whereas the native OSX apps look fine.
 </div>
 
 ```bash
@@ -84,22 +84,13 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 
 <div id="textEditors" name="textEditors"></div>
 ___
+
 ## Text Editors and Apps:
 
 I had issues with my text editor fonts. I use <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> and the <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">IntelliJ IDEA</a>'s IDE's--mostly (sometimes <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text</a>), and my <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> fonts were thinner than normal. To fix those, I had to run these commands in my terminal. Note that the trailing `0` can be changed to either `1`, `2` or `3` depending on the smoothness you are looking for.
 
 
-### VSCode:
-
-```bash
-defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
-defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0
-defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
-defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
-```
-
-You'll most likely have more apps than just VSCode, and you'll probably notice that some look fine and other's do NOT! To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  You can then scroll through to locate the app and adjust it's font smoothing level. As you can see in the images below, I've highlighted the VSCode files that are being updated in this tutorial; and as previously mentioned you can adjust the smoothness via the trailing number of `0` - `3` zero meaning font smoothness is off and three applying the most font smoothing.
-
+### <i class="fad fa-check-circle fa-lg text-yellow"></i> VSCode:
 
 <div class="row">
   <div class="six columns">
@@ -116,35 +107,50 @@ You'll most likely have more apps than just VSCode, and you'll probably notice t
   </div>
 </div>
 
+You'll most likely have more apps than just VSCode, and you'll probably notice that some look fine and other's do NOT! To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  You can then scroll through to locate the app and adjust it's font smoothing level. As you can see in the images above, I've highlighted the VSCode files that are being updated in this tutorial; and as previously mentioned you can adjust the smoothness via the trailing number of `0` - `3` zero meaning font smoothness is off and three applying the most font smoothing... VSCode is built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener" title="Electron JS">Electron</a> and I've found that those apps don't need font smoothing on my monitor so I set mine to `0`.
 
-#### For example:
-You'll notice the `d9f3b04` in my <a href="https://www.jetbrains.com/webstorm/" target="_blank" title="Webstorm" rel="noopener">Webstorm</a> file name. That is probably going to be different for you depending on your Webstorm download. You'll have check for yourself. If you click on the file you'll see that my settings have already been added to the `.plist` file (see in image below).
+```bash
+defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
+```
 
-### Webstorm:
+### <i class="fad fa-check-circle fa-lg text-yellow"></i> Webstorm:
+
+<div class="row">
+	<div class="six columns">
+		<img src="../../images/posts/mac_osx_fonts/jetbrains_number_file_name.png"
+    alt="Webstorm filename id image"
+    title="Webstorm filename id image"
+    class="image fit">
+	</div>
+</div>
+
+You'll notice the `d9f3b04` in my <a href="https://www.jetbrains.com/webstorm/" target="_blank" title="Webstorm" rel="noopener">Webstorm</a> file name. That is probably going to be different for you depending on your Webstorm download. You'll have check for yourself.
 
 ```bash
 defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
 ```
 
-#### Another example with Sublime Text 3:
-
-Here's another example of how I updated <a href="https://www.sublimetext.com/blog/articles/sublime-text-3-point-2" target="_blank" title="Sublime Text 3.2" rel="noopener">Sublime Text 3</a>. I would do so by locating the correct file name and running it like so. You can also see in the image the level of which I set mine to being `2` in `<string>2</string>`:
+### <i class="fad fa-check-circle fa-lg text-yellow"></i> Sublime Text 3.2 (example):
 
 <div class="row">
   <div class="six columns">
     <img src="../../images/posts/mac_osx_fonts/sublime_text_plist.png"
         alt="Sublime Text 3 plist file name image"
         title="Sublime Text 3 plist file name image"
-        class="image fit zoom"/>
+        class="image fit" />
   </div>
   <div class="six columns">
     <img src="../../images/posts/mac_osx_fonts/sublime_text_plist_string.png"
         alt="Sublime Text 3 plist file details in Library/preferences image"
         title="Sublime Text 3 plist file details in Library/preferences image"
-        class="image fit zoom"/>
+        class="image fit" />
   </div>
 </div>
 
+Here's another example of how I updated <a href="https://www.sublimetext.com/blog/articles/sublime-text-3-point-2" target="_blank" title="Sublime Text 3.2" rel="noopener">Sublime Text 3</a>. If you look at the image right above (bottom if you're on mobile) the level that I set mine to be `2` is set in `<string>2</string>`:
 
 ```bash
 defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 2
@@ -169,6 +175,6 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
 
 ---
 
-I'm yet to find a fix for the IntelliJ IDE and Android Studio. I know it would be similar to the WebStorm and VSCode snippets, but I haven't found one that works. If you know, please <a href="#getInTouch">contact me</a> or let me know in the comments so that I can include those here to help future on-lookers. Also, if you have any more info, I'm happy to work with you to post those on this page.  Hope this helps some of you!
+Hopefully this helped you. If so, I'd appreciate a thumbs up below or let me know in the comments. If you have anymore info regarding this or you see something off please <a href="#getInTouch">let me know</a>, I'm happy to work with you to post any updates.
 
 Happy Coding!!!! 😃
