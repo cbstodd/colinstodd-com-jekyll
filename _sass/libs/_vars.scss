@@ -15,26 +15,20 @@ $size: (
 // Font.
 $font: (
   family: ('Source Sans Pro', 'Helvetica Neue', Arial, sans-serif),
-  family-fixed:
-    (
-      'SFMono-Regular',
-      'Roboto Mono Medium',
-      Menlo,
-      'Courier',
-      monospace
-    ),
+  family-fixed: ('SFMono-Regular', 'Roboto Mono', Menlo, 'Courier', monospace),
   family-heading: ('Nunito Sans', 'Helvetica Neue', Roboto, Arial, sans-serif),
   weight: 300,
   weight-bold: 600,
   weight-heading: 200,
   weight-heading-bold: 700,
-  kern-heading: 0.1em
+  kern-heading: 0.1em,
+  header-spacing: 0.06em
 );
 // Palette.
 $palette: (
   bg: #31394b,
-  fg: #AFB7C9,
-  fg-bold: #AFB7C9,
+  fg: #afb7c9,
+  fg-bold: #afb7c9,
   fg-light: rgba(255, 255, 255, 0.35),
   border: rgba(255, 255, 255, 0.125),
   border-bg: rgba(255, 255, 255, 0.025),

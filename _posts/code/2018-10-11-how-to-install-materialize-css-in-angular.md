@@ -131,7 +131,11 @@ Now you should be on your way to using Materialize CSS with Angular using <a hre
 2. If you want to use the <a href="https://google.github.io/material-design-icons/#icon-font-for-the-web" target="_blank" rel="noopener">Material Design</a> icons add this to the your `index.html` file:
 
     ```html
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <head>
+      ...
+      ...
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
     ```
 
     You can <a href="https://google.github.io/material-design-icons/#icon-font-for-the-web" target="_blank" rel="noopener">host the icons</a> yourself but I prefer a CDN as it's likely people have it downloaded to their browser's cache and any new fonts are automatically updated/added, but you may want to host them yourself if you are building an app that needs to work offline (e.g. a Progressive Web App (PWA)). If that's the case you can go to the <a href="https://google.github.io/material-design-icons/#icon-font-for-the-web" target="_blank" rel="noopener">Material Design site</a> for directions on how to do that.
@@ -150,11 +154,3 @@ Now you should be on your way to using Materialize CSS with Angular using <a hre
     ```
 
 4. Restart your server and you should be ready to go!
-
-
-
-
-
-
-
-

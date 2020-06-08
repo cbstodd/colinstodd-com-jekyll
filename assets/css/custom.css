@@ -413,6 +413,19 @@ ul.contact > li > h4 > a {
   }
 }
 
+/* Image Zoom on Hover/Click */
+.enlarge {
+  transition: transform .2s; /* Animation */
+  width: 125%;
+  height: 125%;
+  margin: 0 auto;
+}
+
+.enlarge:hover {
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* transform: scale(1.5); */
+}
+
 @media (min-width: 1681px) {
   img.cs-logo {
     justify-items: center;

@@ -9,7 +9,7 @@ layout: default
       <a href="/posts/{{ page.category }}.html">
         <h6>{{ page.category }}</h6>
       </a>
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="image right" />
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="zoom enlarge image right" />
       <h2>{{ page.title }}</h2>
       <hr class="banner">
       <h5>
@@ -22,7 +22,8 @@ layout: default
       <h5 title="Published Date"><i class="fad fa-calendar-alt"></i> {{ page.date | date_to_string }} (Published)
       </h5>
       {% if page.last_modified_at %}
-        <h5 title="Updated Date"><i class="fad fa-calendar-edit"></i> {{ page.last_modified_at | date_to_string }} (Updated)</h5>
+      <h5 title="Updated Date"><i class="fad fa-calendar-edit"></i> {{ page.last_modified_at | date_to_string }}
+        (Updated)</h5>
       {% endif %}
       <p style="float:right;">{% include facebook-like.html %}</p>
     </div>

@@ -125,3 +125,13 @@ images/posts/use_font_smoothing_pink_arrow.png: use_font_smoothing_pink_arrow.pn
 images/posts/dinner_and_movie.png: dinner_and_movie.png
 images/pages/ripple_lighter_blue.png: ripple_lighter_blue.png
 images/pages/ripple_darker_blue.png: ripple_darker_blue.png
+images/posts/mac_osx_fonts/catalina_icon_min.png: catalina_icon_min.png
+images/posts/mac_osx_fonts/webstorm_plist.png: webstorm_plist.png
+images/posts/mac_osx_fonts/sublime_text_3_plist.png: sublime_text_3_plist.png
+images/posts/mac_osx_fonts/library_preferences.png: library_preferences.png
+images/posts/mac_osx_fonts/sublime_text_plist.png: sublime_text_plist.png
+images/posts/mac_osx_fonts/font_smoothing_toggle_min.png: font_smoothing_toggle_min.png
+images/posts/mac_osx_fonts/preferences_vscode.png: preferences_vscode.png
+images/posts/mac_osx_fonts/use_font_smoothing_pink_arrow.png: use_font_smoothing_pink_arrow.png
+images/posts/mac_osx_fonts/general_settings_font_smoothing.png: general_settings_font_smoothing.png
+images/posts/mac_osx_fonts/sublime_text_plist_string.png: sublime_text_plist_string.png
