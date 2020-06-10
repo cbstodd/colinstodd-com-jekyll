@@ -15,7 +15,15 @@ $size: (
 // Font.
 $font: (
   family: ('Source Sans Pro', 'Helvetica Neue', Arial, sans-serif),
-  family-fixed: ('SFMono-Regular', 'Roboto Mono', Menlo, 'Courier', monospace),
+  family-fixed:
+    (
+      Menlo,
+      'Fira Mono',
+      'SFMono-Regular',
+      'Roboto Mono',
+      Courier,
+      monospace
+    ),
   family-heading: ('Nunito Sans', 'Helvetica Neue', Roboto, Arial, sans-serif),
   weight: 300,
   weight-bold: 600,

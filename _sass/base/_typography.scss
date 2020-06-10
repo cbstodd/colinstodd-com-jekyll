@@ -200,6 +200,7 @@ code {
   border-radius: _size(border-radius);
   border: solid 2px _palette(border);
   font-family: _font(family-fixed);
+  font-weight: 400;
   font-size: 0.9em;
   margin: 0 0.25em;
   padding: 0.4em 0.65em;
@@ -215,11 +216,13 @@ code {
 pre {
   -webkit-overflow-scrolling: touch;
   font-family: _font(family-fixed);
+  font-weight: 400;
   font-size: 1em;
   margin: 0 0 _size(element-margin) 0;
 
   code {
     display: block;
+    font-weight: 400;
     line-height: 1.75em;
     padding: 1em 1.5em;
     overflow-x: auto;

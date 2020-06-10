@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2020-06-07 08:00:00 -0400
+last_modified_at: 2020-06-09 08:00:00 -0400
 categories: tech
 tags:
   - OSX,
@@ -42,7 +42,7 @@ You'll want to check to see if you have your font smoothing enabled or disabled 
   </div>
 </div>
 
-Even though you checked the checkbox in settings, We're going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> `/Applications/Utilities/Terminal.app`. The `-g` stands for `global`.  <a href="#textEditors" title="Scroll down fix individual apps">Further down</a> in the tutorial I show you how to change the fonts on a per-app basis (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors) so that you can apply these commands to those apps specifically versus the entire (global) OS/system....
+Even though you checked the checkbox in settings, We're going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> `/Applications/Utilities/Terminal.app`. The `-g` stands for `global`.  <a href="#textEditors" title="Scroll down fix individual apps">Further down</a> in the tutorial I show you how to change the fonts on a per-app basis (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors).
 
 <div class="blurb">
 <i class="fad fa-info-circle fa-lg text-yellow"></i>&nbsp;&nbsp; FYI: I've found that most apps built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener">Electron</a> need adjustments, whereas the native OSX apps look fine.
@@ -67,7 +67,7 @@ If this worked; great! If not, you can try these options below. My setup is stil
 
 If you're at this section you're probably not happy with the results above 😞. What you'll most likely need to do is try different combinations. I recommend that you write down what worked and where it worked. e.g. if what we ran above helped with OS X's fonts but messed up some apps then take note of that so you can apply commands to those specific apps (basically debug). Im not exaggerating when I say that I spent nearly 8 hours doing this (also searching for answers which is why I'm writing this post).
 
-Nevertheless, You can change the smoothness of the fonts globally with one of these commands; depending on the number/smoothing intensity you want:
+Nevertheless, here's the same command as above but I've laid them out so that you can copy and paste which one you want to try. Once you get your OSX system fonts to where you like them (ie. the menubar at the top, Finder and stock/default OSX apps), you can <a href="#textEditors" title="Scroll down to the Text Editors Section">scroll down <i class="fad fa-level-down-alt"></i></a> to the next section to update apps individually.
 
 `1` - **Light** font smoothing
 ```bash
@@ -85,10 +85,9 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 <div id="textEditors" name="textEditors"></div>
 ___
 
-## Text Editors and Apps:
+## Adjusting Fonts Individually (Text Editors and Apps):
 
-I had issues with my text editor fonts. I use <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> and the <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">IntelliJ IDEA</a>'s IDE's--mostly (sometimes <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text</a>), and my <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> fonts were thinner than normal. To fix those, I had to run these commands in my terminal. Note that the trailing `0` can be changed to either `1`, `2` or `3` depending on the smoothness you are looking for.
-
+I had issues with my text editor fonts so I'll use those as examples, but you can locate and adjust any app you'd like using the same method.
 
 ### <i class="fad fa-check-circle fa-lg text-yellow"></i> VSCode:
 
@@ -107,7 +106,7 @@ I had issues with my text editor fonts. I use <a href="https://code.visualstudio
   </div>
 </div>
 
-You'll most likely have more apps than just VSCode, and you'll probably notice that some look fine and other's do NOT! To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  You can then scroll through to locate the app and adjust it's font smoothing level. As you can see in the images above, I've highlighted the VSCode files that are being updated in this tutorial; and as previously mentioned you can adjust the smoothness via the trailing number of `0` - `3` zero meaning font smoothness is off and three applying the most font smoothing... VSCode is built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener" title="Electron JS">Electron</a> and I've found that those apps don't need font smoothing on my monitor so I set mine to `0`.
+To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  You can then scroll through to locate the app and adjust it's font smoothing level. As you can see in the images above, I've highlighted the VSCode files that are updated below. VSCode is built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener" title="Electron JS">Electron</a> and I've found that those apps don't need font smoothing on my monitor so I set mine to `0`.
 
 ```bash
 defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
@@ -160,8 +159,8 @@ ___
 
 <div id="revert"></div>
 
-## If you messed everything up:
-No need to worry you can set everything back to it's default OSX Catalina state:
+## Revert back to OSX default:
+No need to worry if you messed things up, you can set everything back to it's default OSX Catalina state:
 
 **Removes custom font smoothing:**
 ```bash
