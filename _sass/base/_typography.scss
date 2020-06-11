@@ -38,14 +38,14 @@ textarea {
 }
 
 a {
-  border-bottom: dashed 2px _palette(fg-light);
+  border-bottom: dotted 2px _palette(fg-light);
   color: _palette(fg-bold);
   text-decoration: none;
 
   &:hover {
     @include vendor('transition', 'color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out');
     // border-bottom-color: #ffffff;
-    border-bottom: 2px dotted #fff;
+    border-bottom: 2px dashed #fff;
     color: _palette(fg-bold) !important;
   }
 

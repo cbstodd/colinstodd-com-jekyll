@@ -44,9 +44,6 @@ You'll want to check to see if you have your font smoothing enabled or disabled 
 
 Even though you checked the checkbox in settings, We're going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> `/Applications/Utilities/Terminal.app`. The `-g` stands for `global`.  <a href="#textEditors" title="Scroll down fix individual apps">Further down</a> in the tutorial I show you how to change the fonts on a per-app basis (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors).
 
-<div class="blurb">
-<i class="fad fa-info-circle fa-lg text-yellow"></i>&nbsp;&nbsp; FYI: I've found that most apps built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener">Electron</a> need adjustments, whereas the native OSX apps look fine.
-</div>
 
 ```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
@@ -60,7 +57,6 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 
 Log out, and log back in.
 
-If this worked; great! If not, you can try these options below. My setup is still not perfect but I can live with what I have. You might have to play around with a few different combinations.  I really hope <a href="https://apple.com/support" target="_blank" rel="noopener">Apple</a> addresses this in the near future.
 
 ---
 ## Adjusting Fonts Globally:
@@ -96,7 +92,7 @@ I had issues with my text editor fonts so I'll use those as examples, but you ca
   <li>Keep as <code>defaults write</code>.</li>
   <li class="text-gold">Application <code>.plist</code> filename that you want to locate and update.</li>
   <li>Keep as <code>CGFontRenderingFontSmoothingDisabled</code>.</li>
-  <li class="text-gold">Level of font smoothing from <code>0</code> - <code>3</code>.</li>
+  <li class="text-gold">Select level of font smoothing <code>0</code> - <code>3</code>.</li>
 </ol>
 
 <pre><code><sup>1</sup>defaults write <span class="text-gold"><sup>2</sup>com.microsoft.VSCode</span> <sup>3</sup>CGFontRenderingFontSmoothingDisabled <span class="text-gold"><sup>4</sup>0</span>
@@ -126,7 +122,14 @@ I had issues with my text editor fonts so I'll use those as examples, but you ca
   </div>
 </div>
 
-To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  You can then scroll through to locate the app and adjust it's font smoothing level. As you can see in the images above, I've outlined the VSCode files I update below. As a side note, VSCode is built with <a href="https://www.electronjs.org/apps" target="_blank" rel="noopener" title="Apps built with ElectronJS">ElectronJS</a> and I've found that those apps don't need font smoothing so I typically set them to `0`.
+To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  Then scroll through to locate the apps' filename so we can adjust the font smoothing level. As you can see in the images above I've outlined the VSCode files that I update below. 
+
+
+<div class="blurb">
+<i class="fad fa-info-circle fa-lg text-blue"></i>&nbsp;&nbsp; FWIW: VSCode is built with <a href="https://www.electronjs.org/apps" target="_blank" rel="noopener" title="Apps built with ElectronJS">Electron JS</a> and I've found that Electron apps don't need much font smoothing so I typically set them to <code>0</code>.
+</div>
+
+
 
 ```bash
 defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
@@ -148,7 +151,7 @@ defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabl
 	</div>
 </div>
 
-You'll notice the `d9f3b04` in my <a href="https://www.jetbrains.com/webstorm/" target="_blank" title="Webstorm" rel="noopener">Webstorm</a> file name. That is probably going to be different for you depending on your Webstorm download. You'll have check for yourself.
+You'll notice the `d9f3b04` in my <a href="https://www.jetbrains.com/webstorm/" target="_blank" title="Webstorm" rel="noopener">Webstorm</a> file name. That is probably going to be different for you depending on your Webstorm download. You'll have to check for yourself.
 
 ```bash
 defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
@@ -200,6 +203,8 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
 
 ---
 
-Hopefully this helped you. If so, I'd appreciate a thumbs up below or let me know in the comments. If you have anymore info regarding this or you see something off please <a href="#getInTouch">let me know</a>, I'm happy to work with you to post any updates.
+Hopefully this helped you and/or you learned something 😂?...
 
-Happy Coding!!!! 😃
+I really hope <a href="https://apple.com/support" target="_blank" rel="noopener">Apple</a> addresses this in the near future, but until they do, I'll try to keep this post updated. If you have any info regarding this or you see something off, please <a href="#getInTouch">let me know</a>.
+
+Happy Coding!
