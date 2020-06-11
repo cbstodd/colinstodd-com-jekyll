@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2020-06-09 08:00:00 -0400
+last_modified_at: 2020-06-10 08:00:00 -0400
 categories: tech
 tags:
   - OSX,
@@ -36,7 +36,7 @@ You'll want to check to see if you have your font smoothing enabled or disabled 
   <div class="row">
     <div class="one-third column">&nbsp;</div>
       <div class="one-third column">
-        <img src="../../images/posts/mac_osx_fonts/general_settings_font_smoothing.png" class="image fit" title="font smoothing osx catalina">
+        <img src="../../images/posts/mac_osx_fonts/general_settings_font_smoothing.png" class="image fit" title="font smoothing osx catalina" loading="lazy">
       </div>
     <div class="one-third column">&nbsp;</div>
   </div>
@@ -87,26 +87,46 @@ ___
 
 ## Adjusting Fonts Individually (Text Editors and Apps):
 
-I had issues with my text editor fonts so I'll use those as examples, but you can locate and adjust any app you'd like using the same method.
+I had issues with my text editor fonts so I'll use those as examples, but you can locate and adjust any app you'd like using the same method below.
+
+<div class="blurb">
+<strong><i class="fad fa-books fa-lg"></i>&nbsp; Here's a color-coded script in <span class="text-gold">gold</span> to help you visualize the values to update.</strong>
+
+<ol class="alt">
+  <li>Keep as <code>defaults write</code>.</li>
+  <li class="text-gold">Application <code>.plist</code> filename that you want to locate and update.</li>
+  <li>Keep as <code>CGFontRenderingFontSmoothingDisabled</code>.</li>
+  <li class="text-gold">Level of font smoothing from <code>0</code> - <code>3</code>.</li>
+</ol>
+
+<pre><code><sup>1</sup>defaults write <span class="text-gold"><sup>2</sup>com.microsoft.VSCode</span> <sup>3</sup>CGFontRenderingFontSmoothingDisabled <span class="text-gold"><sup>4</sup>0</span>
+</code></pre>
+
+(More examples further down the page)
+</div>
 
 ### <i class="fad fa-check-circle fa-lg text-yellow"></i> VSCode:
 
 <div class="row">
   <div class="six columns">
     <img src="../../images/posts/mac_osx_fonts/library_preferences.png"
-        alt="Finder 'Go to folder:'"
-        title="Finder 'Go to folder:'"
-        class="image fit" />
+         class="image fit"
+         alt="Finder 'Go to folder:'"
+         title="Finder 'Go to folder:'"
+         loading="lazy"
+    />
   </div>
   <div class="six columns">
     <img src="../../images/posts/mac_osx_fonts/preferences_vscode.png"
-        alt="VSCode preferences location on OSX"
-        title="VSCode preferences location on OSX"
-        class="image fit" />
+         class="image fit"
+         alt="VSCode preferences location on OSX"
+         title="VSCode preferences location on OSX"
+         loading="lazy"
+         />
   </div>
 </div>
 
-To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  You can then scroll through to locate the app and adjust it's font smoothing level. As you can see in the images above, I've highlighted the VSCode files that are updated below. VSCode is built with <a href="https://www.electronjs.org/" target="_blank" rel="noopener" title="Electron JS">Electron</a> and I've found that those apps don't need font smoothing on my monitor so I set mine to `0`.
+To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  You can then scroll through to locate the app and adjust it's font smoothing level. As you can see in the images above, I've outlined the VSCode files I update below. As a side note, VSCode is built with <a href="https://www.electronjs.org/apps" target="_blank" rel="noopener" title="Apps built with ElectronJS">ElectronJS</a> and I've found that those apps don't need font smoothing so I typically set them to `0`.
 
 ```bash
 defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
@@ -120,9 +140,11 @@ defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabl
 <div class="row">
 	<div class="six columns">
 		<img src="../../images/posts/mac_osx_fonts/jetbrains_number_file_name.png"
-    alt="Webstorm filename id image"
-    title="Webstorm filename id image"
-    class="image fit">
+         class="image fit"
+         alt="Webstorm filename id image"
+         title="Webstorm filename id image"
+         loading="lazy"
+    />
 	</div>
 </div>
 
@@ -137,19 +159,23 @@ defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabl
 <div class="row">
   <div class="six columns">
     <img src="../../images/posts/mac_osx_fonts/sublime_text_plist.png"
-        alt="Sublime Text 3 plist file name image"
-        title="Sublime Text 3 plist file name image"
-        class="image fit" />
+         class="image fit"
+         alt="Sublime Text 3 plist file name image"
+         title="Sublime Text 3 plist file name image"
+         loading="lazy"
+    />
   </div>
   <div class="six columns">
     <img src="../../images/posts/mac_osx_fonts/sublime_text_plist_string.png"
-        alt="Sublime Text 3 plist file details in Library/preferences image"
-        title="Sublime Text 3 plist file details in Library/preferences image"
-        class="image fit" />
+         class="image fit"
+         alt="Sublime Text 3 plist file details in Library/preferences image"
+         title="Sublime Text 3 plist file details in Library/preferences image"
+         loading="lazy"
+    />
   </div>
 </div>
 
-Here's another example of how I updated <a href="https://www.sublimetext.com/blog/articles/sublime-text-3-point-2" target="_blank" title="Sublime Text 3.2" rel="noopener">Sublime Text 3</a>. If you look at the image right above (bottom if you're on mobile) the level that I set mine to be `2` is set in `<string>2</string>`:
+Here's a final example of how I updated <a href="https://www.sublimetext.com/blog/articles/sublime-text-3-point-2" target="_blank" title="Sublime Text 3.2" rel="noopener">Sublime Text 3</a>. If you look at the image above you'll notice that the string gets added to the file <u><strong>AFTER</strong></u> I run the command; You can see that `2` is set to `<string>2</string>` in the `.plist` file:
 
 ```bash
 defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 2
@@ -167,7 +193,7 @@ No need to worry if you messed things up, you can set everything back to it's de
 defaults -currentHost delete -globalDomain AppleFontSmoothing
 ```
 
-**Puts it back to light font smoothing:**
+**Reverts back to light font smoothing:**
 ```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
 ```
