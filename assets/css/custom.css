@@ -391,8 +391,8 @@ ul.contact > li > h4 > a {
     font-size: 0.8em;
     font-weight: 600;
     font-style: italic;
-    line-height: 2.5em;
-    padding: 1em 1.2em;
+    line-height: 2em;
+    padding: 1.2em 2em;
     margin: 1em 0;
     border-radius: 15px;
     background: #2a3244;
@@ -401,6 +401,12 @@ ul.contact > li > h4 > a {
     border-right: 1px solid #181f2a;
     border-left: 1px solid #384258;
     border-bottom: 1px solid #384258;
+  }
+
+  .blurb > ul,
+  .blurb > ul > li {
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .blurb > code {

@@ -16,10 +16,6 @@ layout: default
       {% if page.last_modified_at %}
       {% endif %}
       {{ content }}
-      <p class="text-inset">
-        <i class="fa fa-calendar-edit text-inset"></i> Page Last Updated: {{ page.last_modified_at | date_to_string }}
-      </p>
-      <hr>
       {% include google-post-ads.html %}
     </div>
   </div>
