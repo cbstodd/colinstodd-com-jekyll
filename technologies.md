@@ -159,6 +159,12 @@ My programming stack of choice has become <a href="https://angular.io/" target="
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
+			<td><a href="https://getskeleton.com/" target="_blank" rel="noopener">Skeleton CSS</a></td>
+			<td><i class="fad fa-check"></i></td>
+			<td><i class="fad fa-check"></i></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
 			<td><a href="https://svelte.dev/" target="_blank" rel="noopener">Svelte</a></td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>

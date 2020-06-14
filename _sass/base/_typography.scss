@@ -12,7 +12,7 @@ select,
 textarea {
   color: _palette(fg);
   font-family: _font(family);
-  font-size: 16.5pt;
+  font-size: 14pt;
   font-weight: _font(weight);
   line-height: 1.65;
 
@@ -207,6 +207,17 @@ code {
   background: #31394b;
   overflow-x: hidden;
   box-shadow: inset -7px 7px 9px #2b3242, inset 7px -7px 9px #374054;
+}
+
+pre > code:hover {
+  // border-radius: 15px;
+  // background: #2a3244;
+  // box-shadow: inset -5px 5px 12px #1b212c, inset 5px -5px 12px #313a50;
+  // border-top: 2px solid #181f2a;
+  // border-right: 2px solid #181f2a;
+  // border-left: 2px solid #384258;
+  // border-bottom: 2px solid #384258;
+  cursor: text;
 }
 
 .highlighter-rouge {

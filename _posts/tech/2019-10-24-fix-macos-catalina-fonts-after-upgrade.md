@@ -122,7 +122,7 @@ I had issues with my text editor fonts so I'll use those as examples, but you ca
   </div>
 </div>
 
-To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  Then scroll through to locate the apps' filename so we can adjust the font smoothing level. As you can see in the images above I've outlined the VSCode files that I update below. 
+To upgrade your apps individually you can locate their preference files by going to `Finder` and selecting `Go` or by pressing `shift` + `command` + `G` and searching `~/Library/Preferences`.  Then scroll through to locate the apps' filename so we can adjust the font smoothing level. As you can see in the images above I've outlined the VSCode files that I update below.
 
 
 <div class="blurb">
@@ -203,8 +203,8 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
 
 ---
 
-Hopefully this helped you and/or you learned something 😂?...
+Hopefully this helped you and/or you learned something...
 
 I really hope <a href="https://apple.com/support" target="_blank" rel="noopener">Apple</a> addresses this in the near future, but until they do, I'll try to keep this post updated. If you have any info regarding this or you see something off, please <a href="#getInTouch">let me know</a>.
 
-Happy Coding!
+Happy Coding 😄!
