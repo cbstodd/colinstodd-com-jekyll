@@ -41,7 +41,7 @@ gcal_link: "https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srj
 I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
 
 <div class="blurb">
-  <i class="fad fa-comment-exclamation fa-lg"></i>&nbsp; I've had people tell me that the "public calendar link" would not work on one platform and some times the other platform, so I've provided links for both (Same exact info) &nbsp;<i class="fab fa-apple"></i>&nbsp; Apple and &nbsp;<i class="fab fa-google"></i>&nbsp; Google; So you'll now notice that there's two sections (one for each) below. I'll also note that these instructions are assuming you are on a laptop or desktop computer, not a mobile device.  Let me know if you run into any issues. <br/>- Colper
+  <i class="fad fa-comment-exclamation fa-lg"></i>&nbsp; I was told that the old link did not work on both platforms so I've provided links for both (Same exact info) &nbsp;<i class="fab fa-apple"></i>&nbsp; Apple and &nbsp;<i class="fab fa-google"></i>&nbsp; Google; So you'll now notice that there's two sections (one for each) below. And these instructions are assuming you're on a laptop or desktop computer (not mobile device).  Let me know if you run into any issues.
 </div>
 
 ## Examples:

@@ -2,7 +2,10 @@
 
 :root {
   --font-grey: #afb7c9;
-  --main-blue: #242a38;
+  --dark-blue:  #191B24;
+  --main-blue: #2e3141;
+  --border-blue: #3A3D4C;
+  --highlight-blue: #454961;
   --pink: #c10062;
   --blue-grey: #6978a0;
   --blue: #4c5c95;
@@ -167,30 +170,30 @@ h3.neu-alert,
 h4.neu-alert,
 h5.neu-alert {
   border-radius: 15px;
-  background: #31394b;
-  box-shadow: inset -5px 5px 12px #202531, inset 5px -5px 12px #424d65;
+  background: var(--main-blue);
+  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--border-blue);
   padding: 5em 4em;
   line-height: 2em;
-  border-left: 1px solid #424d66;
-  border-bottom: 1px solid #424d66;
+  border-left: 1px solid var(--border-blue);
+  border-bottom: 1px solid var(--border-blue);
 }
 
 p.neu-alert,
 .neu-alert {
   border-radius: 15px;
-  background: #31394b;
-  box-shadow: inset -5px 5px 12px #202531, inset 5px -5px 12px #424d65;
+  background: var(--main-blue);
+  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--border-blue);
   padding: 4em;
   line-height: 2em;
-  border-left: 1px solid #424d66;
-  border-bottom: 1px solid #424d66;
+  border-left: 1px solid var(--border-blue);
+  border-bottom: 1px solid var(--border-blue);
 }
 
 .neu-text {
   border: solid 2px rgba(255, 255, 255, 0.125) !important;
   border-radius: 15px;
-  background: #31394b;
-  box-shadow: inset -5px 5px 12px #202531, inset 5px -5px 12px #424d65;
+  background: var(--main-blue);
+  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--border-blue);
   padding: 0.4em 0.65em;
   margin: 0 0.4em;
   line-height: 2em;
@@ -199,17 +202,17 @@ p.neu-alert,
 .blurb {
   color: #7c8496;
   border-radius: 15px;
-  background: #2a3244;
-  box-shadow: inset -5px 5px 12px #1b212c, inset 5px -5px 12px #313a50;
+  background: var(--main-blue);
+  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--border-blue);
   font-weight: 600;
   font-style: italic;
   line-height: 2.5em;
   padding: 2.3em 2em 3em 3em;
   margin: 1em 2em 2em 2em;
-  border-top: 1px solid #181f2a;
-  border-right: 1px solid #181f2a;
-  border-left: 1px solid #384258;
-  border-bottom: 1px solid #384258;
+  border-top: 1px solid #171820;
+  border-right: 1px solid #171820;
+  border-left: 1px solid var(--border-blue);
+  border-bottom: 1px solid var(--border-blue);
 }
 
 .blurb > code {
@@ -262,7 +265,7 @@ p.neu-alert,
 
 .fixed-font {
   font-family: 'SFMono-Regular', 'Roboto Mono Medium', Menlo, 'Courier',
-    monospace;
+  monospace;
 }
 
 *::selection {
@@ -395,12 +398,12 @@ ul.contact > li > h4 > a {
     padding: 1.2em 2em;
     margin: 1em 0;
     border-radius: 15px;
-    background: #2a3244;
-    box-shadow: inset -5px 5px 12px #1b212c, inset 5px -5px 12px #313a50;
+    background: var(--main-blue);
+    box-shadow: inset -5px 5px 7px #1b212c, inset 5px -5px 7px var(--border-blue);
     border-top: 1px solid #181f2a;
     border-right: 1px solid #181f2a;
-    border-left: 1px solid #384258;
-    border-bottom: 1px solid #384258;
+    border-left: 1px solid var(--border-blue);
+    border-bottom: 1px solid var(--border-blue);
   }
 
   .blurb > ul,
@@ -419,24 +422,31 @@ ul.contact > li > h4 > a {
   }
 }
 
+a.copy-btn, a.copy-btn:hover {
+  text-decoration: none !important;
+  border-bottom: none;
+  cursor: pointer;
+}
+
 /* Image Zoom on Hover/Click */
-.enlarge {
-  transition: transform .2s; /* Animation */
+/* Animation */
+/* .enlarge {
+  transition: transform .2s;
   width: 125%;
   height: 125%;
   margin: 0 auto;
-}
+  } */
 
-.enlarge:hover {
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  /* transform: scale(1.5); */
-}
-
-@media (min-width: 1681px) {
-  img.cs-logo {
-    justify-items: center;
-    align-items: center;
-    margin: 1em 2em 0 0;
-    float: left;
+  .enlarge:hover {
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* transform: scale(1.5); */
   }
-}
+
+  @media (min-width: 1681px) {
+    img.cs-logo {
+      justify-items: center;
+      align-items: center;
+      margin: 1em 2em 0 0;
+      float: left;
+    }
+  }

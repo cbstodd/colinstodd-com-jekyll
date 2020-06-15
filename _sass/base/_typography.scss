@@ -204,9 +204,9 @@ code {
   margin: 0 0.25em;
   padding: 0.4em 0.65em;
   border-radius: 17px;
-  background: #31394b;
+  background-color: var(--main-blue);
   overflow-x: hidden;
-  box-shadow: inset -7px 7px 9px #2b3242, inset 7px -7px 9px #374054;
+  box-shadow: inset -5px 5px 5px #222430, inset 5px -5px 5px #333749;
 }
 
 pre > code:hover {
@@ -224,6 +224,7 @@ pre > code:hover {
   overflow-x: hidden;
 }
 pre {
+  background-color: var(--main-blue);
   -webkit-overflow-scrolling: touch;
   font-family: _font(family-fixed);
   font-weight: 400;
@@ -245,14 +246,14 @@ hr {
   margin: (_size(element-margin) * 1.25) 0;
   border: 0;
   height: 0;
-  border-top: 1px solid #1f2430;
-  border-bottom: 1px solid #424d66;
+  border-top: 1px solid var(--dark-blue);
+  border-bottom: 1px solid var(--border-blue);
 
   &.major {
     border: 0;
     height: 0;
-    border-top: 1px solid #1f2430;
-    border-bottom: 1px solid #46516b;
+    border-top: 1px solid var(--dark-blue);
+    border-bottom: 1px solid var(--border-blue);
     margin: (_size(element-margin) * 2) 0;
   }
 }
@@ -263,14 +264,14 @@ hr.banner {
   margin: (_size(element-margin) * 1.25) 0;
   border: 0;
   height: 0;
-  border-top: 1px solid #171c25;
-  border-bottom: 1px solid #39425a;
+  border-top: 1px solid var(--dark-blue);
+  border-bottom: 1px solid var(--border-blue);
 
   &.major {
     border: 0;
     height: 0;
-    border-top: 1px solid #1f2430;
-    border-bottom: 1px solid #46516b;
+    border-top: 1px solid var(--dark-blue);
+    border-bottom: 1px solid var(--border-blue);
     // margin: (_size(element-margin) * 2) 0;
   }
 }
@@ -281,14 +282,14 @@ hr.footer {
   margin: 0.2em 0 1.5em 0;
   border: 0;
   height: 0;
-  border-top: 1px solid #1f2430;
-  border-bottom: 1px solid #50586f;
+  border-top: 1px solid #1C1D27;
+  border-bottom: 1px solid #45495A;
 
   &.major {
     border: 0;
     height: 0;
-    border-top: 1px solid #1f2430;
-    border-bottom: 1px solid #46516b;
+    border-top: 1px solid #1C1D27;
+    border-bottom: 1px solid #45495A;
     margin: (_size(element-margin) * 2) 0;
   }
 }

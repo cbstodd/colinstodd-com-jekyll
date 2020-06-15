@@ -57,14 +57,14 @@ textarea {
   text-decoration: none;
   width: 100%;
   border-radius: 10px;
-  background: #31394b;
-  box-shadow: inset -5px 5px 10px #2a3040, inset 5px -5px 10px #384256;
+  background: var(--main-blue);
+  box-shadow: inset -5px 5px 10px #171820, inset 5px -5px 10px var(--border-blue);
 
   &:invalid {
     box-shadow: none;
     border-radius: 10px;
-    background: #31394b;
-    box-shadow: inset -5px 5px 10px #2a3040, inset 5px -5px 10px #384256;
+    background: var(--main-blue);
+    box-shadow: inset -5px 5px 10px #171820, inset 5px -5px 10px var(--border-blue);
   }
 
   &:focus {

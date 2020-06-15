@@ -8,7 +8,7 @@
 
 /// Sets the colors of the wrapper's top/bottom edges.
 /// @param {string} $color Color.
-@mixin wrapper-edges-color($color: black) {
+@mixin wrapper-edges-color($color: _palette(bg)) {
   &:before,
   &:after {
     background-image: svg-url(

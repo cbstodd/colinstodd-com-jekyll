@@ -24,7 +24,7 @@ $font: (
       Courier,
       monospace
     ),
-  family-heading: ('Nunito Sans', 'Helvetica Neue', Roboto, Arial, sans-serif),
+  family-heading: ('Nunito Sans', 'Roboto Condensed', 'Helvetica Neue', Roboto, Arial, sans-serif),
   weight: 300,
   weight-bold: 600,
   weight-heading: 200,
@@ -34,7 +34,7 @@ $font: (
 );
 // Palette.
 $palette: (
-  bg: #31394b,
+  bg: #2e3141,
   fg: #afb7c9,
   fg-bold: #afb7c9,
   fg-light: rgba(255, 255, 255, 0.35),

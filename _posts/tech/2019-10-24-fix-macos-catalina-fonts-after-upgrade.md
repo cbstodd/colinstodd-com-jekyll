@@ -36,14 +36,18 @@ You'll want to check to see if you have your font smoothing enabled or disabled 
   <div class="row">
     <div class="one-third column">&nbsp;</div>
       <div class="one-third column">
-        <img src="../../images/posts/mac_osx_fonts/general_settings_font_smoothing.png" class="image fit" title="font smoothing osx catalina" loading="lazy">
+        <img src="../../images/posts/mac_osx_fonts/disable_font_smoothing.png" class="image fit" title="font smoothing osx catalina" loading="lazy">
       </div>
     <div class="one-third column">&nbsp;</div>
   </div>
 </div>
 
 Even though you checked the checkbox in settings, We're going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> `/Applications/Utilities/Terminal.app`. The `-g` stands for `global`.  <a href="#textEditors" title="Scroll down fix individual apps">Further down</a> in the tutorial I show you how to change the fonts on a per-app basis (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors).
-
+<button class="button small copy-btn"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE">
+     <i class="fad fa-clipboard"></i> Copy
+</button>
 
 ```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
@@ -105,7 +109,7 @@ I had issues with my text editor fonts so I'll use those as examples, but you ca
 
 <div class="row">
   <div class="six columns">
-    <img src="../../images/posts/mac_osx_fonts/library_preferences.png"
+    <img src="../../images/posts/mac_osx_fonts/library_pref_light.png"
          class="image fit"
          alt="Finder 'Go to folder:'"
          title="Finder 'Go to folder:'"
@@ -113,7 +117,7 @@ I had issues with my text editor fonts so I'll use those as examples, but you ca
     />
   </div>
   <div class="six columns">
-    <img src="../../images/posts/mac_osx_fonts/preferences_vscode.png"
+    <img src="../../images/posts/mac_osx_fonts/preferences.png"
          class="image fit"
          alt="VSCode preferences location on OSX"
          title="VSCode preferences location on OSX"
@@ -141,14 +145,14 @@ defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabl
 ### <i class="fad fa-check-circle fa-lg text-yellow"></i> Webstorm:
 
 <div class="row">
-	<div class="six columns">
-		<img src="../../images/posts/mac_osx_fonts/jetbrains_number_file_name.png"
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/webstorm_id.png"
          class="image fit"
          alt="Webstorm filename id image"
          title="Webstorm filename id image"
          loading="lazy"
     />
-	</div>
+  </div>
 </div>
 
 You'll notice the `d9f3b04` in my <a href="https://www.jetbrains.com/webstorm/" target="_blank" title="Webstorm" rel="noopener">Webstorm</a> file name. That is probably going to be different for you depending on your Webstorm download. You'll have to check for yourself.
@@ -161,7 +165,7 @@ defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabl
 
 <div class="row">
   <div class="six columns">
-    <img src="../../images/posts/mac_osx_fonts/sublime_text_plist.png"
+    <img src="../../images/posts/mac_osx_fonts/vscode_pref.png"
          class="image fit"
          alt="Sublime Text 3 plist file name image"
          title="Sublime Text 3 plist file name image"
@@ -169,7 +173,7 @@ defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabl
     />
   </div>
   <div class="six columns">
-    <img src="../../images/posts/mac_osx_fonts/sublime_text_plist_string.png"
+    <img src="../../images/posts/mac_osx_fonts/string_two.png"
          class="image fit"
          alt="Sublime Text 3 plist file details in Library/preferences image"
          title="Sublime Text 3 plist file details in Library/preferences image"
@@ -192,19 +196,23 @@ ___
 No need to worry if you messed things up, you can set everything back to it's default OSX Catalina state:
 
 **Removes custom font smoothing:**
+
 ```bash
 defaults -currentHost delete -globalDomain AppleFontSmoothing
 ```
 
 **Reverts back to light font smoothing:**
+
 ```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
 ```
 
+
+
+Hopefully this helped you or you were able to learn something about OSX package/file management...
+
+I really hope <a href="https://apple.com/support" target="_blank" rel="noopener">Apple</a> addresses this, but until they do, I'll try to keep this post updated. If you have any info regarding this or you see something off, please <a href="#getInTouch">let me know</a>.
+
+Happy coding 🤓
+
 ---
-
-Hopefully this helped you and/or you learned something...
-
-I really hope <a href="https://apple.com/support" target="_blank" rel="noopener">Apple</a> addresses this in the near future, but until they do, I'll try to keep this post updated. If you have any info regarding this or you see something off, please <a href="#getInTouch">let me know</a>.
-
-Happy Coding 😄!
