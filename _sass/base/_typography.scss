@@ -206,7 +206,7 @@ code {
   border-radius: 17px;
   background-color: var(--main-blue);
   overflow-x: hidden;
-  box-shadow: inset -5px 5px 5px #222430, inset 5px -5px 5px #333749;
+  box-shadow: inset -5px 5px 12px #222430, inset 5px -5px 12px #333749;
 }
 
 pre > code:hover {
@@ -247,13 +247,13 @@ hr {
   border: 0;
   height: 0;
   border-top: 1px solid var(--dark-blue);
-  border-bottom: 1px solid var(--border-blue);
+  border-bottom: 1px solid #40445c;
 
   &.major {
     border: 0;
     height: 0;
     border-top: 1px solid var(--dark-blue);
-    border-bottom: 1px solid var(--border-blue);
+    border-bottom: 1px solid #40445c;
     margin: (_size(element-margin) * 2) 0;
   }
 }
@@ -264,14 +264,14 @@ hr.banner {
   margin: (_size(element-margin) * 1.25) 0;
   border: 0;
   height: 0;
-  border-top: 1px solid var(--dark-blue);
-  border-bottom: 1px solid var(--border-blue);
+  border-top: 1px solid #14161e;
+  border-bottom: 1px solid #3a3e55;
 
   &.major {
     border: 0;
     height: 0;
-    border-top: 1px solid var(--dark-blue);
-    border-bottom: 1px solid var(--border-blue);
+    border-top: 1px solid #14161e;
+    border-bottom: 1px solid #3a3e55;
     // margin: (_size(element-margin) * 2) 0;
   }
 }
@@ -282,14 +282,14 @@ hr.footer {
   margin: 0.2em 0 1.5em 0;
   border: 0;
   height: 0;
-  border-top: 1px solid #1C1D27;
-  border-bottom: 1px solid #45495A;
+  border-top: 1px solid #1c1d27;
+  border-bottom: 1px solid #45495a;
 
   &.major {
     border: 0;
     height: 0;
-    border-top: 1px solid #1C1D27;
-    border-bottom: 1px solid #45495A;
+    border-top: 1px solid #1c1d27;
+    border-bottom: 1px solid #45495a;
     margin: (_size(element-margin) * 2) 0;
   }
 }

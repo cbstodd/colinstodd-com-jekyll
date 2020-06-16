@@ -2,9 +2,11 @@
 
 :root {
   --font-grey: #afb7c9;
-  --dark-blue:  #191B24;
+  --dark-blue: #191b24;
+  --code-blue: #222535;
   --main-blue: #2e3141;
-  --border-blue: #3A3D4C;
+  --bright-shadow: #33374b;
+  --border-blue: #43475a;
   --highlight-blue: #454961;
   --pink: #c10062;
   --blue-grey: #6978a0;
@@ -171,7 +173,7 @@ h4.neu-alert,
 h5.neu-alert {
   border-radius: 15px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--border-blue);
+  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--bright-shadow);
   padding: 5em 4em;
   line-height: 2em;
   border-left: 1px solid var(--border-blue);
@@ -182,18 +184,18 @@ p.neu-alert,
 .neu-alert {
   border-radius: 15px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--border-blue);
+  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--bright-shadow);
   padding: 4em;
   line-height: 2em;
   border-left: 1px solid var(--border-blue);
-  border-bottom: 1px solid var(--border-blue);
+  border-bottom: 1px solid var(--bright-shadow);
 }
 
 .neu-text {
   border: solid 2px rgba(255, 255, 255, 0.125) !important;
   border-radius: 15px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--border-blue);
+  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--bright-shadow);
   padding: 0.4em 0.65em;
   margin: 0 0.4em;
   line-height: 2em;
@@ -203,7 +205,7 @@ p.neu-alert,
   color: #7c8496;
   border-radius: 15px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--border-blue);
+  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--bright-shadow);
   font-weight: 600;
   font-style: italic;
   line-height: 2.5em;
@@ -265,7 +267,7 @@ p.neu-alert,
 
 .fixed-font {
   font-family: 'SFMono-Regular', 'Roboto Mono Medium', Menlo, 'Courier',
-  monospace;
+    monospace;
 }
 
 *::selection {
@@ -362,18 +364,10 @@ ul.contact > li > h4 > a {
   }
 
   h2.banner-title {
-    /* background: -webkit-linear-gradient(#dfe2e2, #565b66) !important;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
   }
 
   p.page-description {
-    /* background: -webkit-linear-gradient(#FFD9AD, #973D2A) !important; */
-    /* background: -webkit-linear-gradient(#ccd5d5, #ccd5d5) !important; */
     color: var(--font-grey);
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
   }
 
   .mb-3 {
@@ -399,7 +393,8 @@ ul.contact > li > h4 > a {
     margin: 1em 0;
     border-radius: 15px;
     background: var(--main-blue);
-    box-shadow: inset -5px 5px 7px #1b212c, inset 5px -5px 7px var(--border-blue);
+    box-shadow: inset -5px 5px 7px #1b212c,
+      inset 5px -5px 7px var(--border-blue);
     border-top: 1px solid #181f2a;
     border-right: 1px solid #181f2a;
     border-left: 1px solid var(--border-blue);
@@ -422,7 +417,8 @@ ul.contact > li > h4 > a {
   }
 }
 
-a.copy-btn, a.copy-btn:hover {
+a.copy-btn,
+a.copy-btn:hover {
   text-decoration: none !important;
   border-bottom: none;
   cursor: pointer;
@@ -437,16 +433,16 @@ a.copy-btn, a.copy-btn:hover {
   margin: 0 auto;
   } */
 
-  .enlarge:hover {
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    /* transform: scale(1.5); */
-  }
+.enlarge:hover {
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* transform: scale(1.5); */
+}
 
-  @media (min-width: 1681px) {
-    img.cs-logo {
-      justify-items: center;
-      align-items: center;
-      margin: 1em 2em 0 0;
-      float: left;
-    }
+@media (min-width: 1681px) {
+  img.cs-logo {
+    justify-items: center;
+    align-items: center;
+    margin: 1em 2em 0 0;
+    float: left;
   }
+}

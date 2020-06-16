@@ -10,7 +10,7 @@ tags:
   - Tour
 title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2020-01-23 12:01:00 -0500
-last_modified_at: 2020-06-01 00:00:10 -0500
+last_modified_at: 2020-06-16 00:10:10 -0500
 pinned: false
 featured: true
 image: ../images/posts/dinner_and_movie.png
@@ -27,11 +27,11 @@ gcal_link: "https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srj
 ---
 
 
-<div class="neu-alert mb-3 text-blue-grey">
+<div class="blurb mb-3">
 <i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE <i class="fad fa-calendar-alt"></i> {{ page.last_modified_at | date_to_string }}<br/>
   <hr/>
-  <span class="text-green">From <a href="https://phish.com/news/summer-tour-rescheduled-for-2021/" target="_blank" rel="_noopener" class="text-green" title="Go to Phish's website to read for yourself">Phish's Email/Website <i class="fad fa-external-link-square"></i></a></span><br>
-  <span class="text-green">"Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates..."</span> <br>
+  <span class="text-yellow">From <a href="https://phish.com/news/summer-tour-rescheduled-for-2021/" target="_blank" rel="_noopener" class="text-yellow" title="Go to Phish's website to read for yourself">Phish's Email/Website <i class="fad fa-external-link-square"></i></a></span><br>
+  <span class="text-yellow">"Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates..."</span> <br>
   <hr/>
   <i class="fad fa-angle-double-right fa-lg"></i> As long as Phish provides these streams I'll do my best to keep updating the info for each night. <br/>
   <i class="fad fa-angle-double-right fa-lg"></i> Yes, I'll be updating next years' dates -- soon enough.
@@ -40,9 +40,7 @@ gcal_link: "https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srj
 
 I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
 
-<div class="blurb">
-  <i class="fad fa-comment-exclamation fa-lg"></i>&nbsp; I was told that the old link did not work on both platforms so I've provided links for both (Same exact info) &nbsp;<i class="fab fa-apple"></i>&nbsp; Apple and &nbsp;<i class="fab fa-google"></i>&nbsp; Google; So you'll now notice that there's two sections (one for each) below. And these instructions are assuming you're on a laptop or desktop computer (not mobile device).  Let me know if you run into any issues.
-</div>
+
 
 ## Examples:
 <h4 class="text-yellow"><i class="fab fa-apple"></i> Calendar (Apple/iCal):</h4>Go in iCalendar and click `File > New Calendar Subscription` and paste the link below into that input field.
@@ -50,7 +48,7 @@ I was unable to find an updated <a href="https://phish.com/tours" target="_blank
 **Public <i class="fab fa-apple text-yellow"></i> iCal URL:**
 <input type="text" value="{{ page.ical_link }}" id="calendarLink" class="fixed-font">
 <p>
-  <button onclick="appleFunction()" class="button special">
+  <button onclick="appleFunction()" class="button">
     <i class="fab fa-apple"></i> Copy URL
   </button>
 </p>
@@ -65,7 +63,7 @@ I was unable to find an updated <a href="https://phish.com/tours" target="_blank
 **Public <i class="fab fa-google text-yellow"></i> Google URL:**
 <input type="text" value="{{ page.gcal_link }}" id="googleCalendarLink" class="fixed-font">
 <p>
-  <button onclick="googleFunction()" class="button special">
+  <button onclick="googleFunction()" class="button">
     <i class="fab fa-google"></i> Copy URL
   </button>
 </p>

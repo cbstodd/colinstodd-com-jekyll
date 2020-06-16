@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2020-06-10 08:00:00 -0400
+last_modified_at: 2020-06-16 08:00:10 -0400
 categories: tech
 tags:
   - OSX,
@@ -26,7 +26,7 @@ I recently upgraded my MAC from <a href="https://support.apple.com/macos/mojave"
 
 Many people had to play with these settings because not every external display is the same, so what I've posted here might not fit your setup exactly. It took some trial and error, but hopefully these commands will help you. As you'll see below, everything can be reverted (<a href="#revert">see the bottom of the page</a>) and the commands won't do any serious damage to your MAC.
 
-<div class="blurb"><i class="fad fa-comment-alt-exclamation fa-lg text-yellow"></i>&nbsp;&nbsp; Note: Every time you run one of these commands, you'll have to log out to see the changes. You can do so by pressing <code>command</code> + <code>shift</code> + <code>Q</code>.</div>
+<div class="blurb"><i class="fad fa-comment-alt-exclamation fa-lg"></i>&nbsp;&nbsp; Note: Every time you run one of these commands, you'll have to log out to see the changes. You can do so by pressing <code>command</code> + <code>shift</code> + <code>Q</code>.</div>
 ___
 
 ## What Worked For Me:
@@ -43,22 +43,26 @@ You'll want to check to see if you have your font smoothing enabled or disabled 
 </div>
 
 Even though you checked the checkbox in settings, We're going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> `/Applications/Utilities/Terminal.app`. The `-g` stands for `global`.  <a href="#textEditors" title="Scroll down fix individual apps">Further down</a> in the tutorial I show you how to change the fonts on a per-app basis (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors).
-<button class="button small copy-btn"
-   title="Copy to clipboard"
-   data-clipboard-text="defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE">
-     <i class="fad fa-clipboard"></i> Copy
-</button>
 
 ```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
 ```
+<button class="button small copy-btn pull-right"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
 
 And then I ran the code below to add strong font smoothing:
 
 ```bash
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 ```
-
+<button class="button small copy-btn pull-right"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults -currentHost write -globalDomain AppleFontSmoothing -int 2">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
 Log out, and log back in.
 
 
@@ -81,8 +85,16 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 ```bash
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 ```
+<button class="button small copy-btn pull-right"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults -currentHost write -globalDomain AppleFontSmoothing -int 1">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
+
+<p>&nbsp;</p>
 
 <div id="textEditors" name="textEditors"></div>
+
 ___
 
 ## Adjusting Fonts Individually (Text Editors and Apps):
@@ -130,7 +142,7 @@ To upgrade your apps individually you can locate their preference files by going
 
 
 <div class="blurb">
-<i class="fad fa-info-circle fa-lg text-blue"></i>&nbsp;&nbsp; FWIW: VSCode is built with <a href="https://www.electronjs.org/apps" target="_blank" rel="noopener" title="Apps built with ElectronJS">Electron JS</a> and I've found that Electron apps don't need much font smoothing so I typically set them to <code>0</code>.
+<i class="fad fa-info-circle fa-lg"></i>&nbsp;&nbsp; FWIW: VSCode is built with <a href="https://www.electronjs.org/apps" target="_blank" rel="noopener" title="Apps built with ElectronJS">Electron JS</a> and I've found that Electron apps don't need much font smoothing so I typically set them to <code>0</code>.
 </div>
 
 
@@ -141,6 +153,14 @@ defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 
 defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
 defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
 ```
+<button class="button small copy-btn pull-right"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
 
 ### <i class="fad fa-check-circle fa-lg text-yellow"></i> Webstorm:
 
@@ -160,6 +180,11 @@ You'll notice the `d9f3b04` in my <a href="https://www.jetbrains.com/webstorm/" 
 ```bash
 defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
 ```
+<button class="button small copy-btn pull-right"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
 
 ### <i class="fad fa-check-circle fa-lg text-yellow"></i> Sublime Text 3.2 (example):
 
@@ -187,6 +212,13 @@ Here's a final example of how I updated <a href="https://www.sublimetext.com/blo
 ```bash
 defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 2
 ```
+<button class="button small copy-btn pull-right"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 2">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
+
+<p>&nbsp;</p>
 
 ___
 
@@ -200,13 +232,22 @@ No need to worry if you messed things up, you can set everything back to it's de
 ```bash
 defaults -currentHost delete -globalDomain AppleFontSmoothing
 ```
+<button class="button small copy-btn pull-right"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults -currentHost delete -globalDomain AppleFontSmoothing">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
 
 **Reverts back to light font smoothing:**
 
 ```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
 ```
-
+<button class="button small copy-btn pull-right"
+   title="Copy to clipboard"
+   data-clipboard-text="defaults write -g CGFontRenderingFontSmoothingDisabled -bool True">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
 
 
 Hopefully this helped you or you were able to learn something about OSX package/file management...
