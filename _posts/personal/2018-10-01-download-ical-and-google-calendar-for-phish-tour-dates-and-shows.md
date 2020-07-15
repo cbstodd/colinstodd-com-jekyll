@@ -10,10 +10,10 @@ tags:
   - Tour
 title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2020-01-23 12:01:00 -0500
-last_modified_at: 2020-06-16 00:10:10 -0500
+last_modified_at: 2020-06-17 00:08:10 -0500
 pinned: false
 featured: true
-image: ../images/posts/dinner_and_movie.png
+image: ../images/posts/dinner_and_movie_words.png
 description: Download Phish tour iCal/Google calendar. This calendar has been updated to include the "Dinner And A Movie"; also info regarding their rescheduled summer tour.
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
@@ -48,7 +48,7 @@ I was unable to find an updated <a href="https://phish.com/tours" target="_blank
 **Public <i class="fab fa-apple text-yellow"></i> iCal URL:**
 <input type="text" value="{{ page.ical_link }}" id="calendarLink" class="fixed-font">
 <p>
-  <button onclick="appleFunction()" class="button">
+  <button onclick="appleFunction()" class="button small">
     <i class="fab fa-apple"></i> Copy URL
   </button>
 </p>
@@ -63,7 +63,7 @@ I was unable to find an updated <a href="https://phish.com/tours" target="_blank
 **Public <i class="fab fa-google text-yellow"></i> Google URL:**
 <input type="text" value="{{ page.gcal_link }}" id="googleCalendarLink" class="fixed-font">
 <p>
-  <button onclick="googleFunction()" class="button">
+  <button onclick="googleFunction()" class="button small">
     <i class="fab fa-google"></i> Copy URL
   </button>
 </p>
@@ -89,7 +89,7 @@ function appleFunction() {
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Calendar Link Copied, Now paste it into your Apple Calendar app (on a MAC). Enjoy the shows! 🐠 🍄 🌈 🌵 🥳 🐲");
+  alert("Calendar Link Copied to your clipboard, Now paste it into Apple Calendar. Enjoy the shows! 🐠 🍄 🌈 🌵 🥳 🐲");
 }
 // Google Calendar
 function googleFunction() {
@@ -104,6 +104,6 @@ function googleFunction() {
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Calendar Link Copied, Now paste it into your Google Calendar app. Enjoy the shows! 🐠 🍄 🌈 🌵 🥳 🐲");
+  alert("Calendar Link Copied to your clipboard, Now paste it into Google Calendar. Enjoy the shows! 🐠 🍄 🌈 🌵 🥳 🐲");
 }
 </script>

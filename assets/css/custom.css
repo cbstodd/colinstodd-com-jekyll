@@ -1,6 +1,11 @@
 /* Site wide */
 
 :root {
+  --family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  --family-fixed: 'IBM Plex Mono', 'SFMono-Regular', 'Roboto Mono', Menlo,
+    'Fira Mono', Courier, monospace;
+  --family-heading: 'Nunito Sans', 'Roboto Condensed', 'Helvetica Neue', Roboto,
+    Arial, sans-serif;
   --font-grey: #afb7c9;
   --dark-blue: #191b24;
   --code-blue: #222535;
@@ -173,7 +178,8 @@ h4.neu-alert,
 h5.neu-alert {
   border-radius: 15px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--bright-shadow);
+  box-shadow: inset -5px 5px 7px #171820,
+    inset 5px -5px 7px var(--bright-shadow);
   padding: 5em 4em;
   line-height: 2em;
   border-left: 1px solid var(--border-blue);
@@ -184,7 +190,8 @@ p.neu-alert,
 .neu-alert {
   border-radius: 15px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--bright-shadow);
+  box-shadow: inset -5px 5px 7px #171820,
+    inset 5px -5px 7px var(--bright-shadow);
   padding: 4em;
   line-height: 2em;
   border-left: 1px solid var(--border-blue);
@@ -195,7 +202,8 @@ p.neu-alert,
   border: solid 2px rgba(255, 255, 255, 0.125) !important;
   border-radius: 15px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--bright-shadow);
+  box-shadow: inset -5px 5px 7px #171820,
+    inset 5px -5px 7px var(--bright-shadow);
   padding: 0.4em 0.65em;
   margin: 0 0.4em;
   line-height: 2em;
@@ -205,7 +213,8 @@ p.neu-alert,
   color: #7c8496;
   border-radius: 15px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 7px #171820, inset 5px -5px 7px var(--bright-shadow);
+  box-shadow: inset -5px 5px 7px #171820,
+    inset 5px -5px 7px var(--bright-shadow);
   font-weight: 600;
   font-style: italic;
   line-height: 2.5em;
@@ -266,8 +275,8 @@ p.neu-alert,
 }
 
 .fixed-font {
-  font-family: 'SFMono-Regular', 'Roboto Mono Medium', Menlo, 'Courier',
-    monospace;
+  font-family: var(--family-fixed);
+  font-size: 1rem;
 }
 
 *::selection {

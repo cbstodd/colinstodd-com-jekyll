@@ -17,17 +17,26 @@ $font: (
   family: ('Source Sans Pro', 'Helvetica Neue', Arial, sans-serif),
   family-fixed:
     (
-      Menlo,
-      'Fira Mono',
+      'IBM Plex Mono',
       'SFMono-Regular',
       'Roboto Mono',
+      Menlo,
+      'Fira Mono',
       Courier,
       monospace
     ),
-  family-heading: ('Nunito Sans', 'Roboto Condensed', 'Helvetica Neue', Roboto, Arial, sans-serif),
-  weight: 300,
-  weight-bold: 600,
-  weight-heading: 200,
+  family-heading:
+    (
+      'Nunito Sans',
+      'Roboto Condensed',
+      'Helvetica Neue',
+      Roboto,
+      Arial,
+      sans-serif
+    ),
+  weight: 400,
+  weight-bold: 700,
+  weight-heading: 600,
   weight-heading-bold: 700,
   kern-heading: 0.1em,
   header-spacing: 0.06em

@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2020-06-16 08:00:10 -0400
+last_modified_at: 2020-06-18 08:10:10 -0400
 categories: tech
 tags:
   - OSX,
@@ -198,7 +198,7 @@ defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabl
     />
   </div>
   <div class="six columns">
-    <img src="../../images/posts/mac_osx_fonts/string_two.png"
+    <img src="../../images/posts/mac_osx_fonts/sublime_zero.png"
          class="image fit"
          alt="Sublime Text 3 plist file details in Library/preferences image"
          title="Sublime Text 3 plist file details in Library/preferences image"
@@ -207,14 +207,14 @@ defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabl
   </div>
 </div>
 
-Here's a final example of how I updated <a href="https://www.sublimetext.com/blog/articles/sublime-text-3-point-2" target="_blank" title="Sublime Text 3.2" rel="noopener">Sublime Text 3</a>. If you look at the image above you'll notice that the string gets added to the file <u><strong>AFTER</strong></u> I run the command; You can see that `2` is set to `<string>2</string>` in the `.plist` file:
+Here's a final example of how I updated <a href="https://www.sublimetext.com/blog/articles/sublime-text-3-point-2" target="_blank" title="Sublime Text 3.2" rel="noopener">Sublime Text 3</a>. If you look at the image above you'll notice that the string gets added to the file <u><strong>AFTER</strong></u> I run the command; You can see that `0` is set to `<string>0</string>` in the `.plist` file. I find that turning off font smoothing for Sublime gives me the thickest fonts:
 
 ```bash
-defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 2
+defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 0
 ```
 <button class="button small copy-btn pull-right"
    title="Copy to clipboard"
-   data-clipboard-text="defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 2">
+   data-clipboard-text="defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 0">
      <i class="fad fa-clipboard-list"></i> Copy
 </button>
 
