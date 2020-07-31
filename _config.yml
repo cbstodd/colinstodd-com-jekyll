@@ -111,4 +111,5 @@ feed:
     - projects
 
 
-
+recaptcha:
+  site_key: 6LftvrgZAAAAADgejFQYp77OCk-dp3tDvE6MfhZ4
