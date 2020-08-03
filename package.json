@@ -1,6 +1,6 @@
 {
   "name": "colinstodd-com",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "description": "ColinStodd.com Jekyll Website",
   "main": "index.js",
   "dependencies": {

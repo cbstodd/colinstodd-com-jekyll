@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2020-06-18 08:10:10 -0400
+last_modified_at: 2020-08-03 00:10:10 -0400
 categories: tech
 tags:
   - OSX,
@@ -182,7 +182,7 @@ defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
 ```
 <button class="button small copy-btn pull-right"
    title="Copy to clipboard"
-   data-clipboard-text="defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0">
+   data-clipboard-text="defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0">
      <i class="fad fa-clipboard-list"></i> Copy
 </button>
 
