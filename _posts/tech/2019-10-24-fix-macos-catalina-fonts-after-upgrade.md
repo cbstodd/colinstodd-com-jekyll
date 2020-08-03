@@ -178,7 +178,7 @@ defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabl
 You'll notice the `d9f3b04` in my <a href="https://www.jetbrains.com/webstorm/" target="_blank" title="Webstorm" rel="noopener">Webstorm</a> file name. That is probably going to be different for you depending on your Webstorm download. You'll have to check for yourself.
 
 ```bash
-defaults write com.jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
+defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
 ```
 <button class="button small copy-btn pull-right"
    title="Copy to clipboard"
