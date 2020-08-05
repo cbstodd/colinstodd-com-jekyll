@@ -43,7 +43,6 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-select,
 textarea {
   @include vendor('appearance', 'none');
   // background: _palette(border-bg);
@@ -65,6 +64,51 @@ textarea {
     border-radius: 10px;
     background: var(--main-blue);
     box-shadow: inset -5px 5px 10px #171820, inset 5px -5px 10px var(--border-blue);
+  }
+
+  &:focus {
+    border-color: desaturate(lighten(_palette(accent), 6), 3);
+  }
+}
+
+.isHuman {
+  border: solid 2px var(--green);
+}
+.isHumanText {
+  color: #B6C18F !important;
+  background: #414C20 !important;
+}
+
+.isBot {
+ border: solid 2px var(--pink); 
+}
+.isBotText {
+ color: var(--pink) !important;
+ background: #FF8AD9 !important; 
+}
+
+select {
+  border-radius: 12px;
+
+  @include vendor('appearance', 'none');
+  // background: _palette(border-bg);
+  // border-radius: _size(border-radius);
+  // border: none;
+  border: solid 2px _palette(border);
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--main-blue);  
+  cursor: pointer;
+
+  &:invalid {
+    box-shadow: none;
+    border-radius: 10px;
+    background: var(--pink);
   }
 
   &:focus {

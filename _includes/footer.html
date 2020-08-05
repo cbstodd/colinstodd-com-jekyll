@@ -23,9 +23,21 @@
       <div class="field">
         <label for="message">Message*</label>
         <textarea name="message" id="message" rows="4" required minlength="8" maxlength="2500"></textarea>
-      </div>      
+      </div>
+
+      <div class="field">        
+        <label for="human">(Bot check) What are you? *</label>
+        <select name="human" id="human" required>
+          <option value="0">*** Select one to make sure you're not a bot ***</option>
+          <option value="1">Robot</option>
+          <option value="2">Horse</option>
+          <option value="3" id="humanSelection">Human</option>
+          <option value="4">Dolphin</option>
+        </select>
+      </div>     
+
       <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
+        <li><input type="submit" value="Select option above to enable this Send Button" id="submitContactForm" disabled /></li>
         <li>
           <input type="hidden" id="captchaResponse" name="g-recaptcha-response">  
         </li>
