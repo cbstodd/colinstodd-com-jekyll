@@ -433,6 +433,10 @@ a.copy-btn:hover {
   cursor: pointer;
 }
 
+.bot-select {
+  padding-top: 3rem;
+}
+
 /* Image Zoom on Hover/Click */
 /* Animation */
 /* .enlarge {

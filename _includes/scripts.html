@@ -11,23 +11,3 @@
 <script src="/assets/js/clipboard.min.js"></script>
 <script type="text/javascript">new ClipboardJS('.copy-btn');</script>
 <script src="/assets/js/custom.js" type="text/javascript"></script>
-
-
-<script type="text/javascript">
-	try {
-		dotenv.config();
-
-		const recaptchaKey = process.env.RECAPTCHA_KEY;
-		grecaptcha.ready(function() {
-			grecaptcha.execute(recaptchaKey, {action: 'homepage'})
-			.then(function(token) {
-				document.getElementById('captchaResponse').value = token;
-			});
-		});
-		console.log(recaptchaKey);
-	} catch(e) {        
-		console.log('process.env not being found');
-		console.log(e);
-	}
-
-</script>
