@@ -1,0 +1,861 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+  <head>
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w,d,s,l,i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5KC3SGB');
+	</script>
+	<!-- End Google Tag Manager -->
+	<script type="text/javascript">require('dotenv').config();</script>
+	<title>Tech Posts | Colin Stodd</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--~ Favicon ~-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=yyQKGrYykG">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=yyQKGrYykG">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=yyQKGrYykG">
+	<link rel="manifest" href="/site.webmanifest?v=yyQKGrYykG">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=yyQKGrYykG" color="#31394b">
+	<link rel="shortcut icon" href="/favicon.ico?v=yyQKGrYykG">
+	<meta name="apple-mobile-web-app-title" content="Colin Stodd">
+	<meta name="application-name" content="Colin Stodd">
+	<meta name="msapplication-TileColor" content="#31394b">
+	<meta name="theme-color" content="#31394b">
+	<meta name="msvalidate.01" content="91EDE404FB4B17668EDEEDDD5F4722BD" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico?v=yyQKGrYykG">
+	<!-- * PWA * -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="msapplication-starturl" content="/">
+	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css/><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css/><![endif]-->
+	<!-- Animate.css -->
+	<link rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<!-- * FontAwesome * -->
+	<link rel="stylesheet"
+		  href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+		  integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH"
+		  crossorigin="anonymous">
+	<meta property="og:type" content="website" />
+	<!-- reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LftvrgZAAAAADgejFQYp77OCk-dp3tDvE6MfhZ4"></script>
+
+
+<script type="text/javascript">
+	require('dotenv').config();
+	// const recaptchaKey = process.env.RECAPTCHA_KEY;
+	const recaptchaKey = '6LftvrgZAAAAADgejFQYp77OCk-dp3tDvE6MfhZ4';
+
+	grecaptcha.ready(function () {
+		grecaptcha.execute(recaptchaKey,{ action: 'homepage' })
+			.then(function (token) {
+				document.getElementById('captchaResponse').value = token;
+			});
+	});
+	console.log('recapcha .env',recaptchaKey);
+</script>
+	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Colin Stodd" />
+	<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Tech Posts | Colin Stodd</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Tech Posts" />
+<meta name="author" content="cbstodd" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="View Colin’s blog posts about technologies" />
+<meta property="og:description" content="View Colin’s blog posts about technologies" />
+<link rel="canonical" href="http://localhost:4000/posts/tech.html" />
+<meta property="og:url" content="http://localhost:4000/posts/tech.html" />
+<meta property="og:site_name" content="Colin Stodd" />
+<meta property="og:image" content="http://localhost:4000/images/pages/tech-tree.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-17T15:30:12-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/images/pages/tech-tree.png" />
+<meta property="twitter:title" content="Tech Posts" />
+<meta name="twitter:site" content="@cbstodd" />
+<meta name="twitter:creator" content="@cbstodd" />
+<meta property="fb:admins" content="colin.stodd" />
+<meta property="fb:app_id" content="792796074135713" />
+<meta name="google-site-verification" content="1234" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/tech.html"},"image":"http://localhost:4000/images/pages/tech-tree.png","author":{"@type":"Person","name":"cbstodd"},"url":"http://localhost:4000/posts/tech.html","description":"View Colin’s blog posts about technologies","dateModified":"2019-10-17T15:30:12-04:00","headline":"Tech Posts","datePublished":"2019-10-17T15:30:12-04:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+  <body>
+    <noscript><div style="width:100%; display:inline-block;">
+    <div style="width:80%; padding: 4em 1em 2em 8em;">
+        <h4 style=" color:lightsalmon; line-height:2em;"><i class="fad fa-exclamation-triangle fa-lg"></i>&nbsp;&nbsp; It appears your browser is not permitting JavaScript. In order for this site and many other sites to work, it is recommended that you enable JavaScript to run in your browsers.</h4>
+    </div>
+</div></noscript>
+    <script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '792796074135713',
+            xfbml: true,
+            version: 'v4.0'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KC3SGB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div id="page-wrapper">
+      <!-- Header -->
+
+  <header id="header">
+    
+    <h1>
+      <a href="/">
+        <img src="/images/site/cs_grey_inset_50.png" alt="logo" class="cs-logo"
+             title="Colin Stodd">
+      </a>
+      <a href="/" class="site-title">Colin Stodd</a>
+    </h1>
+    <nav>
+      <a href="#menu">Menu</a>
+    </nav>
+  </header>
+      <!-- Menu -->
+<nav id="menu">
+  <div class="inner">
+    <h2>Menu</h2>
+    <ul class="links">
+      
+      
+      <li><a href="/">Home</a></li>
+      
+      
+      
+      <li><a href="/about.html">About</a></li>
+      
+      
+      
+      <li><a href="#getInTouch">Contact</a></li>
+      
+      
+      
+      <li><a href="/posts.html">Posts</a></li>
+      
+      
+      
+      <li><a href="/projects.html">Projects</a></li>
+      
+      
+      
+      <li><a href="/technologies.html">Technologies</a></li>
+      
+      
+    </ul>
+    <a href="#" class="close">Close</a>
+  </div>
+</nav>
+
+      <!-- Wrapper -->
+<section id="wrapper">
+  <header>
+    <div class="inner">
+      <a href="/posts.html">
+        <h4><i class="fad fa-arrow-alt-circle-left"></i> All Posts</h4>
+      </a>
+      <a href="">
+        <h2><i class="fad fa-memory"></i> Tech Posts</h2>
+      </a>
+      <p>View Colin's blog posts about technologies </p>
+    </div>
+  </header>
+  <!-- Content -->
+  <div class="wrapper">
+    <div class="inner">
+      
+      
+      
+      <a href="/posts/tech/MAC-OS-Big-Sur-Not-Showing-As-A-Download-Fix.html">
+
+        <header class="major">
+          <h1>MAC OS Big Sur Beta not showing as a download (Fix)</h1>
+        </header>
+
+        <div class="row uniform">
+          <div class="8u">
+            
+            <p><i class="fad fa-calendar-edit"></i> 11 Aug 2020</p>
+            
+            
+            How to fix the problem with Big Sur Beta not showing as developer download
+            
+          </div>
+          <div class="4u">
+            
+            <img src="../../images/posts/big_sur.png"
+                 alt="MAC OS Big Sur Beta not showing as a download (Fix)"
+                 class="image fit"
+                 loading="lazy" />
+            
+          </div>
+        </div>
+        <hr>
+        <!-- <p><p>Most likely if you’re reading this post you have the same interest in trying <a href="https://www.apple.com/macos/big-sur-preview/" target="_blank" rel="noopener">Apple’s new operating system</a> which is the successor to OSX. This one is called <a href="https://www.apple.com/macos/big-sur-preview/" target="_blank" rel="noopener">Big Sur or OS 11</a>.</p>
+
+<p>I’ve been a beta tester with apple for years, which I typically only use with my personal mac, as I need the stability with my daily coding Macbook Pro.</p>
+
+<p>Anyway, I was having trouble locating the update and after a few different options I found only for Catalina beta, I thought I’d write this post to help others.</p>
+
+<h4 class="blurb">
+I should also note that not every Mac is going to be compatible with Big Sur, which is originally what I thought may have been the issue. But fortunately for me I made the cutoff bing a late 2013 Macbook Pro (last model that is officially supported). 
+</h4>
+
+<p>List of compatible MACs’:</p>
+<ul>
+  <li>2015 and later MacBook</li>
+  <li>2013 and later MacBook Air</li>
+  <li>2013 and later MacBook Pro</li>
+  <li>2014 and later Mac mini</li>
+  <li>2014 and later iMac</li>
+  <li>2017 and later iMac Pro</li>
+  <li>2013 and later Mac Pro</li>
+</ul>
+
+<p>If you have any questions regarding that, I urge you to take a look at this <a href="https://developer.apple.com/forums/thread/649715?answerId=621273022#621273022" target="_blank" rel="noopener">link</a> to find out.</p>
+
+<p>If you have tried unenrolling and re-enrolling and that didnt’ work, then this will most likely work for you:</p>
+
+<p>Open terminal <code class="highlighter-rouge">command</code> + <code class="highlighter-rouge">shift</code> + <code class="highlighter-rouge">T</code> and run:<br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-i</span>
+</code></pre></div></div>
+
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="sudo -i">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>Enter root password:<br />
+<code class="highlighter-rouge">/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil</code></p>
+
+<p>Unenroll from the Beta Program:<br />
+<code class="highlighter-rouge">/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil unenroll</code></p>
+
+<p>Enroll in the DeveloperSeed Beta:<br />
+<code class="highlighter-rouge">/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil enroll DeveloperSeed</code></p>
+
+<p>Close and re-open <code class="highlighter-rouge">System Preferences</code> &gt; <code class="highlighter-rouge">Software Update</code></p>
+
+<p>The new Beta should now show up</p>
+
+<p>Let me know if you run into any issues.</p>
+
+<hr />
+</p> -->
+        
+        
+      
+      <a href="/posts/tech/fix-macos-catalina-fonts-after-upgrade.html">
+
+        <header class="major">
+          <h1>Fix MacOS Catalina Fonts After Upgrade</h1>
+        </header>
+
+        <div class="row uniform">
+          <div class="8u">
+            
+            <p><i class="fad fa-calendar-edit"></i> 03 Aug 2020</p>
+            
+            
+            How to fix blurry/thin fonts after upgrading to Mac OS Catalina
+            
+          </div>
+          <div class="4u">
+            
+            <img src="../images/posts/mac_osx_fonts/catalina_icon_min.png"
+                 alt="Fix MacOS Catalina Fonts After Upgrade"
+                 class="image fit"
+                 loading="lazy" />
+            
+          </div>
+        </div>
+        <hr>
+        <!-- <p><p>I recently upgraded my MAC from <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> to <a href="https://www.apple.com/macos/catalina/" target="_blank" rel="noopener">Catalina</a>, all went well but I noticed that my text editor fonts were looking thinner than normal. I recall this happening with the <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> update, so I sort of knew where to begin looking, but I couldn’t find exactly what I needed in one spot so I’m going to post it here.  <strong><em>I am by no means an expert on these commands, I’m just posting what worked for me</em></strong>.</p>
+
+<p>Many people had to play with these settings because not every external display is the same, so what I’ve posted here might not fit your setup exactly. It took some trial and error, but hopefully these commands will help you. As you’ll see below, everything can be reverted (<a href="#revert">see the bottom of the page</a>) and the commands won’t do any serious damage to your MAC.</p>
+
+<div class="blurb"><i class="fad fa-comment-alt-exclamation fa-lg"></i>&nbsp;&nbsp; Note: Every time you run one of these commands, you'll have to log out to see the changes. You can do so by pressing <code>command</code> + <code>shift</code> + <code>Q</code>.</div>
+<hr />
+
+<h2 id="what-worked-for-me">What Worked For Me:</h2>
+<p>You’ll want to check to see if you have your font smoothing enabled or disabled in your <code class="highlighter-rouge">Settings</code> &gt; <code class="highlighter-rouge">General</code> tab as seen in the image. This also plays a role… I left mine on.</p>
+
+<div class="container">
+  <div class="row">
+    <div class="one-third column">&nbsp;</div>
+      <div class="one-third column">
+        <img src="../../images/posts/mac_osx_fonts/disable_font_smoothing.png" class="image fit" title="font smoothing osx catalina" loading="lazy" />
+      </div>
+    <div class="one-third column">&nbsp;</div>
+  </div>
+</div>
+
+<p>Even though you checked the checkbox in settings, We’re going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> <code class="highlighter-rouge">/Applications/Utilities/Terminal.app</code>. The <code class="highlighter-rouge">-g</code> stands for <code class="highlighter-rouge">global</code>.  <a href="#textEditors" title="Scroll down fix individual apps">Further down</a> in the tutorial I show you how to change the fonts on a per-app basis (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write <span class="nt">-g</span> CGFontRenderingFontSmoothingDisabled <span class="nt">-bool</span> FALSE
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>And then I ran the code below to add strong font smoothing:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> write <span class="nt">-globalDomain</span> AppleFontSmoothing <span class="nt">-int</span> 2
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults -currentHost write -globalDomain AppleFontSmoothing -int 2">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
+Log out, and log back in.</p>
+
+<hr />
+<h2 id="adjusting-fonts-globally">Adjusting Fonts Globally:</h2>
+
+<p>If you’re at this section you’re probably not happy with the results above 😞. What you’ll most likely need to do is try different combinations. I recommend that you write down what worked and where it worked. e.g. if what we ran above helped with OS X’s fonts but messed up some apps then take note of that so you can apply commands to those specific apps (basically debug). Im not exaggerating when I say that I spent nearly 8 hours doing this (also searching for answers which is why I’m writing this post).</p>
+
+<p>Nevertheless, here’s the same command as above but I’ve laid them out so that you can copy and paste which one you want to try. Once you get your OSX system fonts to where you like them (ie. the menubar at the top, Finder and stock/default OSX apps), you can <a href="#textEditors" title="Scroll down to the Text Editors Section">scroll down <i class="fad fa-level-down-alt"></i></a> to the next section to update apps individually.</p>
+
+<p><code class="highlighter-rouge">1</code> - <strong>Light</strong> font smoothing</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> write <span class="nt">-globalDomain</span> AppleFontSmoothing <span class="nt">-int</span> 1
+</code></pre></div></div>
+<p><code class="highlighter-rouge">2</code> - <strong>Medium</strong> font smoothing</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> write <span class="nt">-globalDomain</span> AppleFontSmoothing <span class="nt">-int</span> 2
+</code></pre></div></div>
+<p><code class="highlighter-rouge">3</code> - <strong>Strong</strong> font smoothing</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> write <span class="nt">-globalDomain</span> AppleFontSmoothing <span class="nt">-int</span> 3
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults -currentHost write -globalDomain AppleFontSmoothing -int 1">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>&nbsp;</p>
+
+<div id="textEditors" name="textEditors"></div>
+
+<hr />
+
+<h2 id="adjusting-fonts-individually-text-editors-and-apps">Adjusting Fonts Individually (Text Editors and Apps):</h2>
+
+<p>I had issues with my text editor fonts so I’ll use those as examples, but you can locate and adjust any app you’d like using the same method below.</p>
+
+<div class="blurb">
+<strong><i class="fad fa-books fa-lg"></i>&nbsp; Here's a color-coded script in <span class="text-gold">gold</span> to help you visualize the values to update.</strong>
+
+<ol class="alt">
+  <li>Keep as <code>defaults write</code>.</li>
+  <li class="text-gold">Application <code>.plist</code> filename that you want to locate and update.</li>
+  <li>Keep as <code>CGFontRenderingFontSmoothingDisabled</code>.</li>
+  <li class="text-gold">Select level of font smoothing <code>0</code> - <code>3</code>.</li>
+</ol>
+
+<pre><code><sup>1</sup>defaults write <span class="text-gold"><sup>2</sup>com.microsoft.VSCode</span> <sup>3</sup>CGFontRenderingFontSmoothingDisabled <span class="text-gold"><sup>4</sup>0</span>
+</code></pre>
+
+(More examples further down the page)
+</div>
+
+<h3 id="-vscode"><i class="fad fa-check-circle fa-lg text-yellow"></i> VSCode:</h3>
+
+<div class="row">
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/library_pref_light.png" class="image fit" alt="Finder 'Go to folder:'" title="Finder 'Go to folder:'" loading="lazy" />
+  </div>
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/preferences.png" class="image fit" alt="VSCode preferences location on OSX" title="VSCode preferences location on OSX" loading="lazy" />
+  </div>
+</div>
+
+<p>To upgrade your apps individually you can locate their preference files by going to <code class="highlighter-rouge">Finder</code> and selecting <code class="highlighter-rouge">Go</code> or by pressing <code class="highlighter-rouge">shift</code> + <code class="highlighter-rouge">command</code> + <code class="highlighter-rouge">G</code> and searching <code class="highlighter-rouge">~/Library/Preferences</code>.  Then scroll through to locate the apps’ filename so we can adjust the font smoothing level. As you can see in the images above I’ve outlined the VSCode files that I update below.</p>
+
+<div class="blurb">
+<i class="fad fa-info-circle fa-lg"></i>&nbsp;&nbsp; FWIW: VSCode is built with <a href="https://www.electronjs.org/apps" target="_blank" rel="noopener" title="Apps built with ElectronJS">Electron JS</a> and I've found that Electron apps don't need much font smoothing so I typically set them to <code>0</code>.
+</div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<h3 id="-webstorm"><i class="fad fa-check-circle fa-lg text-yellow"></i> Webstorm:</h3>
+
+<div class="row">
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/webstorm_id.png" class="image fit" alt="Webstorm filename id image" title="Webstorm filename id image" loading="lazy" />
+  </div>
+</div>
+
+<p>You’ll notice the <code class="highlighter-rouge">d9f3b04</code> in my <a href="https://www.jetbrains.com/webstorm/" target="_blank" title="Webstorm" rel="noopener">Webstorm</a> file name. That is probably going to be different for you depending on your Webstorm download. You’ll have to check for yourself.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<h3 id="-sublime-text-32-example"><i class="fad fa-check-circle fa-lg text-yellow"></i> Sublime Text 3.2 (example):</h3>
+
+<div class="row">
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/vscode_pref.png" class="image fit" alt="Sublime Text 3 plist file name image" title="Sublime Text 3 plist file name image" loading="lazy" />
+  </div>
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/sublime_zero.png" class="image fit" alt="Sublime Text 3 plist file details in Library/preferences image" title="Sublime Text 3 plist file details in Library/preferences image" loading="lazy" />
+  </div>
+</div>
+
+<p>Here’s a final example of how I updated <a href="https://www.sublimetext.com/blog/articles/sublime-text-3-point-2" target="_blank" title="Sublime Text 3.2" rel="noopener">Sublime Text 3</a>. If you look at the image above you’ll notice that the string gets added to the file <u><strong>AFTER</strong></u> I run the command; You can see that <code class="highlighter-rouge">0</code> is set to <code class="highlighter-rouge">&lt;string&gt;0&lt;/string&gt;</code> in the <code class="highlighter-rouge">.plist</code> file. I find that turning off font smoothing for Sublime gives me the thickest fonts:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 0
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 0">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<div id="revert"></div>
+
+<h2 id="revert-back-to-osx-default">Revert back to OSX default:</h2>
+<p>No need to worry if you messed things up, you can set everything back to it’s default OSX Catalina state:</p>
+
+<p><strong>Removes custom font smoothing:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> delete <span class="nt">-globalDomain</span> AppleFontSmoothing
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults -currentHost delete -globalDomain AppleFontSmoothing">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p><strong>Reverts back to light font smoothing:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write <span class="nt">-g</span> CGFontRenderingFontSmoothingDisabled <span class="nt">-bool</span> True
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write -g CGFontRenderingFontSmoothingDisabled -bool True">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>Hopefully this helped you or you were able to learn something about OSX package/file management…</p>
+
+<p>I really hope <a href="https://apple.com/support" target="_blank" rel="noopener">Apple</a> addresses this, but until they do, I’ll try to keep this post updated. If you have any info regarding this or you see something off, please <a href="#getInTouch">let me know</a>.</p>
+
+<p>Happy coding 🤓</p>
+
+<hr />
+</p> -->
+        
+        
+      
+      <a href="/posts/tech/list-of-my-favorite-osx-applications.html">
+
+        <header class="major">
+          <h1>List of my favorite OSX applications</h1>
+        </header>
+
+        <div class="row uniform">
+          <div class="8u">
+            
+            <p><i class="fad fa-calendar-edit"></i> 27 Feb 2020</p>
+            
+            
+            A compilation of OSX applications that help keep me productive and organized.
+            
+          </div>
+          <div class="4u">
+            
+            <img src="../images/posts/ticktick_osx.png"
+                 alt="List of my favorite OSX applications"
+                 class="image fit"
+                 loading="lazy" />
+            
+          </div>
+        </div>
+        <hr>
+        <!-- <p><p>People often ask me about the applications I use for software development, so I’ve decided to create a list of my favorite Mac OSX applications. Many of these apps are development tools but others help me outside of software development.  This list is specifically for MAC OSX, but most of them are cross-platform and can be used on Windows, Linux, iOS and Android. The list is in no particular order, and I want to note that none of these companies have asked for my endorsement, but I might have affiliate links which are marked with a  <code class="highlighter-rouge">👍🏼</code>  however, those links mean nothing in my support for or against them. I’m just trying to offset the costs of hosting this site.</p>
+
+<p>If you have a favorite app (especially development and productivity tools), I’d love it if you’d share those with me. I’ll even credit you on the recommend if I use it in my workflow.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://bitwarden.com/" target="_blank" rel="noopener" title="Bitwarden"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Bitwarden_Desktop_MacOS.png" alt="bitwarden" /></a>
+</span>
+<strong><em><a href="https://bitwarden.com/" target="_blank" rel="noopener">Bitwarden</a></em></strong>:<br />Is an open-source password manager. I have been a long-time user of <a href="https://www.lastpass.com/" target="_blank" rel="noopener">LastPass</a> but gave Bitwarden a try, and I don’t see myself going back to LastPass anytime soon. Bitwarden might not be as polished or feature-rich, but I find it less buggy and does everything I need in a Password manager. I use the free version and have no reason to upgrade.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://ticktick.com/zFVY6?u=f3ea6096978047d59510318bf36b8a0b" target="_blank" rel="noopener" title="TickTick"><img loading="lazy" src="/images/posts/ticktick_osx.png" alt="ticktick" /></a>
+</span>
+👍🏼 <strong><em><a href="https://ticktick.com/zFVY6?u=f3ea6096978047d59510318bf36b8a0b" target="_blank" rel="noopener">TickTick</a></em></strong>:<br />Is a todo list application. I’ve tried many of them including <a href="https://todoist.com" target="_blank" rel="noopener">Todoist</a> and <a href="https://culturedcode.com/things/" target="_blank" rel="noopener">Things</a> but TickTick is everything I want in a todo-list (or Get Things Done) application. It’s like a better, prettier <a href="https://www.wunderlist.com/" target="_blank" rel="noopener">Wunderlist</a> (the favorite todo list app of many for years, but was acquired by Microsoft). I upgraded to the Pro plan which is about $30 a year, and that gives you more features like Calendar view. It has a beautify UI and I prefer the right side layout (similar to Wunderlist) compared to Todoists pop-up modal. It also allows for subtasks, commenting and much more; but not too many features where things feel cluttered.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://clickup.com" target="_blank" rel="noopener" title="Clickup"><img loading="lazy" src="https://software-advice.imgix.net/managed/products/screenshots/list_view_app_retina.png?auto=format&amp;w=600&amp;h=450" alt="clickup" /></a>
+</span>
+<strong><em><a href="https://clickup.com" target="_blank" rel="noopener">Clickup</a></em></strong>:<br />This is the project management software that we use at my development job but I also use it for personal projects. This app has just about everything you can imagine in project management software. They deserve some sort of award, it’s simply awesome, and they have a free tier that will be suitable for most personal users and/or small teams.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://justgetflux.com/" target="_blank" rel="noopener" title="f.lux"><img loading="lazy" src="/images/posts/f.lux.png" alt="flux osx" style="max-height:300px;" /></a>
+</span>
+<strong><em><a href="https://justgetflux.com/" target="_blank" rel="noopener">F.lux</a></em></strong>:<br /> Or Flux is a slightly more customizable red-hue screen adjuster. OSX now allows for you to add the red-hue to your screen at certain times of the day, but Flux is a bit more customizable and is free, which is what makes it an easy addition to this list.
+<br />
+<br />
+<br />
+<br /></p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://iterm2.com/" target="_blank" rel="noopener" title="iTerm 2"><img loading="lazy" src="https://miro.medium.com/max/3200/1*6ZbzPhOo4jchV4DzkA3beQ.png" alt="iterm2" /></a>
+</span>
+<strong><em><a href="https://iterm2.com/" target="_blank" rel="noopener">iTerm2</a></em></strong>:<br /> Is a terminal application that gives you many more features than the default terminal application that comes with OSX. I also recommend installing <a href="https://ohmyz.sh/" target="_blank" rel="noopener">Oh-My-Zsh</a> which allows you to install plugins and prompt themes.</p>
+
+<p><span class="image right">
+<a href="https://hyper.is" target="_blank" rel="noopener" title="Hyper Terminal"><img loading="lazy" src="/images/posts/hyper.png" alt="Hyper.js Terminal" /></a>
+</span>
+An alternative to iTerm2 is <a href="https://hyper.is" target="_blank" rel="noopener" title="Hyper.is">Hyper</a>. Hyper is a <a href="https://www.electronjs.org/" target="_blank" rel="noopener" title="Electron App">Electron app</a>, which means it will likely use more RAM and wont be as performant as Apple’s native Terminal app or iTerm2; Nevertheless, customizing the terminal is simple if you’re used to working with a JSON file. I haven’t put Hyper through much testing but I’ve been told that it’s a great option for beginner developers.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://apps.apple.com/us/app/snippetslab/id1006087419?mt=12" target="_blank" rel="noopener" title="Snippets Lab"><img loading="lazy" src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/59/13/8e59137d-d322-41d5-309d-0e8366542cf1/pr_source.jpg/643x0w.jpg" alt="snippets lab" /></a>
+</span>
+<strong><em><a href="https://apps.apple.com/us/app/snippetslab/id1006087419?mt=12" target="_blank" rel="noopener">SnippetsLab</a></em></strong>:<br />This is a note-taking application for developers. As a developer, you find yourself re-using code snippets, and this app does just that with a tagging system and a beautiful UI. You can also connect to iCloud or Dropbox to sync between computers. This is a paid app, but I also recommend <a href="https://boostnote.io/" target="_blank" rel="noopner">Boostnote</a> as a free/opensource alternative.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://brave.com/" target="_blank" rel="noopener" title="Brave Browser"><img loading="lazy" src="https://brave.com/wp-content/uploads/2018/10/a25he_image1.png" alt="brave browser" /></a>
+</span>
+<strong><em><a href="https://brave.com/" target="_blank" rel="noopener">Brave</a></em></strong>:<br />There has been a lot of controversy about Google’s <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Chrome browser</a>. Most recently the notion to <a href="https://www.wired.com/story/google-chrome-ad-blockers-extensions-api/" target="_blank" rel="noopener">remove functionality of extensions like ad-blockers and tracker-blockers</a>. As a result, I started looking at other browsers and came across Brave, which is basically a re-packaged Chrome browser that is built on the open-source <a href="https://www.chromium.org/" target="_blank" rel="noopener">Chromium project</a>. Brave was founded by <a href="https://en.wikipedia.org/wiki/Brendan_Eich" target="_blank" rel="noopener">Brendan Eich</a> who is the creator of <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener">JavaScript</a> and co-founder of the <a href="https://www.mozilla.org/en-US/about/history/" target="_blank" rel="noopener">Mozilla project</a>. Brave has taken a different approach to ads via a rewards system. You can also install any Chrome extensions natively. So it’s like a better performing, safer and more private Chrome.</p>
+
+<p>I also use <a href="https://www.opera.com/" target="_blank" rel="noopener">Opera Browser</a>. Much like Brave, Opera is built on the Chromium project but it comes with many useful features like a side panel for apps like Twitter and Instagram, and with <a href="https://colinstodd.com/posts/code/add-chrome-extensions-to-opera-browser.html" target="_top" rel="noopener">this extension</a> you can install any of the Chrome store extensions. My only concern with Opera is that it was recently acquired by Chinese investors. However, it’s still a part of Norway, so I hope that they are abiding by Norwegian laws.</p>
+
+<p>I can also recommend <a href="https://www.mozilla.org/en-US/firefox/" target="_blank" rel="noopener">Firefox</a>. I was an avid user of Firefox but was part of the group that switched to Chrome. Nevertheless, Firefox re-wrote its browser engine in Rust and its performance has improved greatly as a result. I also admire Firefox’s efforts to keep you safe on the web.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://www.grammarly.com/" target="_blank" rel="noopener" title="Grammarly"><img loading="lazy" src="https://lh3.googleusercontent.com/JKWZYRe_7OkKz70IXaXv6TZdgBc2EKIT-AGANDQ0Kg_vDvuJv0ZRUmtro0Wx1FCVGbqpQ2JbOg=w640-h400-e365" alt="grammarly" /></a>
+</span>
+<strong><em><a href="https://www.grammarly.com/" target="_blank" rel="noopener">Grammarly</a></em></strong>:<br />This is a browser extension and desktop app that makes you a better writer. It not only spells checks your work anywhere on your computer but it also makes suggestions to your writing. I use the free tier but have considered updating to the paid plan just as thanks for how awesome it is. Honestly, everyone should install Grammarly on their computers and mobile devices. Your friends and colleagues will be grateful for proper spelling and punctuation.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://www.alfredapp.com/" target="_blank" rel="noopener" title="Alfred"><img loading="lazy" src="https://9to5mac.com/wp-content/uploads/sites/6/2017/03/friday-5-alfred-3.jpg?quality=82&amp;strip=all&amp;w=1600" alt="alfred osx" /></a>
+</span>
+<strong><em><a href="https://www.alfredapp.com/" target="_blank" rel="noopener">Alfred</a></em></strong>:<br />This is basically Spotlight on steroids. I purchased the “Powerpack” to unlock more features like Workflows which allows you to control many aspects of your mac from the search box. Alfred is a great tool that when set-up properly, can make your workflow much more powerful. If you decide to purchase the Powerpack I recommend you check out some pre-configured Workflows from a community site called <a href="http://www.packal.org/" target="_blank" rel="noopener">Packal</a>. All of those Workflows are free.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://airmailapp.com/" target="_blank" rel="noopener" title="Airmail 4"><img loading="lazy" src="https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/ef/e9/86/efe9868a-6246-44d1-0a50-dac5c2064b81/mzl.vdtpgelc.jpg/643x0w.jpg" alt="Airmail 4" title="Airmail 4" /></a>
+</span>
+<strong><em><a href="https://airmailapp.com/" target="_blank" rel="noopener">Airmail 4</a></em></strong>:<br /> Was just released a few days before this updated. While I haven’t had a great deal of time to play around with it, it seems like it has some subtle but welcomed updates. <a href="https://airmailapp.com/" target="_blank" rel="noopener">Airmail 4</a> This is the successor to the award winning <a href="https://airmailapp.com/">Airmail 3</a> app. Which is the most customizable mail application on OSX that I’ve been able to find. Apples’ mail app is OK but it lacks many awesome features that Airmail and it’s rivals have. With that being said, <a href="https://airmailapp.com/" target="_blank" rel="noopener">Airmail</a> is not perfect, and their iOS app is not what I recommend for mobile, but the OSX app is one of the best that I’ve tried (I’ve tried many). As for runner-up apps I can recommend <a href="https://getmailspring.com/" target="_blank" rel="noopener">MailSpring</a> (a little buggy, but free and Open Sourced) and <a href="https://sparkmailapp.com/" target="_blank" rel="noopener">Spark</a>.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener" title="Webstorm"><img loading="lazy" src="https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2017/08/ionic-debug.png" alt="webstorm" /></a>
+</span>
+<strong><em><a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a> &amp; <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a>:</em></strong><br />
+Specifically to web development and coding in general, I highly recommend <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> as a text editor and <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a> as an IDE.</p>
+
+<p>I use both for different use-cases. For quick editing and small projects I like to use VSCode; It’s lightweight and has a <a href="https://code.visualstudio.com/docs/editor/extension-gallery" target="_blank" rel="noopener">plethora of extensions</a>. For larger applications I use Webstorm. The IntelliSense and baked-in features can’t be beaten. It’s a resource-hog, but when building larger applications, I can’t imagine using anything other than a <a href="https://www.jetbrains.com/" target="_blank" rel="noopener">Jetbrain application</a>.</p>
+
+<hr />
+
+<p><span class="image right">
+<a href="https://toggl.com/" target="_blank" rel="noopener" title="Toggl"><img loading="lazy" src="https://clockify.me/assets/images/best-time-tracking-apps/toggl-apps.png" alt="toggl" /></a>
+</span>
+<a href="https://toggl.com/" target="_blank" rel="noopener">Toggl</a>:<br />This is a time-tracking desktop and browser extension application. It does a few things other than tracking time (like reports, invoice creations, etc), but it does those things really well.</p>
+
+<p><br />
+<br /></p>
+<hr />
+
+<p><span class="image right">
+<a href="https://apps.apple.com/us/app/skitch-snap-mark-up-share/id425955336?mt=12" target="_blank" rel="noopener" title="Skitch"><img loading="lazy" src="https://is5-ssl.mzstatic.com/image/thumb/Purple6/v4/c0/0b/4f/c00b4ffa-a942-1ffa-d1f0-6da2cfa7e928/mzl.fkhegzvv.png/643x0w.png" alt="skitch osx" /></a>
+</span>
+<a href="https://apps.apple.com/us/app/skitch-snap-mark-up-share/id425955336?mt=12" target="_blank" rel="noopener">Skitch</a>:<br /> Is a desktop application that allows you to take screenshots to quickly and easily add markup to screenshots and images.</p>
+
+<p><br />
+<br /></p>
+<hr />
+
+<p>And there you have it. These are the apps that I have running nearly every time I boot-up one of my MACs. If you have any suggestions I encourage you to let me know in the comments.</p>
+
+<p>Be sure to subscribe below as I plan on writing a post for browser extensions and many other things computer and code related.</p>
+
+<p><br />
+<br /></p>
+</p> -->
+        
+        
+      
+      <a href="/posts/tech/add-chrome-extensions-to-opera-browser.html">
+
+        <header class="major">
+          <h1>Add Chrome Extensions To Opera Browser</h1>
+        </header>
+
+        <div class="row uniform">
+          <div class="8u">
+            
+            <p><i class="fad fa-calendar-alt"></i> 22 Mar 2017</p>
+            
+            
+            This addon allows you to install Chrome extensions on Opera.
+            
+          </div>
+          <div class="4u">
+            
+            <img src="../images/posts/opera-chrome.png"
+                 alt="Add Chrome Extensions To Opera Browser"
+                 class="image fit"
+                 loading="lazy" />
+            
+          </div>
+        </div>
+        <hr>
+        <!-- <p><p>If you haven’t heard, Mr. Trump and the Republican Congress have just passed a resolution which allows internet service providers to sell sensitive consumer data, such as browsing history without their permission. In short this means that you have less privacy than you once did.</p>
+
+<p>Stuff like this really eeks me. It’s not that I have anything to hide, it’s just that something doesnt feel right when people are so egar to spend billions on something I’m doing. I haven’t put my finger on it, so I’ll save that for a later post.  But because of laws like this, I feel it is even more important to be careful with how I use the internet.</p>
+
+<p>I think Chrome is the best browser out there, but it’s the worst when it comes to your privacy. Google makes a good portion of their money from your online behavior, which is what sent me to Opera.  Opera is built with much of the same technologies (Webkit) as Chrome and they both perform really well. However, Opera is a bit more considerate when it comes to your privacy, and I love the tools that Opera is bringing to the table.  Its a great browser, but it would be even better with Chrome extentions, and that is why I’m writing this post.</p>
+
+<p>You can do so by downloading this <a href="https://addons.opera.com/en/extensions/details/download-chrome-extension-9/?display=en" target="_blank" rel="noopener">Opera plugin</a>. Once you install the plugin, you can then search the <a href="https://chrome.google.com/webstore/category/extensions" target="_blank" rel="noopener">chrome extension store</a> from your Opera browser to install. It will walk you through the steps as seen in the image below.</p>
+
+<p><img src="https://res.cloudinary.com/colinstodd-com/image/upload/v1491671033/Screen_Shot_2017-04-08_at_12.59.34_PM_ltwx56.png" class="image fit" /></p>
+</p> -->
+        
+        
+      
+      <a href="/posts/tech/best-free-project-management-apps-for-web-developers.html">
+
+        <header class="major">
+          <h1>Best Free Project Management Apps for Web Developers</h1>
+        </header>
+
+        <div class="row uniform">
+          <div class="8u">
+            
+            <p><i class="fad fa-calendar-alt"></i> 26 Feb 2018</p>
+            
+            
+            My picks for the best free project management apps (for web developers) in 2019.
+            
+          </div>
+          <div class="4u">
+            
+            <img src="../images/posts/clickup_min.png"
+                 alt="Best Free Project Management Apps for Web Developers"
+                 class="image fit"
+                 loading="lazy" />
+            
+          </div>
+        </div>
+        <hr>
+        <!-- <p><p>So I’ve been using project management software for the past few years. When I started programming I quickly began to realize that it became difficult to keep track of my ideas and remembering the bugs in my app. I began noticing on social media that other professionals were using some sort of project management software and that’s where my quest began.</p>
+
+<p>I was new to programming so I was looking for tools on a budget. I was hoping to get something free or reasonably priced. I’ve gone through many pieces of software, many of them bringing something different to the table. Since then, my productivity has increased immensely. I have a sub-par memory so making the effort to organize and document my thoughts pays off in the long run. I can also go back and reference things should I need to.</p>
+
+<p>Things that are important to me are: Integration with 3rd party apps, Graphical User Interface (user experience), ways to create and view tasks, how to edit and update those tasks, notifications, built in features and the mobile app.</p>
+
+<p>I’m not going to discuss every detail, rather I’m going to quickly go over what I like/dislike about them, but I encourage you to try them for yourself and let me know your thoughts in the comments. All but one do well with most of what I want, but only one of them does it all really well.</p>
+
+<p>5th: <a href="https://trello.com/" target="_blank" rel="noopener">Trello</a>:</p>
+
+<p><img src="https://res.cloudinary.com/colinstodd-com/image/upload/c_scale,w_500/v1521954866/Screen_Shot_2018-03-24_at_4.04.55_PM_qdgygw.png" class="image right" />
+So I’ll start with the one I dislike the most from this list (which also seems to be the most popular), which is Trello. Trello was recently aquired by Atlassian who built <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noopener">Jira</a>, which is one of the most popular (but paid) issue tracking software. Trello uses a Kanban board and has a commenting (on the card) system. The application is rock solid but the Graphical User Interface (GUI) is the worst of the group. That might seem trivial and is certainly subjective, but it makes the cards difficult to distinguish when you have a large amount of them. I feel like things get cluttered easily.</p>
+
+<p>4th: <a href="https://asana.com/" target="_blank" rel="noopener">Asana</a>:</p>
+
+<p><img src="https://res.cloudinary.com/colinstodd-com/image/upload/c_scale,w_500/v1521954864/Screen_Shot_2018-03-24_at_4.06.00_PM_owywd8.png" class="image right" />
+Asana is my 4th pick. It’s famous for its commenting system. Their intention is to get rid of emails (which I love, and it does well). It’s free and there are a great deal of zaps and integrations that you can include to enhance the software. It also performs well, but much like Trello, when you have a large list it becomes difficult to distinguish the difference between each task. Asana now has a Kanban option available, but again it feels incomplete.</p>
+
+<p>3rd: <a href="https://meistertask.com/" target="_blank" rel="noopener">MeisterTask</a>:</p>
+
+<p><img src="https://res.cloudinary.com/colinstodd-com/image/upload/c_scale,w_500/v1521954989/Screen_Shot_2018-03-24_at_4.03.55_PM_ao438n.png" class="image right" />
+MesisterTask is basically Trello but with a better GUI. I used MeisterTask for about a year until I required more from my project management software. MT is a superb basic customizable Kanban software. It also works with it’s mind mapping software <a href="https://www.mindmeister.com/" target="_blank" rel="noopener">MindMeister</a>. Together they allow you to organize your thoughts and accomplish your tasks with customization and style. It’s mobile app is also excellent.</p>
+
+<p>2nd: <a href="https://freedcamp/" target="blank" rel="noopener">FreedCamp</a>:</p>
+
+<p><img src="https://res.cloudinary.com/colinstodd-com/image/upload/c_scale,w_500/v1521954865/Screen_Shot_2018-03-24_at_4.07.03_PM_ce3dkq.png" class="image right" />
+FreedCamp tries to be the affordable version of Basecamp. Freedcamp’s free version gives you almost everything except for calendar syncing. It’s description area has a great WYSIWYG editor to provide detailed descriptions for notes. It allows you to switch between a list and Kanban Board. Albeit the Kanban board only allows you to have three columns: Open, In Process, and Complete. To me, this is not fully Kanban. But if that’s all you need, FreedCamp is a great choice. It also has a dashboard to view your daily tasks and it’s GUI is fantastic. I also enjoyed using it’s mobile app.</p>
+
+<p>1st: <a href="https://clickup.com/" target="_blank" rel="noopener">Clickup</a>:</p>
+
+<p><img src="https://res.cloudinary.com/colinstodd-com/image/upload/c_scale,w_500/v1521954540/aevb9k5ytoxdb1lfoebf.png" class="image right" />
+Clickup is my winner, and the current piece of software I use for projects. Clickup is perhaps the newest of the group, but that seems to mean very little as the developers have done a phenomenal job in releasing new features and updates. The team also has a voting app on their site so that users can request and vote on potential features, and it shows you what they plan on building, what they are building, and what has been done. And they seem to develop these features at an impeccable rate. Clickup has the option to view tasks as a list (clickup to get the task to the top), or you can view them in a customized Kanban layout, a calendar view, commenting and tagging system, great mobile app, it’s free, they have a $5 pro plan, their description area has syntax highlighting for code snippets, and much, much more. Clickup seems to release new features every two weeks or so. If it were a public company, I would invest in Clickup. Meaning I think this app is going to be an amazing (affordable) tool for developers now and in the future.</p>
+
+<p><strong><em>Note: None of these apps are paying me to write this, I just wanted to share my thoughts</em></strong>.</p>
+</p> -->
+        
+        
+      </a>
+    </div>
+  </div>
+</section>
+      <div id="getInTouch"></div>
+<!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <h2 class="major"><i class="fad fa-mailbox"></i> Send A Message</h2>
+    <hr class="footer">
+    <p>If you are contacting me about future projects or recruitment, the easiest way to get a hold of me is with the
+      form below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
+    </p>
+    <form id="contactForm" method="POST" action="https://getform.io/f/1c2abdba-fac6-4bdc-90c9-5fb74c77eebb">
+      <div class="field">
+        <label for="name">Name*</label>
+        <input type="text" name="name" id="name" required minlength="3" />
+      </div>
+      <div class="field">
+        <label for="email">Email*</label>
+        <input type="email" name="_replyto" id="email" required email minlength="5" />
+      </div>
+      <div class="field">
+        <label for="tel">Phone Number (Optional)</label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <div class="field">
+        <label for="message">Message*</label>
+        <textarea name="message" id="message" rows="4" required minlength="8" maxlength="2500"></textarea>
+      </div>
+
+      <ul class="actions">
+        <li><input type="submit"
+                 value="Send Message" id="contactSubmitBtn"
+                 data-action='post'
+                 disabled />
+        </li>
+        <li>
+          <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+        </li>
+      </ul>
+
+      <div class="field bot-select">
+        <label for="human"><i class="fad fa-user-robot fa-lg"></i> Bot check (Are you human check)*</label>
+        <select name="human" id="human" required>
+          <option value="0">- Select what you are -</option>
+          <option value="1">Robot</option>
+          <option value="2">Horse</option>
+          <option value="3" id="humanSelection">Human</option>
+          <option value="4">Dolphin</option>
+        </select>
+      </div>
+
+      <h4>* Required</h4>
+    </form>
+    <ul class="contact">
+      <li class="fa-github">
+        <h4><a href="https://github.com/cbstodd" target="_blank" rel="noopener" title="Github">@cbstodd</a>
+        </h4>
+      </li>
+      <li class="fa-twitter">
+        <h4><a href="https://twitter.com/cbstodd" target="_blank" rel="noopener" title="Twitter">@cbstodd</a></h4>
+      </li>
+      <li class="fa-instagram">
+        <h4><a href="https://instagram.com/cbstodd" target="_blank" rel="noopener" title="Instagram">@cbstodd</a></h4>
+      </li>
+      <li class="fa-facebook">
+        <h4><a href="https://facebook.com/colin.stodd" target="_blank" rel="noopener" title="Facebook">colin.stodd</a>
+        </h4>
+      </li>
+      <li class="fa-medium">
+        <h4><a href="https://medium.com/@cbstodd" target="_blank" rel="noopener" title="Medium">@cbstodd</a>
+        </h4>
+      </li>
+      <li class="fa-linkedin">
+        <h4><a href="https://www.linkedin.com/in/colin-stodd/" target="_blank" rel="noopener"
+             title="LinkedIn">colin-stodd</a></h4>
+      </li>
+    </ul>
+    <p>&nbsp;</p>
+    <hr class="footer">
+    <ul class="copyright">
+      <!-- <li><img src="./favicon/favicon-32x32.png" alt="logo icon"></li> -->
+      <li class="copy">
+        <h4><i class="fab fa-creative-commons"></i>&nbsp;Colin Stodd, <a href="https://harpua.co" target="_blank"
+             rel="noopener" title="Harpua, LLC">Harpua, LLC</a>. & <a
+             href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>.
+          Background image by <a href="https://www.etsy.com/shop/AZNpics" target="_blank" rel="noopener"
+             title="AZNpics">AZNpics</a>
+        </h4>
+      </li>
+      <li class="copy">
+        <h4><a href="/privacy.html">Privacy Policy</a></h4>
+      </li>
+    </ul>
+  </div>
+</footer>
+    </div>
+    <!-- Scripts -->
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+<script id="dsq-count-scr" src="//colinstodd-v2.disqus.com/count.js" async></script>
+<!-- <script type="text/javascript" src="../../assets/js/zoom-img.js"></script> -->
+<!-- <script type="text/javascript" src="../../assets/js/long-shadow.js"></script> -->
+<script src="/assets/js/clipboard.min.js"></script>
+<script type="text/javascript">new ClipboardJS('.copy-btn');</script>
+<script src="/assets/js/custom.js" type="text/javascript"></script>
+  </body>
+
+</html>

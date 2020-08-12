@@ -1,0 +1,3116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<disqus xmlns="http://disqus.com" xmlns:dsq="http://disqus.com/disqus-internals" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://disqus.com/api/schemas/1.0/disqus.xsd http://disqus.com/api/schemas/1.0/disqus-internals.xsd">
+<category dsq:id="6573439">
+<forum>colinstodd-v2</forum>
+<title>General</title>
+<isDefault>true</isDefault>
+</category>
+<thread dsq:id="5663767624">
+<id />
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:3000/projects/project/tech-summit</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T05:10:12Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5663780000">
+<id />
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:3000/blog/post/adding-mongodb-to-keystonejs</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T05:17:49Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5663780162">
+<id />
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:3000/blog/post/typescript-and-es6-babel-boilerplates</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T05:17:55Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5663850271">
+<id>58cdd025ff3a7d7b3c88d740</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/typescript-and-es6-babel-boilerplates</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T05:59:25Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5664936996">
+<id>58cdd48aff3a7d7b3c88d747</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/adding-mongodb-to-keystonejs</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T14:57:31Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5664999600">
+<id>58d08c04f3e90f411c87c585</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/free-resources-to-learn-angular2-release-candidate-5</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T15:24:41Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5665009302">
+<id>58d08ce3f3e90f411c87c589</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/fix-blury-picture-on-rcn-cable-hdtv</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T15:28:49Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5665009614">
+<id>58d08cb1f3e90f411c87c588</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/3-external-monitors-on-13-macbook-pro</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T15:28:57Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5665013088">
+<id>58d08d77f3e90f411c87c58c</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/new-job</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T15:30:24Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5665013715">
+<id>58d08c65f3e90f411c87c587</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/es6-class-example</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T15:30:42Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5665013953">
+<id>58d08b72f3e90f411c87c583</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/two-different-ways-to-use-ngstyle-in-angular-2</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T15:30:48Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5665015155">
+<id>58d08d45f3e90f411c87c58b</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/my-first-blob-experience</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-25T15:31:18Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5682149161">
+<id>58d08d13f3e90f411c87c58a</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd-v2.appspot.com/blog/post/because-everyone-uses-google</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-31T00:51:55Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5682320261">
+<id>58d08b3cf3e90f411c87c582</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/tips-and-tricks-for-angular-2-in-webstorm</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-31T02:33:40Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5682367497">
+<id>58d08c39f3e90f411c87c586</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/es6-subclass-example</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-31T03:03:44Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5685253607">
+<id>58d08aa6f3e90f411c87c581</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/building-angular-apps-with-webstorm</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-31T23:22:39Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5685263818">
+<id>58d08bb1f3e90f411c87c584</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/my-introductory-flight-getting-my-pilot-s-license</link>
+<title>ColinStodd.com</title>
+<message />
+<createdAt>2017-03-31T23:28:18Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5693888862">
+<id>58e308cdc2c79811bc568018</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/using-highlight-js-cdn-on-your-website-or-application</link>
+<title>Using Highlight.js CDN On Your Website Or Application</title>
+<message />
+<createdAt>2017-04-04T02:47:49Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5707983446">
+<id>58e90dfda5497d0011806c61</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/add-chrome-extensions-to-opera-browser</link>
+<title>Add Chrome extensions to Opera Browser</title>
+<message />
+<createdAt>2017-04-08T17:11:46Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5801835594">
+<id>5912100a8bba1b0011311fe7</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-use-ngif-in-angular-4</link>
+<title>Simple example of how to use ngIf in Angular 4</title>
+<message />
+<createdAt>2017-05-09T19:00:36Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5801874098">
+<id />
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/null</link>
+<title>Colin B. Stodd</title>
+<message />
+<createdAt>2017-05-09T19:13:58Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5910762207">
+<id>59418db39a5b270011a8bbe3</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/ical-calendar-for-phish-s-2017-tour-dates</link>
+<title>iCal calendar for 2017 phish tour dates and shows</title>
+<message />
+<createdAt>2017-06-14T19:33:52Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5996302974">
+<id>596d72ad5f5bf40011c01c48</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-install-bootstrap-4-in-angular-4-as-a-dependency</link>
+<title>How to install Bootstrap 4 in Angular 4 as a dependency</title>
+<message />
+<createdAt>2017-07-18T02:39:49Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6096329535">
+<id>59a0cce396dff3001107541f</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-create-a-username-from-an-email-address-using-angularfire2</link>
+<title>How to create a username from an email address using AngularFire2</title>
+<message />
+<createdAt>2017-08-26T01:34:58Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6146498257">
+<id>59bc3fdfc768af00123aaedf</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/2017-phish-dicks-posters-by-tommy-b</link>
+<title>2017 Phish Dicks Posters by Tommy B</title>
+<message />
+<createdAt>2017-09-15T21:10:13Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6229105291">
+<id>59ea3a54767b710012d060ee</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-install-bootstrap-4-beta-in-angular-4-as-a-dependency</link>
+<title>How to install Bootstrap 4 in Angular 4 as a dependency</title>
+<message />
+<createdAt>2017-10-20T18:05:32Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6333874308">
+<id>5a289a03fe2cc100145541e3</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-install-materialize-css-in-angular-5</link>
+<title>How to install Materialize-CSS in Angular 5</title>
+<message />
+<createdAt>2017-12-07T01:39:19Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6453113948">
+<id>5a73967466ef43001484d1e4</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/ical-calendar-for-phish-tour-dates-and-shows</link>
+<title>iCal calendar for 2018 phish tour dates and shows</title>
+<message />
+<createdAt>2018-02-01T22:38:27Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6574941517">
+<id>5ab72d66d888f200147acf11</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/best-free-project-management-software-for-web-developers</link>
+<title>Best Free Project Management Software for Web Developers</title>
+<message />
+<createdAt>2018-03-25T05:10:57Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6575939396">
+<id>5ab7ecb7cfdb46001405e594</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-add-dotenv-to-webpack</link>
+<title>How to add dotenv to Webpack</title>
+<message />
+<createdAt>2018-03-25T18:41:54Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6747939065">
+<id>5b2d19d5cc19b4001436140c</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-install-bootstrap-4-in-angular-6</link>
+<title>How to install Bootstrap 4 in Angular 6</title>
+<message />
+<createdAt>2018-06-22T15:49:15Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6758590547">
+<id>5b33df54ce26cd001417f535</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/fix-angular-6-and-firebase-hosting-deployment-error</link>
+<title>Fix Angular 6 and Firebase hosting error "Firebase hosting setup complete"</title>
+<message />
+<createdAt>2018-06-27T19:17:26Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6977955660">
+<id>5bc7e56c754f5600142e5211</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-install-materialize-css-in-angular-6</link>
+<title>Quick tutorial on how to install Materialize CSS in Angular 6+</title>
+<message />
+<createdAt>2018-10-18T01:57:47Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7032864178">
+<id>5be62f47f5e6cb0014ae97de</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://www.colinstodd.com/blog/post/how-to-add-uikit-to-angular</link>
+<title>Quick tutorial on how to install UIKit in Angular 6+</title>
+<message />
+<createdAt>2018-11-10T01:15:55Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667172598">
+<id>http://localhost:4000/posts/how-to-install-materialize-css-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-install-materialize-css-in-angular.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T02:19:16Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667175189">
+<id>https://blog.colinstodd.com/posts/how-to-add-uikit-to-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/how-to-add-uikit-to-angular.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T02:21:28Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667178516">
+<id>https://blog.colinstodd.com/posts/how-to-install-materialize-css-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/how-to-install-materialize-css-in-angular.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T02:24:45Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667223019">
+<id>https://blog.colinstodd.com/posts/how-to-install-bootstrap-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/how-to-install-bootstrap-in-angular.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T03:13:41Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667223500">
+<id>https://blog.colinstodd.com/posts/es6-class-example.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/es6-class-example.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T03:14:18Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667236958">
+<id>https://blog.colinstodd.com/posts/free-resources-to-learn-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/free-resources-to-learn-angular.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T03:32:08Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667267278">
+<id>https://blog.colinstodd.com/posts/best-free-project-management-apps-for-web-developers.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/best-free-project-management-apps-for-web-developers.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T04:12:38Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667277041">
+<id>https://blog.colinstodd.com/posts/how-to-add-dotenv-to-webpack.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/how-to-add-dotenv-to-webpack.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T04:26:11Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667910504">
+<id>https://blog.colinstodd.com/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T14:53:07Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7667978953">
+<id>http://localhost:4000/posts/how-to-install-bootstrap-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-install-bootstrap-in-angular.html</link>
+<title>                                                                                                            Colin Stodd  </title>
+<message />
+<createdAt>2019-10-08T15:44:23Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668362512">
+<id>http://localhost:4000/posts/adding-real-favicon-generator-to-your-angular-app.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/adding-real-favicon-generator-to-your-angular-app.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-08T20:11:59Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668745008">
+<id>http://localhost:4000/posts/how-to-add-uikit-to-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-add-uikit-to-angular.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T03:22:36Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668749438">
+<id>http://localhost:4000/posts/how-to-add-dotenv-to-webpack.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-add-dotenv-to-webpack.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T03:28:07Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668774200">
+<id>http://localhost:4000/posts/how-to-add-uikit-to-angular</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-add-uikit-to-angular</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T03:58:49Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668789042">
+<id>http://localhost:4000/posts/how-to-install-bootstrap-in-angular</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-install-bootstrap-in-angular</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T04:13:35Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668789151">
+<id>http://localhost:4000/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T04:13:41Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668791583">
+<id>http://localhost:4000/posts/best-free-project-management-apps-for-web-developers.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/best-free-project-management-apps-for-web-developers.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T04:16:07Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668792181">
+<id>http://localhost:4000/posts/how-to-install-materialize-css-in-angular</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-install-materialize-css-in-angular</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T04:16:52Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7668792996">
+<id>http://localhost:4000/posts/adding-real-favicon-generator-to-your-angular-app</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/adding-real-favicon-generator-to-your-angular-app</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T04:17:52Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669434267">
+<id>http://localhost:4000/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T14:36:00Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669506060">
+<id>https://blog.colinstodd.com/posts/how-to-use-ngif-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://blog.colinstodd.com/posts/how-to-use-ngif-in-angular.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T15:26:57Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669555793">
+<id>https://colinstodd.com/posts/adding-real-favicon-generator-to-your-angular-app.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/adding-real-favicon-generator-to-your-angular-app.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T16:01:52Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669579745">
+<id>https://colinstodd.com/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T16:18:02Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669691708">
+<id>https://colinstodd.com/posts/how-to-install-bootstrap-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/how-to-install-bootstrap-in-angular.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T17:40:04Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669702482">
+<id>https://colinstodd.com/posts/how-to-add-uikit-to-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/how-to-add-uikit-to-angular.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T17:48:17Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669703481">
+<id>https://colinstodd.com/posts/how-to-install-materialize-css-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/how-to-install-materialize-css-in-angular.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T17:49:04Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669704376">
+<id>https://colinstodd.com/posts/firebase-hosting-setup-complete-error-fix.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/firebase-hosting-setup-complete-error-fix.html</link>
+<title>                                Colin Stodd    </title>
+<message />
+<createdAt>2019-10-09T17:49:46Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670037629">
+<id>http://localhost:4000/posts/firebase-hosting-setup-complete-error-fix.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/firebase-hosting-setup-complete-error-fix.html</link>
+<title>Firebase Hosting Setup Complete Error Fix | Colin Stodd</title>
+<message />
+<createdAt>2019-10-09T23:00:15Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670042762">
+<id>http://localhost:4000/posts/adding-mongodb-to-keystonejs.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/adding-mongodb-to-keystonejs.html</link>
+<title>Adding MongoDB To KeystoneJS | Colin Stodd</title>
+<message />
+<createdAt>2019-10-09T23:05:49Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670069961">
+<id>https://colinstodd.com/posts/es6-class-example.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/es6-class-example.html</link>
+<title>ES6 Class Example | Colin Stodd</title>
+<message />
+<createdAt>2019-10-09T23:39:12Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670070159">
+<id>https://colinstodd.com/posts/how-to-create-a-username-from-an-email-address-using-angularfire2.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/how-to-create-a-username-from-an-email-address-using-angularfire2.html</link>
+<title>How To Create A Username From An Email Address Using AngularFire2 | Colin Stodd</title>
+<message />
+<createdAt>2019-10-09T23:39:28Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670143219">
+<id>https://colinstodd.com/posts/two-different-ways-to-use-ngclass-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/two-different-ways-to-use-ngclass-in-angular.html</link>
+<title>Two Different Ways To Use NgClass In Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-10T01:10:56Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670143582">
+<id>https://colinstodd.com/projects/custom-cms.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/custom-cms.html</link>
+<title>Custom CMS | Colin Stodd</title>
+<message />
+<createdAt>2019-10-10T01:11:21Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670178804">
+<id>https://colinstodd.com/projects/blogularfire.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/blogularfire.html</link>
+<title>BlogularFire | Colin Stodd</title>
+<message />
+<createdAt>2019-10-10T01:57:59Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670179060">
+<id>https://colinstodd.com/projects/my-gift-network.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/my-gift-network.html</link>
+<title>My Gift Network | Colin Stodd</title>
+<message />
+<createdAt>2019-10-10T01:58:18Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7670832792">
+<id>https://colinstodd.com/posts/typescript-and-es6-babel-boilerplates.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/typescript-and-es6-babel-boilerplates.html</link>
+<title>TypeScript And ES6 Babel Boilerplates | Colin Stodd</title>
+<message />
+<createdAt>2019-10-10T14:16:47Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671616010">
+<id>http://localhost:4000/posts/things-you-should-know-about-css.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/things-you-should-know-about-css.html</link>
+<title>Things You Should Know About CSS | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T02:56:02Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671616693">
+<id>http://localhost:4000/posts/es6-subclass-example.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/es6-subclass-example.html</link>
+<title>ES6 Subclass Example | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T02:57:00Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671631582">
+<id>https://colinstodd.com/posts/lowdown.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/lowdown.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T03:13:49Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671685959">
+<id>https://colinstodd.com/posts/best-free-project-management-apps-for-web-developers.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/best-free-project-management-apps-for-web-developers.html</link>
+<title>Best Free Project Management Apps for Web Developers | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:20:44Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671690943">
+<id>http://localhost:4000/projects/blogularfire.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/blogularfire.html</link>
+<title>BlogularFire | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:26:34Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671691204">
+<id>http://localhost:4000/projects/custom-cms.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/custom-cms.html</link>
+<title>Custom CMS | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:26:50Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671691314">
+<id>http://localhost:4000/projects/reactjs-temperature-search.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/reactjs-temperature-search.html</link>
+<title>YouGeReactJS Temperature Search | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:26:57Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671691366">
+<id>http://localhost:4000/posts/lowdown.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/lowdown.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:27:01Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671701159">
+<id>http://localhost:4000/posts/2014/10/16/new-job.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/2014/10/16/new-job.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:38:56Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671701169">
+<id>http://localhost:4000/posts/typescript-and-es6-babel-boilerplates.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/typescript-and-es6-babel-boilerplates.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:38:57Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671701180">
+<id>http://localhost:4000/posts/es6-class-example.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/es6-class-example.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:38:58Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671701218">
+<id>http://localhost:4000/posts/introductory-flight-getting-my-pilots-license.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/introductory-flight-getting-my-pilots-license.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:39:01Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671701315">
+<id>http://localhost:4000/posts/free-resources-to-learn-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/free-resources-to-learn-angular.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:39:09Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671701334">
+<id>http://localhost:4000/posts/how-to-create-a-username-from-an-email-address-using-angularfire2.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-create-a-username-from-an-email-address-using-angularfire2.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:39:10Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671701360">
+<id>http://localhost:4000/posts/how-to-use-ngif-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/how-to-use-ngif-in-angular.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:39:12Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7671701388">
+<id>http://localhost:4000/posts/building-angular-apps-with-webstorm.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/building-angular-apps-with-webstorm.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T04:39:14Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7672382147">
+<id>https://colinstodd.com/posts/things-you-should-know-about-css.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/things-you-should-know-about-css.html</link>
+<title>Things You Should Know About CSS | Colin Stodd</title>
+<message />
+<createdAt>2019-10-11T16:00:01Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7675439765">
+<id>https://colinstodd.com/posts/2014/10/16/new-job.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/2014/10/16/new-job.html</link>
+<title>New Job | Colin Stodd</title>
+<message />
+<createdAt>2019-10-14T05:53:07Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7676076173">
+<id>https://colinstodd.com/projects/yougetme.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/yougetme.html</link>
+<title>YouGetMe | Colin Stodd</title>
+<message />
+<createdAt>2019-10-14T16:04:04Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7676303288">
+<id>http://localhost:4000/posts/phish-dicks-colorado-posters-by-tommy-b.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/phish-dicks-colorado-posters-by-tommy-b.html</link>
+<title>Phish Dicks Colorado Posters By Tommy B | Colin Stodd</title>
+<message />
+<createdAt>2019-10-14T18:58:35Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7678979876">
+<id>https://colinstodd.com/posts/phish-dicks-colorado-posters-by-tommy-b.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/phish-dicks-colorado-posters-by-tommy-b.html</link>
+<title>Phish Dicks Colorado Posters By Tommy B | Colin Stodd</title>
+<message />
+<createdAt>2019-10-16T16:18:03Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7679612379">
+<id>http://localhost:4000/code/2019/10/15/common-restful-functions-in-angular-firestore.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/code/2019/10/15/common-restful-functions-in-angular-firestore.html</link>
+<title>RESTful CRUD functions used in a Angular Firestore Application | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T01:40:16Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7679652181">
+<id>http://localhost:4000/code/2019/10/16/basic-crud-operations-used-in-a-angularfirestore-application.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/code/2019/10/16/basic-crud-operations-used-in-a-angularfirestore-application.html</link>
+<title>Basic CRUD Operations Used In A AngularFirestore Application | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T02:26:11Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7679688582">
+<id>https://colinstodd.com/code/2019/10/16/basic-crud-operations-used-in-a-angularfirestore-application.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/code/2019/10/16/basic-crud-operations-used-in-a-angularfirestore-application.html</link>
+<title>Basic CRUD Operations Used In A AngularFirestore Application | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T03:09:09Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7679692341">
+<id>https://colinstodd.com/posts/basic-crud-operations-used-in-a-angularfirestore-application.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/basic-crud-operations-used-in-a-angularfirestore-application.html</link>
+<title>Basic CRUD Operations Used In A AngularFirestore Application | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T03:14:08Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7679700974">
+<id>https://colinstodd.com/posts/basic-crud-operations-used-in-a-angular-firestore-application.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/basic-crud-operations-used-in-a-angular-firestore-application.html</link>
+<title>Basic CRUD Operations Used In A Angular Firestore Application | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T03:25:40Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7679704408">
+<id>https://colinstodd.com/posts/crud-operations-in-a-angular-firestore-app.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/crud-operations-in-a-angular-firestore-app.html</link>
+<title>CRUD Operations In A Angular Firestore App | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T03:30:10Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680437493">
+<id>http://localhost:4000/posts/crud-operations-in-a-angular-firestore-app.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/crud-operations-in-a-angular-firestore-app.html</link>
+<title>CRUD Operations In A Angular Firestore App | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T15:39:59Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680653889">
+<id>http://localhost:4000/posts/code/how-to-install-bootstrap-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/how-to-install-bootstrap-in-angular.html</link>
+<title>How to install Bootstrap in Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:32:57Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680662866">
+<id>http://localhost:4000/posts/code/crud-operations-in-a-angular-firestore-app.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/crud-operations-in-a-angular-firestore-app.html</link>
+<title>CRUD Operations In A Angular Firestore App | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:40:05Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680662974">
+<id>http://localhost:4000/posts/code/how-to-add-uikit-to-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/how-to-add-uikit-to-angular.html</link>
+<title>How to add UIKit to Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:40:11Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680663256">
+<id>http://localhost:4000/posts/code/free-resources-to-learn-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/free-resources-to-learn-angular.html</link>
+<title>Free Resources To Learn Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:40:25Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680663409">
+<id>http://localhost:4000/posts/code/how-to-use-ngif-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/how-to-use-ngif-in-angular.html</link>
+<title>How To Use *ngIf in Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:40:33Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680663808">
+<id>http://localhost:4000/posts/tech/best-free-project-management-apps-for-web-developers.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/tech/best-free-project-management-apps-for-web-developers.html</link>
+<title>Best Free Project Management Apps for Web Developers | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:40:51Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680667288">
+<id>https://colinstodd.com/posts/code/things-you-should-know-about-css.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/things-you-should-know-about-css.html</link>
+<title>Things You Should Know About CSS | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:43:51Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680667462">
+<id>https://colinstodd.com/posts/code/adding-real-favicon-generator-to-your-angular-app.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/adding-real-favicon-generator-to-your-angular-app.html</link>
+<title>Adding Real Favicon Generator To Your Angular App | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:43:59Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680667777">
+<id>https://colinstodd.com/posts/code/crud-operations-in-a-angular-firestore-app.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/crud-operations-in-a-angular-firestore-app.html</link>
+<title>CRUD Operations In A Angular Firestore App | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T18:44:15Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680720994">
+<id>https://colinstodd.com/posts/code/how-to-add-dotenv-to-webpack.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/how-to-add-dotenv-to-webpack.html</link>
+<title>How To Add DotEnv To Webpack | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T19:28:29Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680726957">
+<id>https://colinstodd.com/posts/code/introductory-flight-getting-my-pilots-license.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/introductory-flight-getting-my-pilots-license.html</link>
+<title>My Introductory Flight Getting My Pilots License | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T19:33:17Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7680732070">
+<id>https://colinstodd.com/posts/tech/best-free-project-management-apps-for-web-developers.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/tech/best-free-project-management-apps-for-web-developers.html</link>
+<title>Best Free Project Management Apps for Web Developers | Colin Stodd</title>
+<message />
+<createdAt>2019-10-17T19:37:34Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681018536">
+<id>http://localhost:4000/projects/angular/blogularfire.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/angular/blogularfire.html</link>
+<title>BlogularFire | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T00:36:24Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681114842">
+<id>http://localhost:4000/projects/angular/custom-cms.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/angular/custom-cms.html</link>
+<title>Custom CMS | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T02:25:41Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681114922">
+<id>http://localhost:4000/projects/ruby-on-rails/lowdown.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/ruby-on-rails/lowdown.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T02:25:46Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681185800">
+<id>http://localhost:4000/projects/react/reactjs-temperature-search.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/react/reactjs-temperature-search.html</link>
+<title>ReactJS Temperature Search | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T03:51:45Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681187207">
+<id>http://localhost:4000/projects/angular/yougetme.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/angular/yougetme.html</link>
+<title>YouGetMe | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T03:53:44Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681192666">
+<id>http://localhost:4000/projects/angular/my-gift-network.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/angular/my-gift-network.html</link>
+<title>My Gift Network | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T04:00:53Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681200136">
+<id>https://colinstodd.com/posts/code/tips-and-tricks-for-angular-in-webstorm.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/tips-and-tricks-for-angular-in-webstorm.html</link>
+<title>Tips And Tricks For Angular In Webstorm | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T04:09:29Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681200266">
+<id>https://colinstodd.com/projects/angular/blogularfire.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/angular/blogularfire.html</link>
+<title>BlogularFire | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T04:09:39Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681200424">
+<id>https://colinstodd.com/projects/ruby-on-rails/lowdown.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/ruby-on-rails/lowdown.html</link>
+<title>Lowdown | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T04:09:52Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681200591">
+<id>https://colinstodd.com/projects/angular/custom-cms.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/angular/custom-cms.html</link>
+<title>Custom CMS | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T04:10:06Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681274481">
+<id>https://colinstodd.com/projects/angular/my-gift-network.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/angular/my-gift-network.html</link>
+<title>My Gift Network | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T05:38:48Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681274943">
+<id>https://colinstodd.com/projects/angular/yougetme.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/angular/yougetme.html</link>
+<title>YouGetMe | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T05:39:22Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681755315">
+<id>http://localhost:4000/posts/code/crud-functions-for-your-angular-firestore-apps.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/crud-functions-for-your-angular-firestore-apps.html</link>
+<title>CRUD Functions For Your Angular Firestore Apps | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T13:34:59Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681757693">
+<id>http://localhost:4000/posts/code/common-angular-firestore-crud-functions.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/common-angular-firestore-crud-functions.html</link>
+<title>Common Angular Firestore CRUD Functions | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T13:36:58Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681759768">
+<id>https://colinstodd.com/posts/code/common-angular-firestore-crud-functions.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/common-angular-firestore-crud-functions.html</link>
+<title>Common Angular Firestore CRUD Functions | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T13:38:48Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681854983">
+<id>https://colinstodd.com/posts/personal/phish-dicks-colorado-posters-by-tommy-b.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/personal/phish-dicks-colorado-posters-by-tommy-b.html</link>
+<title>Phish Dicks Colorado Posters By Tommy B | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T14:53:08Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681856456">
+<id>http://localhost:4000/posts/personal/phish-dicks-colorado-posters-by-tommy-b.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/personal/phish-dicks-colorado-posters-by-tommy-b.html</link>
+<title>Phish Dicks Colorado Posters By Tommy B | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T14:54:26Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681857571">
+<id>http://localhost:4000/posts/code/introductory-flight-getting-my-pilots-license.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/introductory-flight-getting-my-pilots-license.html</link>
+<title>My Introductory Flight Getting My Pilots License | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T14:55:26Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681862474">
+<id>http://localhost:4000/posts/personal/personal/2014-10-16-new-job</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/personal/personal/2014-10-16-new-job</link>
+<title>New Job | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T14:59:27Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681864010">
+<id>http://localhost:4000/posts/personal/new-job.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/personal/new-job.html</link>
+<title>New Job | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T15:00:44Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681868490">
+<id>https://colinstodd.com/posts/personal/new-job.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/personal/new-job.html</link>
+<title>New Job | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T15:04:13Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7681895348">
+<id>https://colinstodd.com/posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</link>
+<title>Download iCal and Google calendar for Phish tour dates and shows | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T15:24:18Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7682355606">
+<id>https://colinstodd.com/posts/code/two-different-ways-to-use-ngclass-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/two-different-ways-to-use-ngclass-in-angular.html</link>
+<title>Two Different Ways To Use NgClass In Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T21:58:01Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7682356031">
+<id>https://colinstodd.com/posts/code/how-to-add-uikit-to-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/how-to-add-uikit-to-angular.html</link>
+<title>How to add UIKit to Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T21:58:31Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7682405574">
+<id>http://localhost:4000/projects/jekyll/colinstodd-com-jekyll.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/projects/jekyll/colinstodd-com-jekyll.html</link>
+<title>ColinStodd.com Jekyll | Colin Stodd</title>
+<message />
+<createdAt>2019-10-18T22:50:06Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7682583146">
+<id>https://colinstodd.com/posts/code/how-to-install-materialize-css-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/how-to-install-materialize-css-in-angular.html</link>
+<title>How To Install Materialize CSS In Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-19T03:06:16Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7682606471">
+<id>http://localhost:4000/posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html</link>
+<title>Download iCal and Google calendar for Phish tour dates and shows | Colin Stodd</title>
+<message />
+<createdAt>2019-10-19T03:41:41Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7684849121">
+<id>https://colinstodd.com/projects/jekyll/colinstodd-com-jekyll.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/projects/jekyll/colinstodd-com-jekyll.html</link>
+<title>ColinStodd.com Jekyll | Colin Stodd</title>
+<message />
+<createdAt>2019-10-20T21:29:31Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7684985791">
+<id>https://colinstodd.com/posts/code/es6-subclass-example.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/es6-subclass-example.html</link>
+<title>ES6 Subclass Example | Colin Stodd</title>
+<message />
+<createdAt>2019-10-21T00:19:38Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7685170302">
+<id>https://colinstodd.com/posts/code/building-angular-apps-with-webstorm.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/building-angular-apps-with-webstorm.html</link>
+<title>Building Angular Apps With Webstorm | Colin Stodd</title>
+<message />
+<createdAt>2019-10-21T04:20:26Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7686795299">
+<id>https://colinstodd.com/posts/code/how-to-use-ngif-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/how-to-use-ngif-in-angular.html</link>
+<title>How To Use *ngIf in Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-22T09:23:07Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7690545973">
+<id>http://localhost:4000/posts/code/_drafts/posts/2019-10-16-basic-crud-operations-used-in-a-angularfirestore-application</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/_drafts/posts/2019-10-16-basic-crud-operations-used-in-a-angularfirestore-application</link>
+<title>Basic CRUD Operations Used In A AngularFirestore Application | Colin Stodd</title>
+<message />
+<createdAt>2019-10-25T00:36:15Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7690546910">
+<id>http://localhost:4000/posts/code/fix-macos-catalina-fonts-after-upgrade.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/fix-macos-catalina-fonts-after-upgrade.html</link>
+<title>Fix MacOS Catalina Fonts After Upgrade | Colin Stodd</title>
+<message />
+<createdAt>2019-10-25T00:37:38Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7690607508">
+<id>https://colinstodd.com/posts/code/fix-macos-catalina-fonts-after-upgrade.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/fix-macos-catalina-fonts-after-upgrade.html</link>
+<title>Fix MacOS Catalina Fonts After Upgrade | Colin Stodd</title>
+<message />
+<createdAt>2019-10-25T01:54:56Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7691273748">
+<id>https://colinstodd.com/posts/code/firebase-hosting-setup-complete-error-fix.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/firebase-hosting-setup-complete-error-fix.html</link>
+<title>Firebase Hosting Setup Complete Error Fix | Colin Stodd</title>
+<message />
+<createdAt>2019-10-25T14:31:48Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7697565866">
+<id>https://colinstodd.com/posts/code/how-to-install-bootstrap-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/how-to-install-bootstrap-in-angular.html</link>
+<title>How to install Bootstrap in Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-10-30T06:15:03Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7700618322">
+<id>https://colinstodd.com/posts/code/adding-mongodb-to-keystonejs.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/adding-mongodb-to-keystonejs.html</link>
+<title>Adding MongoDB To KeystoneJS | Colin Stodd</title>
+<message />
+<createdAt>2019-11-01T09:29:06Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7703951487">
+<id>https://colinstodd.com/posts/code/typescript-and-es6-babel-boilerplates.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/typescript-and-es6-babel-boilerplates.html</link>
+<title>TypeScript And ES6 Babel Boilerplates | Colin Stodd</title>
+<message />
+<createdAt>2019-11-03T23:15:24Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7767581874">
+<id>https://colinstodd.com/posts/code/free-resources-to-learn-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/free-resources-to-learn-angular.html</link>
+<title>Free Resources To Learn Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-12-16T23:27:25Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7770533251">
+<id>http://localhost:4000/posts/code/how-to-install-materialize-css-in-angular.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/how-to-install-materialize-css-in-angular.html</link>
+<title>How To Install Materialize CSS In Angular | Colin Stodd</title>
+<message />
+<createdAt>2019-12-18T18:13:46Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7770534091">
+<id>http://localhost:4000/posts/code/things-you-should-know-about-css.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/things-you-should-know-about-css.html</link>
+<title>Things You Should Know About CSS | Colin Stodd</title>
+<message />
+<createdAt>2019-12-18T18:14:23Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7814604784">
+<id>http://localhost:4000/posts/code/adding-real-favicon-generator-to-your-angular-app.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/adding-real-favicon-generator-to-your-angular-app.html</link>
+<title>Adding Real Favicon Generator To Your Angular App | Colin Stodd</title>
+<message />
+<createdAt>2020-01-13T00:47:26Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7814633266">
+<id>http://localhost:4000/posts/code/how-to-add-dotenv-to-webpack.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/how-to-add-dotenv-to-webpack.html</link>
+<title>How To Add DotEnv To Webpack | Colin Stodd</title>
+<message />
+<createdAt>2020-01-13T01:12:33Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7814633625">
+<id>http://localhost:4000/posts/code/adding-mongodb-to-keystonejs.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/adding-mongodb-to-keystonejs.html</link>
+<title>Adding MongoDB To KeystoneJS | Colin Stodd</title>
+<message />
+<createdAt>2020-01-13T01:12:53Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7814634754">
+<id>http://localhost:4000/posts/code/how-to-create-a-username-from-an-email-address-using-angularfire2.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/how-to-create-a-username-from-an-email-address-using-angularfire2.html</link>
+<title>How To Create A Username From An Email Address Using AngularFire2 | Colin Stodd</title>
+<message />
+<createdAt>2020-01-13T01:13:52Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7814637012">
+<id>http://localhost:4000/posts/code/typescript-and-es6-babel-boilerplates.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/typescript-and-es6-babel-boilerplates.html</link>
+<title>TypeScript And ES6 Babel Boilerplates | Colin Stodd</title>
+<message />
+<createdAt>2020-01-13T01:15:58Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7816821185">
+<id>https://colinstodd.com/posts/code/add-chrome-extensions-to-opera-browser.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/add-chrome-extensions-to-opera-browser.html</link>
+<title>Add Chrome Extensions To Opera Browser | Colin Stodd</title>
+<message />
+<createdAt>2020-01-14T06:56:42Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7827950437">
+<id>http://localhost:4000/posts/personal/_drafts/posts/2020-01-20-list-of-my-favorite-osx-applications</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/personal/_drafts/posts/2020-01-20-list-of-my-favorite-osx-applications</link>
+<title>List of my favorite OSX applications | Colin Stodd</title>
+<message />
+<createdAt>2020-01-20T22:56:03Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7828054204">
+<id>http://localhost:4000/posts/personal/code/2020-01-20-list-of-my-favorite-osx-applications</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/personal/code/2020-01-20-list-of-my-favorite-osx-applications</link>
+<title>List of my favorite OSX applications | Colin Stodd</title>
+<message />
+<createdAt>2020-01-21T00:32:30Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7828056676">
+<id>http://localhost:4000/posts/tech/list-of-my-favorite-osx-applications.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/tech/list-of-my-favorite-osx-applications.html</link>
+<title>List of my favorite OSX applications | Colin Stodd</title>
+<message />
+<createdAt>2020-01-21T00:35:04Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7828131295">
+<id>https://colinstodd.com/posts/tech/list-of-my-favorite-osx-applications.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/tech/list-of-my-favorite-osx-applications.html</link>
+<title>List of my favorite OSX applications | Colin Stodd</title>
+<message />
+<createdAt>2020-01-21T01:48:59Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7828324035">
+<id>https://colinstodd.com/posts/code/how-to-create-a-username-from-an-email-address-using-angularfire2.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/how-to-create-a-username-from-an-email-address-using-angularfire2.html</link>
+<title>How To Create A Username From An Email Address Using AngularFire2 | Colin Stodd</title>
+<message />
+<createdAt>2020-01-21T04:53:38Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7846787595">
+<id>http://localhost:4000/posts/code/pretty-print-json-in-dart.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>http://localhost:4000/posts/code/pretty-print-json-in-dart.html</link>
+<title>Pretty Print Json in Dart | Colin Stodd</title>
+<message />
+<createdAt>2020-02-01T04:32:16Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7847607007">
+<id>https://colinstodd.com/posts/code/pretty-print-json-in-dart.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/pretty-print-json-in-dart.html</link>
+<title>Pretty Print Json in Dart | Colin Stodd</title>
+<message />
+<createdAt>2020-02-01T17:04:24Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7868071321">
+<id>https://colinstodd.com/posts/code/es6-class-example.html</id>
+<forum>colinstodd-v2</forum>
+<category dsq:id="6573439" />
+<link>https://colinstodd.com/posts/code/es6-class-example.html</link>
+<title>ES6 Class Example | Colin Stodd</title>
+<message />
+<createdAt>2020-02-13T03:43:44Z</createdAt>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<post dsq:id="3414093471">
+<id />
+<message><![CDATA[<p>Testing the comments section. This is on the iCal phish post.</p>]]></message>
+<createdAt>2017-07-13T03:11:37Z</createdAt>
+<isDeleted>true</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="5910762207" />
+</post>
+<post dsq:id="3415336004">
+<id />
+<message><![CDATA[<p>thank you!</p>]]></message>
+<createdAt>2017-07-13T20:26:58Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Rajneesh Aggarwal</name>
+<isAnonymous>false</isAnonymous>
+<username>rajneeshaggarwal</username>
+</author>
+<thread dsq:id="5910762207" />
+</post>
+<post dsq:id="3549420380">
+<id />
+<message><![CDATA[<p>Per request I have added a reminder to buy tickets on Friday for the NYE shows, and I will continue to update this calendar in the future.</p>]]></message>
+<createdAt>2017-10-04T02:02:19Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="5910762207" />
+</post>
+<post dsq:id="3576503397">
+<id />
+<message><![CDATA[<p>this doesn't work, you douchebag...</p>]]></message>
+<createdAt>2017-10-20T16:04:34Z</createdAt>
+<isDeleted>true</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>stretavkaBB stretavkaBB</name>
+<isAnonymous>false</isAnonymous>
+<username>stretavkabbstretavkabb</username>
+</author>
+<thread dsq:id="5996302974" />
+</post>
+<post dsq:id="3576638643">
+<id />
+<message><![CDATA[<p>It would be helpful if you said what didn't work? But I’ll just let you figure it out on your own. Appreciate the name calling 👍🏼</p>]]></message>
+<createdAt>2017-10-20T17:29:01Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="5996302974" />
+<parent dsq:id="3576503397" />
+</post>
+<post dsq:id="3576652748">
+<id />
+<message><![CDATA[<p>Google took you to a dead link. I'l remove it. but here is how you do it <a href="http://www.colinstodd.com/blog/post/how-to-install-bootstrap-4-beta-in-angular-4-as-a-dependency" rel="nofollow noopener" title="http://www.colinstodd.com/blog/post/how-to-install-bootstrap-4-beta-in-angular-4-as-a-dependency">http://www.colinstodd.com/b...</a></p>]]></message>
+<createdAt>2017-10-20T17:37:43Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="5996302974" />
+<parent dsq:id="3576503397" />
+</post>
+<post dsq:id="3577494763">
+<id />
+<message><![CDATA[<p>thanks for the tutorial just keep sharing ur knowledge</p>]]></message>
+<createdAt>2017-10-21T06:08:56Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Niyongabo Eric</name>
+<isAnonymous>false</isAnonymous>
+<username>niyongaboeric</username>
+</author>
+<thread dsq:id="6229105291" />
+</post>
+<post dsq:id="3581012821">
+<id />
+<message><![CDATA[<p>Thank you so much!</p>]]></message>
+<createdAt>2017-10-23T18:16:34Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Luis Elias</name>
+<isAnonymous>false</isAnonymous>
+<username>disqus_A3Du5HSjor</username>
+</author>
+<thread dsq:id="6229105291" />
+</post>
+<post dsq:id="3584843950">
+<id />
+<message><![CDATA[<p>What about if we use systemjs?</p>]]></message>
+<createdAt>2017-10-25T23:27:10Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Long Field</name>
+<isAnonymous>false</isAnonymous>
+<username>long_field</username>
+</author>
+<thread dsq:id="6229105291" />
+</post>
+<post dsq:id="3619879579">
+<id />
+<message><![CDATA[<p>Thanks a lot bro!</p>]]></message>
+<createdAt>2017-11-17T01:06:26Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Lahid Baker</name>
+<isAnonymous>false</isAnonymous>
+<username>lahidbaker</username>
+</author>
+<thread dsq:id="6229105291" />
+</post>
+<post dsq:id="3634499470">
+<id />
+<message><![CDATA[<p>I am following the same process to connect mlab database with my keystone.js but its saying invalid mongodb uri</p>]]></message>
+<createdAt>2017-11-27T07:46:03Z</createdAt>
+<isDeleted>true</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Bilal</name>
+<isAnonymous>false</isAnonymous>
+<username>disqus_KI0xxLGoau</username>
+</author>
+<thread dsq:id="5664936996" />
+</post>
+<post dsq:id="3634499709">
+<id />
+<message><![CDATA[<p>I am following the same process to connect mlab database with my keystone.js but its saying invalid mongodb uri missing hostname</p>]]></message>
+<createdAt>2017-11-27T07:46:30Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Bilal</name>
+<isAnonymous>false</isAnonymous>
+<username>disqus_KI0xxLGoau</username>
+</author>
+<thread dsq:id="5664936996" />
+</post>
+<post dsq:id="3691411276">
+<id />
+<message><![CDATA[<p>It works !</p>]]></message>
+<createdAt>2018-01-04T15:11:47Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>aicha ta</name>
+<isAnonymous>false</isAnonymous>
+<username>aichata</username>
+</author>
+<thread dsq:id="6229105291" />
+</post>
+<post dsq:id="3706038391">
+<id />
+<message><![CDATA[<p>Thanks for the tutorial. FYI, one can now use the syntax <code>@import ~bootstrap/scss/bootstrap</code> with Angular CLI to simplify SASS imports from <code>node_modules</code> packages.</p><p>In this configuration, how would one override the value for Bootstrap variables to change default Bootstrap stylings when using SASS? For example if a different <code>$font-size-base</code> were desired to reset the global base font size?</p>]]></message>
+<createdAt>2018-01-13T15:05:10Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Keith Gillette</name>
+<isAnonymous>false</isAnonymous>
+<username>keith_gillette</username>
+</author>
+<thread dsq:id="6229105291" />
+</post>
+<post dsq:id="3710740486">
+<id />
+<message><![CDATA[<p>If I understand what you're asking, it's the order in which you are calling each file. So the import file placed below Bootstrap will take precedence in the DOM. So placing your @import "custom" below @import "../../node_modules/bootstrap/scss/bootstrap". will overwrite/take precedence over @import "../../node_modules/bootstrap/scss/bootstrap". It's been a while since I've used the SASS config, are you having issues? After work today I can try and recreate the issue?</p>]]></message>
+<createdAt>2018-01-16T15:55:33Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="6229105291" />
+<parent dsq:id="3706038391" />
+</post>
+<post dsq:id="3711037539">
+<id />
+<message><![CDATA[<p>Thanks for the reply! I think I've figured out how to override Bootstrap variables. Here's what I've done in our project:</p><p>• Removed Bootstrap from <code>.angular-cli.json</code>. (Only load <code>styles.scss</code> in <code>.angular-cli.json</code>.<br>• In <code>variables.scss</code>, override any Bootstrap 4 variables. (Also <code>@import "~bootstrap/scss/functions";</code> &amp; <code>@import "~bootstrap/scss/variables";</code> to make them available in overridden &amp; project-specific variables.)<br>• In <code>styles.scss</code>, place <code>@import variables.scss</code> <em>before</em> <code>@import ~bootstrap/scss/bootstrap;</code> so that the overridden variable values are used when processing Bootstrap SASS.</p>]]></message>
+<createdAt>2018-01-16T18:53:11Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>true</isSpam>
+<author>
+<name>Keith Gillette</name>
+<isAnonymous>false</isAnonymous>
+<username>keith_gillette</username>
+</author>
+<thread dsq:id="6229105291" />
+<parent dsq:id="3710740486" />
+</post>
+<post dsq:id="3722526332">
+<id />
+<message><![CDATA[<p>do you have any idea how to use bootswatch 4 themes scss version in angular 5?</p>]]></message>
+<createdAt>2018-01-23T18:49:01Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Adam Plucinski</name>
+<isAnonymous>false</isAnonymous>
+<username>adamplucinski</username>
+</author>
+<thread dsq:id="6229105291" />
+<parent dsq:id="3710740486" />
+</post>
+<post dsq:id="3723093014">
+<id />
+<message><![CDATA[<p>I think you could create a src/vendor/bootswatch directory (or whatever you want). Copy and paste the files from bootswatch website into that directory. ie. main.scss, _variables.scss, etc (Forget which ones they are) into that folder,  and just import them into your styles.scss folder. like  @import "../../vendor/bootswatch/_vendor.scss" etc etc. Im going off of memory. Just make sure you order the files in the correct order. You might have to play with it.</p><p>You could also follow this tutorial which has more in depth sass explanation; but instead of importing files from node_modules you'd just import them from wherever you put your bootswatch files. I believe you need to also include vanilla bootstrap to work with bootswatch. <a href="https://scotch.io/tutorials/using-sass-with-the-angular-cli" rel="nofollow noopener" title="https://scotch.io/tutorials/using-sass-with-the-angular-cli">https://scotch.io/tutorials...</a></p><p>The idea is to import your bootswatch files into styles.scss, because that folder will be compiled. Hope this helps.</p>]]></message>
+<createdAt>2018-01-24T00:54:25Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="6229105291" />
+<parent dsq:id="3722526332" />
+</post>
+<post dsq:id="3737344038">
+<id />
+<message><![CDATA[<p>Hi Colin. Thanks and congratulations for your article, it really helped me!<br>I let you know that i've installed bootstrap, popper and jquery without version specification and I had a problem for start the app because I had to add the "dist" folder at the scripts inclussion of jquery. Finally the correct was: "../node_modules/jquery/dist/jquery.min.js"</p>]]></message>
+<createdAt>2018-02-01T16:29:02Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Diego Carrasco</name>
+<isAnonymous>false</isAnonymous>
+<username>disqus_yFaLH7YQm1</username>
+</author>
+<thread dsq:id="6229105291" />
+</post>
+<post dsq:id="3737404665">
+<id />
+<message><![CDATA[<p>Thanks for the comment, different versions of jQuery have the files organized differently. Glad to hear you got it working. Maybe your comment will help future on-lookers that decide to install without a version number.</p>]]></message>
+<createdAt>2018-02-01T17:02:47Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="6229105291" />
+<parent dsq:id="3737344038" />
+</post>
+<post dsq:id="3874811415">
+<id />
+<message><![CDATA[<p>thanks a lot u r super intelligent</p>]]></message>
+<createdAt>2018-04-27T02:20:11Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>shubhojit</name>
+<isAnonymous>false</isAnonymous>
+<username>shubhojit</username>
+</author>
+<thread dsq:id="6229105291" />
+</post>
+<post dsq:id="3874869684">
+<id />
+<message><![CDATA[<p>I’m glad you found it helpful!</p>]]></message>
+<createdAt>2018-04-27T03:21:08Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="6229105291" />
+<parent dsq:id="3874811415" />
+</post>
+<post dsq:id="3941046733">
+<id />
+<message><![CDATA[<p>Thanks, for helping out. this worked for me</p>]]></message>
+<createdAt>2018-06-12T13:32:46Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Harrison Ekpobimi</name>
+<isAnonymous>false</isAnonymous>
+<username>harrisonekpobimi</username>
+</author>
+<thread dsq:id="5664936996" />
+</post>
+<post dsq:id="3941104618">
+<id />
+<message><![CDATA[<p>Glad to hear, and thanks for letting me know! This is a slightly older post so I've been meaning to replicate to make sure it's up to date (still works). Nevertheless, thanks for letting me know, much appreciated!</p>]]></message>
+<createdAt>2018-06-12T14:15:39Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="5664936996" />
+<parent dsq:id="3941046733" />
+</post>
+<post dsq:id="3945623944">
+<id />
+<message><![CDATA[<p>i have an issue, when i view my site on mobile the render view displays blank. do you know the fix</p>]]></message>
+<createdAt>2018-06-15T12:37:36Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Harrison Ekpobimi</name>
+<isAnonymous>false</isAnonymous>
+<username>harrisonekpobimi</username>
+</author>
+<thread dsq:id="5664936996" />
+<parent dsq:id="3941104618" />
+</post>
+<post dsq:id="3946146000">
+<id />
+<message><![CDATA[<p>Im not sure. I'd have to know more information about what you're developing. It could be a number of things.</p>]]></message>
+<createdAt>2018-06-15T18:46:57Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="5664936996" />
+<parent dsq:id="3945623944" />
+</post>
+<post dsq:id="3948367945">
+<id />
+<message><![CDATA[<p>I was able to fix it.. <br>How can a sort search table be added to keystone. If you have an idea, it will be of great help to me.<br>Thanks</p>]]></message>
+<createdAt>2018-06-17T16:23:20Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Harrison Ekpobimi</name>
+<isAnonymous>false</isAnonymous>
+<username>harrisonekpobimi</username>
+</author>
+<thread dsq:id="5664936996" />
+<parent dsq:id="3946146000" />
+</post>
+<post dsq:id="3952649772">
+<id />
+<message><![CDATA[<p>Doesn't seem to work for me, process.env is just empty regardless of whats in my .env file.</p>]]></message>
+<createdAt>2018-06-20T13:44:05Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>AndreFigueira</name>
+<isAnonymous>false</isAnonymous>
+<username>AndreFigueira</username>
+</author>
+<thread dsq:id="6575939396" />
+</post>
+<post dsq:id="3974665837">
+<id />
+<message><![CDATA[<p>Thank you so much ..you saved my day!</p>]]></message>
+<createdAt>2018-07-05T10:39:20Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Pankaj Kumar</name>
+<isAnonymous>false</isAnonymous>
+<username>disqus_yt3Dc291VC</username>
+</author>
+<thread dsq:id="6758590547" />
+</post>
+<post dsq:id="4003611782">
+<id />
+<message><![CDATA[<p>As of Angular 6 the path has change.<br>Now only one . before the /</p><p>Old:<br>"styles": [<br>        "../node_modules/materialize-css/dist/css/materialize.css",<br>        "styles.css"<br>      ],<br>      "scripts": [<br>        "../node_modules/jquery/dist/jquery.min.js",<br>        "../node_modules/materialize-css/dist/js/materialize.js"<br>      ],</p><p>New:<br>"styles": [<br>        "./node_modules/materialize-css/dist/css/materialize.css",<br>        "styles.css"<br>      ],<br>      "scripts": [<br>        "./node_modules/jquery/dist/jquery.min.js",<br>        "./node_modules/materialize-css/dist/js/materialize.js"<br>      ],</p>]]></message>
+<createdAt>2018-07-24T09:29:59Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Martin Larsen</name>
+<isAnonymous>false</isAnonymous>
+<username>disqus_pXxurBcTnP</username>
+</author>
+<thread dsq:id="6333874308" />
+</post>
+<post dsq:id="4005957276">
+<id />
+<message><![CDATA[<p>Thanks for the info. I'll try and update the post tonight!</p>]]></message>
+<createdAt>2018-07-25T18:08:16Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="6333874308" />
+<parent dsq:id="4003611782" />
+</post>
+<post dsq:id="4068192112">
+<id />
+<message><![CDATA[<p><a href="https://uploads.disquscdn.com/images/db3356c38f1ba13f577778776507d493d4ced2a4e5ffcd27aedc33f0267efe40.jpg" rel="nofollow noopener" title="https://uploads.disquscdn.com/images/db3356c38f1ba13f577778776507d493d4ced2a4e5ffcd27aedc33f0267efe40.jpg">https://uploads.disquscdn.c...</a> One horribly inappropriate comment and you'll never be shown another baby photo at work ever again. Totally worth it.</p>]]></message>
+<createdAt>2018-08-30T10:37:54Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>true</isSpam>
+<author>
+<name>William7458</name>
+<isAnonymous>false</isAnonymous>
+<username>william7458</username>
+</author>
+<thread dsq:id="6758590547" />
+</post>
+<post dsq:id="4071872467">
+<id />
+<message><![CDATA[<p><a href="https://uploads.disquscdn.com/images/620485041b816513fd12eef2717f9e6f91518df8c4171026f4555960f01f1507.jpg" rel="nofollow noopener" title="https://uploads.disquscdn.com/images/620485041b816513fd12eef2717f9e6f91518df8c4171026f4555960f01f1507.jpg">https://uploads.disquscdn.c...</a> What's the difference between a gay man and a freezer? The freezer doesn't fart when you pull your meat out.</p>]]></message>
+<createdAt>2018-09-01T11:22:24Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>true</isSpam>
+<author>
+<name>Branden3072</name>
+<isAnonymous>false</isAnonymous>
+<username>branden3072</username>
+</author>
+<thread dsq:id="6758590547" />
+</post>
+<post dsq:id="4190597495">
+<id />
+<message><![CDATA[<p>Great tools, great tools everywhere ! :D <br>Been using some of them and tried other and they all rocks, thanks for sharing.<br>As each team is different, there are many solutions for each one, I would suggest a free online tool we developed at Zenkit, you can give it a try, we'd love your feedbacks: <a href="https://zenkit.com" rel="nofollow noopener" title="https://zenkit.com">https://zenkit.com</a></p>]]></message>
+<createdAt>2018-11-12T04:51:58Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Ros</name>
+<isAnonymous>false</isAnonymous>
+<username>Rostane42</username>
+</author>
+<thread dsq:id="6574941517" />
+</post>
+<post dsq:id="4195395471">
+<id />
+<message><![CDATA[<p>For Future on-lookers, I've created a new post for Angular 6: <a href="http://www.colinstodd.com/blog/post/how-to-install-materialize-css-in-angular-6" rel="nofollow noopener" title="http://www.colinstodd.com/blog/post/how-to-install-materialize-css-in-angular-6">http://www.colinstodd.com/b...</a></p><p>It's also mentioned in the "Update" section, but I thought I'd mention it here for brevity.</p>]]></message>
+<createdAt>2018-11-14T22:57:51Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Colper</name>
+<isAnonymous>false</isAnonymous>
+<username>Colper</username>
+</author>
+<thread dsq:id="6333874308" />
+</post>
+</disqus>

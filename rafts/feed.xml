@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-11T22:12:33-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Colin Stodd</title><subtitle>Colin Stodd's personal website focused on his career in web application and mobile development</subtitle><author><name>Colin Stodd</name></author><entry><title type="html">Generate SH1 Keys on MacOS</title><link href="http://localhost:4000/posts/code/generate-sh1-keys-on-macos.html" rel="alternate" type="text/html" title="Generate SH1 Keys on MacOS" /><published>2020-03-11T01:00:10-04:00</published><updated>2020-03-11T01:00:10-04:00</updated><id>http://localhost:4000/posts/code/generate-sh1-keys-on-macos</id><content type="html" xml:base="http://localhost:4000/posts/code/generate-sh1-keys-on-macos.html">&lt;p&gt;In order for you to be able to connect to your &lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github&lt;/a&gt; account or to SSH into applications you are going to be required to generate an SH1 key.&lt;/p&gt;
+
+&lt;p&gt;Here is how you generate SSH key pairs in MacOS.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open up your &lt;a href=&quot;https://www.iterm2.com/&quot; target=&quot;_blank&quot;&gt;favorite terminal&lt;/a&gt; or the default MacOS terminal: &lt;code class=&quot;highlighter-rouge&quot;&gt;Applications&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Utilities&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Terminal&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You’ll first want to check and see if you already have an SSH key created. You can check by running this in your terminal:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-al&lt;/span&gt; ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;If you see files named &lt;code class=&quot;highlighter-rouge&quot;&gt;id_rsa&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt; or like what’s in the image below&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/ssh_key_pair_blurred.png&quot; alt=&quot;id_rsa id_rsa.pub screenshot&quot; class=&quot;image right mobile-full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This means a key has already been created in it’s default location (Yay, less work!), so you can use that key (&lt;a href=&quot;#add-ssh-to-github&quot;&gt;see how use below&lt;/a&gt;) or you can generate a new one.&lt;/p&gt;
+
+&lt;p&gt;If you don’t see those files, then you’ll want to generate a new key. For something such as CPanel, start in the next section.&lt;/p&gt;
+
+&lt;p class=&quot;neu-alert text-blue-grey&quot;&gt;&lt;i class=&quot;fa fa-bullhorn&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Note:&lt;br /&gt;
+&lt;em&gt;If all you need to do is add your key to &lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;GitHub&quot;&gt;GitHub&lt;/a&gt; then &lt;a href=&quot;#add-ssh-to-github&quot;&gt;Scroll down &lt;i class=&quot;fad fa-level-down-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt; for instructions.&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cpanel.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;cPanel&quot; style=&quot;border-bottom:none;&quot;&gt;
+    &lt;i class=&quot;fab fa-cpanel text-green&quot; alt=&quot;cPanel&quot; title=&quot;cPanel instructions&quot; style=&quot;font-size:5em; border-bottom:none;&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;For cPanel you’ll want to run this in your terminal and the press the &lt;code class=&quot;highlighter-rouge&quot;&gt;return&lt;/code&gt; key:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You will now be prompted to tell the the prompt where you want your key be placed/located. If you leave it blank and press &lt;code class=&quot;highlighter-rouge&quot;&gt;return&lt;/code&gt; key, it will place the key in it’s default location (Recommended). If you decide to place the key in a different location, just remember to make a note of where you place your key. If you leave it blank and press &lt;code class=&quot;highlighter-rouge&quot;&gt;return&lt;/code&gt; it will place your key in:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/home/user/.ssh/id_rsa&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now you will be prompted to enter a password to access the key (Note: The password is &lt;strong&gt;not&lt;/strong&gt; required, you can leave blank and press &lt;code class=&quot;highlighter-rouge&quot;&gt;return&lt;/code&gt;). Also, note that you will not see the characters when you are typing the password. This is for your own safety.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;After you press &lt;code class=&quot;highlighter-rouge&quot;&gt;return&lt;/code&gt;, your SSH key will have been created and located in:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/home/user/.ssh/id_rsa.pub&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Depending on what you are using the passkey for you can upload/use by going into something like C Panel or Github by using this command:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add /home/user/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;GitHub instructions&quot; style=&quot;border-bottom:none;&quot;&gt;
+    &lt;i class=&quot;fab fa-github-alt text-green&quot; alt=&quot;github&quot; title=&quot;GitHub instructions&quot; style=&quot;font-size:4em;&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h3 class=&quot;text-green&quot;&gt;GitHub&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;For &lt;a href=&quot;https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;GitHub&quot;&gt;GitHub&lt;/a&gt; you’ll want to open your terminal app and run the following command (but with your Github account email address):&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;your_github_email@example.com&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;This creates a new ssh key with &lt;code class=&quot;highlighter-rouge&quot;&gt;your_github_email&lt;/code&gt; address.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now you’ll be asked where you want to save your key (I recommend that you leave this blank to have it placed in your default location):&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/Users/yourUsername/.ssh/id_rsa&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Press &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next, a prompt will ask for a passphrase/password. Again, this is optional and you won’t be able to see the password you type.&lt;/p&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Enter passphrase &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;empty &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;no passphrase&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: typePasswordHere
+Enter same passphrase again: typeSamePasswordAgain
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;i class=&quot;fad fa-terminal text-green&quot; alt=&quot;Adding your SSH Key&quot; title=&quot;Adding your SSH key to the ssh-agent&quot; style=&quot;font-size:3em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;h3 class=&quot;text-green&quot;&gt;
+Adding your SSH key to the ssh-agent
+&lt;/h3&gt;
+
+&lt;p class=&quot;neu-alert text-blue-grey&quot;&gt;&lt;i class=&quot;fa fa-bullhorn&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Note:&lt;br /&gt;
+&lt;em&gt;Much of the remaining two sections were taken directly from the &lt;a href=&quot;https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;&quot;&gt;GitHub help pages&lt;/a&gt;. I'm lazy and they explain things better, but I wanted to combine their work with the stuff I added above for ease-of-access.&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&quot;important-note-from-github-docs-&quot;&gt;&lt;em&gt;Important note from Github Docs:&lt;/em&gt; &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Before adding a new SSH key to the ssh-agent to manage your keys, you should have checked for existing SSH keys and generated a new SSH key. When adding your SSH key to the agent, use the default macOS ssh-add command, and not an application installed by macports, homebrew, or some other external source.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Start the ssh-agent in the background:
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;ssh-agent &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+
+ &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Agent pid 59566
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you’re using &lt;strong&gt;macOS Sierra 10.12.2&lt;/strong&gt; or later, you will need to modify your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/config&lt;/code&gt; file to automatically load keys into the ssh-agent and store passphrases in your keychain.
+ &lt;strong&gt;Open using VSCode:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; code ~/.ssh/config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/config&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Host &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+ AddKeysToAgent &lt;span class=&quot;nb&quot;&gt;yes
+ &lt;/span&gt;UseKeychain &lt;span class=&quot;nb&quot;&gt;yes
+ &lt;/span&gt;IdentityFile ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file:
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ssh-add &lt;span class=&quot;nt&quot;&gt;-K&lt;/span&gt; ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;div id=&quot;add-ssh-to-github&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;i class=&quot;fad fa-key text-green&quot; alt=&quot;Adding your new SSH Key to GitHub&quot; title=&quot;Adding your new SSH key to GitHub&quot; style=&quot;font-size:3em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+
+&lt;h3 class=&quot;text-green&quot;&gt;
+Adding Your New SSH Key To Your GitHub Account
+&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy the SSH key to your clipboard &lt;sup id=&quot;fnref:1:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+    &lt;p&gt;If your SSH key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don’t add any newlines or whitespace.&lt;/p&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; pbcopy &amp;lt; ~/.ssh/id_rsa.pub  &lt;span class=&quot;c&quot;&gt;# Copies the contents of the id_rsa.pub file to your clipboard&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p class=&quot;neu-alert text-blue-grey&quot;&gt;&lt;i class=&quot;fa fa-bullhorn&quot;&gt;&lt;/i&gt;
+&amp;nbsp;&amp;nbsp;&lt;b class=&quot;text-blue-grey&quot;&gt;Tip:&lt;/b&gt;&lt;br /&gt;&lt;em&gt;If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;In the upper-right corner of any page, click your profile photo, then click Settings:
+    &lt;div class=&quot;row&quot;&gt;
+ &lt;img src=&quot;https://help.github.com/assets/images/help/settings/userbar-account-settings.png&quot; class=&quot;image left&quot; style=&quot;display:block;&quot; /&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In the user settings sidebar, click SSH and GPG keys:
+    &lt;div class=&quot;row&quot;&gt;
+ &lt;img src=&quot;https://help.github.com/assets/images/help/settings/settings-sidebar-ssh-keys.png&quot; class=&quot;image left&quot; style=&quot;display:block;&quot; /&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Click New SSH key or Add SSH key:
+    &lt;div class=&quot;row&quot;&gt;
+ &lt;img src=&quot;https://help.github.com/assets/images/help/settings/ssh-add-ssh-key.png&quot; class=&quot;image left&quot; style=&quot;display:block;&quot; /&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the “Title” field, add a descriptive label for the new key. For example, if you’re using a personal Mac, you might call this key “Personal MacBook Air”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Paste your key into the “Key” field:
+    &lt;div class=&quot;row&quot;&gt;
+ &lt;img src=&quot;https://help.github.com/assets/images/help/settings/ssh-key-paste.png&quot; class=&quot;image left&quot; style=&quot;display:block;&quot; /&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Click Add SSH key:
+    &lt;div class=&quot;row&quot;&gt;
+ &lt;img src=&quot;https://help.github.com/assets/images/help/settings/ssh-add-key.png&quot; class=&quot;image left&quot; style=&quot;display:block;&quot; /&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If prompted, confirm your GitHub password:
+    &lt;div class=&quot;row&quot;&gt;
+ &lt;img src=&quot;https://help.github.com/assets/images/help/settings/sudo_mode_popup.png&quot; class=&quot;image left&quot; style=&quot;display:block;&quot; /&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And you should now be good to go. I hope you found this article useful, if so, please leave a comment or &lt;a href=&quot;https://disqus.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Disqus Response&lt;/a&gt; below so that I know how things things went for you.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 class=&quot;text-green&quot;&gt;&lt;i class=&quot;fad fa-comment-alt-edit&quot;&gt;&lt;/i&gt; Footnotes:&lt;/h4&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;GitHubPages &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Colin Stodd</name></author><category term="SSH," /><category term="Key Pair," /><category term="MacOS," /><category term="SH1" /><summary type="html">In order for you to be able to connect to your Github account or to SSH into applications you are going to be required to generate an SH1 key.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/ssh_key.jpg" /></entry><entry><title type="html">Pretty Print Json in Dart</title><link href="http://localhost:4000/posts/code/pretty-print-json-in-dart.html" rel="alternate" type="text/html" title="Pretty Print Json in Dart" /><published>2020-01-31T00:20:00-05:00</published><updated>2020-02-23T00:20:00-05:00</updated><id>http://localhost:4000/posts/code/pretty-print-json-in-dart</id><content type="html" xml:base="http://localhost:4000/posts/code/pretty-print-json-in-dart.html">&lt;p&gt;I’ve started learning &lt;a href=&quot;https://flutter.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flutter&lt;/a&gt;, which is a framework for building mobile (but now also &lt;a href=&quot;https://flutter.dev/web&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;web&lt;/a&gt;) apps on both iOS and Android devices using the same codebase. I’ll let you do the research on &lt;a href=&quot;https://flutter.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flutter&lt;/a&gt; but if you landed on this page, there’s probably a good chance you already know about &lt;a href=&quot;https://flutter.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flutter&lt;/a&gt;. Nevertheless, below is a function to help you “pretty-print” JSON data into your &lt;a href=&quot;https://dart.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Dart&lt;/a&gt; terminal.&lt;/p&gt;
+
+&lt;p&gt;FYI: &lt;a href=&quot;https://dart.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Dart&lt;/a&gt; is the programming language that &lt;a href=&quot;https://flutter.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flutter&lt;/a&gt; uses, which are both created and maintained by &lt;a href=&quot;https://www.google.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This function can be used just like you would with a &lt;code class=&quot;highlighter-rouge&quot;&gt;print('some message')&lt;/code&gt; in Dart, but the parameter has to be a String of JSON.&lt;/p&gt;
+
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'dart:convert'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Don't forget to import this&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;prettyPrintJson&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsonDecoder&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decoder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsonDecoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsonEncoder&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encoder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsonEncoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withIndent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'  '&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;dynamic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;convert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;dynamic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prettyString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;convert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;prettyString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;dynamic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You would use/call it like so&lt;/p&gt;
+
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;prettyPrintJson&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;validJSON&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Or in a realistic example using &lt;a href=&quot;https://openweathermap.org/api&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OpenWeatherMap’s API&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'dart:convert'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'package:appName/utilities/constants.dart'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'package:appName/utilities/pretty_print.dart'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'package:http/http.dart'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;NetworkHelper&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Future&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;dynamic&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getWeatherData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'https://api.openweathermap.org/data/2.5/weather?lat=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$lat&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;amp;lon=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$lon&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;amp;appid=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$kApiKey&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Response&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;cm&quot;&gt;/*
+    Below we are calling the prettyPrintJson() with the response.body
+    But you need to make sure it's in String format.
+    */&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;prettyPrintJson&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;statusCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonDecode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Error: response.statusCode not 200. Was: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;${response.statusCode}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;statusCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Below is an image of the output. As you can see it’s much more legible to the human eye.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/posts/prettyprintjson_result.png&quot; class=&quot;image left&quot; /&gt;&lt;/p&gt;</content><author><name>Colin Stodd</name></author><category term="Dart," /><category term="JSON," /><category term="Pretty Print," /><category term="Flutter," /><category term="OpenWeatherMap" /><summary type="html">I’ve started learning Flutter, which is a framework for building mobile (but now also web) apps on both iOS and Android devices using the same codebase. I’ll let you do the research on Flutter but if you landed on this page, there’s probably a good chance you already know about Flutter. Nevertheless, below is a function to help you “pretty-print” JSON data into your Dart terminal.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/dart_logo.png" /></entry><entry><title type="html">Download iCal and Google calendar for Phish tour dates and shows</title><link href="http://localhost:4000/posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html" rel="alternate" type="text/html" title="Download iCal and Google calendar for Phish tour dates and shows" /><published>2020-01-23T12:01:00-05:00</published><updated>2020-06-17T01:08:10-04:00</updated><id>http://localhost:4000/posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows</id><content type="html" xml:base="http://localhost:4000/posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html">&lt;div class=&quot;blurb mb-3&quot;&gt;
+&lt;i class=&quot;fad fa-microphone-stand&quot; style=&quot;font-size:3rem;&quot;&gt;&lt;/i&gt;  UPDATE &lt;i class=&quot;fad fa-calendar-alt&quot;&gt;&lt;/i&gt; 17 Jun 2020&lt;br /&gt;
+  &lt;hr /&gt;
+  &lt;span class=&quot;text-yellow&quot;&gt;From &lt;a href=&quot;https://phish.com/news/summer-tour-rescheduled-for-2021/&quot; target=&quot;_blank&quot; rel=&quot;_noopener&quot; class=&quot;text-yellow&quot; title=&quot;Go to Phish's website to read for yourself&quot;&gt;Phish's Email/Website &lt;i class=&quot;fad fa-external-link-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;&lt;br /&gt;
+  &lt;span class=&quot;text-yellow&quot;&gt;&quot;Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates...&quot;&lt;/span&gt; &lt;br /&gt;
+  &lt;hr /&gt;
+  &lt;i class=&quot;fad fa-angle-double-right fa-lg&quot;&gt;&lt;/i&gt; As long as Phish provides these streams I'll do my best to keep updating the info for each night. &lt;br /&gt;
+  &lt;i class=&quot;fad fa-angle-double-right fa-lg&quot;&gt;&lt;/i&gt; Yes, I'll be updating next years' dates -- soon enough.
+&lt;/div&gt;
+
+&lt;p&gt;I was unable to find an updated &lt;a href=&quot;https://phish.com/tours&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Phish Tour&quot;&gt;Phish&lt;/a&gt; iCal calendar on the web, so I created one myself and I’m sharing it with you. All you need to do is copy and paste this link into your calendar application.&lt;/p&gt;
+
+&lt;h2 id=&quot;examples&quot;&gt;Examples:&lt;/h2&gt;
+&lt;h4 class=&quot;text-yellow&quot;&gt;&lt;i class=&quot;fab fa-apple&quot;&gt;&lt;/i&gt; Calendar (Apple/iCal):&lt;/h4&gt;
+&lt;p&gt;Go in iCalendar and click &lt;code class=&quot;highlighter-rouge&quot;&gt;File &amp;gt; New Calendar Subscription&lt;/code&gt; and paste the link below into that input field.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Public &lt;i class=&quot;fab fa-apple text-yellow&quot;&gt;&lt;/i&gt; iCal URL:&lt;/strong&gt;
+&lt;input type=&quot;text&quot; value=&quot;https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com/public/basic.ics&quot; id=&quot;calendarLink&quot; class=&quot;fixed-font&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;button onclick=&quot;appleFunction()&quot; class=&quot;button small&quot;&gt;
+    &lt;i class=&quot;fab fa-apple&quot;&gt;&lt;/i&gt; Copy URL
+  &lt;/button&gt;
+&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 class=&quot;text-yellow&quot;&gt;&lt;i class=&quot;fab fa-google&quot;&gt;&lt;/i&gt; Google Calendar:&lt;/h4&gt;
+&lt;p&gt;Go into &lt;a href=&quot;https://calendar.google.com/calendar&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Click to open Google Calendar&quot;&gt;Google Calendar&lt;/a&gt;, on the bottom left hand side you’ll see &lt;code class=&quot;highlighter-rouge&quot;&gt;Other Calendars&lt;/code&gt; then click the &lt;i class=&quot;fal fa-plus neu-text&quot;&gt;&lt;/i&gt; and &lt;br /&gt;select &lt;code class=&quot;highlighter-rouge&quot;&gt;From URL&lt;/code&gt; and paste the URL below into that input.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Public &lt;i class=&quot;fab fa-google text-yellow&quot;&gt;&lt;/i&gt; Google URL:&lt;/strong&gt;
+&lt;input type=&quot;text&quot; value=&quot;https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com&amp;amp;ctz=America%2FNew_York&quot; id=&quot;googleCalendarLink&quot; class=&quot;fixed-font&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;button onclick=&quot;googleFunction()&quot; class=&quot;button small&quot;&gt;
+    &lt;i class=&quot;fab fa-google&quot;&gt;&lt;/i&gt; Copy URL
+  &lt;/button&gt;
+&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;You should now see the show dates with details populate on your calendar. I will try and keep this calendar updated should they add more dates. If you see something missing or off, please let me know in the comments.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://calendar.google.com/calendar/b/1/embed?height=600&amp;amp;wkst=1&amp;amp;bgcolor=%235868a1&amp;amp;ctz=America%2FNew_York&amp;amp;src=Y2lnb2tkaDVsNmNzOGkwcGg2c3JqaWJvaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;amp;color=%2300cab3&amp;amp;mode=MONTH&amp;amp;title=%3C%22(((%3C3%20%20Phish%20Shows%20%20%3C%22(((%3C3&quot; style=&quot;border-width:0&quot; width=&quot;100%&quot; height=&quot;800&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+// Apple Calendar
+function appleFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById(&quot;calendarLink&quot;);
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand(&quot;copy&quot;);
+
+  /* Alert the copied text */
+  alert(&quot;Calendar Link Copied to your clipboard, Now paste it into Apple Calendar. Enjoy the shows! 🐠 🍄 🌈 🌵 🥳 🐲&quot;);
+}
+// Google Calendar
+function googleFunction() {
+  /* Get the text field */
+  var googleText = document.getElementById(&quot;googleCalendarLink&quot;);
+
+  /* Select the text field */
+  googleText.select();
+  googleText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand(&quot;copy&quot;);
+
+  /* Alert the copied text */
+  alert(&quot;Calendar Link Copied to your clipboard, Now paste it into Google Calendar. Enjoy the shows! 🐠 🍄 🌈 🌵 🥳 🐲&quot;);
+}
+&lt;/script&gt;</content><author><name>Colin Stodd</name></author><category term="Phish," /><category term="Google Calendar," /><category term="iCal," /><category term="Shows" /><category term="Tour" /><summary type="html">UPDATE 17 Jun 2020 From Phish's Email/Website &quot;Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates...&quot; As long as Phish provides these streams I'll do my best to keep updating the info for each night. Yes, I'll be updating next years' dates -- soon enough.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://5ojtv13o4by138ocv258q4xu7h-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/19940708ph_great_woods_trey_narration_VHS_screenshot_02_crop.jpg" /></entry><entry><title type="html">List of my favorite OSX applications</title><link href="http://localhost:4000/posts/tech/list-of-my-favorite-osx-applications.html" rel="alternate" type="text/html" title="List of my favorite OSX applications" /><published>2020-01-20T00:00:10-05:00</published><updated>2020-02-27T00:00:10-05:00</updated><id>http://localhost:4000/posts/tech/list-of-my-favorite-osx-applications</id><content type="html" xml:base="http://localhost:4000/posts/tech/list-of-my-favorite-osx-applications.html">&lt;p&gt;People often ask me about the applications I use for software development, so I’ve decided to create a list of my favorite Mac OSX applications. Many of these apps are development tools but others help me outside of software development.  This list is specifically for MAC OSX, but most of them are cross-platform and can be used on Windows, Linux, iOS and Android. The list is in no particular order, and I want to note that none of these companies have asked for my endorsement, but I might have affiliate links which are marked with a  &lt;code class=&quot;highlighter-rouge&quot;&gt;👍🏼&lt;/code&gt;  however, those links mean nothing in my support for or against them. I’m just trying to offset the costs of hosting this site.&lt;/p&gt;
+
+&lt;p&gt;If you have a favorite app (especially development and productivity tools), I’d love it if you’d share those with me. I’ll even credit you on the recommend if I use it in my workflow.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://bitwarden.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Bitwarden&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d0/Bitwarden_Desktop_MacOS.png&quot; alt=&quot;bitwarden&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://bitwarden.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bitwarden&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt;Is an open-source password manager. I have been a long-time user of &lt;a href=&quot;https://www.lastpass.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LastPass&lt;/a&gt; but gave Bitwarden a try, and I don’t see myself going back to LastPass anytime soon. Bitwarden might not be as polished or feature-rich, but I find it less buggy and does everything I need in a Password manager. I use the free version and have no reason to upgrade.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://ticktick.com/zFVY6?u=f3ea6096978047d59510318bf36b8a0b&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;TickTick&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;/images/posts/ticktick_osx.png&quot; alt=&quot;ticktick&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+👍🏼 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://ticktick.com/zFVY6?u=f3ea6096978047d59510318bf36b8a0b&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TickTick&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt;Is a todo list application. I’ve tried many of them including &lt;a href=&quot;https://todoist.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Todoist&lt;/a&gt; and &lt;a href=&quot;https://culturedcode.com/things/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Things&lt;/a&gt; but TickTick is everything I want in a todo-list (or Get Things Done) application. It’s like a better, prettier &lt;a href=&quot;https://www.wunderlist.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wunderlist&lt;/a&gt; (the favorite todo list app of many for years, but was acquired by Microsoft). I upgraded to the Pro plan which is about $30 a year, and that gives you more features like Calendar view. It has a beautify UI and I prefer the right side layout (similar to Wunderlist) compared to Todoists pop-up modal. It also allows for subtasks, commenting and much more; but not too many features where things feel cluttered.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://clickup.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Clickup&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://software-advice.imgix.net/managed/products/screenshots/list_view_app_retina.png?auto=format&amp;amp;w=600&amp;amp;h=450&quot; alt=&quot;clickup&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://clickup.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Clickup&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt;This is the project management software that we use at my development job but I also use it for personal projects. This app has just about everything you can imagine in project management software. They deserve some sort of award, it’s simply awesome, and they have a free tier that will be suitable for most personal users and/or small teams.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://justgetflux.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;f.lux&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;/images/posts/f.lux.png&quot; alt=&quot;flux osx&quot; style=&quot;max-height:300px;&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://justgetflux.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;F.lux&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt; Or Flux is a slightly more customizable red-hue screen adjuster. OSX now allows for you to add the red-hue to your screen at certain times of the day, but Flux is a bit more customizable and is free, which is what makes it an easy addition to this list.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://iterm2.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;iTerm 2&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://miro.medium.com/max/3200/1*6ZbzPhOo4jchV4DzkA3beQ.png&quot; alt=&quot;iterm2&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://iterm2.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;iTerm2&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt; Is a terminal application that gives you many more features than the default terminal application that comes with OSX. I also recommend installing &lt;a href=&quot;https://ohmyz.sh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Oh-My-Zsh&lt;/a&gt; which allows you to install plugins and prompt themes.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://hyper.is&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Hyper Terminal&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;/images/posts/hyper.png&quot; alt=&quot;Hyper.js Terminal&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+An alternative to iTerm2 is &lt;a href=&quot;https://hyper.is&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Hyper.is&quot;&gt;Hyper&lt;/a&gt;. Hyper is a &lt;a href=&quot;https://www.electronjs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Electron App&quot;&gt;Electron app&lt;/a&gt;, which means it will likely use more RAM and wont be as performant as Apple’s native Terminal app or iTerm2; Nevertheless, customizing the terminal is simple if you’re used to working with a JSON file. I haven’t put Hyper through much testing but I’ve been told that it’s a great option for beginner developers.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://apps.apple.com/us/app/snippetslab/id1006087419?mt=12&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Snippets Lab&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/8e/59/13/8e59137d-d322-41d5-309d-0e8366542cf1/pr_source.jpg/643x0w.jpg&quot; alt=&quot;snippets lab&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://apps.apple.com/us/app/snippetslab/id1006087419?mt=12&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SnippetsLab&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt;This is a note-taking application for developers. As a developer, you find yourself re-using code snippets, and this app does just that with a tagging system and a beautiful UI. You can also connect to iCloud or Dropbox to sync between computers. This is a paid app, but I also recommend &lt;a href=&quot;https://boostnote.io/&quot; target=&quot;_blank&quot; rel=&quot;noopner&quot;&gt;Boostnote&lt;/a&gt; as a free/opensource alternative.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://brave.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Brave Browser&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://brave.com/wp-content/uploads/2018/10/a25he_image1.png&quot; alt=&quot;brave browser&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://brave.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Brave&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt;There has been a lot of controversy about Google’s &lt;a href=&quot;https://www.google.com/chrome/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Chrome browser&lt;/a&gt;. Most recently the notion to &lt;a href=&quot;https://www.wired.com/story/google-chrome-ad-blockers-extensions-api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;remove functionality of extensions like ad-blockers and tracker-blockers&lt;/a&gt;. As a result, I started looking at other browsers and came across Brave, which is basically a re-packaged Chrome browser that is built on the open-source &lt;a href=&quot;https://www.chromium.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Chromium project&lt;/a&gt;. Brave was founded by &lt;a href=&quot;https://en.wikipedia.org/wiki/Brendan_Eich&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Brendan Eich&lt;/a&gt; who is the creator of &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaScript&lt;/a&gt; and co-founder of the &lt;a href=&quot;https://www.mozilla.org/en-US/about/history/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mozilla project&lt;/a&gt;. Brave has taken a different approach to ads via a rewards system. You can also install any Chrome extensions natively. So it’s like a better performing, safer and more private Chrome.&lt;/p&gt;
+
+&lt;p&gt;I also use &lt;a href=&quot;https://www.opera.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Opera Browser&lt;/a&gt;. Much like Brave, Opera is built on the Chromium project but it comes with many useful features like a side panel for apps like Twitter and Instagram, and with &lt;a href=&quot;https://colinstodd.com/posts/code/add-chrome-extensions-to-opera-browser.html&quot; target=&quot;_top&quot; rel=&quot;noopener&quot;&gt;this extension&lt;/a&gt; you can install any of the Chrome store extensions. My only concern with Opera is that it was recently acquired by Chinese investors. However, it’s still a part of Norway, so I hope that they are abiding by Norwegian laws.&lt;/p&gt;
+
+&lt;p&gt;I can also recommend &lt;a href=&quot;https://www.mozilla.org/en-US/firefox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Firefox&lt;/a&gt;. I was an avid user of Firefox but was part of the group that switched to Chrome. Nevertheless, Firefox re-wrote its browser engine in Rust and its performance has improved greatly as a result. I also admire Firefox’s efforts to keep you safe on the web.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://www.grammarly.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Grammarly&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://lh3.googleusercontent.com/JKWZYRe_7OkKz70IXaXv6TZdgBc2EKIT-AGANDQ0Kg_vDvuJv0ZRUmtro0Wx1FCVGbqpQ2JbOg=w640-h400-e365&quot; alt=&quot;grammarly&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://www.grammarly.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Grammarly&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt;This is a browser extension and desktop app that makes you a better writer. It not only spells checks your work anywhere on your computer but it also makes suggestions to your writing. I use the free tier but have considered updating to the paid plan just as thanks for how awesome it is. Honestly, everyone should install Grammarly on their computers and mobile devices. Your friends and colleagues will be grateful for proper spelling and punctuation.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://www.alfredapp.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Alfred&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://9to5mac.com/wp-content/uploads/sites/6/2017/03/friday-5-alfred-3.jpg?quality=82&amp;amp;strip=all&amp;amp;w=1600&quot; alt=&quot;alfred osx&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://www.alfredapp.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Alfred&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt;This is basically Spotlight on steroids. I purchased the “Powerpack” to unlock more features like Workflows which allows you to control many aspects of your mac from the search box. Alfred is a great tool that when set-up properly, can make your workflow much more powerful. If you decide to purchase the Powerpack I recommend you check out some pre-configured Workflows from a community site called &lt;a href=&quot;http://www.packal.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Packal&lt;/a&gt;. All of those Workflows are free.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://airmailapp.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Airmail 4&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/ef/e9/86/efe9868a-6246-44d1-0a50-dac5c2064b81/mzl.vdtpgelc.jpg/643x0w.jpg&quot; alt=&quot;Airmail 4&quot; title=&quot;Airmail 4&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://airmailapp.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Airmail 4&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;:&lt;br /&gt; Was just released a few days before this updated. While I haven’t had a great deal of time to play around with it, it seems like it has some subtle but welcomed updates. &lt;a href=&quot;https://airmailapp.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Airmail 4&lt;/a&gt; This is the successor to the award winning &lt;a href=&quot;https://airmailapp.com/&quot;&gt;Airmail 3&lt;/a&gt; app. Which is the most customizable mail application on OSX that I’ve been able to find. Apples’ mail app is OK but it lacks many awesome features that Airmail and it’s rivals have. With that being said, &lt;a href=&quot;https://airmailapp.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Airmail&lt;/a&gt; is not perfect, and their iOS app is not what I recommend for mobile, but the OSX app is one of the best that I’ve tried (I’ve tried many). As for runner-up apps I can recommend &lt;a href=&quot;https://getmailspring.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MailSpring&lt;/a&gt; (a little buggy, but free and Open Sourced) and &lt;a href=&quot;https://sparkmailapp.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Spark&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://www.jetbrains.com/webstorm/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Webstorm&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2017/08/ionic-debug.png&quot; alt=&quot;webstorm&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://www.jetbrains.com/webstorm/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webstorm&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VSCode&lt;/a&gt;:&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+Specifically to web development and coding in general, I highly recommend &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VSCode&lt;/a&gt; as a text editor and &lt;a href=&quot;https://www.jetbrains.com/webstorm/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webstorm&lt;/a&gt; as an IDE.&lt;/p&gt;
+
+&lt;p&gt;I use both for different use-cases. For quick editing and small projects I like to use VSCode; It’s lightweight and has a &lt;a href=&quot;https://code.visualstudio.com/docs/editor/extension-gallery&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;plethora of extensions&lt;/a&gt;. For larger applications I use Webstorm. The IntelliSense and baked-in features can’t be beaten. It’s a resource-hog, but when building larger applications, I can’t imagine using anything other than a &lt;a href=&quot;https://www.jetbrains.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Jetbrain application&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://toggl.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Toggl&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://clockify.me/assets/images/best-time-tracking-apps/toggl-apps.png&quot; alt=&quot;toggl&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;a href=&quot;https://toggl.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Toggl&lt;/a&gt;:&lt;br /&gt;This is a time-tracking desktop and browser extension application. It does a few things other than tracking time (like reports, invoice creations, etc), but it does those things really well.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;
+&lt;a href=&quot;https://apps.apple.com/us/app/skitch-snap-mark-up-share/id425955336?mt=12&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Skitch&quot;&gt;&lt;img loading=&quot;lazy&quot; src=&quot;https://is5-ssl.mzstatic.com/image/thumb/Purple6/v4/c0/0b/4f/c00b4ffa-a942-1ffa-d1f0-6da2cfa7e928/mzl.fkhegzvv.png/643x0w.png&quot; alt=&quot;skitch osx&quot; /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;a href=&quot;https://apps.apple.com/us/app/skitch-snap-mark-up-share/id425955336?mt=12&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Skitch&lt;/a&gt;:&lt;br /&gt; Is a desktop application that allows you to take screenshots to quickly and easily add markup to screenshots and images.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;And there you have it. These are the apps that I have running nearly every time I boot-up one of my MACs. If you have any suggestions I encourage you to let me know in the comments.&lt;/p&gt;
+
+&lt;p&gt;Be sure to subscribe below as I plan on writing a post for browser extensions and many other things computer and code related.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Colin Stodd</name></author><category term="Tools," /><category term="Tips &amp; Tricks," /><category term="Applications," /><category term="OSX," /><category term="Productivity" /><summary type="html">People often ask me about the applications I use for software development, so I’ve decided to create a list of my favorite Mac OSX applications. Many of these apps are development tools but others help me outside of software development. This list is specifically for MAC OSX, but most of them are cross-platform and can be used on Windows, Linux, iOS and Android. The list is in no particular order, and I want to note that none of these companies have asked for my endorsement, but I might have affiliate links which are marked with a 👍🏼 however, those links mean nothing in my support for or against them. I’m just trying to offset the costs of hosting this site.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/ticktick_osx.png" /></entry><entry><title type="html">Fix MacOS Catalina Fonts After Upgrade</title><link href="http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade.html" rel="alternate" type="text/html" title="Fix MacOS Catalina Fonts After Upgrade" /><published>2019-10-24T00:00:01-04:00</published><updated>2020-08-03T00:10:10-04:00</updated><id>http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade</id><content type="html" xml:base="http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade.html">&lt;p&gt;I recently upgraded my MAC from &lt;a href=&quot;https://support.apple.com/macos/mojave&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mojave&lt;/a&gt; to &lt;a href=&quot;https://www.apple.com/macos/catalina/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Catalina&lt;/a&gt;, all went well but I noticed that my text editor fonts were looking thinner than normal. I recall this happening with the &lt;a href=&quot;https://support.apple.com/macos/mojave&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mojave&lt;/a&gt; update, so I sort of knew where to begin looking, but I couldn’t find exactly what I needed in one spot so I’m going to post it here.  &lt;strong&gt;&lt;em&gt;I am by no means an expert on these commands, I’m just posting what worked for me&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Many people had to play with these settings because not every external display is the same, so what I’ve posted here might not fit your setup exactly. It took some trial and error, but hopefully these commands will help you. As you’ll see below, everything can be reverted (&lt;a href=&quot;#revert&quot;&gt;see the bottom of the page&lt;/a&gt;) and the commands won’t do any serious damage to your MAC.&lt;/p&gt;
+
+&lt;div class=&quot;blurb&quot;&gt;&lt;i class=&quot;fad fa-comment-alt-exclamation fa-lg&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Note: Every time you run one of these commands, you'll have to log out to see the changes. You can do so by pressing &lt;code&gt;command&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;Q&lt;/code&gt;.&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what-worked-for-me&quot;&gt;What Worked For Me:&lt;/h2&gt;
+&lt;p&gt;You’ll want to check to see if you have your font smoothing enabled or disabled in your &lt;code class=&quot;highlighter-rouge&quot;&gt;Settings&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;General&lt;/code&gt; tab as seen in the image. This also plays a role… I left mine on.&lt;/p&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;one-third column&quot;&gt;&amp;nbsp;&lt;/div&gt;
+      &lt;div class=&quot;one-third column&quot;&gt;
+        &lt;img src=&quot;../../images/posts/mac_osx_fonts/disable_font_smoothing.png&quot; class=&quot;image fit&quot; title=&quot;font smoothing osx catalina&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;/div&gt;
+    &lt;div class=&quot;one-third column&quot;&gt;&amp;nbsp;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Even though you checked the checkbox in settings, We’re going to assure that font smoothing is on system-wide by running the command below in your &lt;a href=&quot;https://www.iterm2.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;iTerm 2&quot;&gt;favorite terminal application&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/Applications/Utilities/Terminal.app&lt;/code&gt;. The &lt;code class=&quot;highlighter-rouge&quot;&gt;-g&lt;/code&gt; stands for &lt;code class=&quot;highlighter-rouge&quot;&gt;global&lt;/code&gt;.  &lt;a href=&quot;#textEditors&quot; title=&quot;Scroll down fix individual apps&quot;&gt;Further down&lt;/a&gt; in the tutorial I show you how to change the fonts on a per-app basis (examples shown &lt;a href=&quot;#textEditors&quot; title=&quot;Scroll down to the Text Editors Section&quot;&gt;down the page &lt;i class=&quot;fad fa-level-down-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt; for text editors).&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; CGFontRenderingFontSmoothingDisabled &lt;span class=&quot;nt&quot;&gt;-bool&lt;/span&gt; FALSE
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button class=&quot;button small copy-btn pull-right&quot; title=&quot;Copy to clipboard&quot; data-clipboard-text=&quot;defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE&quot;&gt;
+     &lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Copy
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;And then I ran the code below to add strong font smoothing:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults &lt;span class=&quot;nt&quot;&gt;-currentHost&lt;/span&gt; write &lt;span class=&quot;nt&quot;&gt;-globalDomain&lt;/span&gt; AppleFontSmoothing &lt;span class=&quot;nt&quot;&gt;-int&lt;/span&gt; 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button class=&quot;button small copy-btn pull-right&quot; title=&quot;Copy to clipboard&quot; data-clipboard-text=&quot;defaults -currentHost write -globalDomain AppleFontSmoothing -int 2&quot;&gt;
+     &lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Copy
+&lt;/button&gt;
+Log out, and log back in.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;adjusting-fonts-globally&quot;&gt;Adjusting Fonts Globally:&lt;/h2&gt;
+
+&lt;p&gt;If you’re at this section you’re probably not happy with the results above 😞. What you’ll most likely need to do is try different combinations. I recommend that you write down what worked and where it worked. e.g. if what we ran above helped with OS X’s fonts but messed up some apps then take note of that so you can apply commands to those specific apps (basically debug). Im not exaggerating when I say that I spent nearly 8 hours doing this (also searching for answers which is why I’m writing this post).&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, here’s the same command as above but I’ve laid them out so that you can copy and paste which one you want to try. Once you get your OSX system fonts to where you like them (ie. the menubar at the top, Finder and stock/default OSX apps), you can &lt;a href=&quot;#textEditors&quot; title=&quot;Scroll down to the Text Editors Section&quot;&gt;scroll down &lt;i class=&quot;fad fa-level-down-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt; to the next section to update apps individually.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; - &lt;strong&gt;Light&lt;/strong&gt; font smoothing&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults &lt;span class=&quot;nt&quot;&gt;-currentHost&lt;/span&gt; write &lt;span class=&quot;nt&quot;&gt;-globalDomain&lt;/span&gt; AppleFontSmoothing &lt;span class=&quot;nt&quot;&gt;-int&lt;/span&gt; 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt; - &lt;strong&gt;Medium&lt;/strong&gt; font smoothing&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults &lt;span class=&quot;nt&quot;&gt;-currentHost&lt;/span&gt; write &lt;span class=&quot;nt&quot;&gt;-globalDomain&lt;/span&gt; AppleFontSmoothing &lt;span class=&quot;nt&quot;&gt;-int&lt;/span&gt; 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt; - &lt;strong&gt;Strong&lt;/strong&gt; font smoothing&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults &lt;span class=&quot;nt&quot;&gt;-currentHost&lt;/span&gt; write &lt;span class=&quot;nt&quot;&gt;-globalDomain&lt;/span&gt; AppleFontSmoothing &lt;span class=&quot;nt&quot;&gt;-int&lt;/span&gt; 3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button class=&quot;button small copy-btn pull-right&quot; title=&quot;Copy to clipboard&quot; data-clipboard-text=&quot;defaults -currentHost write -globalDomain AppleFontSmoothing -int 1&quot;&gt;
+     &lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Copy
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;div id=&quot;textEditors&quot; name=&quot;textEditors&quot;&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;adjusting-fonts-individually-text-editors-and-apps&quot;&gt;Adjusting Fonts Individually (Text Editors and Apps):&lt;/h2&gt;
+
+&lt;p&gt;I had issues with my text editor fonts so I’ll use those as examples, but you can locate and adjust any app you’d like using the same method below.&lt;/p&gt;
+
+&lt;div class=&quot;blurb&quot;&gt;
+&lt;strong&gt;&lt;i class=&quot;fad fa-books fa-lg&quot;&gt;&lt;/i&gt;&amp;nbsp; Here's a color-coded script in &lt;span class=&quot;text-gold&quot;&gt;gold&lt;/span&gt; to help you visualize the values to update.&lt;/strong&gt;
+
+&lt;ol class=&quot;alt&quot;&gt;
+  &lt;li&gt;Keep as &lt;code&gt;defaults write&lt;/code&gt;.&lt;/li&gt;
+  &lt;li class=&quot;text-gold&quot;&gt;Application &lt;code&gt;.plist&lt;/code&gt; filename that you want to locate and update.&lt;/li&gt;
+  &lt;li&gt;Keep as &lt;code&gt;CGFontRenderingFontSmoothingDisabled&lt;/code&gt;.&lt;/li&gt;
+  &lt;li class=&quot;text-gold&quot;&gt;Select level of font smoothing &lt;code&gt;0&lt;/code&gt; - &lt;code&gt;3&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;&lt;sup&gt;1&lt;/sup&gt;defaults write &lt;span class=&quot;text-gold&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;com.microsoft.VSCode&lt;/span&gt; &lt;sup&gt;3&lt;/sup&gt;CGFontRenderingFontSmoothingDisabled &lt;span class=&quot;text-gold&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+(More examples further down the page)
+&lt;/div&gt;
+
+&lt;h3 id=&quot;-vscode&quot;&gt;&lt;i class=&quot;fad fa-check-circle fa-lg text-yellow&quot;&gt;&lt;/i&gt; VSCode:&lt;/h3&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;six columns&quot;&gt;
+    &lt;img src=&quot;../../images/posts/mac_osx_fonts/library_pref_light.png&quot; class=&quot;image fit&quot; alt=&quot;Finder 'Go to folder:'&quot; title=&quot;Finder 'Go to folder:'&quot; loading=&quot;lazy&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;six columns&quot;&gt;
+    &lt;img src=&quot;../../images/posts/mac_osx_fonts/preferences.png&quot; class=&quot;image fit&quot; alt=&quot;VSCode preferences location on OSX&quot; title=&quot;VSCode preferences location on OSX&quot; loading=&quot;lazy&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To upgrade your apps individually you can locate their preference files by going to &lt;code class=&quot;highlighter-rouge&quot;&gt;Finder&lt;/code&gt; and selecting &lt;code class=&quot;highlighter-rouge&quot;&gt;Go&lt;/code&gt; or by pressing &lt;code class=&quot;highlighter-rouge&quot;&gt;shift&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;command&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;G&lt;/code&gt; and searching &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Preferences&lt;/code&gt;.  Then scroll through to locate the apps’ filename so we can adjust the font smoothing level. As you can see in the images above I’ve outlined the VSCode files that I update below.&lt;/p&gt;
+
+&lt;div class=&quot;blurb&quot;&gt;
+&lt;i class=&quot;fad fa-info-circle fa-lg&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; FWIW: VSCode is built with &lt;a href=&quot;https://www.electronjs.org/apps&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Apps built with ElectronJS&quot;&gt;Electron JS&lt;/a&gt; and I've found that Electron apps don't need much font smoothing so I typically set them to &lt;code&gt;0&lt;/code&gt;.
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button class=&quot;button small copy-btn pull-right&quot; title=&quot;Copy to clipboard&quot; data-clipboard-text=&quot;defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0&quot;&gt;
+     &lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Copy
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-webstorm&quot;&gt;&lt;i class=&quot;fad fa-check-circle fa-lg text-yellow&quot;&gt;&lt;/i&gt; Webstorm:&lt;/h3&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;six columns&quot;&gt;
+    &lt;img src=&quot;../../images/posts/mac_osx_fonts/webstorm_id.png&quot; class=&quot;image fit&quot; alt=&quot;Webstorm filename id image&quot; title=&quot;Webstorm filename id image&quot; loading=&quot;lazy&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You’ll notice the &lt;code class=&quot;highlighter-rouge&quot;&gt;d9f3b04&lt;/code&gt; in my &lt;a href=&quot;https://www.jetbrains.com/webstorm/&quot; target=&quot;_blank&quot; title=&quot;Webstorm&quot; rel=&quot;noopener&quot;&gt;Webstorm&lt;/a&gt; file name. That is probably going to be different for you depending on your Webstorm download. You’ll have to check for yourself.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button class=&quot;button small copy-btn pull-right&quot; title=&quot;Copy to clipboard&quot; data-clipboard-text=&quot;defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0&quot;&gt;
+     &lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Copy
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-sublime-text-32-example&quot;&gt;&lt;i class=&quot;fad fa-check-circle fa-lg text-yellow&quot;&gt;&lt;/i&gt; Sublime Text 3.2 (example):&lt;/h3&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;six columns&quot;&gt;
+    &lt;img src=&quot;../../images/posts/mac_osx_fonts/vscode_pref.png&quot; class=&quot;image fit&quot; alt=&quot;Sublime Text 3 plist file name image&quot; title=&quot;Sublime Text 3 plist file name image&quot; loading=&quot;lazy&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;six columns&quot;&gt;
+    &lt;img src=&quot;../../images/posts/mac_osx_fonts/sublime_zero.png&quot; class=&quot;image fit&quot; alt=&quot;Sublime Text 3 plist file details in Library/preferences image&quot; title=&quot;Sublime Text 3 plist file details in Library/preferences image&quot; loading=&quot;lazy&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here’s a final example of how I updated &lt;a href=&quot;https://www.sublimetext.com/blog/articles/sublime-text-3-point-2&quot; target=&quot;_blank&quot; title=&quot;Sublime Text 3.2&quot; rel=&quot;noopener&quot;&gt;Sublime Text 3&lt;/a&gt;. If you look at the image above you’ll notice that the string gets added to the file &lt;u&gt;&lt;strong&gt;AFTER&lt;/strong&gt;&lt;/u&gt; I run the command; You can see that &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; is set to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;0&amp;lt;/string&amp;gt;&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.plist&lt;/code&gt; file. I find that turning off font smoothing for Sublime gives me the thickest fonts:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button class=&quot;button small copy-btn pull-right&quot; title=&quot;Copy to clipboard&quot; data-clipboard-text=&quot;defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 0&quot;&gt;
+     &lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Copy
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div id=&quot;revert&quot;&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;revert-back-to-osx-default&quot;&gt;Revert back to OSX default:&lt;/h2&gt;
+&lt;p&gt;No need to worry if you messed things up, you can set everything back to it’s default OSX Catalina state:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Removes custom font smoothing:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults &lt;span class=&quot;nt&quot;&gt;-currentHost&lt;/span&gt; delete &lt;span class=&quot;nt&quot;&gt;-globalDomain&lt;/span&gt; AppleFontSmoothing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button class=&quot;button small copy-btn pull-right&quot; title=&quot;Copy to clipboard&quot; data-clipboard-text=&quot;defaults -currentHost delete -globalDomain AppleFontSmoothing&quot;&gt;
+     &lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Copy
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reverts back to light font smoothing:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; CGFontRenderingFontSmoothingDisabled &lt;span class=&quot;nt&quot;&gt;-bool&lt;/span&gt; True
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button class=&quot;button small copy-btn pull-right&quot; title=&quot;Copy to clipboard&quot; data-clipboard-text=&quot;defaults write -g CGFontRenderingFontSmoothingDisabled -bool True&quot;&gt;
+     &lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Copy
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;Hopefully this helped you or you were able to learn something about OSX package/file management…&lt;/p&gt;
+
+&lt;p&gt;I really hope &lt;a href=&quot;https://apple.com/support&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Apple&lt;/a&gt; addresses this, but until they do, I’ll try to keep this post updated. If you have any info regarding this or you see something off, please &lt;a href=&quot;#getInTouch&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy coding 🤓&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>Colin Stodd</name></author><category term="OSX," /><category term="Catalina," /><category term="MAC," /><category term="Apple," /><category term="Fonts," /><category term="Tips" /><summary type="html">I recently upgraded my MAC from Mojave to Catalina, all went well but I noticed that my text editor fonts were looking thinner than normal. I recall this happening with the Mojave update, so I sort of knew where to begin looking, but I couldn’t find exactly what I needed in one spot so I’m going to post it here. I am by no means an expert on these commands, I’m just posting what worked for me.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/mac_osx_fonts/catalina_icon_min.png" /></entry><entry><title type="html">Common Angular Firestore CRUD Functions</title><link href="http://localhost:4000/posts/code/common-angular-firestore-crud-functions.html" rel="alternate" type="text/html" title="Common Angular Firestore CRUD Functions" /><published>2019-10-16T01:30:00-04:00</published><updated>2020-04-07T11:30:00-04:00</updated><id>http://localhost:4000/posts/code/common-angular-firestore-crud-functions</id><content type="html" xml:base="http://localhost:4000/posts/code/common-angular-firestore-crud-functions.html">&lt;p&gt;I’ve been building a bunch of &lt;a href=&quot;https://github.com/angular/angularfire2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AngularFirestore2&lt;/a&gt; apps recently, and I’ve come to realize that I’m really just copying and pasting much of the functionality of my services and renaming the &lt;code class=&quot;highlighter-rouge&quot;&gt;Item.ts&lt;/code&gt; types and Observable names. Anyway, I figured I’d post these common functions mainly for easy access (for myself), but I thought maybe you guys could find the code useful as well. Who knows, maybe this becomes a documentation cheat-sheet down the line.&lt;/p&gt;
+
+&lt;p&gt;For the sake of simplicity and reusability (just do a find and replace) I’m going to call each “object” or “type” an &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Item&lt;/code&gt;&lt;/strong&gt;; so you should be able to use your favorite &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Visual Studio Code&quot;&gt;text editor&lt;/a&gt; or &lt;a href=&quot;https://www.jetbrains.com/webstorm/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Webstorm&quot;&gt;IDE&lt;/a&gt; to update to whatever you need.&lt;/p&gt;
+
+&lt;p&gt;All of the code is meant to be placed in your service. Going off of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Item&lt;/code&gt; naming convention, it would be
+&lt;code class=&quot;highlighter-rouge&quot;&gt;item.service.ts&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll need to create the functionality with forms and user auth separately. Maybe down the line I’ll write that and link to it in a future post.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;-returns-a-observable-list-of-all-items-by-its-name-in-ascending-order&quot;&gt;&lt;i class=&quot;fad fa-clipboard-list&quot;&gt;&lt;/i&gt; Returns a Observable list of all &lt;code class=&quot;highlighter-rouge&quot;&gt;Items&lt;/code&gt; by its “&lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt;” in ascending order:&lt;/h3&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ItemService&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;nl&quot;&gt;itemCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestoreCollection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;items$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;getAllItems&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;itemCollection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;orderBy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;asc&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;items$&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;itemCollection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;valueChanges&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;-returns-a-single-observable-item-from-its-id&quot;&gt;&lt;i class=&quot;fad fa-hand-point-up&quot;&gt;&lt;/i&gt; Returns a single Observable &lt;code class=&quot;highlighter-rouge&quot;&gt;Item&lt;/code&gt; from it’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ID&lt;/code&gt;:&lt;/h3&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ItemService&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;nl&quot;&gt;itemDoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestoreDocument&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;item$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;getItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;itemDoc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;doc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`items/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item$&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;itemDoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;snapshotChanges&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exists&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}));&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;-setssaves-item-data-from-a-reactive-form&quot;&gt;&lt;i class=&quot;fad fa-save&quot;&gt;&lt;/i&gt; Sets/Saves &lt;code class=&quot;highlighter-rouge&quot;&gt;Item&lt;/code&gt; data (from a reactive form):&lt;/h3&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ItemService&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UsersService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;saveItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentDate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// OR&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// const currentDate = new Date(); If you want a Timestamp.&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;itemRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestoreDocument&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;doc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`items/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;newId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;createdAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;updatedAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;itemRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// Set some sort of Success alert/action&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// Set some Error alert/action&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`myERROR: `&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;-updatesmerges-item-data&quot;&gt;&lt;i class=&quot;fad fa-cloud-upload-alt&quot;&gt;&lt;/i&gt; Updates/Merges &lt;code class=&quot;highlighter-rouge&quot;&gt;Item&lt;/code&gt; Data:&lt;/h3&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ItemService&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UsersService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;updateItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newDate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;questRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestoreDocument&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;doc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`item/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;createdAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createdAt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;formData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;updatedAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;questRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;c1&quot;&gt;// Set some sort of Success alert/action&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;c1&quot;&gt;// Set some Error alert/action&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`myERROR: `&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;-delete-an-item&quot;&gt;&lt;i class=&quot;fad fa-trash-alt&quot;&gt;&lt;/i&gt; Delete an &lt;code class=&quot;highlighter-rouge&quot;&gt;Item&lt;/code&gt;:&lt;/h3&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ItemService&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;nl&quot;&gt;itemDoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestoreDocument&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AngularFirestore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;deleteItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;itemDoc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;afs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;doc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`items/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;itemDoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;c1&quot;&gt;// Do Something with Success&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`myERROR: `&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And with that you should have the general CRUD operations taken care of. I will try and add more complex situations when I find the time. If you find something wrong or missing please let me know in the comments.&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>Colin Stodd</name></author><category term="Angular," /><category term="Firestore," /><category term="Observables," /><category term="UID," /><category term="CRUD," /><category term="Services," /><category term="Examples" /><summary type="html">I’ve been building a bunch of AngularFirestore2 apps recently, and I’ve come to realize that I’m really just copying and pasting much of the functionality of my services and renaming the Item.ts types and Observable names. Anyway, I figured I’d post these common functions mainly for easy access (for myself), but I thought maybe you guys could find the code useful as well. Who knows, maybe this becomes a documentation cheat-sheet down the line.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/angularfire.png" /></entry><entry><title type="html">Things You Should Know About CSS</title><link href="http://localhost:4000/posts/code/things-you-should-know-about-css.html" rel="alternate" type="text/html" title="Things You Should Know About CSS" /><published>2019-05-12T01:00:10-04:00</published><updated>2020-03-12T01:10:10-04:00</updated><id>http://localhost:4000/posts/code/things-you-should-know-about-css</id><content type="html" xml:base="http://localhost:4000/posts/code/things-you-should-know-about-css.html">&lt;p&gt;Most people use &lt;a href=&quot;https://sass-lang.com/documentation/syntax&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SASS/SCSS&lt;/a&gt; or &lt;a href=&quot;http://lesscss.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LESS&lt;/a&gt;,  but maybe you don’t need to?  Here are a couple of reasons I’m opting to use vanilla CSS instead of SCSS in my projects.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;It’s one less abstraction or process I need to compile. I can’t tell you the number of times I build my application but something in the build process goes weary and it’s because of something like SASS.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CSS&lt;/a&gt; now has variables.  That’s right; The main reason I loved SCSS so much was because of the ability to create variables. Doing so allowed you to change the root variable and it would change everything application/site wide. It’s pretty awesome, but now you can do the same with vanilla CSS. Most text editors &amp;amp; IDE’s also support color highlighting too with CSS variables. It’s simple, all you need to do is wrap your variables inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;:root {}&lt;/code&gt; like so&lt;/p&gt;
+
+    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nd&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;c&quot;&gt;/* Fonts */&lt;/span&gt;
+     &lt;span class=&quot;py&quot;&gt;--sans-font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Roboto'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;py&quot;&gt;--serif-font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Cambria'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+     &lt;span class=&quot;c&quot;&gt;/* Colors */&lt;/span&gt;
+     &lt;span class=&quot;py&quot;&gt;--dark-red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#860000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;py&quot;&gt;--light-gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#cccccc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;py&quot;&gt;--dark&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#444444&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+ &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--sans-font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+     &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--dark&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;And you can call those variables with &lt;code class=&quot;highlighter-rouge&quot;&gt;var(--var-name)&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Another reason I’ve started using CSS again is CSS Grid. With a few lines of code, you can create your own CSS “Grid Framework” like &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;, with columns and all. Since CSS Grid takes some more explaining (and I’m really lazy), I’m going to forward you to a couple of resources that are amazing and must be bookmarked. This &lt;a href=&quot;https://scrimba.com/g/gR8PTE&quot;&gt;interactive course from Scrimba&lt;/a&gt; will leave you a pro at CSS Grid and should only take you an afternoon to complete, and best of all it’s 100% FREE!&lt;/p&gt;
+
+    &lt;p&gt;And for reference sake, you can’t get much better than &lt;a href=&quot;https://css-tricks.com/snippets/css/complete-guide-grid/&quot;&gt;CSS Tricks&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;This guide from Learn &lt;a href=&quot;https://learncssgrid.com/&quot;&gt;CSS Grid&lt;/a&gt; is also a great reference/education tool.&lt;/p&gt;
+
+    &lt;p&gt;And with those, you’ll be well on your way to a CSS Grid pro!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Colin Stodd</name></author><category term="CSS," /><category term="Tips &amp; Tricks," /><category term="SASS" /><summary type="html">Most people use SASS/SCSS or LESS, but maybe you don’t need to? Here are a couple of reasons I’m opting to use vanilla CSS instead of SCSS in my projects.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/css3.png" /></entry><entry><title type="html">Adding Real Favicon Generator To Your Angular App</title><link href="http://localhost:4000/posts/code/adding-real-favicon-generator-to-your-angular-app.html" rel="alternate" type="text/html" title="Adding Real Favicon Generator To Your Angular App" /><published>2019-02-19T15:30:12-05:00</published><updated>2019-02-19T15:30:12-05:00</updated><id>http://localhost:4000/posts/code/adding-real-favicon-generator-to-your-angular-app</id><content type="html" xml:base="http://localhost:4000/posts/code/adding-real-favicon-generator-to-your-angular-app.html">&lt;p&gt;For just about all of my &lt;a href=&quot;https://angular.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Angular&quot;&gt;Angular&lt;/a&gt; applications I’ve used &lt;a href=&quot;https://realfavicongenerator.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Real Favicon Generator&quot;&gt;Real Favicon Generator (RFG)&lt;/a&gt; to generate the files for my Favicon icon. It’s a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I’ve found a quick and painless way to use both the Node and HTML5 tools. I’ll also show you how to add &lt;a href=&quot;https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Medium&quot;&gt;Progressive Web App (PWA)&lt;/a&gt; meta tags so that you can add your newly created icons to your mobile home-screen. Lets get to it.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Head over to the &lt;a href=&quot;https://realfavicongenerator.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Real Favicon Generator&quot;&gt;Real Favicon Generator&lt;/a&gt; site and upload your icon. Note that your icon should have even/square dimensions and be at least 260px wide/high.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Set your icon settings; which basically allows you to play with the margin size, background size and what it will look like as a PWA icon on your mobile devices.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once the &lt;a href=&quot;https://realfavicongenerator.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Real Favicon Generator&quot;&gt;Real Favicon Generator&lt;/a&gt; does its thing, you’ll want to click on the “Node CLI” tab as seen in the image below.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../../images/posts/real_favicon_with_arrows.png&quot; class=&quot;zoom image fit&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now you’ll want to install the Real Favicon Generator CLI globally which helps to generate the files for you.
+So run:
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; cli-real-favicon
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now that the CLI is installed, run this command from the root of your &lt;a href=&quot;https://angular.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Angular&quot;&gt;Angular&lt;/a&gt; app:
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;touch &lt;/span&gt;faviconDescription.json &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;src/assets/outputDir
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;This creates a generator file and output directory where the generator files are going to be placed in.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now you’ll want to copy that source code on the RFG site into the newly created &lt;code class=&quot;highlighter-rouge&quot;&gt;faviconDescription.json&lt;/code&gt; file. You’ll notice that there will be &lt;code class=&quot;highlighter-rouge&quot;&gt;TODO: Path to your master picture&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You’ll need to add your original icon that you uploaded to RFG into the newly created &lt;code class=&quot;highlighter-rouge&quot;&gt;src/assets/outputDir&lt;/code&gt; directory. I named my image &lt;code class=&quot;highlighter-rouge&quot;&gt;favicon.png&lt;/code&gt; so my path looks like this:&lt;/p&gt;
+
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;masterPicture&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/assets/outputDir/favicon.png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Update&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(Should&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;be&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;same&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;you&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;rename&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;favicon.png)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;iconsPath&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;design&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now that you have copied and pasted that code and updated the     &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;masterPicture&quot;&lt;/code&gt; path to your image path, you’ll want to run this RFG CLI command to generate your new icons. So run this in your terminal:
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; real-favicon generate faviconDescription.json faviconData.json src/assets/outputDir
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div class=&quot;blurb&quot;&gt;&lt;i class=&quot;fad fa-whistle fa-lg text-gold&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;
+ Before reaching out to me with an error, please double and triple-check that you followed my instructions carefully. (1) Did you add your original pic to the output directory? (2) Did you copy the correct path?... I've tested this multiple times so I'm confident that it's working as expected. Nevertheless, if after checking your code and you still cannot get it to work, feel free to &lt;a href=&quot;#getInTouch&quot;&gt;contact me&lt;/a&gt;.
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If everything went correctly you should now see your icons in your &lt;code class=&quot;highlighter-rouge&quot;&gt;src/assets/outputDir&lt;/code&gt; directory.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now go into your &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; file and make sure it has the path to your favicon in the assets like so:&lt;/p&gt;
+
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;assets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/assets/outputDir/favicon.ico&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;This&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/assets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/sitemap.xml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/robots.txt&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Finally!!!!!!! One last step, go into your &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; file and add your meta tags. Mine looks like what’s below. If you copy and paste my code just remember to update the color HEX’s to be what you choose for your icon. You can find those HEX colors on the HTML5 tab on the RFG site. I’ve added some PWA tags too so when you add your site to your mobile devices’ home screen, and launch the app, it will run like a PWA application and will use your new icon.
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- * Favicon * --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/x-icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./assets/outputDir/favicon.ico&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;apple-touch-icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;180x180&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./assets/outputDir/apple-touch-icon.png&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;32x32&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./assets/outputDir/favicon-32x32.png&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;16x16&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./assets/outputDir/favicon-16x16.png&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;manifest&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./assets/outputDir/site.webmanifest&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mask-icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./assets/outputDir/safari-pinned-tab.svg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#d4327b&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;msapplication-TileColor&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#ffffff&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;msapplication-config&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./assets/outputDir/browserconfig.xml&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;theme-color&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#fcfcfc&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- * PWA * --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width=device-width, initial-scale=1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mobile-web-app-capable&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;yes&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;apple-mobile-web-app-capable&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;yes&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;apple-mobile-web-app-status-bar-style&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;white&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;msapplication-starturl&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;If you run into any issues or have any questions please let me know in the comments.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Colin Stodd</name></author><category term="Angular," /><category term="Tutorial," /><category term="Real Favicon Generator" /><summary type="html">For just about all of my Angular applications I’ve used Real Favicon Generator (RFG) to generate the files for my Favicon icon. It’s a great tool, and I highly suggest using it and donating to it. However, their guide only shows you how to add your favicon to a Node or HTML5 application/site. If you are using Angular there are a few more steps involved, so I’ve found a quick and painless way to use both the Node and HTML5 tools. I’ll also show you how to add Progressive Web App (PWA) meta tags so that you can add your newly created icons to your mobile home-screen. Lets get to it.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/favicon_generator_og_image_transp.png" /></entry><entry><title type="html">How to add UIKit to Angular</title><link href="http://localhost:4000/posts/code/how-to-add-uikit-to-angular.html" rel="alternate" type="text/html" title="How to add UIKit to Angular" /><published>2019-02-19T15:30:12-05:00</published><updated>2020-05-13T13:30:12-04:00</updated><id>http://localhost:4000/posts/code/how-to-add-uikit-to-angular</id><content type="html" xml:base="http://localhost:4000/posts/code/how-to-add-uikit-to-angular.html">&lt;p&gt;I heard about &lt;a href=&quot;https://getuikit.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UIKit&lt;/a&gt; from a friend and really liked it! If you do a little digging on their website you’ll see that they have a &lt;a href=&quot;https://www.npmjs.com/package/uikit&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NPM package&lt;/a&gt;. &lt;br /&gt;This post shows you how to install &lt;a href=&quot;https://getuikit.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UIKit&lt;/a&gt; in &lt;a href=&quot;https://angular.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Angular&lt;/a&gt; using either CSS or &lt;a href=&quot;#scss&quot;&gt;SCSS/SASS &lt;i class=&quot;fad fa-level-down-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;neu-alert mb-3&quot;&gt;
+&lt;i class=&quot;fad fa-hands-wash fa-lg&quot;&gt;&lt;/i&gt;  Thanks to a &lt;a href=&quot;http://disq.us/p/2975tzk&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;commenter&lt;/a&gt; for pointing out that &lt;a href=&quot;https://jquery.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;jQuery&lt;/a&gt; is no longer needed as a dependency, so now all you need is the &lt;a href=&quot;https://getuikit.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UIKit&lt;/a&gt; package.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;i class=&quot;fab fa-css3 text-pink header-icon&quot; title=&quot;CSS 3&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;if-youre-using-css&quot;&gt;&lt;em&gt;If you’re using CSS:&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;From the root of your project you need to install &lt;a href=&quot;https://getuikit.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UIKit&lt;/a&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;uikit &lt;span class=&quot;nt&quot;&gt;--S&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update your &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; file with the same code snippet below in two places: Underneath &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;build&quot;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;test&quot;&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;styles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/styles.css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/uikit/dist/css/uikit.min.css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/uikit/dist/css/uikit-core.min.css&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/uikit/dist/js/uikit.min.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/uikit/dist/js/uikit-icons.min.js&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div id=&quot;scss&quot; name=&quot;scss&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Since we updated &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; you’ll have to restart your server.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;i class=&quot;fab fa-sass text-pink header-icon&quot; title=&quot;SASS&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;if-youre-using-scss-or-sass&quot;&gt;&lt;em&gt;If you’re using SCSS or SASS:&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;From the root of your project you need to install &lt;a href=&quot;https://getuikit.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UIKit&lt;/a&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;uikit &lt;span class=&quot;nt&quot;&gt;--S&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update your &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; file with the same code snippet below in two places. Underneath &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;build&quot;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;test&quot;&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;styles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/styles/styles.scss&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;See&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;blurb&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(link)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;below&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;regarding&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(And&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;comment).&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;stylePreprocessorOptions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;includePaths&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+       &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/styles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+       &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/uikit/src/scss&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/uikit/dist/js/uikit.min.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/uikit/dist/js/uikit-icons.min.js&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div class=&quot;blurb&quot;&gt;&lt;i class=&quot;fad fa-books fa-lg&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;  To read more about  &lt;code&gt;stylePreprocessorOptions&lt;/code&gt; go to  &amp;nbsp;&lt;a href=&quot;https://github.com/angular/angular-cli/wiki/stories-global-styles&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; Angular/CLI README  &lt;i class=&quot;fad fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;. &amp;nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc in Angular.
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;styles&lt;/code&gt; directory/folder in &lt;code class=&quot;highlighter-rouge&quot;&gt;/src&lt;/code&gt;. So it should be &lt;code class=&quot;highlighter-rouge&quot;&gt;src/styles&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now move your &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.scss&lt;/code&gt; file into that directory and create your variables, mixins and custom files to that &lt;code class=&quot;highlighter-rouge&quot;&gt;src/styles&lt;/code&gt; directory using the following naming convention: &lt;code class=&quot;highlighter-rouge&quot;&gt;_variables.scss&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_mixins.scss&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_custom.scss&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now open your &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.scss&lt;/code&gt; file and import &lt;a href=&quot;https://getuikit.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UIKit&lt;/a&gt; and your custom/mixin/variable files:&lt;/p&gt;
+
+    &lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cm&quot;&gt;/* Custom SCSS/SASS Files */&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'variables'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'mixins'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'custom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;cm&quot;&gt;/* UIKit */&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;variables-theme.scss&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;mixins-theme.scss&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;uikit-theme.scss&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To use your variables in other components, you’ll have to import them into every
+&lt;code class=&quot;highlighter-rouge&quot;&gt;component-name.component.scss&lt;/code&gt; file like so. But because we added the &lt;code class=&quot;highlighter-rouge&quot;&gt;src/styles&lt;/code&gt; and the &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;./node_modules/uikit/src/scss&quot;&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;stylePreprocessorOptions&quot;&lt;/code&gt; in our &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; file, we can leave off the path in our style files because they are compiled globally (read the blurb above) which makes things much cleaner:&lt;/p&gt;
+
+    &lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cm&quot;&gt;/* component-name.component.scss */&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'variables'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Since we updated &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; you’ll have to restart your server.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Colin Stodd</name></author><category term="Angular," /><category term="UIKIT," /><category term="Tutorial" /><summary type="html">I heard about UIKit from a friend and really liked it! If you do a little digging on their website you’ll see that they have a NPM package. This post shows you how to install UIKit in Angular using either CSS or SCSS/SASS .</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/uikit.png" /></entry><entry><title type="html">How to install Bootstrap in Angular</title><link href="http://localhost:4000/posts/code/how-to-install-bootstrap-in-angular.html" rel="alternate" type="text/html" title="How to install Bootstrap in Angular" /><published>2018-12-19T00:00:10-05:00</published><updated>2020-03-28T01:10:00-04:00</updated><id>http://localhost:4000/posts/code/how-to-install-bootstrap-in-angular</id><content type="html" xml:base="http://localhost:4000/posts/code/how-to-install-bootstrap-in-angular.html">&lt;p&gt;There are other packages out there that you can use such as &lt;a href=&quot;https://github.com/valor-software/ngx-bootstrap&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ngx-bootstrap&lt;/a&gt;, but this is the vanilla &lt;a href=&quot;https://getbootstrap.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bootstrap&lt;/a&gt; (including JavaScript) method.&lt;/p&gt;
+
+&lt;p&gt;There are some slight differences from versions before Angular 6. This post is for 6+ and will show you how to install &lt;a href=&quot;https://getbootstrap.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bootstrap 4&lt;/a&gt; in &lt;a href=&quot;https://angular.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Angular&lt;/a&gt; using either CSS or &lt;a href=&quot;#scss&quot;&gt;SCSS/SASS &lt;i class=&quot;fad fa-level-down-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;fab fa-css3 text-pink header-icon&quot; title=&quot;CSS 3&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;if-youre-using-css&quot;&gt;&lt;em&gt;If you’re using CSS:&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;From the root of your project you need to install &lt;a href=&quot;https://getbootstrap.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bootstrap&lt;/a&gt;, &lt;a href=&quot;https://jquery.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;jQuery&lt;/a&gt; and &lt;a href=&quot;https://popper.js.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Popper.js&lt;/a&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bootstrap jquery popper.js &lt;span class=&quot;nt&quot;&gt;--S&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div class=&quot;blurb&quot;&gt;&lt;i class=&quot;fad fa-exclamation-triangle fa-lg text-gold&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; You can disregard the warning about upgrading to &lt;code&gt;@popperjs/core&lt;/code&gt;. Bootstrap requires Popper.js 1.6.
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update your &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; file with the same code snippet below in two places: Underneath &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;build&quot;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;test&quot;&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;styles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/styles.css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/jquery/dist/jquery.min.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/popper.js/dist/umd/popper.min.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div id=&quot;scss&quot; name=&quot;scss&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Since we updated &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; you’ll have to restart your server. Once you do that you should be good to go for the CSS version.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;i class=&quot;fab fa-sass text-pink header-icon&quot; title=&quot;SASS&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;if-youre-using-scss-or-sass&quot;&gt;&lt;em&gt;If you’re using SCSS or SASS:&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;From the root of your project you need to install &lt;a href=&quot;https://getbootstrap.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bootstrap&lt;/a&gt;, &lt;a href=&quot;https://jquery.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;jQuery&lt;/a&gt; and &lt;a href=&quot;https://popper.js.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Popper.js&lt;/a&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;blurb&quot;&gt;&lt;i class=&quot;fad fa-exclamation-triangle fa-lg text-gold&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; You can disregard the warning about upgrading to &lt;code&gt;@popperjs/core&lt;/code&gt;. Bootstrap requires Popper.js 1.6.
+ &lt;/div&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bootstrap jquery popper.js &lt;span class=&quot;nt&quot;&gt;--S&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update your &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; file with the same code snippet below in two places. Underneath &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;build&quot;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;test&quot;&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;styles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/styles/styles.scss&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/bootstrap/scss/bootstrap.scss&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;See&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;blurb&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;about&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;below,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;comment.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;stylePreprocessorOptions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;includePaths&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;src/styles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/bootstrap/scss&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/jquery/dist/jquery.min.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/popper.js/dist/umd/popper.min.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div class=&quot;blurb&quot;&gt;&lt;i class=&quot;fad fa-books fa-lg&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;  To read more about  &lt;code&gt;stylePreprocessorOptions&lt;/code&gt; go to  &amp;nbsp;&lt;a href=&quot;https://github.com/angular/angular-cli/wiki/stories-global-styles&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; Angular/CLI README  &lt;i class=&quot;fad fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;. &amp;nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc in Angular.
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;styles&lt;/code&gt; directory/folder in &lt;code class=&quot;highlighter-rouge&quot;&gt;/src&lt;/code&gt;. So it should be &lt;code class=&quot;highlighter-rouge&quot;&gt;src/styles&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now move your &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.scss&lt;/code&gt; file into that directory and create your variables, mixins and custom files to that &lt;code class=&quot;highlighter-rouge&quot;&gt;src/styles&lt;/code&gt; directory using the following naming convention: &lt;code class=&quot;highlighter-rouge&quot;&gt;_variables.scss&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_mixins.scss&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_custom.scss&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now open your &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.scss&lt;/code&gt; file and import &lt;a href=&quot;https://getbootstrap.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bootstrap&lt;/a&gt; and your custom/mixin/variable files:&lt;/p&gt;
+
+    &lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cm&quot;&gt;/* Bootstrap */&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bootstrap'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+ &lt;span class=&quot;cm&quot;&gt;/* Custom */&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'variables'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'mixins'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'custom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To use your variables in other components, you’ll have to import them into every
+&lt;code class=&quot;highlighter-rouge&quot;&gt;component-name.component.scss&lt;/code&gt; file like so. But because we imported all of Bootstrap’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.scss&lt;/code&gt; files into our &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; file, we can leave off the path which makes things much cleaner:&lt;/p&gt;
+
+    &lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cm&quot;&gt;/* component-name.component.scss */&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'variables'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Since we updated &lt;code class=&quot;highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; you’ll have to restart your server.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Colin Stodd</name></author><category term="Angular," /><category term="Bootstrap 4," /><category term="Tutorial" /><summary type="html">There are other packages out there that you can use such as ngx-bootstrap, but this is the vanilla Bootstrap (including JavaScript) method.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/posts/bootstrap.png" /></entry></feed>

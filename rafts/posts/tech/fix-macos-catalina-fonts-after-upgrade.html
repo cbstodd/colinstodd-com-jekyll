@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+  <head>
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w,d,s,l,i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5KC3SGB');
+	</script>
+	<!-- End Google Tag Manager -->
+	<script type="text/javascript">require('dotenv').config();</script>
+	<title>Fix MacOS Catalina Fonts After Upgrade | Colin Stodd</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--~ Favicon ~-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=yyQKGrYykG">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=yyQKGrYykG">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=yyQKGrYykG">
+	<link rel="manifest" href="/site.webmanifest?v=yyQKGrYykG">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=yyQKGrYykG" color="#31394b">
+	<link rel="shortcut icon" href="/favicon.ico?v=yyQKGrYykG">
+	<meta name="apple-mobile-web-app-title" content="Colin Stodd">
+	<meta name="application-name" content="Colin Stodd">
+	<meta name="msapplication-TileColor" content="#31394b">
+	<meta name="theme-color" content="#31394b">
+	<meta name="msvalidate.01" content="91EDE404FB4B17668EDEEDDD5F4722BD" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico?v=yyQKGrYykG">
+	<!-- * PWA * -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="msapplication-starturl" content="/">
+	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css/><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css/><![endif]-->
+	<!-- Animate.css -->
+	<link rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<!-- * FontAwesome * -->
+	<link rel="stylesheet"
+		  href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+		  integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH"
+		  crossorigin="anonymous">
+	<meta property="og:type" content="website" />
+	<!-- reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LftvrgZAAAAADgejFQYp77OCk-dp3tDvE6MfhZ4"></script>
+
+
+<script type="text/javascript">
+	require('dotenv').config();
+	// const recaptchaKey = process.env.RECAPTCHA_KEY;
+	const recaptchaKey = '6LftvrgZAAAAADgejFQYp77OCk-dp3tDvE6MfhZ4';
+
+	grecaptcha.ready(function () {
+		grecaptcha.execute(recaptchaKey,{ action: 'homepage' })
+			.then(function (token) {
+				document.getElementById('captchaResponse').value = token;
+			});
+	});
+	console.log('recapcha .env',recaptchaKey);
+</script>
+	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Colin Stodd" />
+	<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Fix MacOS Catalina Fonts After Upgrade | Colin Stodd</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Fix MacOS Catalina Fonts After Upgrade" />
+<meta name="author" content="Colin Stodd" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to fix blurry/thin fonts after upgrading to Mac OS Catalina" />
+<meta property="og:description" content="How to fix blurry/thin fonts after upgrading to Mac OS Catalina" />
+<link rel="canonical" href="http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade.html" />
+<meta property="og:url" content="http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade.html" />
+<meta property="og:site_name" content="Colin Stodd" />
+<meta property="og:image" content="http://localhost:4000/images/posts/mac_osx_fonts/catalina_icon_min.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-24T00:00:01-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/images/posts/mac_osx_fonts/catalina_icon_min.png" />
+<meta property="twitter:title" content="Fix MacOS Catalina Fonts After Upgrade" />
+<meta name="twitter:site" content="@cbstodd" />
+<meta name="twitter:creator" content="@Colin Stodd" />
+<meta property="fb:admins" content="colin.stodd" />
+<meta property="fb:app_id" content="792796074135713" />
+<meta name="google-site-verification" content="1234" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade.html"},"image":"http://localhost:4000/images/posts/mac_osx_fonts/catalina_icon_min.png","author":{"@type":"Person","name":"Colin Stodd"},"url":"http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade.html","description":"How to fix blurry/thin fonts after upgrading to Mac OS Catalina","dateModified":"2020-08-03T00:10:10-04:00","headline":"Fix MacOS Catalina Fonts After Upgrade","datePublished":"2019-10-24T00:00:01-04:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+  <body>
+    <noscript><div style="width:100%; display:inline-block;">
+    <div style="width:80%; padding: 4em 1em 2em 8em;">
+        <h4 style=" color:lightsalmon; line-height:2em;"><i class="fad fa-exclamation-triangle fa-lg"></i>&nbsp;&nbsp; It appears your browser is not permitting JavaScript. In order for this site and many other sites to work, it is recommended that you enable JavaScript to run in your browsers.</h4>
+    </div>
+</div></noscript>
+    <script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '792796074135713',
+            xfbml: true,
+            version: 'v4.0'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KC3SGB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div id="page-wrapper">
+      <!-- Header -->
+
+  <header id="header">
+    
+    <h1>
+      <a href="/">
+        <img src="/images/site/cs_grey_inset_50.png" alt="logo" class="cs-logo"
+             title="Colin Stodd">
+      </a>
+      <a href="/" class="site-title">Colin Stodd</a>
+    </h1>
+    <nav>
+      <a href="#menu">Menu</a>
+    </nav>
+  </header>
+      <!-- Menu -->
+<nav id="menu">
+  <div class="inner">
+    <h2>Menu</h2>
+    <ul class="links">
+      
+      
+      <li><a href="/">Home</a></li>
+      
+      
+      
+      <li><a href="/about.html">About</a></li>
+      
+      
+      
+      <li><a href="#getInTouch">Contact</a></li>
+      
+      
+      
+      <li><a href="/posts.html">Posts</a></li>
+      
+      
+      
+      <li><a href="/projects.html">Projects</a></li>
+      
+      
+      
+      <li><a href="/technologies.html">Technologies</a></li>
+      
+      
+    </ul>
+    <a href="#" class="close">Close</a>
+  </div>
+</nav>
+
+      <!-- Wrapper -->
+<section id="wrapper">
+  <header>
+    <div class="inner">
+      <a href="/posts/.html">
+        <h6></h6>
+      </a>
+      <img src="/images/posts/mac_osx_fonts/catalina_icon_min.png" alt="Fix MacOS Catalina Fonts After Upgrade" class="zoom enlarge image right" />
+      <h2 class="major">Fix MacOS Catalina Fonts After Upgrade</h2>
+      <hr class="banner">
+      <h5>
+        <a href="/posts/tech.html" class="cat-link">
+          <i class="fad fa-folder-tree"></i> tech
+        </a>
+      </h5>
+      <h5><i class="fad fa-user"></i> Colin Stodd</h5>
+      <h5><i class="fad fa-tags"></i> OSX,Catalina,MAC,Apple,Fonts,Tips</h5>
+      <h5 title="Published Date"><i class="fad fa-calendar-alt"></i> 24 Oct 2019 (Published)
+      </h5>
+      
+      <h5 title="Updated Date"><i class="fad fa-calendar-edit"></i> 03 Aug 2020
+        (Updated)</h5>
+      
+      <p style="float:right;"><div class="fb-like"
+     data-share="true"
+     data-width="300"
+     data-show-faces="true">
+</div></p>
+    </div>
+  </header>
+  <!-- Content -->
+  <div class="wrapper">
+    <div class="inner">
+      <p>I recently upgraded my MAC from <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> to <a href="https://www.apple.com/macos/catalina/" target="_blank" rel="noopener">Catalina</a>, all went well but I noticed that my text editor fonts were looking thinner than normal. I recall this happening with the <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> update, so I sort of knew where to begin looking, but I couldn’t find exactly what I needed in one spot so I’m going to post it here.  <strong><em>I am by no means an expert on these commands, I’m just posting what worked for me</em></strong>.</p>
+
+<p>Many people had to play with these settings because not every external display is the same, so what I’ve posted here might not fit your setup exactly. It took some trial and error, but hopefully these commands will help you. As you’ll see below, everything can be reverted (<a href="#revert">see the bottom of the page</a>) and the commands won’t do any serious damage to your MAC.</p>
+
+<div class="blurb"><i class="fad fa-comment-alt-exclamation fa-lg"></i>&nbsp;&nbsp; Note: Every time you run one of these commands, you'll have to log out to see the changes. You can do so by pressing <code>command</code> + <code>shift</code> + <code>Q</code>.</div>
+<hr />
+
+<h2 id="what-worked-for-me">What Worked For Me:</h2>
+<p>You’ll want to check to see if you have your font smoothing enabled or disabled in your <code class="highlighter-rouge">Settings</code> &gt; <code class="highlighter-rouge">General</code> tab as seen in the image. This also plays a role… I left mine on.</p>
+
+<div class="container">
+  <div class="row">
+    <div class="one-third column">&nbsp;</div>
+      <div class="one-third column">
+        <img src="../../images/posts/mac_osx_fonts/disable_font_smoothing.png" class="image fit" title="font smoothing osx catalina" loading="lazy" />
+      </div>
+    <div class="one-third column">&nbsp;</div>
+  </div>
+</div>
+
+<p>Even though you checked the checkbox in settings, We’re going to assure that font smoothing is on system-wide by running the command below in your <a href="https://www.iterm2.com/" target="_blank" rel="noopener" title="iTerm 2">favorite terminal application</a> <code class="highlighter-rouge">/Applications/Utilities/Terminal.app</code>. The <code class="highlighter-rouge">-g</code> stands for <code class="highlighter-rouge">global</code>.  <a href="#textEditors" title="Scroll down fix individual apps">Further down</a> in the tutorial I show you how to change the fonts on a per-app basis (examples shown <a href="#textEditors" title="Scroll down to the Text Editors Section">down the page <i class="fad fa-level-down-alt"></i></a> for text editors).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write <span class="nt">-g</span> CGFontRenderingFontSmoothingDisabled <span class="nt">-bool</span> FALSE
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>And then I ran the code below to add strong font smoothing:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> write <span class="nt">-globalDomain</span> AppleFontSmoothing <span class="nt">-int</span> 2
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults -currentHost write -globalDomain AppleFontSmoothing -int 2">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button>
+Log out, and log back in.</p>
+
+<hr />
+<h2 id="adjusting-fonts-globally">Adjusting Fonts Globally:</h2>
+
+<p>If you’re at this section you’re probably not happy with the results above 😞. What you’ll most likely need to do is try different combinations. I recommend that you write down what worked and where it worked. e.g. if what we ran above helped with OS X’s fonts but messed up some apps then take note of that so you can apply commands to those specific apps (basically debug). Im not exaggerating when I say that I spent nearly 8 hours doing this (also searching for answers which is why I’m writing this post).</p>
+
+<p>Nevertheless, here’s the same command as above but I’ve laid them out so that you can copy and paste which one you want to try. Once you get your OSX system fonts to where you like them (ie. the menubar at the top, Finder and stock/default OSX apps), you can <a href="#textEditors" title="Scroll down to the Text Editors Section">scroll down <i class="fad fa-level-down-alt"></i></a> to the next section to update apps individually.</p>
+
+<p><code class="highlighter-rouge">1</code> - <strong>Light</strong> font smoothing</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> write <span class="nt">-globalDomain</span> AppleFontSmoothing <span class="nt">-int</span> 1
+</code></pre></div></div>
+<p><code class="highlighter-rouge">2</code> - <strong>Medium</strong> font smoothing</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> write <span class="nt">-globalDomain</span> AppleFontSmoothing <span class="nt">-int</span> 2
+</code></pre></div></div>
+<p><code class="highlighter-rouge">3</code> - <strong>Strong</strong> font smoothing</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> write <span class="nt">-globalDomain</span> AppleFontSmoothing <span class="nt">-int</span> 3
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults -currentHost write -globalDomain AppleFontSmoothing -int 1">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>&nbsp;</p>
+
+<div id="textEditors" name="textEditors"></div>
+
+<hr />
+
+<h2 id="adjusting-fonts-individually-text-editors-and-apps">Adjusting Fonts Individually (Text Editors and Apps):</h2>
+
+<p>I had issues with my text editor fonts so I’ll use those as examples, but you can locate and adjust any app you’d like using the same method below.</p>
+
+<div class="blurb">
+<strong><i class="fad fa-books fa-lg"></i>&nbsp; Here's a color-coded script in <span class="text-gold">gold</span> to help you visualize the values to update.</strong>
+
+<ol class="alt">
+  <li>Keep as <code>defaults write</code>.</li>
+  <li class="text-gold">Application <code>.plist</code> filename that you want to locate and update.</li>
+  <li>Keep as <code>CGFontRenderingFontSmoothingDisabled</code>.</li>
+  <li class="text-gold">Select level of font smoothing <code>0</code> - <code>3</code>.</li>
+</ol>
+
+<pre><code><sup>1</sup>defaults write <span class="text-gold"><sup>2</sup>com.microsoft.VSCode</span> <sup>3</sup>CGFontRenderingFontSmoothingDisabled <span class="text-gold"><sup>4</sup>0</span>
+</code></pre>
+
+(More examples further down the page)
+</div>
+
+<h3 id="-vscode"><i class="fad fa-check-circle fa-lg text-yellow"></i> VSCode:</h3>
+
+<div class="row">
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/library_pref_light.png" class="image fit" alt="Finder 'Go to folder:'" title="Finder 'Go to folder:'" loading="lazy" />
+  </div>
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/preferences.png" class="image fit" alt="VSCode preferences location on OSX" title="VSCode preferences location on OSX" loading="lazy" />
+  </div>
+</div>
+
+<p>To upgrade your apps individually you can locate their preference files by going to <code class="highlighter-rouge">Finder</code> and selecting <code class="highlighter-rouge">Go</code> or by pressing <code class="highlighter-rouge">shift</code> + <code class="highlighter-rouge">command</code> + <code class="highlighter-rouge">G</code> and searching <code class="highlighter-rouge">~/Library/Preferences</code>.  Then scroll through to locate the apps’ filename so we can adjust the font smoothing level. As you can see in the images above I’ve outlined the VSCode files that I update below.</p>
+
+<div class="blurb">
+<i class="fad fa-info-circle fa-lg"></i>&nbsp;&nbsp; FWIW: VSCode is built with <a href="https://www.electronjs.org/apps" target="_blank" rel="noopener" title="Apps built with ElectronJS">Electron JS</a> and I've found that Electron apps don't need much font smoothing so I typically set them to <code>0</code>.
+</div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0 defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<h3 id="-webstorm"><i class="fad fa-check-circle fa-lg text-yellow"></i> Webstorm:</h3>
+
+<div class="row">
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/webstorm_id.png" class="image fit" alt="Webstorm filename id image" title="Webstorm filename id image" loading="lazy" />
+  </div>
+</div>
+
+<p>You’ll notice the <code class="highlighter-rouge">d9f3b04</code> in my <a href="https://www.jetbrains.com/webstorm/" target="_blank" title="Webstorm" rel="noopener">Webstorm</a> file name. That is probably going to be different for you depending on your Webstorm download. You’ll have to check for yourself.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write jetbrains.webstorm.d9f3b04 CGFontRenderingFontSmoothingDisabled 0">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<h3 id="-sublime-text-32-example"><i class="fad fa-check-circle fa-lg text-yellow"></i> Sublime Text 3.2 (example):</h3>
+
+<div class="row">
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/vscode_pref.png" class="image fit" alt="Sublime Text 3 plist file name image" title="Sublime Text 3 plist file name image" loading="lazy" />
+  </div>
+  <div class="six columns">
+    <img src="../../images/posts/mac_osx_fonts/sublime_zero.png" class="image fit" alt="Sublime Text 3 plist file details in Library/preferences image" title="Sublime Text 3 plist file details in Library/preferences image" loading="lazy" />
+  </div>
+</div>
+
+<p>Here’s a final example of how I updated <a href="https://www.sublimetext.com/blog/articles/sublime-text-3-point-2" target="_blank" title="Sublime Text 3.2" rel="noopener">Sublime Text 3</a>. If you look at the image above you’ll notice that the string gets added to the file <u><strong>AFTER</strong></u> I run the command; You can see that <code class="highlighter-rouge">0</code> is set to <code class="highlighter-rouge">&lt;string&gt;0&lt;/string&gt;</code> in the <code class="highlighter-rouge">.plist</code> file. I find that turning off font smoothing for Sublime gives me the thickest fonts:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 0
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write com.sublimetext.3 CGFontRenderingFontSmoothingDisabled 0">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<div id="revert"></div>
+
+<h2 id="revert-back-to-osx-default">Revert back to OSX default:</h2>
+<p>No need to worry if you messed things up, you can set everything back to it’s default OSX Catalina state:</p>
+
+<p><strong>Removes custom font smoothing:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults <span class="nt">-currentHost</span> delete <span class="nt">-globalDomain</span> AppleFontSmoothing
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults -currentHost delete -globalDomain AppleFontSmoothing">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p><strong>Reverts back to light font smoothing:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write <span class="nt">-g</span> CGFontRenderingFontSmoothingDisabled <span class="nt">-bool</span> True
+</code></pre></div></div>
+<p><button class="button small copy-btn pull-right" title="Copy to clipboard" data-clipboard-text="defaults write -g CGFontRenderingFontSmoothingDisabled -bool True">
+     <i class="fad fa-clipboard-list"></i> Copy
+</button></p>
+
+<p>Hopefully this helped you or you were able to learn something about OSX package/file management…</p>
+
+<p>I really hope <a href="https://apple.com/support" target="_blank" rel="noopener">Apple</a> addresses this, but until they do, I’ll try to keep this post updated. If you have any info regarding this or you see something off, please <a href="#getInTouch">let me know</a>.</p>
+
+<p>Happy coding 🤓</p>
+
+<hr />
+
+
+      <p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gn-2j-q-58+wj"
+     data-ad-client="ca-pub-9248372544210578"
+     data-ad-slot="3405486255"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+      
+      
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade.html';
+      this.page.identifier = 'http://localhost:4000/posts/tech/fix-macos-catalina-fonts-after-upgrade.html';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://colinstodd-v2.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      
+    </div>
+  </div>
+</section>
+      <div id="getInTouch"></div>
+<!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <h2 class="major"><i class="fad fa-mailbox"></i> Send A Message</h2>
+    <hr class="footer">
+    <p>If you are contacting me about future projects or recruitment, the easiest way to get a hold of me is with the
+      form below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
+    </p>
+    <form id="contactForm" method="POST" action="https://getform.io/f/1c2abdba-fac6-4bdc-90c9-5fb74c77eebb">
+      <div class="field">
+        <label for="name">Name*</label>
+        <input type="text" name="name" id="name" required minlength="3" />
+      </div>
+      <div class="field">
+        <label for="email">Email*</label>
+        <input type="email" name="_replyto" id="email" required email minlength="5" />
+      </div>
+      <div class="field">
+        <label for="tel">Phone Number (Optional)</label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <div class="field">
+        <label for="message">Message*</label>
+        <textarea name="message" id="message" rows="4" required minlength="8" maxlength="2500"></textarea>
+      </div>
+
+      <ul class="actions">
+        <li><input type="submit"
+                 value="Send Message" id="contactSubmitBtn"
+                 data-action='post'
+                 disabled />
+        </li>
+        <li>
+          <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+        </li>
+      </ul>
+
+      <div class="field bot-select">
+        <label for="human"><i class="fad fa-user-robot fa-lg"></i> Bot check (Are you human check)*</label>
+        <select name="human" id="human" required>
+          <option value="0">- Select what you are -</option>
+          <option value="1">Robot</option>
+          <option value="2">Horse</option>
+          <option value="3" id="humanSelection">Human</option>
+          <option value="4">Dolphin</option>
+        </select>
+      </div>
+
+      <h4>* Required</h4>
+    </form>
+    <ul class="contact">
+      <li class="fa-github">
+        <h4><a href="https://github.com/cbstodd" target="_blank" rel="noopener" title="Github">@cbstodd</a>
+        </h4>
+      </li>
+      <li class="fa-twitter">
+        <h4><a href="https://twitter.com/cbstodd" target="_blank" rel="noopener" title="Twitter">@cbstodd</a></h4>
+      </li>
+      <li class="fa-instagram">
+        <h4><a href="https://instagram.com/cbstodd" target="_blank" rel="noopener" title="Instagram">@cbstodd</a></h4>
+      </li>
+      <li class="fa-facebook">
+        <h4><a href="https://facebook.com/colin.stodd" target="_blank" rel="noopener" title="Facebook">colin.stodd</a>
+        </h4>
+      </li>
+      <li class="fa-medium">
+        <h4><a href="https://medium.com/@cbstodd" target="_blank" rel="noopener" title="Medium">@cbstodd</a>
+        </h4>
+      </li>
+      <li class="fa-linkedin">
+        <h4><a href="https://www.linkedin.com/in/colin-stodd/" target="_blank" rel="noopener"
+             title="LinkedIn">colin-stodd</a></h4>
+      </li>
+    </ul>
+    <p>&nbsp;</p>
+    <hr class="footer">
+    <ul class="copyright">
+      <!-- <li><img src="./favicon/favicon-32x32.png" alt="logo icon"></li> -->
+      <li class="copy">
+        <h4><i class="fab fa-creative-commons"></i>&nbsp;Colin Stodd, <a href="https://harpua.co" target="_blank"
+             rel="noopener" title="Harpua, LLC">Harpua, LLC</a>. & <a
+             href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>.
+          Background image by <a href="https://www.etsy.com/shop/AZNpics" target="_blank" rel="noopener"
+             title="AZNpics">AZNpics</a>
+        </h4>
+      </li>
+      <li class="copy">
+        <h4><a href="/privacy.html">Privacy Policy</a></h4>
+      </li>
+    </ul>
+  </div>
+</footer>
+    </div>
+    <!-- Scripts -->
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+<script id="dsq-count-scr" src="//colinstodd-v2.disqus.com/count.js" async></script>
+<!-- <script type="text/javascript" src="../../assets/js/zoom-img.js"></script> -->
+<!-- <script type="text/javascript" src="../../assets/js/long-shadow.js"></script> -->
+<script src="/assets/js/clipboard.min.js"></script>
+<script type="text/javascript">new ClipboardJS('.copy-btn');</script>
+<script src="/assets/js/custom.js" type="text/javascript"></script>
+  </body>
+
+</html>

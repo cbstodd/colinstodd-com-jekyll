@@ -1,0 +1,25 @@
+{
+  "name": "colinstodd-com",
+  "version": "1.0.45",
+  "description": "ColinStodd.com Jekyll Website",
+  "main": "index.js",
+  "dependencies": {
+    "clipboard": "^2.0.6",
+    "dotenv": "^8.2.0",
+    "svgo": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbstodd/colinstodd-com-jekyll.git"
+  },
+  "author": "Colin Stodd <https://colinstodd.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbstodd/colinstodd-com-jekyll/issues"
+  },
+  "homepage": "https://github.com/cbstodd/colinstodd-com-jekyll#readme"
+}
