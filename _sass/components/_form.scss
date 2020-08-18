@@ -71,22 +71,6 @@ textarea {
   }
 }
 
-.isHuman {
-  border: solid 2px var(--green);
-}
-.isHumanText {
-  color: #B6C18F !important;
-  background: #414C20 !important;
-}
-
-.isBot {
- border: solid 2px var(--pink); 
-}
-.isBotText {
- color: var(--pink) !important;
- background: #FF8AD9 !important; 
-}
-
 select {
   border-radius: 12px;
 

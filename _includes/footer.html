@@ -27,67 +27,84 @@
 
       <ul class="actions">
         <li><input type="submit"
-                 value="Send Message" id="contactSubmitBtn"
-                 data-action='post'
-                 disabled />
-        </li>
-        <li>
-          <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-        </li>
-      </ul>
-
-      <div class="field bot-select">
-        <label for="human"><i class="fad fa-user-robot fa-lg"></i> Bot check (Are you human check)*</label>
-        <select name="human" id="human" required>
-          <option value="0">- Select what you are -</option>
-          <option value="1">Robot</option>
-          <option value="2">Horse</option>
-          <option value="3" id="humanSelection">Human</option>
-          <option value="4">Dolphin</option>
-        </select>
-      </div>
-
-      <h4>* Required</h4>
-    </form>
-    <ul class="contact">
-      <li class="fa-github">
-        <h4><a href="https://github.com/cbstodd" target="_blank" rel="noopener" title="Github">@cbstodd</a>
-        </h4>
-      </li>
-      <li class="fa-twitter">
-        <h4><a href="https://twitter.com/cbstodd" target="_blank" rel="noopener" title="Twitter">@cbstodd</a></h4>
-      </li>
-      <li class="fa-instagram">
-        <h4><a href="https://instagram.com/cbstodd" target="_blank" rel="noopener" title="Instagram">@cbstodd</a></h4>
-      </li>
-      <li class="fa-facebook">
-        <h4><a href="https://facebook.com/colin.stodd" target="_blank" rel="noopener" title="Facebook">colin.stodd</a>
-        </h4>
-      </li>
-      <li class="fa-medium">
-        <h4><a href="https://medium.com/@cbstodd" target="_blank" rel="noopener" title="Medium">@cbstodd</a>
-        </h4>
-      </li>
-      <li class="fa-linkedin">
-        <h4><a href="https://www.linkedin.com/in/colin-stodd/" target="_blank" rel="noopener"
-             title="LinkedIn">colin-stodd</a></h4>
+         value="Send Message" id="contactSubmitBtn"
+         data-action='post'
+         disabled />
+       </li>
+       <li>
+        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
       </li>
     </ul>
-    <p>&nbsp;</p>
-    <hr class="footer">
-    <ul class="copyright">
-      <!-- <li><img src="./favicon/favicon-32x32.png" alt="logo icon"></li> -->
-      <li class="copy">
-        <h4><i class="fab fa-creative-commons"></i>&nbsp;Colin Stodd, <a href="https://harpua.co" target="_blank"
-             rel="noopener" title="Harpua, LLC">Harpua, LLC</a>. & <a
-             href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>.
-          Background image by <a href="https://www.etsy.com/shop/AZNpics" target="_blank" rel="noopener"
-             title="AZNpics">AZNpics</a>
-        </h4>
-      </li>
-      <li class="copy">
-        <h4><a href="/privacy.html">Privacy Policy</a></h4>
-      </li>
-    </ul>
-  </div>
+
+    <div class="bot-select mb-3">      
+      <div class="row">        
+        <div class="col-6 col-12-small">
+          <input type="checkbox" id="isHuman" name="is-human" title="Are you a human?">
+          <label for="isHuman"><i id="botIcon" class="fad fa-user-robot fa-lg" style="margin:0 0.5em;"></i>Are you human? *</label>
+        </div>
+      </div>    
+    </div>
+
+    <h4>* Required</h4>
+  </form>
+  <ul class="contact">
+    <li class="fa-github">
+      <h4>
+        <a href="https://github.com/cbstodd" target="_blank" rel="noopener" title="Github">
+          @cbstodd
+        </a>
+      </h4>
+    </li>
+    <li class="fa-twitter">
+      <h4>
+        <a href="https://twitter.com/cbstodd" target="_blank" rel="noopener" title="Twitter">
+          @cbstodd
+        </a>
+      </h4>
+    </li>
+    <li class="fa-instagram">
+      <h4>
+        <a href="https://instagram.com/cbstodd" target="_blank" rel="noopener" title="Instagram">@cbstodd
+        </a>
+      </h4>
+    </li>
+    <li class="fa-facebook">
+      <h4>
+        <a href="https://facebook.com/colin.stodd" target="_blank" rel="noopener" title="Facebook">colin.stodd
+        </a>
+      </h4>
+    </li>
+    <li class="fa-medium">
+      <h4>
+        <a href="https://medium.com/@cbstodd" target="_blank" rel="noopener" title="Medium">
+          @cbstodd
+        </a>
+      </h4>
+    </li>
+    <li class="fa-linkedin">
+      <h4>
+        <a href="https://www.linkedin.com/in/colin-stodd/" target="_blank" rel="noopener"
+        title="LinkedIn">
+        colin-stodd
+      </a>
+    </h4>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<hr class="footer">
+<ul class="copyright">
+  <!-- <li><img src="./favicon/favicon-32x32.png" alt="logo icon"></li> -->
+  <li class="copy">
+    <h4><i class="fab fa-creative-commons"></i>&nbsp;Colin Stodd, <a href="https://harpua.co" target="_blank"
+     rel="noopener" title="Harpua, LLC">Harpua, LLC</a>. & <a
+     href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>.
+     Background image by <a href="https://www.etsy.com/shop/AZNpics" target="_blank" rel="noopener"
+     title="AZNpics">AZNpics</a>
+   </h4>
+ </li>
+ <li class="copy">
+  <h4><a href="/privacy.html">Privacy Policy</a></h4>
+</li>
+</ul>
+</div>
 </footer>

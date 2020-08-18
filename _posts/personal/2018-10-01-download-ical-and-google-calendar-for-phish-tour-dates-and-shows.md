@@ -10,11 +10,11 @@ tags:
   - Tour
 title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2020-01-23 12:01:00 -0500
-last_modified_at: 2020-06-17 00:08:10 -0500
+last_modified_at: 2020-08-18 00:08:10 -0500
 pinned: false
 featured: false
 # image: ../images/posts/dinner_and_movie_words.png
-image: 'https://5ojtv13o4by138ocv258q4xu7h-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/19940708ph_great_woods_trey_narration_VHS_screenshot_02_crop.jpg'
+image: https://pbs.twimg.com/media/EfbbBl3XsAA3OJX?format=jpg&name=900x900
 description: Download Phish tour iCal/Google calendar. This calendar has been updated to include the "Dinner And A Movie"; also info regarding their rescheduled summer tour.
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true

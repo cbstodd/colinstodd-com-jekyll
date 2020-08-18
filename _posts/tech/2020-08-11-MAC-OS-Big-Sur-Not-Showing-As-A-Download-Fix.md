@@ -8,7 +8,7 @@ image: ../../images/posts/big_sur.png
 featured: true
 pinned: false
 date: 2020-08-11 00:00:10 -0400
-last_modified_at: 2020-08-11 00:00:10 -0400
+last_modified_at: 2020-08-18 10:00:10 -0400
 permalink: /posts/tech/MAC-OS-Big-Sur-Not-Showing-As-A-Download-Fix.html
 categories: tech
 tags:
@@ -22,11 +22,11 @@ comments: true
 ---
 
 
-Most likely if you're reading this post you have the same interest in trying <a href="https://www.apple.com/macos/big-sur-preview/" target="_blank" rel="noopener">Apple's new operating system</a> which is the successor to OSX. This one is called <a href="https://www.apple.com/macos/big-sur-preview/" target="_blank" rel="noopener">Big Sur or OS 11</a>.
+If you're reading this post I presume you have the same interest in trying <a href="https://www.apple.com/macos/big-sur-preview/" target="_blank" rel="noopener">Apple's new operating system</a> which is the successor to OSX. This one is called <a href="https://www.apple.com/macos/big-sur-preview/" target="_blank" rel="noopener">Big Sur or OS 11</a>.
 
-I've been a beta tester with apple for years, which I typically only use with my personal mac, as I need the stability with my daily coding Macbook Pro. 
+I've been a beta tester with <a href="https://apple.com" title="Apple" target="_blank" rel="noopener">Apple</a> for years, which I typically only use with my personal mac, as I need the stability with my daily coding Macbook Pro. 
 
-Anyway, I was having trouble locating the update and after a few different options I found only for Catalina beta, I thought I'd write this post to help others. 
+Anyway, I was having trouble locating the upddate and after a few different options I found only for Catalina beta, I thought I'd write this post to help others. 
 
 <h4 class="blurb">
 I should also note that not every Mac is going to be compatible with Big Sur, which is originally what I thought may have been the issue. But fortunately for me I made the cutoff bing a late 2013 Macbook Pro (last model that is officially supported). 
@@ -59,13 +59,18 @@ sudo -i
 
 
 Enter root password:<br>
-`/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil`
-
+```txt
+/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil`
+```
 Unenroll from the Beta Program:<br>
-`/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil unenroll`
+```txt
+/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil unenroll
+```
 
 Enroll in the DeveloperSeed Beta:<br>
-`/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil enroll DeveloperSeed`
+```txt
+/System/Library/PrivateFrameworks/Seeding.framework/Versions/A/Resources/seedutil enroll DeveloperSeed
+```
 
 Close and re-open `System Preferences` > `Software Update`
 
