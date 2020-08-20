@@ -3,9 +3,9 @@
 :root {
   --family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   --family-fixed: 'IBM Plex Mono', 'SFMono-Regular', 'Roboto Mono', Menlo,
-  'Fira Mono', Courier, monospace;
+    'Fira Mono', Courier, monospace;
   --family-heading: 'Nunito Sans', 'Roboto Condensed', 'Helvetica Neue', Roboto,
-  Arial, sans-serif;
+    Arial, sans-serif;
   --font-grey: #afb7c9;
   --dark-blue: #191b24;
   --code-blue: #222535;
@@ -179,7 +179,7 @@ h5.neu-alert {
   border-radius: 15px;
   background: var(--main-blue);
   box-shadow: inset -5px 5px 7px #171820,
-  inset 5px -5px 7px var(--bright-shadow);
+    inset 5px -5px 7px var(--bright-shadow);
   padding: 5em 4em;
   line-height: 2em;
   border-left: 1px solid var(--border-blue);
@@ -191,7 +191,7 @@ p.neu-alert,
   border-radius: 15px;
   background: var(--main-blue);
   box-shadow: inset -5px 5px 7px #171820,
-  inset 5px -5px 7px var(--bright-shadow);
+    inset 5px -5px 7px var(--bright-shadow);
   padding: 4em;
   line-height: 2em;
   border-left: 1px solid var(--border-blue);
@@ -203,7 +203,7 @@ p.neu-alert,
   border-radius: 15px;
   background: var(--main-blue);
   box-shadow: inset -5px 5px 7px #171820,
-  inset 5px -5px 7px var(--bright-shadow);
+    inset 5px -5px 7px var(--bright-shadow);
   padding: 0.4em 0.65em;
   margin: 0 0.4em;
   line-height: 2em;
@@ -214,7 +214,7 @@ p.neu-alert,
   border-radius: 15px;
   background: var(--main-blue);
   box-shadow: inset -5px 5px 7px #171820,
-  inset 5px -5px 7px var(--bright-shadow);
+    inset 5px -5px 7px var(--bright-shadow);
   font-weight: 600;
   font-style: italic;
   line-height: 2.5em;
@@ -279,12 +279,45 @@ p.neu-alert,
   font-size: 1rem;
 }
 
-*::selection {
-  background-color: var(--main-blue) !important;
+h1::selection,
+h1::-moz-selection,
+h2::selection,
+h2::-moz-selection,
+h3::selection,
+h3::-moz-selection,
+h4::selection,
+h4::-moz-selection,
+h5::selection,
+h5::-moz-selection,
+h6::selection,
+h6::-moz-selection,
+p::selection,
+p::-moz-selection,
+div::selection,
+div::-moz-selection,
+span::selection,
+span::-moz-selection,
+ul::selection,
+ul::-moz-selection,
+li::selection,
+li::-moz-selection,
+ol::selection {
+  background-color: var(--dark-blue);
   color: inherit;
 }
-*::-moz-selection {
-  background-color: var(--main-blue) !important;
+
+code::selection,
+pre::selection,
+code > pre::selection,
+pre > code::selection {
+  background-color: var(--blue) !important;
+  color: inherit;
+}
+code::-moz-selection,
+pre::-moz-selection,
+code > pre::-moz-selection,
+pre > code::-moz-selection {
+  background-color: var(--blue) !important;
   color: inherit;
 }
 
@@ -403,7 +436,7 @@ ul.contact > li > h4 > a {
     border-radius: 15px;
     background: var(--main-blue);
     box-shadow: inset -5px 5px 7px #1b212c,
-    inset 5px -5px 7px var(--border-blue);
+      inset 5px -5px 7px var(--border-blue);
     border-top: 1px solid #181f2a;
     border-right: 1px solid #181f2a;
     border-left: 1px solid var(--border-blue);
@@ -446,16 +479,16 @@ a.copy-btn:hover {
   margin: 0 auto;
   } */
 
-  .enlarge:hover {
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    /* transform: scale(1.5); */
-  }
+.enlarge:hover {
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* transform: scale(1.5); */
+}
 
-  @media (min-width: 1681px) {
-    img.cs-logo {
-      justify-items: center;
-      align-items: center;
-      margin: 1em 2em 0 0;
-      float: left;
-    }
+@media (min-width: 1681px) {
+  img.cs-logo {
+    justify-items: center;
+    align-items: center;
+    margin: 1em 2em 0 0;
+    float: left;
   }
+}

@@ -1,5 +1,9 @@
 const clipboard = new ClipboardJS('.copy-btn');
 const appleUrl = new ClipboardJS('.apple-btn');
+const humanSelect = document.getElementById('isHuman');
+const botIcon = document.getElementById('botIcon');
+const submitBtn = document.getElementById('contactSubmitBtn');
+// End Constant imports.
 
 clipboard.on('success', e => {
   e.trigger.innerHTML = `<span class="text-green"><i class="fad fa-clipboard-check"></i> Copied!</span>`;
@@ -34,11 +38,6 @@ function calendarCopy(html, activeHtml, length) {
     }, 1500);
   });
 }
-
-// ######  Contact form Bot Check ######
-const humanSelect = document.getElementById('isHuman');
-const botIcon = document.getElementById('botIcon');
-const submitBtn = document.getElementById('contactSubmitBtn');
 
 const validateHuman = (selectedValue) => {  
   if (selectedValue) {    
