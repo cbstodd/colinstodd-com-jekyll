@@ -49,7 +49,7 @@ collections:
 menus:
   - Home: "/"
   - About: "/about.html"
-  - Contact: "#getInTouch"
+  - Contact: "/#getInTouch"
   - Posts: "/posts.html"
   - Projects: "/projects.html"
   - Technologies: "/technologies.html"
@@ -112,4 +112,4 @@ feed:
 
 
 recaptcha:
-  site_key: 6LftvrgZAAAAADgejFQYp77OCk-dp3tDvE6MfhZ4
+  site_key: 6LegH8gZAAAAAMLfDAYMJ5lxwutTMMeyI9QG27FP

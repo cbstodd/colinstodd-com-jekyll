@@ -302,7 +302,7 @@ ul::-moz-selection,
 li::selection,
 li::-moz-selection,
 ol::selection {
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   color: inherit;
 }
 

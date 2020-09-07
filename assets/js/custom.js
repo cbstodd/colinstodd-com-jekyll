@@ -39,19 +39,19 @@ function calendarCopy(html, activeHtml, length) {
   });
 }
 
-const validateHuman = (selectedValue) => {  
-  if (selectedValue) {    
+const validateHuman = selectedValue => {
+  if (selectedValue) {
     botIcon.classList.remove('fa-user-robot');
-    botIcon.classList.add('fa-user');    
+    botIcon.classList.add('fa-user');
     submitBtn.disabled = false;
-    submitBtn.value = 'Submit Message';  
-  } else {    
-    botIcon.classList.remove('fa-user');    
+    submitBtn.value = 'Submit Message';
+  } else {
+    botIcon.classList.remove('fa-user');
     botIcon.classList.add('fa-user-robot');
     submitBtn.disabled = true;
-    submitBtn.value = 'Form Invalid';  
+    submitBtn.value = 'Form Invalid';
   }
-}
+};
 
 // Returns boolean value if checked or not.
-humanSelect.addEventListener('click', evt =>  validateHuman(evt.target.checked));
+humanSelect.addEventListener('click', evt => validateHuman(evt.target.checked));
