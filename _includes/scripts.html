@@ -7,4 +7,15 @@
 <!-- <script type="text/javascript" src="../../assets/js/long-shadow.js"></script> -->
 <script src="/assets/js/clipboard.min.js"></script>
 <script type="text/javascript">new ClipboardJS('.copy-btn');</script>
-<script src="/assets/js/custom.js" type="text/javascript"></script>
+<script src="/assets/js/custom.js"></script>
+<!-- reCAPTCHA -->
+<script type="text/javascript">		
+	const recaptchaKey = '6Lc5KMkZAAAAADEyn3mS08NNOcRImToegDa9G4gw';	
+	grecaptcha.ready(function () {
+		grecaptcha.execute(recaptchaKey,{ action: 'homepage' })
+		.then(function (token) {
+			document.getElementById('captchaResponse').value = token;
+		});
+	});	
+</script>
+<script src="/assets/js/contactAjax.js"></script>

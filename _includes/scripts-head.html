@@ -2,20 +2,4 @@
 <!-- jQuery -->
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/jquery.scrollex.min.js"></script>
-<!-- reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
-<script src="/assets/js/contactAjax.js"></script>
-
-
-<script type="text/javascript">
-	require('dotenv').config();
-	const recaptchaKey = '6LftvrgZAAAAADgejFQYp77OCk-dp3tDvE6MfhZ4';
-	const recaptchaKey = process.env.RECAPTCHA_KEY;
-	grecaptcha.ready(function () {
-		grecaptcha.execute(recaptchaKey,{ action: 'homepage' })
-			.then(function (token) {
-				document.getElementById('captchaResponse').value = token;
-			});
-	});
-	console.log('recapcha .env',recaptchaKey);
-</script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lc5KMkZAAAAADEyn3mS08NNOcRImToegDa9G4gw"></script>

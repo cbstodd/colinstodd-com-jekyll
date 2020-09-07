@@ -109,7 +109,3 @@ feed:
   collections:
     - posts
     - projects
-
-
-recaptcha:
-  site_key: 6LegH8gZAAAAAMLfDAYMJ5lxwutTMMeyI9QG27FP

@@ -1,7 +1,4 @@
-// contactAjax.js
-// const actionURL = 'https://getform.io/f/248d99c5-214c-4ffe-b8f7-f12be8720b59';
-// const reCAPTCHASiteKey = '6LegH8gZAAAAAMLfDAYMJ5lxwutTMMeyI9QG27FP';
-$('#contactForm').submit(function(e) {
+$('#ajaxForm').submit(function(e) {
   e.preventDefault();
   var action = $(this).attr('action');
   $.ajax({
@@ -12,16 +9,26 @@ $('#contactForm').submit(function(e) {
     dataType: 'json',
     contentType: 'multipart/form-data',
     processData: false,
+    contentType: false,
     headers: {
       Accept: 'application/json'
     }
   })
-    .done(function() {
-      $('.success').addClass('is-active');
-      console.log('Form Data submitted successfully!');
-    })
-    .fail(function() {
-      alert('An error occurred please try again later.');
-      console.error('Form Contact Form data was not submitted', error);
-    });
+  .done(function() {
+    $('.success').addClass('is-active');
+    botIcon.classList.remove('fa-user');
+    botIcon.classList.add('fa-user-robot');
+    submitBtn.disabled = true;
+    submitBtn.value = 'Form Invalid';
+    setTimeout(() => {
+      $('.success').removeClass('is-active');
+    }, 5000)
+    console.log('Form Data submitted successfully!');
+    document.getElementById("ajaxForm").reset(); 
+  })
+  .fail(function(errorMsg) {
+    $('.errorMsg').addClass('is-active');
+    alert('An error occurred please try again later.');
+    console.error('Form Contact Form data was not submitted', errorMsg);
+  });
 });

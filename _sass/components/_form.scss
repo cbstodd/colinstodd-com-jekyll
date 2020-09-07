@@ -239,3 +239,31 @@ input[type="radio"] {
   color: _palette(fg-light) !important;
   opacity: 1.0;
 }
+
+.success {
+  display: none;
+  background: #A1D52F;
+  color: #334A17;
+  padding: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 5px;
+  &.is-active {
+    display: block;
+  }
+}
+
+.errorMsg {
+  display: none;
+  background: #FFC1C0;
+  color: #5A1B1B;
+  padding: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 5px;
+  &.is-active {
+    display: block;
+  }
+}

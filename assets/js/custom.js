@@ -1,6 +1,6 @@
 const clipboard = new ClipboardJS('.copy-btn');
 const appleUrl = new ClipboardJS('.apple-btn');
-const humanSelect = document.getElementById('isHuman');
+const humanSelect = document.getElementById('is-human');
 const botIcon = document.getElementById('botIcon');
 const submitBtn = document.getElementById('contactSubmitBtn');
 // End Constant imports.
@@ -39,7 +39,7 @@ function calendarCopy(html, activeHtml, length) {
   });
 }
 
-const validateHuman = selectedValue => {
+function validateHuman(selectedValue) {
   if (selectedValue) {
     botIcon.classList.remove('fa-user-robot');
     botIcon.classList.add('fa-user');
