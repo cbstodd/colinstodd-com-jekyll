@@ -1,6 +1,6 @@
 const clipboard = new ClipboardJS('.copy-btn');
 const appleUrl = new ClipboardJS('.apple-btn');
-const humanSelect = document.getElementById('is-human');
+const humanSelect = document.getElementById('isHuman');
 const botIcon = document.getElementById('botIcon');
 const submitBtn = document.getElementById('contactSubmitBtn');
 // End Constant imports.
@@ -51,7 +51,7 @@ function validateHuman(selectedValue) {
     submitBtn.disabled = true;
     submitBtn.value = 'Form Invalid';
   }
-};
+}
 
 // Returns boolean value if checked or not.
 humanSelect.addEventListener('click', evt => validateHuman(evt.target.checked));
