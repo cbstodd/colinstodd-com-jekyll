@@ -466,8 +466,19 @@ a.copy-btn:hover {
   cursor: pointer;
 }
 
+.hide-bot-select {
+  padding-top: 2rem;
+  visibility: hidden;
+}
+
 .bot-select {
-  padding-top: 3rem;
+  padding-top: 2rem;
+  visibility: visible;
+  display: block;
+}
+
+.required-star {
+  padding-top: 2rem;
 }
 
 /* Image Zoom on Hover/Click */

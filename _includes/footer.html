@@ -10,7 +10,8 @@
     <form accept-charset="UTF-8"
           id="ajaxForm"
           method="POST"
-          action="https://getform.io/f/{{ site.getFormId }}">
+          enctype="multipart/form-data"
+          action="https://getform.io/f/{{site.getFormId}}">
       <div class="field">
         <label for="name">Name*</label>
         <input type="text" name="name" id="name" required minlength="3" />
@@ -42,14 +43,15 @@
           <input type="submit"
                  value="Send Message"
                  id="contactSubmitBtn"
-                 disabled />
+                 data-action="POST"
+                 disabled="disabled" />
         </li>
         <li>
           <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
         </li>
       </ul>
-
-      <div class="bot-select mb-3">
+      <!-- BotCheck -->
+      <div class="bot-select neu-alert">
         <div class="row">
           <div class="col-6 col-12-small">
             <input type="checkbox" id="isHuman" name="isHuman" title="Are you a human?">
@@ -57,10 +59,41 @@
               human? *</label>
           </div>
         </div>
-      </div>
 
-      <h4>* Required</h4>
+        <hr class="neu-alert-hr" />
+
+        <div class="row hide-bot-select">
+          <div class="col-12-small">
+            <h5 for="questAnswer">
+              Type the first letter (only) of <span
+                    style="color:var(--pink); font-weight:bold; text-transform:uppercase;">my</span> first and last name
+              (See top right navbar)
+            </h5>
+          </div>
+        </div>
+        <div class="row hide-bot-select">
+          <div class="col-3">
+            <input type="text"
+                   id="questAnswer"
+                   value=""
+                   name="questAnswer"
+                   required="required"
+                   placeholder="Enter answer here...">
+          </div>
+        </div>
+
+        <div class="row hide-bot-select" style="margin-top:1rem;">
+          <div class="col-12-small">
+            <button class="button small"
+                    id="checkAnswerBtn"
+                    type="button"><i id="botIcon" class="fad fa-user-robot" style="margin:0 0.5em;"></i>Check
+              Answer</button>
+          </div>
+        </div>
+      </div>
+      <h4 class="required-star">* Required</h4>
     </form>
+
     <ul class="contact">
       <li class="fa-github">
         <h4>
