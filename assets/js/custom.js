@@ -1,6 +1,7 @@
 const clipboard = new ClipboardJS('.copy-btn');
 const appleUrl = new ClipboardJS('.apple-btn');
 const humanSelect = document.getElementById('isHuman');
+const hideBotSelect = document.getElementsByClassName('hide-bot-select');
 const botSelect = document.getElementById('notHuman');
 const botIcon = document.getElementById('botIcon');
 const submitBtn = document.getElementById('contactSubmitBtn');
@@ -42,7 +43,7 @@ function calendarCopy(html, activeHtml, length) {
 }
 
 function validateHuman(selectedValue) {
-  console.log('validateHuman', selectedValue);
+  console.log('selectedValue', selectedValue);
   if (selectedValue === true) {
     submitBtn.disabled = false;
     submitBtn.value = 'Submit Message';
@@ -63,20 +64,48 @@ checkAnswerBtn.addEventListener('mouseup', () => {
   }
 });
 
-// botToggleForm.className.add('bot-select');
+// botToggleForm.classList.add('bot-select');
 
-// botToggleForm.className.remove('show-bot-select');
+// botToggleForm.classList.remove('show-bot-select');
 
 // Returns boolean value if checked or not.
-humanSelect.addEventListener('touch', evt => {
-  validateHuman(evt.target.checked);
-  showCustomBotSelect();
+humanSelect.addEventListener('click', evt => {
+  let isClicked = evt.target.checked;
+  console.table('isClicked', isClicked);
+  if (isClicked === true) {
+    showHideBotForm(isClicked);
+  }
+  validateHuman(isClicked);
 });
 
-function showCustomBotSelect() {
-  // botToggleForm.add.className('show-bot-select');
-  humanSelect.remove.className('hide-bot-select');
-};
+function showHideBotForm(clickedValue) {
+  const allBotsSelect = allDivsByParamName('hide-bot-select');
+
+  if (clickedValue == true) {
+    allBotsSelect
+      .map(classNames => {
+        classNames.classList.add('bot-select');
+      })
+      .then(() => classNames.classList.remove('hide-bot-select'));
+  } else {
+    allBotsSelect
+      .map(classNames => {
+        console.log('divsElse', classNames);
+        classNames.classList.remove('bot-select');
+      })
+      .then(() => classNames.classList.add('hide-bot-select'));
+  }
+}
+
+function allDivsByParamName(classNames) {
+  if (typeof classNames === 'string') {
+    const botDivs = document.querySelectorAll(`${classNames}`);
+    console.log('botdivs', botDivs);
+    botDivs.forEach(classNames => classNames);
+  } else {
+    console.error('AllDivsByParamName paramater needs to be a string');
+  }
+}
 
 // botSelect.addEventListener('click', evt => {
 //   evt.preventDefault();

@@ -1,3 +1,5 @@
+const contactForm = Array();
+
 $('#ajaxForm').submit(evt => {
   const reCAPTCHASiteKey = site.RECAPTCHA_SITE_KEY;
   const action = $(this).attr('action');
@@ -17,6 +19,8 @@ $('#ajaxForm').submit(evt => {
   })
     .done(() => {
       // reCAPTCHA
+      const myContact = contactForm(ajax.data);
+      console.table(contactForm(myContact));
       grecaptcha.ready(() => {
         grecaptcha
           .execute(reCAPTCHASiteKey, { action: 'submit' })
@@ -35,7 +39,7 @@ $('#ajaxForm').submit(evt => {
       console.log('Form Data submitted successfully!');
       document.getElementById('ajaxForm').reset();
     })
-    .fail((errorMsg) => {
+    .fail(errorMsg => {
       $('.errorMsg').addClass('is-active');
       alert('An error occurred please try again later.');
       console.error('Form Contact Form data was not submitted', errorMsg);

@@ -7,4 +7,7 @@
         "file:///Users/cstodd/.vscode/extensions/webrender.synthwave-x-fluoromachine-0.0.12/synthwave-x-fluoromachine.itermcolors",
     ],
     "vscode_custom_css.policy": true,
+    "favorites.resources": [
+        "_config.yml"
+    ],
 }

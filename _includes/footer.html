@@ -8,6 +8,7 @@
       form below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
     </p>
     <form accept-charset="UTF-8"
+
           id="ajaxForm"
           method="POST"
           enctype="multipart/form-data"
@@ -46,15 +47,17 @@
                  data-action="POST"
                  disabled="disabled" />
         </li>
-        <li>
-          <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+        <li> <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
         </li>
       </ul>
       <!-- BotCheck -->
-      <div class="bot-select neu-alert">
+      <div class="neu-alert">
         <div class="row">
           <div class="col-6 col-12-small">
-            <input type="checkbox" id="isHuman" name="isHuman" title="Are you a human?">
+            <input type="checkbox"
+                   id="isHuman"
+                   name="isHuman"
+                   title="Are you a human?">
             <label for="isHuman"><i id="botIcon" class="fad fa-user-robot fa-lg" style="margin:0 0.5em;"></i>Are you
               human? *</label>
           </div>
