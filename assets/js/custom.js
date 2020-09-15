@@ -1,11 +1,13 @@
 const clipboard = new ClipboardJS('.copy-btn');
 const appleUrl = new ClipboardJS('.apple-btn');
-const humanSelect = document.getElementById('isHuman');
+const isHuman = document.getElementById('isHuman');
+const notHuman = document.getElementById('notHuman');
 const hideBotSelect = document.getElementsByClassName('hide-bot-select');
-const botSelect = document.getElementById('notHuman');
 const botIcon = document.getElementById('botIcon');
 const submitBtn = document.getElementById('contactSubmitBtn');
 const checkAnswerBtn = document.getElementById('checkAnswerBtn');
+const allBotsSelect = document.querySelectorAll('hide-bot-select');
+let humanState = 'unchecked';
 // End Constant imports.
 
 clipboard.on('success', e => {
@@ -42,6 +44,9 @@ function calendarCopy(html, activeHtml, length) {
   });
 }
 
+/*
+  Validate Contact Form --------------------+
+*/
 function validateHuman(selectedValue) {
   console.log('selectedValue', selectedValue);
   if (selectedValue === true) {
@@ -63,38 +68,41 @@ checkAnswerBtn.addEventListener('mouseup', () => {
     validateHuman(false);
   }
 });
-
 // botToggleForm.classList.add('bot-select');
 
 // botToggleForm.classList.remove('show-bot-select');
 
 // Returns boolean value if checked or not.
-humanSelect.addEventListener('click', evt => {
-  let isClicked = evt.target.checked;
-  console.table('isClicked', isClicked);
-  if (isClicked === true) {
-    showHideBotForm(isClicked);
+
+// TODO: Get this function to work correctly.
+function updateIsHumanState(value) {
+  if (value === 'isHuman') {
+    document.getElementById('isHuman').setAttribute('value', 'checked');
+    document.getElementById('notHuman').removeAttribute('value', 'checked');
+  } else if (value === 'notHuman') {
+    document.getElementById('isHuman').removeAttribute('value', 'checked');
+    document.getElementById('notHuman').setAttribute('value', 'checked');
+    console.log('notHuman checked');
+  } else {
+    document.getElementById('isHuman').removeAttribute('value', 'checked');
+    document.getElementById('notHuman').setAttribute('value', 'checked');
+    console.log('else removedAttributes');
   }
-  validateHuman(isClicked);
-});
+}
+
+updateIsHumanState('');
 
 function showHideBotForm(clickedValue) {
-  const allBotsSelect = allDivsByParamName('hide-bot-select');
+  console.log('clickedValue', clickedValue);
 
-  if (clickedValue == true) {
-    allBotsSelect
-      .map(classNames => {
-        classNames.classList.add('bot-select');
-      })
-      .then(() => classNames.classList.remove('hide-bot-select'));
-  } else {
-    allBotsSelect
-      .map(classNames => {
-        console.log('divsElse', classNames);
-        classNames.classList.remove('bot-select');
-      })
-      .then(() => classNames.classList.add('hide-bot-select'));
-  }
+  // else {
+  //   allBotsSelect
+  //     .forEach(classNames => {
+  //       console.log('divsElse', classNames);
+  //       classNames.classList.remove('bot-select');
+  //     })
+  // .then(() => classNames.classList.add('hide-bot-select'));
+  // }
 }
 
 function allDivsByParamName(classNames) {

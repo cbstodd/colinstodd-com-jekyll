@@ -8,7 +8,6 @@
       form below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
     </p>
     <form accept-charset="UTF-8"
-
           id="ajaxForm"
           method="POST"
           enctype="multipart/form-data"
@@ -55,11 +54,21 @@
         <div class="row">
           <div class="col-6 col-12-small">
             <input type="checkbox"
+                   onclick="updateIsHumanState('isHuman')"
                    id="isHuman"
                    name="isHuman"
                    title="Are you a human?">
-            <label for="isHuman"><i id="botIcon" class="fad fa-user-robot fa-lg" style="margin:0 0.5em;"></i>Are you
-              human? *</label>
+            <label for="isHuman"><i id="userIcon" class="fad fa-user fa-lg" style="margin:0 0.5em;"></i>Are you
+              human?</label>
+          </div>
+          <div class="col-6 col-12-small">
+            <input type="checkbox"
+                   onclick="updateIsHumanState('notHuman')"
+                   id="notHuman"
+                   name="notHuman"
+                   title="Are you a human?">
+            <label for="notHuman"><i id="userIcon" class="fad fa-user-robot fa-lg" style="margin:0 0.5em;"></i>Are you
+              not human?</label>
           </div>
         </div>
 
