@@ -47,9 +47,36 @@ function calendarCopy(html, activeHtml, length) {
 /*
   Validate Contact Form --------------------+
 */
-function validateHuman(selectedValue) {
-  console.log('selectedValue', selectedValue);
-  if (selectedValue === true) {
+
+// Returns boolean value if checked or not.
+isHuman.addEventListener('click', evt => {
+  const checkedState = evt.target.checked;
+  if (checkedState === true) {
+    notHuman.checked = false;
+    isHumanState = true;
+    updateSubmitBtnState(true);
+    console.log('checkedState', checkedState);
+  } else {
+    isHumanState = false;
+    isHuman.checked = false;
+    updateSubmitBtnState(false);
+  }
+});
+
+notHuman.addEventListener('click', evt => {
+  const checkedState = evt.target.checked;
+  if (checkedState === true) {
+    isHuman.checked = false;
+    isHumanState = false;
+    updateSubmitBtnState(false);
+    console.log('checkedState', checkedState);
+  } else {
+    notHuman.checked = false;
+  }
+});
+
+function updateSubmitBtnState(isHumanState) {
+  if (isHumanState === true) {
     submitBtn.disabled = false;
     submitBtn.value = 'Submit Message';
   } else {
@@ -57,64 +84,3 @@ function validateHuman(selectedValue) {
     submitBtn.value = 'Form Invalid';
   }
 }
-
-checkAnswerBtn.addEventListener('mouseup', () => {
-  const questAnswer = document.getElementById('questAnswer').value;
-  const realAnswer = site.correctBotAnswer;
-  console.log(questAnswer);
-  if (questAnswer && questAnswer.toLowerCase() == realAnswer) {
-    validateHuman(true);
-  } else {
-    validateHuman(false);
-  }
-});
-// botToggleForm.classList.add('bot-select');
-
-// botToggleForm.classList.remove('show-bot-select');
-
-// Returns boolean value if checked or not.
-isHuman.addEventListener('click', evt => {
-  let checkedState = evt.target.checked;
-  if (checkedState === true) {
-    notHuman.checked = false;
-    isHumanState = true;
-    showHideBotForm(isHumanState);
-    console.log('checkedState', checkedState);
-  } else {
-    isHumanState = false;
-    isHuman.checked = false;
-    showHideBotForm(isHumanState);
-  }
-});
-
-notHuman.addEventListener('click', evt => {
-  let checkedState = evt.target.checked;
-  if (checkedState === true) {
-    isHuman.checked = false;
-    showHideBotForm(isHumanState);
-    console.log('checkedState', checkedState);
-  } else {
-    notHumanState = false;
-    notHuman.checked = false;
-    showHideBotForm(isHumanState);
-  }
-});
-
-function showHideBotForm(clickedValue) {
-  console.log('showHideclickedValue', clickedValue);
-}
-
-function allDivsByParamName(classNames) {
-  if (typeof classNames === 'string') {
-    const botDivs = document.querySelectorAll(`${classNames}`);
-    console.log('botdivs', botDivs);
-    botDivs.forEach(classNames => classNames);
-  } else {
-    console.error('AllDivsByParamName paramater needs to be a string');
-  }
-}
-
-// botSelect.addEventListener('click', evt => {
-//   evt.preventDefault();
-//   return isBot(evt.target.checked);
-// });
