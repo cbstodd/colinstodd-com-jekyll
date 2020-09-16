@@ -7,7 +7,7 @@ const botIcon = document.getElementById('botIcon');
 const submitBtn = document.getElementById('contactSubmitBtn');
 const checkAnswerBtn = document.getElementById('checkAnswerBtn');
 const allBotsSelect = document.querySelectorAll('hide-bot-select');
-let humanState = 'unchecked';
+let isHumanState = false;
 // End Constant imports.
 
 clipboard.on('success', e => {
@@ -73,36 +73,35 @@ checkAnswerBtn.addEventListener('mouseup', () => {
 // botToggleForm.classList.remove('show-bot-select');
 
 // Returns boolean value if checked or not.
-
-// TODO: Get this function to work correctly.
-function updateIsHumanState(value) {
-  if (value === 'isHuman') {
-    document.getElementById('isHuman').setAttribute('value', 'checked');
-    document.getElementById('notHuman').removeAttribute('value', 'checked');
-  } else if (value === 'notHuman') {
-    document.getElementById('isHuman').removeAttribute('value', 'checked');
-    document.getElementById('notHuman').setAttribute('value', 'checked');
-    console.log('notHuman checked');
+isHuman.addEventListener('click', evt => {
+  let checkedState = evt.target.checked;
+  if (checkedState === true) {
+    notHuman.checked = false;
+    isHumanState = true;
+    showHideBotForm(isHumanState);
+    console.log('checkedState', checkedState);
   } else {
-    document.getElementById('isHuman').removeAttribute('value', 'checked');
-    document.getElementById('notHuman').setAttribute('value', 'checked');
-    console.log('else removedAttributes');
+    isHumanState = false;
+    isHuman.checked = false;
+    showHideBotForm(isHumanState);
   }
-}
+});
 
-updateIsHumanState('');
+notHuman.addEventListener('click', evt => {
+  let checkedState = evt.target.checked;
+  if (checkedState === true) {
+    isHuman.checked = false;
+    showHideBotForm(isHumanState);
+    console.log('checkedState', checkedState);
+  } else {
+    notHumanState = false;
+    notHuman.checked = false;
+    showHideBotForm(isHumanState);
+  }
+});
 
 function showHideBotForm(clickedValue) {
-  console.log('clickedValue', clickedValue);
-
-  // else {
-  //   allBotsSelect
-  //     .forEach(classNames => {
-  //       console.log('divsElse', classNames);
-  //       classNames.classList.remove('bot-select');
-  //     })
-  // .then(() => classNames.classList.add('hide-bot-select'));
-  // }
+  console.log('showHideclickedValue', clickedValue);
 }
 
 function allDivsByParamName(classNames) {
