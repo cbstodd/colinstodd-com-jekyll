@@ -4,7 +4,6 @@ const isHuman = document.getElementById('isHuman');
 const notHuman = document.getElementById('notHuman');
 const hideBotSelect = document.getElementsByClassName('hide-bot-select');
 const botIcon = document.getElementById('botIcon');
-const submitBtn = document.getElementById('contactSubmitBtn');
 const checkAnswerBtn = document.getElementById('checkAnswerBtn');
 const allBotsSelect = document.querySelectorAll('hide-bot-select');
 let isHumanState = false;

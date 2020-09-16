@@ -11,7 +11,8 @@
           id="ajaxForm"
           method="POST"
           enctype="multipart/form-data"
-          action="https://getform.io/f/{{site.getFormId}}">
+          action="https://getform.io/f/{{site.getFormId}}"
+          target="_blank">
       <div class="field">
         <label for="name">Name*</label>
         <input type="text" name="name" id="name" required minlength="3" />
@@ -38,19 +39,8 @@
         </div>
       </div>
 
-      <ul class="actions">
-        <li>
-          <input type="submit"
-                 value="Send Message"
-                 id="contactSubmitBtn"
-                 data-action="POST"
-                 disabled="disabled" />
-        </li>
-        <li> <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-        </li>
-      </ul>
       <!-- BotCheck -->
-      <div class="neu-alert">
+      <div class="blurb">
         <div class="row">
           <div class="col-6 col-12-small">
             <input type="checkbox"
@@ -70,6 +60,17 @@
           </div>
         </div>
       </div>
+
+      <ul class="actions">
+        <li>
+          <input type="submit"
+                 id="submitBtn"
+                 value="Send Message"
+                 disabled="disabled" />
+        </li>
+        <li> <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+        </li>
+      </ul>
       <h4 class="required-star">* Required</h4>
     </form>
 

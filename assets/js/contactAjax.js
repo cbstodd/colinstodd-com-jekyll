@@ -1,9 +1,7 @@
-const contactForm = Array();
-
-$('#ajaxForm').submit(evt => {
-  const reCAPTCHASiteKey = site.RECAPTCHA_SITE_KEY;
+$('#ajaxForm').submit(function(e) {
+  e.preventDefault();
+  const reCAPTCHASiteKey = '6LcNQ8kZAAAAACJL-16GCA8EfkaizSE57L-ZX3Ct';
   const action = $(this).attr('action');
-  evt.preventDefault();
   $.ajax({
     type: 'POST',
     url: action,
@@ -19,18 +17,16 @@ $('#ajaxForm').submit(evt => {
   })
     .done(() => {
       // reCAPTCHA
-      const myContact = contactForm(ajax.data);
-      console.table(contactForm(myContact));
       grecaptcha.ready(() => {
         grecaptcha
-          .execute(reCAPTCHASiteKey, { action: 'submit' })
+          .execute(reCAPTCHASiteKey, {
+            action: 'submit'
+          })
           .then(token => {
             document.getElementById('captchaResponse').value = token;
           });
       });
       $('.success').addClass('is-active');
-      botIcon.classList.remove('fa-user');
-      botIcon.classList.add('fa-user-robot');
       submitBtn.disabled = true;
       submitBtn.value = 'Form Invalid';
       setTimeout(() => {
