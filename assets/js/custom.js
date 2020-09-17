@@ -1,8 +1,12 @@
 const clipboard = new ClipboardJS('.copy-btn');
 const appleUrl = new ClipboardJS('.apple-btn');
-const humanSelect = document.getElementById('is-human');
+const isHuman = document.getElementById('isHuman');
+const notHuman = document.getElementById('notHuman');
+const hideBotSelect = document.getElementsByClassName('hide-bot-select');
 const botIcon = document.getElementById('botIcon');
-const submitBtn = document.getElementById('contactSubmitBtn');
+const checkAnswerBtn = document.getElementById('checkAnswerBtn');
+const allBotsSelect = document.querySelectorAll('hide-bot-select');
+let isHumanState = false;
 // End Constant imports.
 
 clipboard.on('success', e => {
@@ -39,19 +43,43 @@ function calendarCopy(html, activeHtml, length) {
   });
 }
 
-function validateHuman(selectedValue) {
-  if (selectedValue) {
-    botIcon.classList.remove('fa-user-robot');
-    botIcon.classList.add('fa-user');
+/*
+  Validate Contact Form --------------------+
+*/
+
+// Returns boolean value if checked or not.
+isHuman.addEventListener('click', evt => {
+  const checkedState = evt.target.checked;
+  if (checkedState === true) {
+    notHuman.checked = false;
+    isHumanState = true;
+    updateSubmitBtnState(true);
+    console.log('checkedState', checkedState);
+  } else {
+    isHumanState = false;
+    isHuman.checked = false;
+    updateSubmitBtnState(false);
+  }
+});
+
+notHuman.addEventListener('click', evt => {
+  const checkedState = evt.target.checked;
+  if (checkedState === true) {
+    isHuman.checked = false;
+    isHumanState = false;
+    updateSubmitBtnState(false);
+    console.log('checkedState', checkedState);
+  } else {
+    notHuman.checked = false;
+  }
+});
+
+function updateSubmitBtnState(isHumanState) {
+  if (isHumanState === true) {
     submitBtn.disabled = false;
     submitBtn.value = 'Submit Message';
   } else {
-    botIcon.classList.remove('fa-user');
-    botIcon.classList.add('fa-user-robot');
     submitBtn.disabled = true;
     submitBtn.value = 'Form Invalid';
   }
-};
-
-// Returns boolean value if checked or not.
-humanSelect.addEventListener('click', evt => validateHuman(evt.target.checked));
+}
