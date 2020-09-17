@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2020-08-03 00:10:10 -0400
+last_modified_at: 2020-09-16 00:10:10 -0400
 categories: tech
 tags:
   - OSX,
@@ -21,6 +21,19 @@ permalink: /posts/tech/fix-macos-catalina-fonts-after-upgrade.html
 redirect_from:
   - /posts/code/fix-macos-catalina-fonts-after-upgrade.html
 ---
+
+
+<div class="blurb">
+<h2 class="text-yellow"><i class="fad fa-traffic-cone"></i> UPDATE <i class="fad fa-traffic-cone"></i></h2>
+For those of you who are unfamiliar with the Terminal or the command line, you may be happy to read that while I was reading a post on <a href="https://medium.com/">Medium</a> I was introduced to an app that allows you to do most of theses commands but from a free application called <a href="https://www.bresink.com/osx/TinkerTool.html" target="_blank" rel="noopener">TinkerTool</a>.  As you can see in the image below there is a tab called "Font Smoothing", and you'll see that there are options for you to do much of what I
+explain below, without having to use the command line.
+<p><img src="../../images/posts/mac_osx_fonts/tinkertool.png" class="image fit" title="TinkerTool font smoothing" loading="lazy"></p>
+</div>
+
+
+<hr/>
+
+<h2 class="text-green">Start of original post</h2>
 
 I recently upgraded my MAC from <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> to <a href="https://www.apple.com/macos/catalina/" target="_blank" rel="noopener">Catalina</a>, all went well but I noticed that my text editor fonts were looking thinner than normal. I recall this happening with the <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> update, so I sort of knew where to begin looking, but I couldn't find exactly what I needed in one spot so I'm going to post it here.  ***I am by no means an expert on these commands, I'm just posting what worked for me***.
 
