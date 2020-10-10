@@ -491,6 +491,11 @@ a.copy-btn:hover {
   background-color: #2A3215;
 }
 
+.not-a-bot > label {
+  color: var(--green);
+  background-color: #2A3215;
+}
+
 .required-star {
   padding-top: 2rem;
 }

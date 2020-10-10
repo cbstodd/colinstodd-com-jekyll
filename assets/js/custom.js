@@ -4,14 +4,13 @@ const hideBotSelect = document.getElementsByClassName('hide-bot-select');
 const botIcon = document.getElementById('botIcon');
 const checkAnswerBtn = document.getElementById('checkAnswerBtn');
 const allBotsSelect = document.querySelectorAll('hide-bot-select');
-let isHumanState = false;
 // End Constant imports.
 // Form Inputs:
 const cfName = document.getElementById('name');
 const cfEmail = document.getElementById('email');
 const cfTel = document.getElementById('tel');
 const cfMessage = document.getElementById('message');
-const isHuman = document.getElementById('isHuman');
+const botCheckbox = document.getElementById('botCheckbox');
 const notHuman = document.getElementById('notHuman');
 const mathResult = document.getElementById('mathResult');
 const showBotForm = document.getElementById('showBotForm');
@@ -64,36 +63,43 @@ function toggleBotForm(value) {
     mathResult.classList.add('not-a-bot');
     botCheck.classList.add('not-a-bot');
     mathResult.innerHTML = `<i class="fad fa-lg fa-clipboard-check"></i> Success! Now you can press the button below to submit your info.`;
-    isHuman.checked;
+
     notABot = true;
   } else {
     console.log('value', value);
     mathResult.classList.remove('not-a-bot');
     botCheck.classList.remove('not-a-bot');
     mathResult.innerHTML = `<i class="fad fa-window-restore"></i> Please answer the question in the pop-up window to prove you are not a bot.`;
-    notABot = false;
+  }
+
+  botCheckbox.checked = true | false;
+}
+
+function triggerBotForm(checkedState) {
+  if (!checkedState) {
+    botCheckbox.checked = false;
+    toggleBotForm(false);
+  } else {
+    const answer = new BotChecker();
+    const userAnswer = prompt(
+      `Let's make sure you're not a robot can you add these two numbers:  ${answer.num1} + ${answer.num2} = ?`
+    );
+    const botFormResults = answer.checkUsersGuess(userAnswer);
+    toggleBotForm(botFormResults);
   }
 }
 
-function triggerBotForm() {
-  const answer = new BotChecker();
-  const userAnswer = prompt(
-    `Let's make sure you're not a robot can you add these two numbers:  ${answer.num1} + ${answer.num2} = ?`
-  );
-  const botFormResults = answer.checkUsersGuess(userAnswer);
-  toggleBotForm(botFormResults);
-}
-
 // Returns boolean value if checked or not.
-isHuman.addEventListener('click', evt => {
+botCheckbox.addEventListener('click', evt => {
   evt.preventDefault();
-  notABot = evt.target.checked;
-  console.log('toggleBotForm', notABot);
-  if (notABot) {
-    mathResult.classList.add('bot-select');
-    setTimeout(() => triggerBotForm(), 300);
+
+  console.log('toggleBotForm', evt.target.checked);
+
+  if (!evt.target.checked) {
+    triggerBotForm(false);
+    botCheckbox.checked = false;
   } else {
-    console.log('Hide Bot Form');
-    toggleBotForm = false;
+    mathResult.classList.add('bot-select');
+    setTimeout(() => triggerBotForm(true), 300);
   }
 });
