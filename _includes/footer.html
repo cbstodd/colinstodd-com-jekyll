@@ -8,13 +8,12 @@
       form below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
     </p>
     <form accept-charset="UTF-8"
-          id="ajaxForm"
+          id="contactForm"
           method="POST"
           enctype="multipart/form-data"
-          action="https://getform.io/f/{{site.getFormId}}"
           target="_blank">
       <div class="field">
-        <label for="name">Name*</label>
+        <label for="contactForm">Name*</label>
         <input type="text" name="name" id="name" title="Name" required minlength="3" />
       </div>
       <div class="field">
@@ -40,37 +39,39 @@
       </div>
 
       <!-- BotCheck -->
-      <div class="bot-check">
+      <div class="bot-check" id="botCheck">
         <div class="row">
-          <div class="col-6 col-12-small">
-            <input type="checkbox"
-                   id="notHuman"
-                   name="notHuman"
-                   title="Are you a human?">
-            <label for="notHuman"><i id="userIcon" class="fad fa-user-robot fa-lg" style="margin:0 0.5em;"></i>Are you
-              not Human?</label>
-          </div>
-          <div class="col-6 col-12-small">
-            <input type="checkbox"
-                   id="isHuman"
-                   name="isHuman"
-                   title="Are you a human?">
-            <label for="isHuman"><i id="userIcon" class="fad fa-user fa-lg" style="margin:0 0.5em;"></i>Are you
-              Human?</label>
+          <div class="col-sm-12">
+            <form action="submit">
+              <div class="form-group">
+                <input type="checkbox"
+                       id="isHuman"
+                       name="isHuman"
+                       title="Are you a human?">
+                <label for="isHuman"><i id="userIcon" class="fad fa-user fa-lg" style="margin:0 0.5em;"></i>Are you
+                  Human?</label>
+              </div>
+              <div class="info" id="mathResult">
+                <i class="fad fa-window-restore"></i> Please answer the question in the pop-up window to prove you are not a bot.
+              </div>
+            </form>
           </div>
         </div>
       </div>
+      <div class="form-group">
 
-      <ul class="actions">
-        <li>
-          <input type="submit"
-                 id="submitBtn"
-                 value="Send Message"
-                 disabled="disabled" />
-        </li>
-        <li> <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-        </li>
-      </ul>
+        <ul class="actions">
+          <li>
+            <button type="submit" id="submitBtn" disabled="disabled">
+              Send Message
+            </button>
+            <input type="submit"
+                   id="submitBtn"
+                   value="Send Message"
+                   disabled="disabled" />
+          </li>
+        </ul>
+      </div>
       <h4 class="required-star">* Required</h4>
     </form>
 

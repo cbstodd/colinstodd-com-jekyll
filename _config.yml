@@ -68,7 +68,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-compress-images
   - jekyll-feed
-  - jekyll-tsc
 
     # SEO / META:
 twitter:
@@ -117,11 +116,3 @@ RECAPTCHA_SECRET_KEY: '6LcNQ8kZAAAAAOE6FDrD8j2JIregNJ_--HzA0vmd'
 getFormId: '248d99c5-214c-4ffe-b8f7-f12be8720b59'
 correctBotAnswer: 'cs'
 getFormApiTokenUrl: 'https://api.getform.io/v1/forms/248d99c5-214c-4ffe-b8f7-f12be8720b59?token=NV6H6FMEnsQn4qnAXP1wXwzVyXAa2umWBDgu1waPBG1vDpwZYWi5bNZZcetc'
-
-# TypeScript:
-typescript:
-  temp_dir: .typescript
-  extensions: ['.ts', '.tsx']
-  copy_ext: []
-  command: ['tsc']
-  cache: true

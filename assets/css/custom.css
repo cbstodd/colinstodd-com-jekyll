@@ -485,6 +485,12 @@ a.copy-btn:hover {
   display: block;
 }
 
+.not-a-bot {
+  color: var(--green);
+  border-color: var(--green);
+  background-color: #2A3215;
+}
+
 .required-star {
   padding-top: 2rem;
 }

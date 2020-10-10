@@ -1,7 +1,13 @@
-$('#ajaxForm').submit(function(e) {
-  e.preventDefault();
-  const reCAPTCHASiteKey = '6LcNQ8kZAAAAACJL-16GCA8EfkaizSE57L-ZX3Ct';
-  const action = $(this).attr('action');
+const formCompleteChecker = formData => {
+  if (formData.name && formData.email && formData.message && formData.isHuman) {
+  } else {
+    // window.URL('https://colinstodd.com/404.html');
+    return null;
+  }
+};
+
+$('#contactForm').submit(function(e) {
+  console.log(e);
   $.ajax({
     type: 'POST',
     url: action,
@@ -16,16 +22,6 @@ $('#ajaxForm').submit(function(e) {
     }
   })
     .done(() => {
-      // reCAPTCHA
-      grecaptcha.ready(() => {
-        grecaptcha
-          .execute(reCAPTCHASiteKey, {
-            action: 'submit'
-          })
-          .then(token => {
-            document.getElementById('captchaResponse').value = token;
-          });
-      });
       $('.success').addClass('is-active');
       submitBtn.disabled = true;
       submitBtn.value = 'Form Invalid';
