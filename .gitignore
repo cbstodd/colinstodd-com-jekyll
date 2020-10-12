@@ -9,3 +9,4 @@ node_modules
 .jekyll-cache
 .firebase/
 .typescript
+_config.yml

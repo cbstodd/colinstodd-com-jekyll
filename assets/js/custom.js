@@ -5,16 +5,11 @@ const botIcon = document.getElementById('botIcon');
 const checkAnswerBtn = document.getElementById('checkAnswerBtn');
 const allBotsSelect = document.querySelectorAll('hide-bot-select');
 // End Constant imports.
-// Form Inputs:
-const cfName = document.getElementById('name');
-const cfEmail = document.getElementById('email');
-const cfTel = document.getElementById('tel');
-const cfMessage = document.getElementById('message');
 const botCheckbox = document.getElementById('botCheckbox');
 const notHuman = document.getElementById('notHuman');
 const mathResult = document.getElementById('mathResult');
 const showBotForm = document.getElementById('showBotForm');
-const botCheck = document.getElementById('botCheck');
+const checkBox = document.getElementById('checkBox');
 
 clipboard.on('success', evt => {
   evt.trigger.innerHTML = `<span class="text-green"><i class="fad fa-clipboard-check"></i> Copied!</span>`;
@@ -55,34 +50,32 @@ function calendarCopy(html, activeHtml, length) {
   */
 // let toggleBotForm = false;
 mathResult.classList.add('hide-bot-select');
-let notABot = false;
-
+submitBtn.disabled = true;
 function toggleBotForm(value) {
   if (value) {
     console.log('value', value);
     mathResult.classList.add('not-a-bot');
     botCheck.classList.add('not-a-bot');
-    mathResult.innerHTML = `<i class="fad fa-lg fa-clipboard-check"></i> Success! Now you can press the button below to submit your info.`;
-
-    notABot = true;
+    mathResult.innerHTML = `Success! <br> <i class="fad fa-check-square"></i> 1. You made it to colinstodd.com. <br><i class="fad fa-check-square"></i> 2. You've proven that you're smart.<br> I think I'm going to like you 😉.<br>Please press Submit to send your info. or <a href="mailto:colin@colinstodd.com?subject=[Contact] from colinstodd.com&body=Hello Colin, I have a question regarding...">Email</a>. <br>Thanks!`;
+    submitBtn.disabled = false;
   } else {
     console.log('value', value);
     mathResult.classList.remove('not-a-bot');
     botCheck.classList.remove('not-a-bot');
-    mathResult.innerHTML = `<i class="fad fa-window-restore"></i> Please answer the question in the pop-up window to prove you are not a bot.`;
+    mathResult.classList.add('is-a-bot');
+    botCheck.classList.add('is-a-bot');
+    mathResult.innerHTML = `<i class="fad fa-window-restore"></i> Please validate that you're a human by answering the question in the pop-up window.`;
+    submitBtn.disabled = true;
   }
-
-  botCheckbox.checked = true | false;
 }
 
 function triggerBotForm(checkedState) {
   if (!checkedState) {
-    botCheckbox.checked = false;
     toggleBotForm(false);
   } else {
     const answer = new BotChecker();
     const userAnswer = prompt(
-      `Let's make sure you're not a robot can you add these two numbers:  ${answer.num1} + ${answer.num2} = ?`
+      `Please add these two numbers:  ${answer.num1} + ${answer.num2} = ?`
     );
     const botFormResults = answer.checkUsersGuess(userAnswer);
     toggleBotForm(botFormResults);
@@ -91,13 +84,9 @@ function triggerBotForm(checkedState) {
 
 // Returns boolean value if checked or not.
 botCheckbox.addEventListener('click', evt => {
-  evt.preventDefault();
-
   console.log('toggleBotForm', evt.target.checked);
-
   if (!evt.target.checked) {
     triggerBotForm(false);
-    botCheckbox.checked = false;
   } else {
     mathResult.classList.add('bot-select');
     setTimeout(() => triggerBotForm(true), 300);

@@ -7,13 +7,9 @@
     <p>If you are contacting me about future projects or recruitment, the easiest way to get a hold of me is with the
       form below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
     </p>
-    <form accept-charset="UTF-8"
-          id="contactForm"
-          method="POST"
-          enctype="multipart/form-data"
-          target="_blank">
+    <form id="contactForm">
       <div class="field">
-        <label for="contactForm">Name*</label>
+        <label for="name">Name*</label>
         <input type="text" name="name" id="name" title="Name" required minlength="3" />
       </div>
       <div class="field">
@@ -21,8 +17,8 @@
         <input type="email" name="email" id="email" title="Email" required email minlength="5" />
       </div>
       <div class="field">
-        <label for="tel">Phone Number (Optional)</label>
-        <input type="tel" name="tel" id="tel" title="Telephone Number" />
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" name="phone" id="phone" title="Telephone Number" />
       </div>
       <div class="field">
         <label for="message">Message*</label>
@@ -42,14 +38,17 @@
       <div class="bot-check" id="botCheck">
         <div class="row">
           <div class="col-sm-12">
-            <form action="submit">
-              <div class="form-group">
+            <form id="contactForm">
+              <div class="form-group" id="checkBox">
                 <input type="checkbox"
-                       id="botCheckbox"
-                       name="botCheckbox"
-                       title="Are you a human?">
-                <label for="botCheckbox"><i id="userIcon" class="fad fa-user fa-lg" style="margin:0 0.5em;"></i>Are you
-                  Human?</label>
+                id="botCheckbox"
+                name="botCheckbox"
+                title="Are you a human?">
+                <label for="botCheckbox" class="tooltip">
+                    <span class="tooltiptext">If you run into any form trouble please email colin@colinstodd.com.</span>
+                    <i id="userIcon" class="fad fa-robot fa-lg" style="margin:0 0.5em;"></i>
+                    Are you Human?
+                </label>
               </div>
               <div class="info" id="mathResult">
                 <i class="fad fa-window-restore"></i> Please answer the question in the pop-up window to prove you are not a bot.
@@ -62,13 +61,9 @@
 
         <ul class="actions">
           <li>
-            <button type="submit" id="submitBtn" disabled="disabled">
+            <button type="submit" id="submitBtn">
               Send Message
             </button>
-            <input type="submit"
-                   id="submitBtn"
-                   value="Send Message"
-                   disabled="disabled" />
           </li>
         </ul>
       </div>
