@@ -17,48 +17,58 @@
         <input type="email" name="email" id="email" title="Email" required email minlength="5" />
       </div>
       <div class="field">
+        <label for="reason">Reason for contacting*</label>
+        <select name="reason" id="reason">
+          <option value="selectOne">--- Select One ---</option>
+          <option value="jobOffer">Job Offer</option>
+          <option value="bug">Bug on ColinStodd.com</option>
+          <option value="post">Question about a blog post</option>
+          <option value="project">Question about a project</option>
+          <option value="consulting">Consulting (Harpua, LLC)</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="field">
         <label for="phone">Phone Number (Optional)</label>
         <input type="tel" name="phone" id="phone" title="Telephone Number" />
       </div>
       <div class="field">
         <label for="message">Message*</label>
-        <textarea name="message" id="message" rows="4" required minlength="8" maxlength="2500" title="Message to Colin Stodd"></textarea>
+        <textarea name="message" id="message" rows="4" required minlength="5" maxlength="2500" title="Message to Colin Stodd"></textarea>
       </div>
 
       <div class="field">
-        <div class="success">
+        <div id="successMsg" class="alerts" style="display:none;">
           <i class="fad fa-shield-check"></i> Thank you, your info has been sent successfully!
         </div>
-        <div class="errorMsg">
+        <div id="warningMsg" class="alerts" style="display:none;">
           <i class="fad fa-exclamation-triangle"></i> Problem sending your form, please try again.
         </div>
       </div>
 
-      <!-- BotCheck -->
-      <div class="bot-check" id="botCheck">
-        <div class="row">
-          <div class="col-sm-12">
-            <form id="contactForm">
-              <div class="form-group" id="checkBox">
-                <input type="checkbox"
-                id="botCheckbox"
-                name="botCheckbox"
-                title="Are you a human?">
-                <label for="botCheckbox" class="tooltip">
-                    <span class="tooltiptext">If you run into any form trouble please email colin@colinstodd.com.</span>
-                    <i id="userIcon" class="fad fa-robot fa-lg" style="margin:0 0.5em;"></i>
-                    Are you Human?
-                </label>
-              </div>
-              <div class="info" id="mathResult">
-                <i class="fad fa-window-restore"></i> Please answer the question in the pop-up window to prove you are not a bot.
-              </div>
-            </form>
+      <div class="field">
+        <!-- BotCheck -->
+
+        <div class="bot-check" id="botCheck">
+          <div id="checkBox">
+            <input type="checkbox"
+                   id="botCheckbox"
+                   name="botCheckbox"
+                   title="Are you a human? *">
+            <label for="botCheckbox" class="tooltip">
+              <span class="tooltiptext">If you run into any form trouble please email colin@colinstodd.com.</span>
+              <i id="userIcon" class="fad fa-robot fa-lg" style="margin:0 0.5em;"></i>
+              Are you Human? *
+            </label>
           </div>
+          <div class="info" id="mathResult">
+            <i class="fad fa-window-restore"></i> Please answer the question in the pop-up window to prove you are not a bot.
+          </div>
+
         </div>
       </div>
-      <div class="form-group">
 
+      <div class="field">
         <ul class="actions">
           <li>
             <button type="submit" id="submitBtn">

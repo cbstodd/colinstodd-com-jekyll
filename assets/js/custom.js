@@ -10,6 +10,7 @@ const notHuman = document.getElementById('notHuman');
 const mathResult = document.getElementById('mathResult');
 const showBotForm = document.getElementById('showBotForm');
 const checkBox = document.getElementById('checkBox');
+let isNotABot;
 
 clipboard.on('success', evt => {
   evt.trigger.innerHTML = `<span class="text-green"><i class="fad fa-clipboard-check"></i> Copied!</span>`;
@@ -50,22 +51,23 @@ function calendarCopy(html, activeHtml, length) {
   */
 // let toggleBotForm = false;
 mathResult.classList.add('hide-bot-select');
-submitBtn.disabled = true;
 function toggleBotForm(value) {
   if (value) {
+    isNotABot = true;
     console.log('value', value);
     mathResult.classList.add('not-a-bot');
     botCheck.classList.add('not-a-bot');
+    getId('warningMsg').style.display = 'none';
     mathResult.innerHTML = `Success! <br> <i class="fad fa-check-square"></i> 1. You made it to colinstodd.com. <br><i class="fad fa-check-square"></i> 2. You've proven that you're smart.<br> I think I'm going to like you 😉.<br>Please press Submit to send your info. or <a href="mailto:colin@colinstodd.com?subject=[Contact] from colinstodd.com&body=Hello Colin, I have a question regarding...">Email</a>. <br>Thanks!`;
-    submitBtn.disabled = false;
+
   } else {
     console.log('value', value);
+    isNotABot = false;
     mathResult.classList.remove('not-a-bot');
     botCheck.classList.remove('not-a-bot');
     mathResult.classList.add('is-a-bot');
     botCheck.classList.add('is-a-bot');
     mathResult.innerHTML = `<i class="fad fa-window-restore"></i> Please validate that you're a human by answering the question in the pop-up window.`;
-    submitBtn.disabled = true;
   }
 }
 

@@ -25,8 +25,8 @@ redirect_from:
 
 <div class="blurb">
 <h2 class="text-yellow"><i class="fad fa-traffic-cone"></i> UPDATE <i class="fad fa-traffic-cone"></i></h2>
-For those of you who are unfamiliar with the Terminal or the command line, you may be happy to read that while I was reading a post on <a href="https://medium.com/">Medium</a> I was introduced to an app that allows you to do most of theses commands but from a free application called <a href="https://www.bresink.com/osx/TinkerTool.html" target="_blank" rel="noopener">TinkerTool</a>.  As you can see in the image below there is a tab called "Font Smoothing", and you'll see that there are options for you to do much of what I
-explain below, without having to use the command line.
+For those of you that are unfamiliar with the Terminal/command line, I'm happy to let you know that I came across a post on <a href="https://medium.com/macoclock/adjust-hidden-settings-on-your-mac-f29f4beaaf50" target="_blank" rel="noopener">Medium</a> that introduced me to a OSX app which allows you to do most of theses commands below from a free application called <a href="https://www.bresink.com/osx/TinkerTool.html" target="_blank" rel="noopener">TinkerTool</a>.  As you can see in the image below there is a tab called "Font Smoothing", and you'll see that there are options for you to do much of what I
+explain below. However, this app is limited and does not let you adjust font smoothing on a per-app basis (that I explain below). But if all you need is to set the smoothing globally, than this might be a better method.
 <p><img src="../../images/posts/mac_osx_fonts/tinkertool.png" class="image fit" title="TinkerTool font smoothing" loading="lazy"></p>
 </div>
 

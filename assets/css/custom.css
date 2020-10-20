@@ -485,6 +485,26 @@ a.copy-btn:hover {
   display: block;
 }
 
+.success {
+  display: block;
+  color: var(--green);
+  border: 2px solid var(--green);
+  border-radius: 15px;
+  background-color: #2A3215;
+  padding: 1.2rem 1.75rem;
+  margin: 1.5rem;
+}
+
+.warning {
+  display: block;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+  border-radius: 15px;
+  background-color: #392905;
+  padding: 1.2rem 1.75rem;
+  margin: 1.5rem;
+}
+
 .not-a-bot {
   color: var(--green);
   border-color: var(--green);
