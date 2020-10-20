@@ -98,8 +98,10 @@ function sendMessage(name, email, reason, phone, message, isNotABot, createdAt) 
       getId('successMsg').style.display = 'block';
       setTimeout(function() {
         getId('successMsg').classList.remove('success');
-        getId('successMsg').innerHTML = ' ';
-        mathResult.innerHTML = '';
+        getId('warningMsg').classList.remove('warning');
+        getId('successMsg').innerHTML = ` `;
+        getId('warningMsg').innerHTML = ` `;
+        mathResult.innerHTML = ` `;
         getId('contactForm').reset();
       }, 5000);
     })
@@ -120,15 +122,11 @@ function sendMessage(name, email, reason, phone, message, isNotABot, createdAt) 
 
 getId('contactForm').addEventListener('change', evt => {
   evt.preventDefault();
-  console.log('reason', reason.value);
   if (isNotABot && (reason.value !== 'selectOne')) {
     console.log('Form is Valid');
-    // getId('submitBtn').removeAttribute = disabled;
     submitBtn.disabled = false;
   } else {
     console.log('Form NOT Valid');
-    console.table(evt);
     submitBtn.disabled = true;
-
   }
 });
