@@ -8,7 +8,7 @@ image: ../../images/posts/big_sur.png
 featured: true
 pinned: false
 date: 2020-08-11 00:00:10 -0400
-last_modified_at: 2020-08-18 10:00:10 -0400
+last_modified_at: 2020-10-19 10:00:10 -0400
 permalink: /posts/tech/MAC-OS-Big-Sur-Not-Showing-As-A-Download-Fix.html
 categories: tech
 tags:

@@ -7,7 +7,7 @@ featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2020-09-16 00:10:10 -0400
+last_modified_at: 2020-10-19 11:10:10 -0400
 categories: tech
 tags:
   - OSX,
