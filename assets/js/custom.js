@@ -59,7 +59,6 @@ function toggleBotForm(value) {
     botCheck.classList.add('not-a-bot');
     getId('warningMsg').style.display = 'none';
     mathResult.innerHTML = `Success! <br> <i class="fad fa-check-square"></i> 1. You made it to colinstodd.com. <br><i class="fad fa-check-square"></i> 2. You've proven that you're smart.<br> I think I'm going to like you 😉.<br>Please press Submit to send your info. or <a href="mailto:colin@colinstodd.com?subject=[Contact] from colinstodd.com&body=Hello Colin, I have a question regarding...">Email</a>. <br>Thanks!`;
-
   } else {
     console.log('value', value);
     isNotABot = false;

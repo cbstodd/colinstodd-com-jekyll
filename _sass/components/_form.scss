@@ -6,6 +6,8 @@
 
 /* Form */
 
+// TODO: Make input fields with less drop shadow/indent.
+
 form {
   margin: 0 0 _size(element-margin) 0;
 
@@ -57,17 +59,23 @@ textarea {
   width: 100%;
   border-radius: 10px;
   background: var(--main-blue);
-  box-shadow: inset -5px 5px 10px #171820, inset 5px -5px 10px var(--border-blue);
+  box-shadow: inset -5px 5px 10px #171820,
+    inset 5px -5px 10px var(--border-blue);
 
   &:invalid {
     box-shadow: none;
     border-radius: 10px;
     background: var(--main-blue);
-    box-shadow: inset -5px 5px 10px #171820, inset 5px -5px 10px var(--border-blue);
+    box-shadow: inset -5px 5px 10px #171820,
+      inset 5px -5px 10px var(--border-blue);
   }
 
   &:focus {
     border-color: desaturate(lighten(_palette(accent), 6), 3);
+  }
+
+  &:internal-autofill-selected {
+    background-color: var(--code-blue);
   }
 }
 
@@ -86,13 +94,16 @@ select {
   text-decoration: none;
   width: 100%;
   border-radius: 10px;
-  background: var(--main-blue);  
-  cursor: pointer;
+  background: var(--main-blue);
+  box-shadow: inset -5px 5px 10px #171820,
+    inset 5px -5px 10px var(--border-blue);
 
   &:invalid {
     box-shadow: none;
     border-radius: 10px;
-    background: var(--pink);
+    background-color: var(--highlight-blue);
+    box-shadow: inset -5px 5px 10px #171820,
+      inset 5px -5px 10px var(--border-blue);
   }
 
   &:focus {
@@ -125,9 +136,14 @@ select {
 }
 
 select {
+  color: _palette(fg-bold);
+  background: _palette(bg);
+
+  border-radius: 12px;
+  border: solid 2px _palette(border);
   option {
-    color: _palette(fg-bold);
-    background: _palette(bg);
+    line-height: 1.2rem;
+    padding: 1rem;
   }
 }
 
@@ -157,7 +173,7 @@ input[type="radio"] {
     @include icon;
     color: _palette(fg);
     cursor: pointer;
-    display: inline-block;
+    esplay: inline-block;
     font-size: 1em;
     font-family: _font(family);
     text-transform: none;
@@ -242,8 +258,8 @@ input[type="radio"] {
 
 .success {
   display: none;
-  background: #A1D52F;
-  color: #334A17;
+  background: #a1d52f;
+  color: #334a17;
   padding: 20px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -256,8 +272,8 @@ input[type="radio"] {
 
 .errorMsg {
   display: none;
-  background: #FFC1C0;
-  color: #5A1B1B;
+  background: #ffc1c0;
+  color: #5a1b1b;
   padding: 20px;
   margin-top: 16px;
   margin-bottom: 16px;

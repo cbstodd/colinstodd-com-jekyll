@@ -56,7 +56,7 @@ getId('contactForm').addEventListener('submit', formSubmit);
 function formSubmit(e) {
   e.preventDefault();
   // Get Values from the DOM
-  const name = getId('name').value;
+  const name = getId('name').valueeeaa;
   const email = getId('email').value;
   const reason = getId('reason').value;
   const phone = getId('phone').value;
@@ -99,9 +99,9 @@ function sendMessage(name, email, reason, phone, message, isNotABot, createdAt) 
       setTimeout(function() {
         getId('successMsg').classList.remove('success');
         getId('warningMsg').classList.remove('warning');
-        getId('successMsg').innerHTML = ` `;
-        getId('warningMsg').innerHTML = ` `;
-        mathResult.innerHTML = ` `;
+        getId('successMsg').innerHTML = ``;
+        getId('warningMsg').innerHTML = ``;
+        mathResult.innerHTML = ``;
         getId('contactForm').reset();
       }, 5000);
     })
