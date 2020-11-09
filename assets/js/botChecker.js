@@ -1,4 +1,4 @@
-class BotChecker  {
+export class BotChecker  {
 	constructor() {
 	  this.randomNumbers();
 	  this.addNumbers();

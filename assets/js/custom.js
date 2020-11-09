@@ -1,3 +1,6 @@
+import * as _const from './html-constants.js';
+import { validFormCheck, getId } from './contact.js';
+import { BotChecker } from './botChecker.js';
 const clipboard = new ClipboardJS('.copy-btn');
 const appleUrl = new ClipboardJS('.apple-btn');
 const hideBotSelect = document.getElementsByClassName('hide-bot-select');
@@ -10,7 +13,7 @@ const notHuman = document.getElementById('notHuman');
 const mathResult = document.getElementById('mathResult');
 const showBotForm = document.getElementById('showBotForm');
 const checkBox = document.getElementById('checkBox');
-let isNotABot;
+let isNotABot = false;
 
 clipboard.on('success', evt => {
   evt.trigger.innerHTML = `<span class="text-green"><i class="fad fa-clipboard-check"></i> Copied!</span>`;
@@ -48,31 +51,55 @@ function calendarCopy(html, activeHtml, length) {
 
 /*
   Validate Contact Form --------------------+
-  */
-// let toggleBotForm = false;
+*/
+
+function disableSubmitBtn(isEnabledValue) {
+  getId('submitBtn').disabled = isEnabledValue;
+}
+
+window.onload(disableSubmitBtn(true));
 mathResult.classList.add('hide-bot-select');
-function toggleBotForm(value) {
-  if (value) {
-    isNotABot = true;
-    console.log('value', value);
+
+function isHumanAlert(value) {
+  if (validFormCheck === true && value) {
+    disableSubmitBtn(false);
     mathResult.classList.add('not-a-bot');
     botCheck.classList.add('not-a-bot');
     getId('warningMsg').style.display = 'none';
-    mathResult.innerHTML = `Success! <br> <i class="fad fa-check-square"></i> 1. You made it to colinstodd.com. <br><i class="fad fa-check-square"></i> 2. You've proven that you're smart.<br> I think I'm going to like you 😉.<br>Please press Submit to send your info. or <a href="mailto:colin@colinstodd.com?subject=[Contact] from colinstodd.com&body=Hello Colin, I have a question regarding...">Email</a>. <br>Thanks!`;
+    mathResult.innerHTML = _const.isHumanAlertMessage;
+  } else if (value) {
+    disableSubmitBtn(true);
+    mathResult.classList.add('not-a-bot');
+    botCheck.classList.add('not-a-bot');
+    getId('warningMsg').style.display = 'none';
+    mathResult.innerHTML = _const.isHumanAlertMessage;
   } else {
-    console.log('value', value);
-    isNotABot = false;
-    mathResult.classList.remove('not-a-bot');
-    botCheck.classList.remove('not-a-bot');
-    mathResult.classList.add('is-a-bot');
-    botCheck.classList.add('is-a-bot');
-    mathResult.innerHTML = `<i class="fad fa-window-restore"></i> Please validate that you're a human by answering the question in the pop-up window.`;
+    mathResult.classList.add('not-a-bot');
+    botCheck.classList.add('not-a-bot');
+    getId('warningMsg').style.display = 'none';
+    mathResult.innerHTML = _const.isHumanAlertMessage;
   }
 }
 
-function triggerBotForm(checkedState) {
+function isNotHumanError() {
+  mathResult.classList.remove('not-a-bot');
+  botCheck.classList.remove('not-a-bot');
+  mathResult.classList.add('is-a-bot');
+  botCheck.classList.add('is-a-bot');
+  mathResult.innerHTML = _const.isNotHumanErrorMessage;
+}
+
+function toggleBotForm(value) {
+  if (value) {
+    isHumanAlert(value);
+  } else {
+    isNotHumanError();
+  }
+}
+
+function triggerAlertQuestion(checkedState) {
   if (!checkedState) {
-    toggleBotForm(false);
+    disableSubmitBtn(true);
   } else {
     const answer = new BotChecker();
     const userAnswer = prompt(
@@ -87,9 +114,12 @@ function triggerBotForm(checkedState) {
 botCheckbox.addEventListener('click', evt => {
   console.log('toggleBotForm', evt.target.checked);
   if (!evt.target.checked) {
-    triggerBotForm(false);
+    disableSubmitBtn(true);
+    triggerAlertQuestion(false);
   } else {
     mathResult.classList.add('bot-select');
-    setTimeout(() => triggerBotForm(true), 300);
+    setTimeout(() => triggerAlertQuestion(true), 300);
   }
 });
+
+export { isNotABot, disableSubmitBtn };

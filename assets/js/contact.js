@@ -1,27 +1,15 @@
+// TODO: Add createdAt and isNotABot definitions.
+import { isNotABot } from './custom.js';
+import { alphabetArray } from './html-constants.js';
+import { disableSubmitBtn } from './custom.js';
 // Generates random number id according to specified length:
 function createNewId(length) {
-  const letterArray = new Array(
-    'a',
-    'A',
-    'b',
-    'b',
-    'c',
-    'C',
-    'd',
-    'D',
-    'e',
-    'E',
-    'f',
-    'F',
-    'g',
-    'G'
-  );
   let idArray = [];
 
   for (let i = 0; i < length; i++) {
     const randomNum = Math.floor(Math.random() * 8 + 1);
     idArray.push(randomNum);
-    idArray.push(letterArray[i + randomNum || -2]);
+    idArray.push(alphabetArray[i + randomNum || -2]);
   }
   const newerId = idArray.join('');
   return newerId.toString();
@@ -52,20 +40,41 @@ const formMessage = firebase.database().ref(`contacts`);
 //listen for submit event//(1)
 getId('contactForm').addEventListener('submit', formSubmit);
 
+// Makes sure all required form inputs are filled in:
+function validFormCheck() {
+  // Get Values from the DOM
+  const name = getId('name').value;
+  const email = getId('email').value;
+  const reason = getId('reason').value;
+  const message = getId('message').value;
+  const btnId = getId('submitBtn');
+  if (
+    name &&
+    email &&
+    reason !== 'selectOne' &&
+    message
+  ) {
+    disableSubmitBtn(false);
+    return true;
+  } else {
+    return false;
+  }
+}
+
 //Submit form(1.2)
 function formSubmit(e) {
   e.preventDefault();
-  // Get Values from the DOM
-  const name = getId('name').valueeeaa;
-  const email = getId('email').value;
-  const reason = getId('reason').value;
-  const phone = getId('phone').value;
-  const message = getId('message').value;
 
   //send message values
-  if (name && email && (reason !== 'selectOne') && message && isNotABot) {
-    submitBtn.disabled = false;
-    sendMessage(name, email, reason, phone, message, isNotABot, createdAt = Date());
+  if (validFormCheck() === true) {
+    sendMessage(
+      name,
+      email,
+      reason,
+      phone,
+      message,
+      (createdAt = Date())
+    );
   } else {
     getId('warningMsg').style.display = 'block';
     getId(
@@ -77,7 +86,14 @@ function formSubmit(e) {
 
 //Send Message to Firebase(4)
 
-function sendMessage(name, email, reason, phone, message, isNotABot, createdAt) {
+function sendMessage(
+  name,
+  email,
+  reason,
+  phone,
+  message,
+  createdAt
+) {
   const newFormMessage = formMessage.push();
 
   newFormMessage
@@ -87,8 +103,7 @@ function sendMessage(name, email, reason, phone, message, isNotABot, createdAt) 
       reason: reason,
       phone: phone,
       message: message,
-      isNotABot: isNotABot,
-      createdAt: createdAt,
+      createdAt: createdAt
     })
     .then(() => {
       mathResult.classList.remove('not-a-bot');
@@ -96,7 +111,7 @@ function sendMessage(name, email, reason, phone, message, isNotABot, createdAt) 
       botCheck.classList.remove('is-a-bot');
       getId('successMsg').classList.add('success');
       getId('successMsg').style.display = 'block';
-      setTimeout(function() {
+      setTimeout(() => {
         getId('successMsg').classList.remove('success');
         getId('warningMsg').classList.remove('warning');
         getId('successMsg').innerHTML = ``;
@@ -111,7 +126,7 @@ function sendMessage(name, email, reason, phone, message, isNotABot, createdAt) 
       botCheck.classList.remove('not-a-bot');
       getId('warningMsg').classList.add('warning');
       getId('warningMsg').style.display = 'block';
-      setTimeout(function() {
+      setTimeout(() => {
         getId('warningMsg').classList.remove('warning');
         getId(
           'warningMsg'
@@ -122,11 +137,13 @@ function sendMessage(name, email, reason, phone, message, isNotABot, createdAt) 
 
 getId('contactForm').addEventListener('change', evt => {
   evt.preventDefault();
-  if (isNotABot && (reason.value !== 'selectOne')) {
+  if (validFormCheck() === true) {
+    disableSubmitBtn(false);
     console.log('Form is Valid');
-    submitBtn.disabled = false;
   } else {
     console.log('Form NOT Valid');
     submitBtn.disabled = true;
   }
 });
+
+export { getId, validFormCheck };
