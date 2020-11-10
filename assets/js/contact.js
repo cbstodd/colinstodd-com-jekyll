@@ -1,4 +1,3 @@
-// TODO: Add createdAt and isNotABot definitions.
 import { isNotABot } from './custom.js';
 import { alphabetArray } from './html-constants.js';
 import { disableSubmitBtn } from './custom.js';
@@ -15,7 +14,7 @@ function createNewId(length) {
   const newerId = idArray.join('');
   return newerId.toString();
 }
-const uid = createNewId(16);
+const newId = createNewId(16);
 
 function getId(id) {
   return document.getElementById(id);
@@ -35,7 +34,7 @@ firebase.initializeApp({
 });
 
 //Reference for form collection(3)
-const formMessage = firebase.database().ref(`contacts/${uid}`);
+const formMessage = firebase.database().ref(`contacts`);
 
 //listen for submit event//(1)
 getId('contactForm').addEventListener('submit', formSubmit);
@@ -59,7 +58,14 @@ function validFormCheck() {
 //Submit form(1.2)
 function formSubmit(e) {
   e.preventDefault();
-  const createdAt = new Date();
+  // Get Values from the DOM
+  const name = getId('name').value;
+  const email = getId('email').value;
+  const reason = getId('reason').value;
+  const message = getId('message').value;
+  const phone = getId('phone').value;
+  const createdAt = '';
+  const uid = '';
   //send message values
   if (validFormCheck() === true) {
     sendMessage(name, isNotABot, email, reason, phone, message, uid, createdAt);
@@ -88,14 +94,14 @@ function sendMessage(
 
   newFormMessage
     .set({
-      name,
+      name: name,
       isNotABot,
-      email,
-      reason,
-      phone,
-      message,
-      uid,
-      createdAt: (createdAt = new Date())
+      email: email,
+      reason: reason,
+      phone: phone,
+      message: message,
+      uid: newFormMessage.key || newId,
+      createdAt: Date()
     })
     .then(() => {
       mathResult.classList.remove('not-a-bot');
