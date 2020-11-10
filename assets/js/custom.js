@@ -61,14 +61,15 @@ window.onload(disableSubmitBtn(true));
 mathResult.classList.add('hide-bot-select');
 
 function isHumanAlert(value) {
-  if (validFormCheck === true && value) {
-    disableSubmitBtn(false);
+  const valid = validFormCheck();
+  if (valid && value) {
+    isNotABot = true;
+    console.log('valid: ', valid);
     mathResult.classList.add('not-a-bot');
     botCheck.classList.add('not-a-bot');
     getId('warningMsg').style.display = 'none';
     mathResult.innerHTML = _const.isHumanAlertMessage;
   } else if (value) {
-    disableSubmitBtn(true);
     mathResult.classList.add('not-a-bot');
     botCheck.classList.add('not-a-bot');
     getId('warningMsg').style.display = 'none';
@@ -91,6 +92,7 @@ function isNotHumanError() {
 
 function toggleBotForm(value) {
   if (value) {
+    isNotABot = true;
     isHumanAlert(value);
   } else {
     isNotHumanError();
@@ -101,6 +103,8 @@ function triggerAlertQuestion(checkedState) {
   if (!checkedState) {
     disableSubmitBtn(true);
   } else {
+    disableSubmitBtn(false);
+    isNotABot = true;
     const answer = new BotChecker();
     const userAnswer = prompt(
       `Please add these two numbers:  ${answer.num1} + ${answer.num2} = ?`
@@ -114,9 +118,9 @@ function triggerAlertQuestion(checkedState) {
 botCheckbox.addEventListener('click', evt => {
   console.log('toggleBotForm', evt.target.checked);
   if (!evt.target.checked) {
-    disableSubmitBtn(true);
     triggerAlertQuestion(false);
   } else {
+    disableSubmitBtn(false);
     mathResult.classList.add('bot-select');
     setTimeout(() => triggerAlertQuestion(true), 300);
   }

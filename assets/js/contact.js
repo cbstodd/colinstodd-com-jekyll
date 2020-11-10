@@ -2,6 +2,7 @@
 import { isNotABot } from './custom.js';
 import { alphabetArray } from './html-constants.js';
 import { disableSubmitBtn } from './custom.js';
+
 // Generates random number id according to specified length:
 function createNewId(length) {
   let idArray = [];
@@ -14,8 +15,7 @@ function createNewId(length) {
   const newerId = idArray.join('');
   return newerId.toString();
 }
-
-const newId = createNewId(12);
+const uid = createNewId(16);
 
 function getId(id) {
   return document.getElementById(id);
@@ -35,7 +35,7 @@ firebase.initializeApp({
 });
 
 //Reference for form collection(3)
-const formMessage = firebase.database().ref(`contacts`);
+const formMessage = firebase.database().ref(`contacts/${uid}`);
 
 //listen for submit event//(1)
 getId('contactForm').addEventListener('submit', formSubmit);
@@ -47,14 +47,9 @@ function validFormCheck() {
   const email = getId('email').value;
   const reason = getId('reason').value;
   const message = getId('message').value;
-  const btnId = getId('submitBtn');
-  if (
-    name &&
-    email &&
-    reason !== 'selectOne' &&
-    message
-  ) {
-    disableSubmitBtn(false);
+
+  console.log('isNotABot', isNotABot);
+  if (email && isNotABot && message && name && reason !== 'selectOne') {
     return true;
   } else {
     return false;
@@ -64,17 +59,10 @@ function validFormCheck() {
 //Submit form(1.2)
 function formSubmit(e) {
   e.preventDefault();
-
+  const createdAt = new Date();
   //send message values
   if (validFormCheck() === true) {
-    sendMessage(
-      name,
-      email,
-      reason,
-      phone,
-      message,
-      (createdAt = Date())
-    );
+    sendMessage(name, isNotABot, email, reason, phone, message, uid, createdAt);
   } else {
     getId('warningMsg').style.display = 'block';
     getId(
@@ -88,22 +76,26 @@ function formSubmit(e) {
 
 function sendMessage(
   name,
+  isNotABot,
   email,
   reason,
   phone,
   message,
+  uid,
   createdAt
 ) {
   const newFormMessage = formMessage.push();
 
   newFormMessage
     .set({
-      name: name,
-      email: email,
-      reason: reason,
-      phone: phone,
-      message: message,
-      createdAt: createdAt
+      name,
+      isNotABot,
+      email,
+      reason,
+      phone,
+      message,
+      uid,
+      createdAt: (createdAt = new Date())
     })
     .then(() => {
       mathResult.classList.remove('not-a-bot');
@@ -140,9 +132,10 @@ getId('contactForm').addEventListener('change', evt => {
   if (validFormCheck() === true) {
     disableSubmitBtn(false);
     console.log('Form is Valid');
+    console.log('validFormCheck(): ', validFormCheck());
   } else {
     console.log('Form NOT Valid');
-    submitBtn.disabled = true;
+    disableSubmitBtn(true);
   }
 });
 
