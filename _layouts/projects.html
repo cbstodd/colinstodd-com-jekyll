@@ -52,7 +52,7 @@ layout: default
         <div class="row uniform">
           <div class="8u">
             {% if project.last_modified_at %}
-            <p><i class="fad fa-pen-alt"></i> {{ project.last_modified_at | date_to_string }}</p>
+            <p><i class="fad fa-calendar-edit"></i> {{ project.last_modified_at | date_to_string }}</p>
             {% else project.date %}
             <p><i class="fad fa-calendar-alt"></i> {{ project.date | date_to_string }}</p>
             {% endif %}

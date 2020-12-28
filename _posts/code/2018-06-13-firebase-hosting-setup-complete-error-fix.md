@@ -22,11 +22,11 @@ redirect_from:
 
 I was just trying to post my <a href="https://github.com/angular/angularfire2" target="_blank" rel="noopener">AngularFire</a> app to <a href="https://firebase.google.com/" target="_blank" rel="noopener">Firebase hosting</a> and I was getting the ***"Firebase hosting setup complete"*** alert page. I couldn't find the fix online, so I'll post it here.
 
-**The Problem:**
+<h3 class="text-pink"><em><i class="fad fa-skull-crossbones"></i> The Problem:</em></h3>
 
 When you run `ng build --prod`, Angular now places the build files in `dist/app-name/`, but prior to ng6 it would place the build files in `dist/`. So when you're uploading the files, Firebase ends up looking in the `dist` folder (probably where you're used to setting your `firebase init` public folder).
 
-**The Fix:**
+<h3 class="text-green"><em><i class="fad fa-badge-check"></i> The Fix:</em></h3>
 
 Open up your `angular.json` file and change
 
@@ -40,4 +40,13 @@ to
 "outputPath": "dist",
 ```
 
-You should now be able to run your `firebase init` setup as you normally would have in Angular 5--.
+<h3 class="text-green"><em>Or:</em></h3>
+
+You can re-run/setup your `firebase init` set your public directory option to `"dist/your-app-name"`
+
+
+Either way you should now be able to run your `firebase init` setup as you normally would have in Angular 5--.
+
+
+
+---

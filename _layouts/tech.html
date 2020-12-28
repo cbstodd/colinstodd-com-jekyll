@@ -17,7 +17,7 @@ layout: default
   <!-- Content -->
   <div class="wrapper">
     <div class="inner">
-      {% assign posts = site.categories.tech %}
+      {% assign posts = site.categories.tech | sort: 'last_modified_at' | reverse %}
       {% for post in posts %}
       {% if post.title != 404 %}
       <a href="{{ post.url | relative_url }}">
@@ -29,7 +29,7 @@ layout: default
         <div class="row uniform">
           <div class="8u">
             {% if post.last_modified_at %}
-            <p><i class="fad fa-pen-alt"></i> {{ post.last_modified_at | date_to_string }}</p>
+            <p><i class="fad fa-calendar-edit"></i> {{ post.last_modified_at | date_to_string }}</p>
             {% else post.date %}
             <p><i class="fad fa-calendar-alt"></i> {{ post.date | date_to_string }}</p>
             {% endif %}
@@ -40,7 +40,9 @@ layout: default
           <div class="4u">
             {% if post.image %}
             <img src="{{ post.image }}"
-                 alt="{{ post.title }}" class="image fit" loading="lazy" />
+                 alt="{{ post.title }}"
+                 class="image fit"
+                 loading="lazy" />
             {% endif %}
           </div>
         </div>

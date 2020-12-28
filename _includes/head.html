@@ -20,6 +20,11 @@
 	<title>{{ page.title }} | {{ site.title }}</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="revised" content="{{ site.time | date: '%B %d, %Y' }}">
+	<!-- Cache Control -->
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
 	<!--~ Favicon ~-->
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png?v=yyQKGrYykG" | relative_url }}">
 	<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png?v=yyQKGrYykG" | relative_url }}">
@@ -44,13 +49,16 @@
 	<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}/><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}/><![endif]-->
+	<!-- Animate.css -->
+	<link rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<!-- * FontAwesome * -->
 	<link rel="stylesheet"
 		  href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
 		  integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH"
 		  crossorigin="anonymous">
-	<link rel="stylesheet" href="../../assets/css/smoothbox.css">
 	<meta property="og:type" content="website" />
+	{% include scripts-head.html %}
 	{% feed_meta %}
 	{% seo %}
 </head>

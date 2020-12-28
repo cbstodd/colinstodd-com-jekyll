@@ -6,6 +6,8 @@
 
 /* Form */
 
+// TODO: Make input fields with less drop shadow/indent.
+
 form {
   margin: 0 0 _size(element-margin) 0;
 
@@ -43,7 +45,6 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-select,
 textarea {
   @include vendor('appearance', 'none');
   // background: _palette(border-bg);
@@ -57,14 +58,52 @@ textarea {
   text-decoration: none;
   width: 100%;
   border-radius: 10px;
-  background: #31394b;
-  box-shadow: inset -5px 5px 10px #2a3040, inset 5px -5px 10px #384256;
+  background: var(--main-blue);
+  box-shadow: inset -5px 5px 10px #171820,
+    inset 5px -5px 10px var(--border-blue);
 
   &:invalid {
     box-shadow: none;
     border-radius: 10px;
-    background: #31394b;
-    box-shadow: inset -5px 5px 10px #2a3040, inset 5px -5px 10px #384256;
+    background: var(--main-blue);
+    box-shadow: inset -5px 5px 10px #171820,
+      inset 5px -5px 10px var(--border-blue);
+  }
+
+  &:focus {
+    border-color: desaturate(lighten(_palette(accent), 6), 3);
+  }
+
+  &:internal-autofill-selected {
+    background-color: var(--code-blue);
+  }
+}
+
+select {
+  border-radius: 12px;
+
+  @include vendor('appearance', 'none');
+  // background: _palette(border-bg);
+  // border-radius: _size(border-radius);
+  // border: none;
+  border: solid 2px _palette(border);
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--main-blue);
+  box-shadow: inset -5px 5px 10px #171820,
+    inset 5px -5px 10px var(--border-blue);
+
+  &:invalid {
+    box-shadow: none;
+    border-radius: 10px;
+    background-color: var(--highlight-blue);
+    box-shadow: inset -5px 5px 10px #171820,
+      inset 5px -5px 10px var(--border-blue);
   }
 
   &:focus {
@@ -97,9 +136,14 @@ textarea {
 }
 
 select {
+  color: _palette(fg-bold);
+  background: _palette(bg);
+
+  border-radius: 12px;
+  border: solid 2px _palette(border);
   option {
-    color: _palette(fg-bold);
-    background: _palette(bg);
+    line-height: 1.2rem;
+    padding: 1rem;
   }
 }
 
@@ -129,7 +173,7 @@ input[type="radio"] {
     @include icon;
     color: _palette(fg);
     cursor: pointer;
-    display: inline-block;
+    esplay: inline-block;
     font-size: 1em;
     font-family: _font(family);
     text-transform: none;
@@ -210,4 +254,32 @@ input[type="radio"] {
 .polyfill-placeholder {
   color: _palette(fg-light) !important;
   opacity: 1.0;
+}
+
+.success {
+  display: none;
+  background: #a1d52f;
+  color: #334a17;
+  padding: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 5px;
+  &.is-active {
+    display: block;
+  }
+}
+
+.errorMsg {
+  display: none;
+  background: #ffc1c0;
+  color: #5a1b1b;
+  padding: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 5px;
+  &.is-active {
+    display: block;
+  }
 }

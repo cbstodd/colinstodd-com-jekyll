@@ -1,56 +1,134 @@
 <div id="getInTouch"></div>
 <!-- Footer -->
-<section id="footer">
+<footer id="footer">
   <div class="inner">
     <h2 class="major"><i class="fad fa-mailbox"></i> Send A Message</h2>
     <hr class="footer">
     <p>If you are contacting me about future projects or recruitment, the easiest way to get a hold of me is with the
       form below. Please leave a detailed description to your inquiry and I will respond accordingly. Thanks!
     </p>
-    <form method="POST" action="https://getform.io/f/1c2abdba-fac6-4bdc-90c9-5fb74c77eebb">
+    <form id="contactForm">
       <div class="field">
         <label for="name">Name*</label>
-        <input type="text" name="name" id="name" required minlength="3" />
+        <input type="text" name="name" id="name" title="Name" required minlength="3" />
       </div>
       <div class="field">
         <label for="email">Email*</label>
-        <input type="email" name="_replyto" id="email" required email minlength="5" />
+        <input type="email" name="email" id="email" title="Email" required email minlength="5" />
       </div>
       <div class="field">
-        <label for="tel">Phone Number (Optional)</label>
-        <input type="tel" name="tel" id="tel" />
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" name="phone" id="phone" title="Telephone Number" />
       </div>
       <div class="field">
         <label for="message">Message*</label>
-        <textarea name="message" id="message" rows="4" required minlength="8" maxlength="2500"></textarea>
+        <textarea name="message" id="message" rows="4" required minlength="5" maxlength="2500" title="Message to Colin Stodd"></textarea>
       </div>
-      <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
-      </ul>
-      <h4>* Required</h4>
+
+      <div class="field">
+        <label for="reason">Reason for contacting*</label>
+        <select name="reason" id="reason">
+          <option value="selectOne">--- Select One ---</option>
+          <option value="jobOffer">Job Offer</option>
+          <option value="bug">Bug on ColinStodd.com</option>
+          <option value="post">Question about a blog post</option>
+          <option value="project">Question about a project</option>
+          <option value="consulting">Consulting (Harpua, LLC)</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <!-- BotCheck -->
+
+        <div class="bot-check" id="botCheck">
+          <div id="checkBox">
+            <input type="checkbox"
+                   id="botCheckbox"
+                   name="botCheckbox"
+                   title="Are you a human? *">
+            <label for="botCheckbox" class="tooltip">
+              <span class="tooltiptext">If you run into any form trouble please email colin@colinstodd.com.</span>
+              <i id="userIcon" class="fad fa-robot fa-lg" style="margin:0 0.5em;"></i>
+              Are you Human? *
+            </label>
+          </div>
+          <div class="info" id="mathResult">
+            <i class="fad fa-window-restore"></i> Please answer the question in the pop-up window to prove you are not a bot.
+          </div>
+
+        </div>
+
+        <div class="field">
+          <div id="successMsg" class="alerts" style="display:none;">
+            <i class="fad fa-shield-check"></i> Thank you, your info has been sent successfully!
+          </div>
+          <div id="warningMsg" class="alerts" style="display:none;">
+            <i class="fad fa-exclamation-triangle"></i> Problem sending your form, please try again.
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <ul class="actions">
+          <li>
+            <button type="submit" id="submitBtn">
+              Send Message
+            </button>
+          </li>
+        </ul>
+      </div>
+      <h4 class="required-star">* Required</h4>
     </form>
+
     <ul class="contact">
       <li class="fa-github">
-        <h4><a href="https://github.com/cbstodd" target="_blank" rel="noopener" title="Github">@cbstodd</a>
+        <h4>
+          <a href="https://github.com/cbstodd" target="_blank" rel="noopener" title="Github">
+            @cbstodd
+          </a>
         </h4>
       </li>
       <li class="fa-twitter">
-        <h4><a href="https://twitter.com/cbstodd" target="_blank" rel="noopener" title="Twitter">@cbstodd</a></h4>
+        <h4>
+          <a href="https://twitter.com/cbstodd" target="_blank" rel="noopener" title="Twitter">
+            @cbstodd
+          </a>
+        </h4>
       </li>
       <li class="fa-instagram">
-        <h4><a href="https://instagram.com/cbstodd" target="_blank" rel="noopener" title="Instagram">@cbstodd</a></h4>
+        <h4>
+          <a href="https://instagram.com/cbstodd" target="_blank" rel="noopener" title="Instagram">@cbstodd
+          </a>
+        </h4>
       </li>
       <li class="fa-facebook">
-        <h4><a href="https://facebook.com/colin.stodd" target="_blank" rel="noopener" title="Facebook">colin.stodd</a>
+        <h4>
+          <a href="https://facebook.com/colin.stodd" target="_blank" rel="noopener" title="Facebook">colin.stodd
+          </a>
+        </h4>
+      </li>
+      <li class="fab fa-dev">
+        <h4>
+          <a href="https://dev.to/colper" target="_blank" rel="noopener" title="Dev.to">
+            @colper
+          </a>
         </h4>
       </li>
       <li class="fa-medium">
-        <h4><a href="https://medium.com/@cbstodd" target="_blank" rel="noopener" title="Medium">@cbstodd</a>
+        <h4>
+          <a href="https://medium.com/@cbstodd" target="_blank" rel="noopener" title="Medium">
+            @cbstodd
+          </a>
         </h4>
       </li>
       <li class="fa-linkedin">
-        <h4><a href="https://www.linkedin.com/in/colin-stodd/" target="_blank" rel="noopener"
-             title="LinkedIn">colin-stodd</a></h4>
+        <h4>
+          <a href="https://www.linkedin.com/in/colin-stodd/" target="_blank" rel="noopener"
+             title="LinkedIn">
+            colin-stodd
+          </a>
+        </h4>
       </li>
     </ul>
     <p>&nbsp;</p>
@@ -70,5 +148,4 @@
       </li>
     </ul>
   </div>
-</section>
-
+</footer>

@@ -6,8 +6,8 @@ last_modified_at: 2020-03-30 10:30:12 -0500
 icon: "fad fa-address-card"
 categories:
 description: Learn more about Colin Stodd
-image: images/site/colin_dog_square-min.jpg
-image2: "/images/pages/colin_tommy_tennessee_damn_right.jpg"
+image: images/pages/colin_dog_square_min.jpg
+image2: images/pages/colin_tommy_tennessee_damn_right_min.jpg
 author: cbstodd
 permalink: /about.html
 redirect_from:

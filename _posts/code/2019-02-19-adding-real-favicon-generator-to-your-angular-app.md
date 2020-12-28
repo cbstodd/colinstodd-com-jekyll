@@ -28,9 +28,7 @@ For just about all of my <a href="https://angular.io/" target="_blank" rel="noop
 
 3. Once the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener" title="Real Favicon Generator">Real Favicon Generator</a> does its thing, you'll want to click on the "Node CLI" tab as seen in the image below.
 
-    <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener">
-    <img src="../../images/posts/real_favicon_with_arrows.png" class="image fit" />
-    </a>
+    <img src="../../images/posts/real_favicon_with_arrows.png" class="zoom image fit" />
 
 4. Now you'll want to install the Real Favicon Generator CLI globally which helps to generate the files for you.
 So run:
