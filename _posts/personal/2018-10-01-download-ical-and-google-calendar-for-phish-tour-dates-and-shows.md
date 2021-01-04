@@ -3,40 +3,72 @@ layout: post
 categories: personal
 author: Colin Stodd
 tags:
-  - Phish,
-  - Google Calendar,
-  - iCal,
-  - Shows
-  - Tour
+- Phish,
+- Google Calendar,
+- iCal,
+- Shows
+- Tour
 title: Download iCal and Google calendar for Phish tour dates and shows
-date: 2020-01-23 12:01:00 -0500
-last_modified_at: 2020-08-18 00:08:10 -0500
+date: 2017-12-29 12:01:00 -0500
+last_modified_at: 2020-12-30 00:08:10 -0500
 pinned: false
-featured: false
+featured: true
 # image: ../images/posts/dinner_and_movie_words.png
-image: https://pbs.twimg.com/media/EfbbBl3XsAA3OJX?format=jpg&name=900x900
+image: ../images/posts/personal/fishman_chess_squashed.png
 description: Download Phish tour iCal/Google calendar. This calendar has been updated to include the "Dinner And A Movie"; also info regarding their rescheduled summer tour.
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
 redirect_from:
-  - /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
-  - /blog/post/ical-calendar-for-phish-s-2017-tour-dates/
-  - /posts/ical-calendar-for-phish-tour-dates-and-shows/
-  - /posts/ical-calendar-for-phish-tour-dates-and-shows
+- /posts/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
+- /blog/post/ical-calendar-for-phish-s-2017-tour-dates/
+- /posts/ical-calendar-for-phish-tour-dates-and-shows/
+- /posts/ical-calendar-for-phish-tour-dates-and-shows
 ical_link: "https://calendar.google.com/calendar/ical/cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com/public/basic.ics"
 gcal_link: "https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srjiboig%40group.calendar.google.com&ctz=America%2FNew_York"
 ---
 
 
-<div class="blurb mb-3">
-<i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE <i class="fad fa-calendar-alt"></i> {{ page.last_modified_at | date_to_string }}<br/>
+
+<div class="blurb">
+  <i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATE&nbsp;&nbsp;&nbsp;<i class="fad fa-calendar-alt"></i>&nbsp;&nbsp;{{ page.last_modified_at | date_to_string }}<br/>
   <hr/>
-  <span class="text-yellow">From <a href="https://phish.com/news/summer-tour-rescheduled-for-2021/" target="_blank" rel="_noopener" class="text-yellow" title="Go to Phish's website to read for yourself">Phish's Email/Website <i class="fad fa-external-link-square"></i></a></span><br>
-  <span class="text-yellow">"Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates..."</span> <br>
-  <hr/>
-  <i class="fad fa-angle-double-right fa-lg"></i> As long as Phish provides these streams I'll do my best to keep updating the info for each night. <br/>
-  <i class="fad fa-angle-double-right fa-lg"></i> Yes, I'll be updating next years' dates -- soon enough.
+
+  <p class="text-yellow">
+    Exactly 25 years after the audience tied the band 1-1 in a chess rivalry, Phish challenges YOU to a rematch as part of a special New Year’s Eve Dinner And A Movie. We’ll be presenting Phish’s first New Year’s Eve show from Madison Square Garden -- 12/31/95 -- in its entirety, beginning at 8:30 pm ET at webcast.livephish.com.
+  </p>
+
+  <p class="text-yellow">
+    We’ve teamed up with the fine folks at Chess.com to host the Band vs. Audience online chess game which will start right at the top of the show and move at a decent clip. In short, fans will have 5 minutes to move their piece (the band will have no more than that as well). At the end of 5 minutes, whichever move has the most votes is the ‘audience’ move. Stick around during the set breaks as the band joins in from their various homes, playing a few moves and providing scintillating commentary on the game.
+  </p>
+
+  <p class="text-yellow">To join the audience in voting for moves against the band, you will first need to become a member of Chess.com. It is free and you can register at https://www.chess.com/register. After you verify your account by email, join the official club for the audience side at http://bit.ly/2Jry4pG. We will post and send out the actual game link on 12/31.</p>
+
+
+
+  <p class="text-yellow">To pace yourself over a long evening, we present some chess cheese board recipes for extended grazing. Our friend Marissa Mullen put together two options — “Olive Cheese Dreams” and “Billy Bries” — with an easy ‘cheese by numbers’ guide. Feel free to swap out any of the ingredients if there’s something else you prefer. Pair with the bubbly of your choice. For dessert, chessboard cookies! Recipes are at http://livephi.sh/chessmenu.</p>
+
+
+  <p class="text-yellow">  For this final webcast of the year, our beneficiary will be none other than The WaterWheel Foundation itself. Since 1997, the band and their fans have collaborated on a nationwide charitable endeavor by raising funds and donating the proceeds across the country.  This year alone, collectively we have raised and donated nearly $750,000 to 27 different nonprofits during the Dinner And A Movie series. Join us in continuing to support those in need. Donate at http://www.phish.com/waterwheel.</p>
+
+<hr/>
+
+<h3 class="text-pink">A little older info:</h3>
+
+<span class="text-yellow">From <a href="https://phish.com/news/summer-tour-rescheduled-for-2021/" target="_blank" rel="_noopener" class="text-yellow" title="Go to Phish's website to read for yourself">Phish's Email/Website <i class="fad fa-external-link-square"></i></a></span><br>
+<span class="">"Due to the ongoing pandemic, we sadly have made the difficult decision to reschedule Phish’s entire 2020 summer tour, now moving to the summer of 2021. We’ve been as excited as ever to play music for you all, and are so heartbroken to postpone these dates..."</span> <br>
+
 </div>
+
+<h3>Video of the last match:</h3>
+
+<iframe class="fit image"
+width="auto"
+height="500"
+src="https://www.youtube.com/embed/pqmtR8qNbBs"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
 
 
 I was unable to find an updated <a href="https://phish.com/tours" target="_blank" rel="noopener" title="Phish Tour">Phish</a> iCal calendar on the web, so I created one myself and I'm sharing it with you. All you need to do is copy and paste this link into your calendar application.
@@ -55,7 +87,9 @@ I was unable to find an updated <a href="https://phish.com/tours" target="_blank
 </p>
 
 
------
+
+------
+
 
 
 <h4 class="text-yellow"><i class="fab fa-google"></i> Google Calendar:</h4>Go into <a href="https://calendar.google.com/calendar" target="_blank" rel="noopener" title="Click to open Google Calendar">Google Calendar</a>, on the bottom left hand side you'll see `Other Calendars` then click the <i class="fal fa-plus neu-text"></i> and <br/>select `From URL` and paste the URL below into that input.
