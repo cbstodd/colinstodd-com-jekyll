@@ -7,8 +7,8 @@ tags:
   - UIKIT,
   - Tutorial
 title: How to add UIKit to Angular
-date: 2019-02-19 15:30:12 -0500
-last_modified_at: 2020-05-13 12:30:12 -0500
+date: 2019-02-19 15:30:12 -0400
+last_modified_at: 2021-01-12 00:30:12 -0400
 pinned: false
 featured: true
 image: ../images/posts/uikit.png
@@ -94,6 +94,33 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
 3. Create a `styles` directory/folder in `/src`. So it should be `src/styles`.
 
 4. Now move your `styles.scss` file into that directory and create your variables, mixins and custom files to that `src/styles` directory using the following naming convention: `_variables.scss`, `_mixins.scss` and `_custom.scss`.
+
+    ```css
+    src
+    ├── app
+    │   ├── app-routing.module.ts
+    │   ├── app.component.html
+    │   ├── app.component.scss
+    │   ├── app.component.spec.ts
+    │   ├── app.component.ts
+    │   ├── app.module.ts
+    │   └── users
+    ├── assets
+    ├── environments
+    │   ├── environment.prod.ts
+    │   └── environment.ts
+    ├── favicon.ico
+    ├── index.html
+    ├── main.ts
+    ├── polyfills.ts
+    ├── styles
+    │   ├── custom.scss /* Add files here but they should have the "_" pre-pended like `_custom.scss`, (shown above) other than `styles.scss`.  */
+    │   ├── mixins.scss /* Your editor and the lang strips these but I'm not entire sure why they are needed, but that's what I was taught. */
+    │   ├── styles.scss
+    │   └── variables.scss
+    └── test.ts
+    ```
+
 
 5. Now open your `styles.scss` file and import <a href="https://getuikit.com/" target="_blank" rel="noopener">UIKit</a> and your custom/mixin/variable files:
 

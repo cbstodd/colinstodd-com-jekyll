@@ -1,18 +1,19 @@
 ---
 layout: post
-title: Fix MacOS Catalina Fonts After Upgrade
+title: Fix MacOS Catalina or macOS Big Sur Fonts After Upgrade
 author: Colin Stodd
-description: How to fix blurry/thin fonts after upgrading to Mac OS Catalina and Big Sur (OS 11)
+description: How to fix blurry/thin fonts after upgrading to macOSX Catalina and macOS Big Sur (OS 11)
 featured: true
 pinned: false
 image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
 date: 2019-10-24 00:00:01 -0400
-last_modified_at: 2021-01-03 11:10:10 -0400
+last_modified_at: 2021-01-06 00:00:10 -0400
 categories: tech
 tags:
   - OSX,
   - Catalina,
-  - Big Sur,
+  - macOS Big Sur,
+  - macOS 11,
   - MAC,
   - Apple,
   - Fonts,
@@ -36,7 +37,7 @@ explain below. However, this app is limited and does not let you adjust font smo
 
 <h2 class="text-green"><em><i class="fad fa-page-break"></i>&nbsp; Start of original post</em></h2>
 
-I recently upgraded my MAC from <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> to <a href="https://www.apple.com/macos/catalina/" target="_blank" rel="noopener">Catalina</a>, then also to <a href="https://www.apple.com/macos/big-sur/" target="_blank" title="macOS Big Sur Download" rel="noopener">Big Sur</a>, all went well but I noticed that my text editor fonts were looking thinner than normal. I recall this happening with the <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> update, so I sort of knew where to begin looking, but I couldn't find exactly what I needed in one spot so I'm going to post it here.  ***I am by no means an expert on these commands, I'm just posting what worked for me***.
+I recently upgraded my MAC from <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> to <a href="https://www.apple.com/macos/catalina/" target="_blank" rel="noopener">Catalina</a>, then also to <a href="https://www.apple.com/macos/big-sur/" target="_blank" title="macOS Big Sur Download" rel="noopener">macOS Big Sur</a>, all went well but I noticed that my text editor fonts were looking thinner than normal. I recall this happening with the <a href="https://support.apple.com/macos/mojave" target="_blank" rel="noopener">Mojave</a> update, so I sort of knew where to begin looking, but I couldn't find exactly what I needed in one spot so I'm going to post it here.  ***I am by no means an expert on these commands, I'm just posting what worked for me***.
 
 Many people had to play with these settings because not every external display is the same, so what I've posted here might not fit your setup exactly. It took some trial and error, but hopefully these commands will help you. As you'll see below, everything can be reverted (<a href="#revert">see the bottom of the page</a>) and the commands won't do any serious damage to your MAC.
 
@@ -50,7 +51,7 @@ You'll want to check to see if you have your font smoothing enabled or disabled 
   <div class="row">
     <div class="one-third column">&nbsp;</div>
       <div class="one-third column">
-        <img src="../../images/posts/mac_osx_fonts/disable_font_smoothing.png" class="image fit" title="font smoothing osx catalina" loading="lazy">
+        <img src="../../images/posts/mac_osx_fonts/disable_font_smoothing.png" class="image fit" title="font smoothing osx catalina and macOS Big Sur" loading="lazy">
       </div>
     <div class="one-third column">&nbsp;</div>
   </div>
@@ -239,7 +240,7 @@ ___
 <div id="revert"></div>
 
 ## Revert back to OSX default:
-No need to worry if you messed things up, you can set everything back to it's default OSX Catalina state:
+No need to worry if you messed things up, you can set everything back to it's default OSX Catalina and macOS Big Sur state:
 
 **Removes custom font smoothing:**
 
