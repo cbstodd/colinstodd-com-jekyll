@@ -5,7 +5,7 @@ author: Colin Stodd
 description: How to fix blurry/thin fonts after upgrading to macOSX Catalina and macOS Big Sur (OS 11)
 featured: true
 pinned: false
-image: ../images/posts/mac_osx_fonts/catalina_icon_min.png
+image: "/images/posts/mac_osx_fonts/2021-03-02-big-sur-download.png"
 date: 2019-10-24 00:00:01 -0400
 last_modified_at: 2021-01-06 00:00:10 -0400
 categories: tech
