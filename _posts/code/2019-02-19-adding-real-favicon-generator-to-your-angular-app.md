@@ -9,8 +9,8 @@ tags:
 title: Adding Real Favicon Generator To Your Angular App
 date: 2019-02-19 15:30:12 -0500
 last_modified_at: 2019-02-19 15:30:12 -0500
-pinned: false
-featured: true
+pinned: true
+featured: false
 image: ../images/posts/favicon_generator_og_image_transp.png
 description: How to use the Real Favicon Generator to add a Favicon and PWA icon to your Angular app.
 permalink: /posts/code/adding-real-favicon-generator-to-your-angular-app.html

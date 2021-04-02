@@ -14,7 +14,7 @@ export class BotChecker  {
 		return this.num1 + this.num2;
 	}
 
-	// TODO: Neecds to be fixed. 		It's currently not working.
+	// TODO: Needs to be fixed. It's currently not working.
 	isNumberTypeCheckOnDirty(usersGuess) {
 		try {
 			if (typeof usersGuess == 'number') {
