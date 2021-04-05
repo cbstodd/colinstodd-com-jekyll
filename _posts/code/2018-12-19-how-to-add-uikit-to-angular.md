@@ -114,10 +114,10 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
     ├── main.ts
     ├── polyfills.ts
     ├── styles
-    │   ├── custom.scss /* Add files here but they should have the "_" pre-pended like `_custom.scss`, (shown above) other than `styles.scss`.  */
-    │   ├── mixins.scss /* Your editor and the lang strips these but I'm not entire sure why they are needed, but that's what I was taught. */
+    │   ├── _custom.scss /* Add files here but they should have the "_" pre-pended like `_custom.scss`, (shown above) other than `styles.scss`.  */
+    │   ├── _mixins.scss /* Your editor and the lang strips these but I'm not entire sure why they are needed, but that's what I was taught. */
     │   ├── styles.scss
-    │   └── variables.scss
+    │   └── _variables.scss  /* Add files here but they should have the "_" pre-pended like `_custom.scss`, (shown above) other than `styles.scss`.  */
     └── test.ts
     ```
 

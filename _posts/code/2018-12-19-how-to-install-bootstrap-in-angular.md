@@ -11,8 +11,8 @@ tags:
   - CSS,
   - Tutorial
 title: How to install Bootstrap 4 or 5 in Angular
-date: 2018-12-19 00:00:10 -0500
-last_modified_at: 2021-04-02 00:10:00 -0400
+date: 2018-12-19 00:00:10 -0400
+last_modified_at: 2021-04-04 00:50:00 -0400
 pinned: false
 featured: true
 image: https://blog.getbootstrap.com/assets/img/2020/06/v5-new-logo.png
@@ -131,6 +131,33 @@ There are some slight differences from versions before Angular 6. This post is f
 3. Create a `styles` directory/folder in `/src`. So it should be `src/styles`.
 
 4. Now move your `styles.scss` file into that directory and create your variables, mixins and custom files to that `src/styles` directory using the following naming convention: `_variables.scss`, `_mixins.scss` and `_custom.scss`.
+
+    ```css
+    src
+    ├── app
+    │   ├── app-routing.module.ts
+    │   ├── app.component.html
+    │   ├── app.component.scss
+    │   ├── app.component.spec.ts
+    │   ├── app.component.ts
+    │   ├── app.module.ts
+    │   └── users
+    ├── assets
+    ├── environments
+    │   ├── environment.prod.ts
+    │   └── environment.ts
+    ├── favicon.ico
+    ├── index.html
+    ├── main.ts
+    ├── polyfills.ts
+    ├── styles
+    │   ├── _custom.scss /* Add files here but they should have the "_" pre-pended like `_custom.scss`, (shown above) other than `styles.scss`.  */
+    │   ├── _mixins.scss /* Your editor and the lang strips these but I'm not entire sure why they are needed, but that's what I was taught. */
+    │   ├── styles.scss
+    │   └── _variables.scss  /* Add files here but they should have the "_" pre-pended like `_custom.scss`, (shown above) other than `styles.scss`.  */
+    └── test.ts
+    ```
+
 
 5. Now open your `styles.scss` file and import <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a> and your custom/mixin/variable files:
 
