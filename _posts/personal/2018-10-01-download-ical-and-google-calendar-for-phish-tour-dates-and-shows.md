@@ -31,11 +31,12 @@ gcal_link: 'https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srj
   <span class="text-yellow">
   <i class="fad fa-microphone-stand" style="font-size:3rem;"></i>  UPDATED&nbsp;&nbsp;&nbsp;<i class="fad fa-calendar-alt"></i>&nbsp;&nbsp;{{ page.last_modified_at | date_to_string }}<br/>
   </span>
+  
   <br />
+  
   <hr />
-   <p>
-   <strong>The calendar has been updated for the Phish Summer Tour 2023</strong>.
-   </p>
+
+   <p><strong>The calendar has been updated for the Phish Summer Tour 2023</strong>.</p>
 
    <p>Sorry for the delay; I was finally able to update this page. The "calendar" is dynamic, so even if this page isn't up-to-date, that doesn't necessarily mean that the shows are not updated.  Nevertheless, I was able to get around to updating this post as well.</p>
 
