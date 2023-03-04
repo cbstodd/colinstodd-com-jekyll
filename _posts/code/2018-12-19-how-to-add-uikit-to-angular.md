@@ -7,8 +7,8 @@ tags:
   - UIKIT,
   - Tutorial
 title: How to add UIKit to Angular
-date: 2019-02-19 15:30:12 -0400
-last_modified_at: 2021-01-12 00:30:12 -0400
+date: 2019-02-19 15:30:12 -0500
+last_modified_at: 2023-03-03 00:30:12 -0500
 pinned: false
 featured: true
 image: ../images/posts/uikit.png
@@ -87,7 +87,7 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
       ]
     ```
 
-    <div class="blurb"><i class="fad fa-books fa-lg"></i>&nbsp;&nbsp;&nbsp;  To read more about  <code>stylePreprocessorOptions</code> go to  &nbsp;<a href="https://github.com/angular/angular-cli/wiki/stories-global-styles" target="_blank" rel="noopener"> Angular/CLI README  <i class="fad fa-external-link-alt"></i></a>. &nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc in Angular.
+    <div class="blurb"><i class="fad fa-books fa-lg"></i>&nbsp;&nbsp;&nbsp;  To read more about  <code>stylePreprocessorOptions</code> go to  &nbsp;<a href="https://angular.io/guide/workspace-config#styles-and-scripts-configuration" target="_blank" rel="noopener"> Angular/CLI README  <i class="fad fa-external-link-alt"></i></a>. &nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc in Angular.
     </div>
 
 
