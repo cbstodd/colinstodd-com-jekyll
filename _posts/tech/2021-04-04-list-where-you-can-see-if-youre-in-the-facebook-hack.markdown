@@ -4,7 +4,7 @@ title: List where you can see if you're in the Facebook hack
 draft: false
 author: Colin Stodd
 description: Simply a link to where you can check to see if you're on the Facebook hack of 2019 reported about in April 2021.
-featured: true
+featured: false
 pinned: false
 image: "images/posts/tech/facebook-hack-squashed.jpg"
 date: 2021-04-04 05:00:00 -0400

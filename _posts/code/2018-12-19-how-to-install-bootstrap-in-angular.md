@@ -10,9 +10,9 @@ tags:
   - SCSS,
   - CSS,
   - Tutorial
-title: How to install Bootstrap 4 or 5 in Angular
-date: 2018-12-19 00:00:10 -0400
-last_modified_at: 2021-04-04 00:50:00 -0400
+title: How to install Bootstrap 5 in Angular
+date: 2018-12-19 00:00:10 -0500
+last_modified_at: 2023-03-03 00:50:00 -0500
 pinned: false
 featured: true
 image: https://blog.getbootstrap.com/assets/img/2020/06/v5-new-logo.png
@@ -41,22 +41,10 @@ There are some slight differences from versions before Angular 6. This post is f
 
 <h3 class="text-pink"><em>If you're using CSS:</em></h3>
 
-<h4 class="text-blue-grey"><em>If you're using Bootstrap 4:</em></h4>
-1. From the root of your project you need to install <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 4</a>, <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> and <a href="https://popper.js.org/" target="_blank" rel="noopener">Popper.js</a>:
-
-    ```bash
-    npm install bootstrap jquery popper.js --S
-    ```
-
-    <div class="blurb"><i class="fad fa-exclamation-triangle fa-lg text-gold"></i>&nbsp;&nbsp;&nbsp; You can disregard the warning about upgrading to <code>@popperjs/core</code>. Bootstrap requires Popper.js 1.6.
-    </div>
-
-<h4 class="text-blue-grey"><em>If you're using Bootstrap 5:</em></h4>
-
 1. From the root of your project you need to install <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 5</a>, and <a href="https://popper.js.org/" target="_blank" rel="noopener">Popper.js</a> which is used for dropdown menu's and other JavaScript sort of things:
 
     ```bash
-    npm install bootstrap@next popper.js --S
+    npm install bootstrap popper.js --S
     ```
 
 
@@ -68,7 +56,6 @@ There are some slight differences from versions before Angular 6. This post is f
       "./node_modules/bootstrap/dist/css/bootstrap.min.css",
     ],
     "scripts": [
-      "./node_modules/jquery/dist/jquery.min.js", // Delete this line if using version 5.
       "./node_modules/popper.js/dist/umd/popper.min.js",
       "./node_modules/bootstrap/dist/js/bootstrap.min.js"
     ]
@@ -84,21 +71,10 @@ There are some slight differences from versions before Angular 6. This post is f
 
 <h3 class="text-pink"><em>If you're using SCSS or SASS:</em></h3>
 
-<h4 class="text-blue-grey"><em>If you're using Bootstrap 4:</em></h4>
-1. From the root of your project you need to install <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>, <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> and <a href="https://popper.js.org/" target="_blank" rel="noopener">Popper.js</a>:
-
-    <div class="blurb"><i class="fad fa-exclamation-triangle fa-lg text-gold"></i>&nbsp;&nbsp;&nbsp; You can disregard the warning about upgrading to <code>@popperjs/core</code>. Bootstrap requires Popper.js 1.6.
-    </div>
-
-    ```bash
-    npm install bootstrap jquery popper.js --S
-    ```
-
-<h4 class="text-blue-grey"><em>If you're using Bootstrap 5:</em></h4>
 1. From the root of your project you need to install <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 5</a>, and <a href="https://popper.js.org/" target="_blank" rel="noopener">Popper.js</a> which is used for dropdown menu's and other JavaScript sort of things:
 
     ```bash
-    npm install bootstrap@next popper.js --S
+    npm install bootstrap popper.js --S
     ```
 
 
@@ -118,13 +94,12 @@ There are some slight differences from versions before Angular 6. This post is f
       ]
     },
     "scripts": [
-      "./node_modules/jquery/dist/jquery.min.js", // Delete line if using version 5.
       "./node_modules/popper.js/dist/umd/popper.min.js",
       "./node_modules/bootstrap/dist/js/bootstrap.min.js"
     ]
     ```
 
-    <div class="blurb"><i class="fad fa-books fa-lg"></i>&nbsp;&nbsp;&nbsp;  To read more about  <code>stylePreprocessorOptions</code> go to  &nbsp;<a href="https://github.com/angular/angular-cli/wiki/stories-global-styles" target="_blank" rel="noopener"> Angular/CLI README  <i class="fad fa-external-link-alt"></i></a>. &nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc in Angular.
+    <div class="blurb"><i class="fad fa-books fa-lg"></i>&nbsp;&nbsp;&nbsp;  To read more about  <code>stylePreprocessorOptions</code> go to  &nbsp;<a href="https://angular.io/guide/workspace-config#styles-and-scripts-configuration" target="_blank" rel="noopener"> Angular/CLI README  <i class="fad fa-external-link-alt"></i></a>. &nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc in Angular.
     </div>
 
 
