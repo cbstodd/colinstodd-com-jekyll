@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "site/",
+    "public": "_site",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -29,8 +29,8 @@
       ]
     },
     {
-      "source": "jekyll_site",
-      "codebase": "jekyll_site",
+      "source": "colinstodd-com",
+      "codebase": "colinstodd-com",
       "ignore": [
         "node_modules",
         ".git",
