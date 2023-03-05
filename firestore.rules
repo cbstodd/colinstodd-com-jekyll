@@ -1,0 +1,70 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /{contacts=**} {
+      allow write;
+      allow read, delete: if isLoggedIn() && emailVerified();
+    }
+
+	match /{homepage=**} {      
+      allow read, write, delete: if isLoggedIn();
+    }
+
+	match /{imageGallery=**} {
+      allow read, write, delete: if isLoggedIn() && emailVerified();
+    }
+
+	match /{images=**} {
+      allow read, write, delete: if isLoggedIn() && emailVerified();
+    }
+
+	match /{meta=**} {
+      allow read;
+      allow write, delete: if isLoggedIn();
+    }
+
+	match /{pages=**} {      
+      allow read, write, delete: if isLoggedIn();
+    }
+
+	match /{postCategories=**} {
+      allow read, write, delete: if isLoggedIn();
+    }
+
+	match /{posts=**} {
+      allow read, write, delete: if isLoggedIn();
+    }
+
+	match /{projectCategories=**} {
+      allow read, write, delete: if isLoggedIn();
+    }
+
+	match /{projects=**} {
+      allow read, write, delete: if isLoggedIn();
+    }
+
+	match /{users=**} {      
+      allow read, write, delete: if isLoggedIn() && isCurrentAuthor();
+    }
+
+
+
+
+
+    //------ FUNCTIONS --------------------
+    function isLoggedIn() {
+      return request.auth != null && auth.uid != null;
+    }
+    
+    function isCurrentAuthor() {
+    	return request.auth.uid == request.resource.data.author_uid;
+    }
+
+    function emailVerified() {
+      return request.auth.token.email_verified;
+    }
+
+
+
+  } //END
+}
