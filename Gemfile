@@ -1,6 +1,10 @@
 source "https://rubygems.org"
 gemspec
+<<<<<<< HEAD
 gem 'bundler', '2.2.22'
+=======
+gem 'bundler', '2.4.1'
+>>>>>>> 054-update-remote-with-local-versions
 gem 'kramdown'
 gem 'rouge'
 gem 'jekyll-seo-tag'

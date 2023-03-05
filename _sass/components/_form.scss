@@ -173,7 +173,7 @@ input[type="radio"] {
     @include icon;
     color: _palette(fg);
     cursor: pointer;
-    esplay: inline-block;
+    display: inline-block;
     font-size: 1em;
     font-family: _font(family);
     text-transform: none;

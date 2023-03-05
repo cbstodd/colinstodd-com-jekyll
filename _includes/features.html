@@ -3,7 +3,7 @@
 {% assign is_alt = forloop.index | modulo:2 %}
 {% capture alt %}{% if is_alt == 0 %} alt{% endif %}{% endcapture %}
 <!-- feature-{{ forloop.index }} -->
-<section id="feature-{{ forloop.index }}" class="wrapper{{ alt }} spotlight style{{ forloop.index }}">
+<article id="feature-{{ forloop.index }}" class="wrapper{{ alt }} spotlight style{{ forloop.index }}">
   <div class="inner animate__animated animate__backInLeft">
     <a href="{{ feature.url | relative_url }}" title="{{ feature.title }}" class="image featured-image-link">
       <img src="{{ feature.image }}" alt="{{ feature.title }}"
@@ -18,5 +18,5 @@
       <a href="{{ feature.url | relative_url }}" class="special">Read More</a>
     </div>
   </div>
-</section>
+</article>
 {% endfor %}
