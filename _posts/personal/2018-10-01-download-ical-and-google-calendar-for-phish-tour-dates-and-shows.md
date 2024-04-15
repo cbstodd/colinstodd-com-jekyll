@@ -9,12 +9,12 @@ tags:
   - Shows
   - Tour
 title: Download iCal and Google calendar for Phish tour dates and shows
-date: 2017-12-29 12:01:00 -0500
-last_modified_at: 2023-03-03 00:00:10 -0500
+date: 2017-12-29 12:01:00 -0400
+last_modified_at: 2024-04-15 00:00:10 -0400
 pinned: true
 featured: true
-# image: ../images/posts/dinner_and_movie_words.png
-image: https://phish.wpenginepowered.com/wp-content/uploads/2023/02/Phish_2023_Summer_SOCIALS_900.jpg
+image: ../images/posts/personal/phish-summer-tour-2024.jpg
+# image: https://phish.wpenginepowered.com/wp-content/uploads/2023/02/Phish_2023_Summer_SOCIALS_900.jpg
 description: Download Phish tour iCal/Google calendar. The calendar has been updated for the 2023 Summer Tour.
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
@@ -36,13 +36,11 @@ gcal_link: 'https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srj
   
   <hr />
 
-   <p><strong>The calendar has been updated for the Phish Summer Tour 2023</strong>.</p>
-
-   <p>Sorry for the delay; I was finally able to update this page. The "calendar" is dynamic, so even if this page isn't up-to-date, that doesn't necessarily mean that the shows are not updated.  Nevertheless, I was able to get around to updating this post as well.</p>
+   <p><strong>The calendar has been updated for the 2024 season</strong>.</p>
 
    <p>The directions provided below are intended for desktop/laptop devices. When I get the time I'll try and add directions for those of you who only use mobile devices. Until then, please refer to the internet as a source of how to add calendar subscriptions using your mobile device..... Nevertheless, If you see something missing or off, please let me know.</p>
 
-   <p>Finally, Keep in mind, I took the time to change the time zones for West coast show to accurately reflect things for people back on the east side (So times might say <code>10:30PM</code> if you're on the east coast).... That's not an error.</p>
+  <p><strong>Please Note:</strong> The dates have been set to Eastern time. Therefore, if you are on the east coast and the show is in a different time zone (eg: Vegas /Sphere), there will be an overlap in the days.</p>
 
    <p>Love you all, never let kindness astray from your character.</p>
 

@@ -1,13 +1,12 @@
 {
-    "workbench.settings.useSplitJSON": true,
-    "workbench.settings.openDefaultSettings": true,
-    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-    "vscode_custom_css.imports": [
-        "file:///Users/cstodd/.vscode/extensions/webrender.synthwave-x-fluoromachine-0.0.12/synthwave-x-fluoromachine.css",
-        "file:///Users/cstodd/.vscode/extensions/webrender.synthwave-x-fluoromachine-0.0.12/synthwave-x-fluoromachine.itermcolors",
-    ],
-    "vscode_custom_css.policy": true,
-    "favorites.resources": [
-        "_config.yml"
-    ],
+  "workbench.settings.useSplitJSON": true,
+  "workbench.settings.openDefaultSettings": true,
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "vscode_custom_css.imports": [
+    "file:///Users/cstodd/.vscode/extensions/webrender.synthwave-x-fluoromachine-0.0.12/synthwave-x-fluoromachine.css",
+    "file:///Users/cstodd/.vscode/extensions/webrender.synthwave-x-fluoromachine-0.0.12/synthwave-x-fluoromachine.itermcolors"
+  ],
+  "vscode_custom_css.policy": true,
+  "favorites.resources": ["_config.yml"],
+  "cSpell.words": ["Stodd"]
 }

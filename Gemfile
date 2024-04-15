@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 gemspec
 
-gem "bundler", "2.5.2"
+gem "bundler", "2.5.6"
 gem "kramdown"
 gem "rouge"
 gem "jekyll-seo-tag"
