@@ -6,7 +6,7 @@ tags: ReactJS, Open Weather Map, Bootstrap
 date: 2017-05-09 00:00:01 -0500
 last_modified_at: 2017-05-09 00:00:01 -0500
 category: react
-featured: true
+featured: false
 pinned: false
 image: ../images/projects/react-temp.png
 liveUrl: "http://reactjs-temp.herokuapp.com/"

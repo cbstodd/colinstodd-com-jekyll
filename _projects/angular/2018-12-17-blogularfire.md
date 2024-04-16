@@ -6,7 +6,7 @@ tags: Angular, Firebase, UIKit
 date: 2018-12-17 00:00:01 -0500
 last_modified_at: 2018-12-17 00:00:01 -0500
 category: angular
-featured: true
+featured: false
 pinned: false
 image: ../images/projects/blogularfire.png
 liveUrl:

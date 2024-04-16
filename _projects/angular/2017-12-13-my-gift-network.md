@@ -6,7 +6,7 @@ tags: Angular, Angular Material, Bootstrap
 title: My Gift Network
 date: 2017-12-13 00:00:01 -0500
 last_modified_at: 2020-02-17 00:10:01 -0500
-pinned: true
+pinned: false
 featured: false
 image: ../images/projects/my-gift-network.png
 liveUrl: https://mygiftnetwork.com/

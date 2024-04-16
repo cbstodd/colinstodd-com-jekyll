@@ -10,12 +10,12 @@ tags:
   - Tour
 title: Download iCal and Google calendar for Phish tour dates and shows
 date: 2017-12-29 12:01:00 -0400
-last_modified_at: 2024-04-15 00:00:10 -0400
-pinned: true
+last_modified_at: 2024-04-16 00:00:10 -0400
+pinned: false
 featured: true
 image: ../images/posts/personal/phish-summer-tour-2024.jpg
 # image: https://phish.wpenginepowered.com/wp-content/uploads/2023/02/Phish_2023_Summer_SOCIALS_900.jpg
-description: Download Phish tour iCal/Google calendar. The calendar has been updated for the 2023 Summer Tour.
+description: Download Phish tour iCal/Google calendar. The calendar has been updated for the 2024 Summer Tour.
 permalink: /posts/personal/download-ical-and-google-calendar-for-phish-tour-dates-and-shows.html
 comments: true
 redirect_from:

@@ -6,8 +6,8 @@ tags: Angular, Firebase
 date: 2018-08-10 00:00:01 -0500
 last_modified_at: 2018-08-10 00:00:01 -0500
 category: angular
-featured: true
-pinned: true
+featured: false
+pinned: false
 image: ../images/projects/custom-cms.png
 liveUrl:
 githubUrl: "https://github.com/AmerGastroAssn/ddw-org"
