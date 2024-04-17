@@ -87,4 +87,4 @@ gcal_link: 'https://calendar.google.com/calendar/embed?src=cigokdh5l6cs8i0ph6srj
 
 <p>You should now see the show dates with details populate on your calendar. I will try and keep this calendar updated should they add more dates. If you see something missing or off, please let me know in the comments.</p>
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D81B60&amp;ctz=America%2FNew_York&amp;src=Y2lnb2tkaDVsNmNzOGkwcGg2c3JqaWJvaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%2300ccab&amp;mode=AGENDA&amp;showTitle=0&amp;showCalendars=0&amp;title=%F0%9F%90%A0Phish%20Tour%20(2021-22)" style="border-width:0" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D81B60&amp;ctz=America%2FNew_York&amp;src=Y2lnb2tkaDVsNmNzOGkwcGg2c3JqaWJvaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%2300ccab&amp;mode=AGENDA&amp;showTitle=0&amp;showCalendars=0&amp;title=%F0%9F%90%A0Phish%20Tour%20(2021-22)" style="border-width:0" width="100%" height="800" frameborder="0" scrolling="yes"></iframe>

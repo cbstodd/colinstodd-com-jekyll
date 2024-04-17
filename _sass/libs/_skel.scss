@@ -4,7 +4,7 @@
 
 /// Breakpoints.
 /// @var {list}
-$breakpoints: () !global;
+// $breakpoints: () !global;
 
 /// Vendor prefixes.
 /// @var {list}
@@ -1075,7 +1075,7 @@ $vendor-values: ('filter',
 	}
 
 	// Expand just the value?
-	@elseif $expandValue {
+	@else if $expandValue {
 		@each $vendor in $vendor-prefixes {
 			#{$property}: #{str-replace-all($value, '-prefix-', $vendor)};
 		}
