@@ -52,7 +52,7 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
         ]
     ```
 
-    <div id="scss" name="scss"></div>
+
 
 3. Since we updated `angular.json` you'll have to restart your server.
 
@@ -87,7 +87,7 @@ I heard about <a href="https://getuikit.com" target="_blank" rel="noopener">UIKi
       ]
     ```
 
-    <div class="blurb"><i class="fad fa-books fa-lg"></i>&nbsp;&nbsp;&nbsp;  To read more about  <code>stylePreprocessorOptions</code> go to  &nbsp;<a href="https://angular.io/guide/workspace-config#styles-and-scripts-configuration" target="_blank" rel="noopener"> Angular/CLI README  <i class="fad fa-external-link-alt"></i></a>. &nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc in Angular.
+    <div class="blurb"><i class="fad fa-books fa-lg"></i>&nbsp;&nbsp;&nbsp;  To read more about  <code>stylePreprocessorOptions</code> go to  &nbsp;<a href="https://angular.io/guide/workspace-config#styles-and-scripts-configuration" target="_blank" rel="noopener"> Angular/CLI README  <i class="fad fa-external-link-alt"></i></a>. &nbsp;It's a quick (3 min) read and definitely a good thing to be aware of if you're working with SASS, LESS, etc. in Angular.
     </div>
 
 

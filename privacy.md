@@ -16,5 +16,5 @@ If you comment on a post or contact me you agree to allow me store your name, em
 
 Regards,
 
-**Colin Stodd** <br/>
+**Colin B. Stodd** <br/>
 *(Owner of this website and domain)*

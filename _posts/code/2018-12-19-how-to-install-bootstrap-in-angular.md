@@ -61,7 +61,7 @@ There are some slight differences from versions before Angular 6. This post is f
     ]
     ```
 
-    <div id="scss" name="scss"></div>
+    
 
 3. Since we updated `angular.json` you'll have to restart your server. Once you do that you should be good to go for the CSS version.
 
