@@ -8,7 +8,7 @@ tags:
   - Real Favicon Generator
 title: Adding Real Favicon Generator To Your Angular App
 date: 2019-02-19 15:30:12 -0500
-last_modified_at: 2019-02-19 15:30:12 -0500
+last_modified_at: 2024-04-24 00:30:12 -0500
 pinned: true
 featured: false
 image: ../images/posts/favicon_generator_og_image_transp.png
@@ -29,19 +29,21 @@ For just about all of my <a href="https://angular.io/" target="_blank" rel="noop
 3. Once the <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener" title="Real Favicon Generator">Real Favicon Generator</a> does its thing, you'll want to click on the "Node CLI" tab as seen in the image below.
 
     <img src="../../images/posts/real_favicon_with_arrows.png" class="zoom image fit" />
-<br/>
 
 4. Now you'll want to install the Real Favicon Generator CLI globally which helps to generate the files for you.
 So run:
+
     ```bash
     npm install -g cli-real-favicon
     ```
 
 5. Now that the CLI is installed, run this command from the root of your <a href="https://angular.io/" target="_blank" rel="noopener" title="Angular">Angular</a> app:
-    ```bash
+
+   ```bash
     touch faviconDescription.json && mkdir src/assets/outputDir
     ```
-    This creates a generator file and output directory where the generator files are going to be placed in.
+    _*This creates a generator file and output directory where the generator files are going to be placed in._
+
 
 6. Now you'll want to copy that source code on the RFG site into the newly created `faviconDescription.json` file. You'll notice that there will be `TODO: Path to your master picture`.
 
@@ -57,7 +59,8 @@ So run:
     ```
 
 8. Now that you have copied and pasted that code and updated the     `"masterPicture"` path to your image path, you'll want to run this RFG CLI command to generate your new icons. So run this in your terminal:
-    ```bash
+    
+   ```bash
     real-favicon generate faviconDescription.json faviconData.json src/assets/outputDir
     ```
 
@@ -78,6 +81,7 @@ So run:
     ```
 
 11. Finally!!!!!!! One last step, go into your `index.html` file and add your meta tags. Mine looks like what's below. If you copy and paste my code just remember to update the color HEX's to be what you choose for your icon. You can find those HEX colors on the HTML5 tab on the RFG site. I've added some PWA tags too so when you add your site to your mobile devices' home screen, and launch the app, it will run like a PWA application and will use your new icon.
+
     ```html
         <!-- * Favicon * -->
         <link rel="icon" type="image/x-icon" href="./assets/outputDir/favicon.ico">
